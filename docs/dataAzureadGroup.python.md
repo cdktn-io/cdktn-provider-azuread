@@ -1,15 +1,15 @@
-# `dataAzureadGroup` Submodule <a name="`dataAzureadGroup` Submodule" id="@cdktf/provider-azuread.dataAzureadGroup"></a>
+# `dataAzureadGroup` Submodule <a name="`dataAzureadGroup` Submodule" id="@cdktn/provider-azuread.dataAzureadGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzureadGroup <a name="DataAzureadGroup" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup"></a>
+### DataAzureadGroup <a name="DataAzureadGroup" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group azuread_group}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroup(
   scope: Construct,
@@ -34,27 +34,27 @@ dataAzureadGroup.DataAzureadGroup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#id DataAzureadGroup#id}. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to include transitive members (a flat list of all nested members). |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is mail-enabled. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | The object ID of the group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#id DataAzureadGroup#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to include transitive members (a flat list of all nested members). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is mail-enabled. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | The object ID of the group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a security group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,49 +72,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.displayName"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -135,9 +135,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `include_transitive_members`<sup>Optional</sup> <a name="include_transitive_members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.includeTransitiveMembers"></a>
+##### `include_transitive_members`<sup>Optional</sup> <a name="include_transitive_members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.includeTransitiveMembers"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies whether to include transitive members (a flat list of all nested members).
 
@@ -145,9 +145,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailEnabled"></a>
+##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is mail-enabled.
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.mailNickname"></a>
 
 - *Type:* str
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `object_id`<sup>Optional</sup> <a name="object_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.objectId"></a>
+##### `object_id`<sup>Optional</sup> <a name="object_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.objectId"></a>
 
 - *Type:* str
 
@@ -175,9 +175,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.securityEnabled"></a>
+##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.securityEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a security group.
 
@@ -185,9 +185,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
 
 timeouts block.
 
@@ -199,36 +199,36 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetDisplayName">reset_display_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetIncludeTransitiveMembers">reset_include_transitive_members</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailEnabled">reset_mail_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId">reset_object_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetSecurityEnabled">reset_security_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetDisplayName">reset_display_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetIncludeTransitiveMembers">reset_include_transitive_members</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailEnabled">reset_mail_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId">reset_object_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetSecurityEnabled">reset_security_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toString"></a>
 
 ```python
 def to_string() -> str
@@ -236,7 +236,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride"></a>
 
 ```python
 def add_override(
@@ -245,19 +245,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -267,7 +267,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -275,7 +275,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -283,7 +283,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -291,13 +291,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -305,7 +305,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -313,13 +313,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -327,13 +327,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -341,13 +341,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -355,13 +355,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -369,13 +369,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -383,13 +383,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -397,13 +397,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -411,13 +411,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -425,13 +425,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -439,13 +439,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -453,7 +453,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -461,49 +461,49 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_display_name` <a name="reset_display_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetDisplayName"></a>
+##### `reset_display_name` <a name="reset_display_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetDisplayName"></a>
 
 ```python
 def reset_display_name() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_include_transitive_members` <a name="reset_include_transitive_members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetIncludeTransitiveMembers"></a>
+##### `reset_include_transitive_members` <a name="reset_include_transitive_members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetIncludeTransitiveMembers"></a>
 
 ```python
 def reset_include_transitive_members() -> None
 ```
 
-##### `reset_mail_enabled` <a name="reset_mail_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailEnabled"></a>
+##### `reset_mail_enabled` <a name="reset_mail_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailEnabled"></a>
 
 ```python
 def reset_mail_enabled() -> None
 ```
 
-##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname"></a>
+##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetMailNickname"></a>
 
 ```python
 def reset_mail_nickname() -> None
 ```
 
-##### `reset_object_id` <a name="reset_object_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId"></a>
+##### `reset_object_id` <a name="reset_object_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetObjectId"></a>
 
 ```python
 def reset_object_id() -> None
 ```
 
-##### `reset_security_enabled` <a name="reset_security_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetSecurityEnabled"></a>
+##### `reset_security_enabled` <a name="reset_security_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetSecurityEnabled"></a>
 
 ```python
 def reset_security_enabled() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -513,17 +513,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataAzureadGroup resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DataAzureadGroup resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroup.is_construct(
   x: typing.Any
@@ -546,7 +546,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -554,42 +554,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroup.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroup.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroup.generate_config_for_import(
   scope: Construct,
@@ -599,9 +599,9 @@ dataAzureadGroup.DataAzureadGroup.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DataAzureadGroup resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataAzureadGroup resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -609,7 +609,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the DataAzureadGroup to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -627,9 +627,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataAzureadGroup to import is found.
 
@@ -639,62 +639,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.assignableToRole">assignable_to_role</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList">DataAzureadGroupDynamicMembershipList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mail">mail</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members">members</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesNetbiosName">onpremises_netbios_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.theme">theme</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference">DataAzureadGroupTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.writebackEnabled">writeback_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembersInput">include_transitive_members_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabledInput">mail_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput">object_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabledInput">security_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.assignableToRole">assignable_to_role</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList">DataAzureadGroupDynamicMembershipList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mail">mail</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members">members</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesNetbiosName">onpremises_netbios_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.theme">theme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference">DataAzureadGroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.writebackEnabled">writeback_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembersInput">include_transitive_members_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabledInput">mail_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput">object_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabledInput">security_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.node"></a>
 
 ```python
 node: Node
@@ -706,17 +706,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.fqn"></a>
 
 ```python
 fqn: str
@@ -726,7 +726,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -736,7 +736,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -746,7 +746,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -756,27 +756,27 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -786,57 +786,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `assignable_to_role`<sup>Required</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.assignableToRole"></a>
+##### `assignable_to_role`<sup>Required</sup> <a name="assignable_to_role" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.assignableToRole"></a>
 
 ```python
 assignable_to_role: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `auto_subscribe_new_members`<sup>Required</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.autoSubscribeNewMembers"></a>
+##### `auto_subscribe_new_members`<sup>Required</sup> <a name="auto_subscribe_new_members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.autoSubscribeNewMembers"></a>
 
 ```python
 auto_subscribe_new_members: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `behaviors`<sup>Required</sup> <a name="behaviors" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.behaviors"></a>
+##### `behaviors`<sup>Required</sup> <a name="behaviors" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.behaviors"></a>
 
 ```python
 behaviors: typing.List[str]
@@ -846,7 +846,7 @@ behaviors: typing.List[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.description"></a>
 
 ```python
 description: str
@@ -856,47 +856,47 @@ description: str
 
 ---
 
-##### `dynamic_membership`<sup>Required</sup> <a name="dynamic_membership" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dynamicMembership"></a>
+##### `dynamic_membership`<sup>Required</sup> <a name="dynamic_membership" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.dynamicMembership"></a>
 
 ```python
 dynamic_membership: DataAzureadGroupDynamicMembershipList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList">DataAzureadGroupDynamicMembershipList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList">DataAzureadGroupDynamicMembershipList</a>
 
 ---
 
-##### `external_senders_allowed`<sup>Required</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.externalSendersAllowed"></a>
+##### `external_senders_allowed`<sup>Required</sup> <a name="external_senders_allowed" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.externalSendersAllowed"></a>
 
 ```python
 external_senders_allowed: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `hide_from_address_lists`<sup>Required</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromAddressLists"></a>
+##### `hide_from_address_lists`<sup>Required</sup> <a name="hide_from_address_lists" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromAddressLists"></a>
 
 ```python
 hide_from_address_lists: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `hide_from_outlook_clients`<sup>Required</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromOutlookClients"></a>
+##### `hide_from_outlook_clients`<sup>Required</sup> <a name="hide_from_outlook_clients" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.hideFromOutlookClients"></a>
 
 ```python
 hide_from_outlook_clients: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `mail`<sup>Required</sup> <a name="mail" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mail"></a>
+##### `mail`<sup>Required</sup> <a name="mail" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mail"></a>
 
 ```python
 mail: str
@@ -906,7 +906,7 @@ mail: str
 
 ---
 
-##### `members`<sup>Required</sup> <a name="members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members"></a>
+##### `members`<sup>Required</sup> <a name="members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.members"></a>
 
 ```python
 members: typing.List[str]
@@ -916,7 +916,7 @@ members: typing.List[str]
 
 ---
 
-##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesDomainName"></a>
+##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesDomainName"></a>
 
 ```python
 onpremises_domain_name: str
@@ -926,7 +926,7 @@ onpremises_domain_name: str
 
 ---
 
-##### `onpremises_group_type`<sup>Required</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesGroupType"></a>
+##### `onpremises_group_type`<sup>Required</sup> <a name="onpremises_group_type" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesGroupType"></a>
 
 ```python
 onpremises_group_type: str
@@ -936,7 +936,7 @@ onpremises_group_type: str
 
 ---
 
-##### `onpremises_netbios_name`<sup>Required</sup> <a name="onpremises_netbios_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesNetbiosName"></a>
+##### `onpremises_netbios_name`<sup>Required</sup> <a name="onpremises_netbios_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesNetbiosName"></a>
 
 ```python
 onpremises_netbios_name: str
@@ -946,7 +946,7 @@ onpremises_netbios_name: str
 
 ---
 
-##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSamAccountName"></a>
+##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSamAccountName"></a>
 
 ```python
 onpremises_sam_account_name: str
@@ -956,7 +956,7 @@ onpremises_sam_account_name: str
 
 ---
 
-##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSecurityIdentifier"></a>
+##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSecurityIdentifier"></a>
 
 ```python
 onpremises_security_identifier: str
@@ -966,17 +966,17 @@ onpremises_security_identifier: str
 
 ---
 
-##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSyncEnabled"></a>
+##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.onpremisesSyncEnabled"></a>
 
 ```python
 onpremises_sync_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `owners`<sup>Required</sup> <a name="owners" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="owners" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.owners"></a>
 
 ```python
 owners: typing.List[str]
@@ -986,7 +986,7 @@ owners: typing.List[str]
 
 ---
 
-##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.preferredLanguage"></a>
+##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.preferredLanguage"></a>
 
 ```python
 preferred_language: str
@@ -996,7 +996,7 @@ preferred_language: str
 
 ---
 
-##### `provisioning_options`<sup>Required</sup> <a name="provisioning_options" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provisioningOptions"></a>
+##### `provisioning_options`<sup>Required</sup> <a name="provisioning_options" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.provisioningOptions"></a>
 
 ```python
 provisioning_options: typing.List[str]
@@ -1006,7 +1006,7 @@ provisioning_options: typing.List[str]
 
 ---
 
-##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.proxyAddresses"></a>
+##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.proxyAddresses"></a>
 
 ```python
 proxy_addresses: typing.List[str]
@@ -1016,7 +1016,7 @@ proxy_addresses: typing.List[str]
 
 ---
 
-##### `theme`<sup>Required</sup> <a name="theme" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.theme"></a>
+##### `theme`<sup>Required</sup> <a name="theme" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.theme"></a>
 
 ```python
 theme: str
@@ -1026,17 +1026,17 @@ theme: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeouts"></a>
 
 ```python
 timeouts: DataAzureadGroupTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference">DataAzureadGroupTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference">DataAzureadGroupTimeoutsOutputReference</a>
 
 ---
 
-##### `types`<sup>Required</sup> <a name="types" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.types"></a>
+##### `types`<sup>Required</sup> <a name="types" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.types"></a>
 
 ```python
 types: typing.List[str]
@@ -1046,7 +1046,7 @@ types: typing.List[str]
 
 ---
 
-##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.visibility"></a>
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.visibility"></a>
 
 ```python
 visibility: str
@@ -1056,17 +1056,17 @@ visibility: str
 
 ---
 
-##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.writebackEnabled"></a>
+##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.writebackEnabled"></a>
 
 ```python
 writeback_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayNameInput"></a>
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1076,7 +1076,7 @@ display_name_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1086,27 +1086,27 @@ id_input: str
 
 ---
 
-##### `include_transitive_members_input`<sup>Optional</sup> <a name="include_transitive_members_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembersInput"></a>
+##### `include_transitive_members_input`<sup>Optional</sup> <a name="include_transitive_members_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembersInput"></a>
 
 ```python
 include_transitive_members_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_enabled_input`<sup>Optional</sup> <a name="mail_enabled_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabledInput"></a>
+##### `mail_enabled_input`<sup>Optional</sup> <a name="mail_enabled_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabledInput"></a>
 
 ```python
 mail_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput"></a>
+##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNicknameInput"></a>
 
 ```python
 mail_nickname_input: str
@@ -1116,7 +1116,7 @@ mail_nickname_input: str
 
 ---
 
-##### `object_id_input`<sup>Optional</sup> <a name="object_id_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput"></a>
+##### `object_id_input`<sup>Optional</sup> <a name="object_id_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectIdInput"></a>
 
 ```python
 object_id_input: str
@@ -1126,27 +1126,27 @@ object_id_input: str
 
 ---
 
-##### `security_enabled_input`<sup>Optional</sup> <a name="security_enabled_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabledInput"></a>
+##### `security_enabled_input`<sup>Optional</sup> <a name="security_enabled_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabledInput"></a>
 
 ```python
 security_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DataAzureadGroupTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1156,7 +1156,7 @@ display_name: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.id"></a>
 
 ```python
 id: str
@@ -1166,27 +1166,27 @@ id: str
 
 ---
 
-##### `include_transitive_members`<sup>Required</sup> <a name="include_transitive_members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembers"></a>
+##### `include_transitive_members`<sup>Required</sup> <a name="include_transitive_members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.includeTransitiveMembers"></a>
 
 ```python
 include_transitive_members: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabled"></a>
+##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailEnabled"></a>
 
 ```python
 mail_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname"></a>
+##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -1196,7 +1196,7 @@ mail_nickname: str
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1206,13 +1206,13 @@ object_id: str
 
 ---
 
-##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabled"></a>
+##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.securityEnabled"></a>
 
 ```python
 security_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1220,11 +1220,11 @@ security_enabled: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroup.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1236,12 +1236,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzureadGroupConfig <a name="DataAzureadGroupConfig" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig"></a>
+### DataAzureadGroupConfig <a name="DataAzureadGroupConfig" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1266,95 +1266,95 @@ dataAzureadGroup.DataAzureadGroupConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#id DataAzureadGroup#id}. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether to include transitive members (a flat list of all nested members). |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is mail-enabled. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.objectId">object_id</a></code> | <code>str</code> | The object ID of the group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#id DataAzureadGroup#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.includeTransitiveMembers">include_transitive_members</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether to include transitive members (a flat list of all nested members). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is mail-enabled. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.objectId">object_id</a></code> | <code>str</code> | The object ID of the group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a security group. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.displayName"></a>
+##### `display_name`<sup>Optional</sup> <a name="display_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.id"></a>
 
 ```python
 id: str
@@ -1383,13 +1383,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `include_transitive_members`<sup>Optional</sup> <a name="include_transitive_members" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.includeTransitiveMembers"></a>
+##### `include_transitive_members`<sup>Optional</sup> <a name="include_transitive_members" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.includeTransitiveMembers"></a>
 
 ```python
 include_transitive_members: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies whether to include transitive members (a flat list of all nested members).
 
@@ -1397,13 +1397,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailEnabled"></a>
+##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailEnabled"></a>
 
 ```python
 mail_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is mail-enabled.
 
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `object_id`<sup>Optional</sup> <a name="object_id" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.objectId"></a>
+##### `object_id`<sup>Optional</sup> <a name="object_id" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1439,13 +1439,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.securityEnabled"></a>
+##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.securityEnabled"></a>
 
 ```python
 security_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a security group.
 
@@ -1453,13 +1453,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupConfig.property.timeouts"></a>
 
 ```python
 timeouts: DataAzureadGroupTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
 
 timeouts block.
 
@@ -1467,23 +1467,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DataAzureadGroupDynamicMembership <a name="DataAzureadGroupDynamicMembership" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership"></a>
+### DataAzureadGroupDynamicMembership <a name="DataAzureadGroupDynamicMembership" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupDynamicMembership()
 ```
 
 
-### DataAzureadGroupTimeouts <a name="DataAzureadGroupTimeouts" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts"></a>
+### DataAzureadGroupTimeouts <a name="DataAzureadGroupTimeouts" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupTimeouts(
   read: str = None
@@ -1494,11 +1494,11 @@ dataAzureadGroup.DataAzureadGroupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#read DataAzureadGroup#read}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#read DataAzureadGroup#read}. |
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1512,12 +1512,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzureadGroupDynamicMembershipList <a name="DataAzureadGroupDynamicMembershipList" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList"></a>
+### DataAzureadGroupDynamicMembershipList <a name="DataAzureadGroupDynamicMembershipList" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupDynamicMembershipList(
   terraform_resource: IInterpolatingParent,
@@ -1528,21 +1528,21 @@ dataAzureadGroup.DataAzureadGroupDynamicMembershipList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1550,7 +1550,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1562,15 +1562,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1582,19 +1582,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve"></a>
 
 ```python
 def resolve(
@@ -1604,13 +1604,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1620,7 +1620,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get"></a>
 
 ```python
 def get(
@@ -1628,7 +1628,7 @@ def get(
 ) -> DataAzureadGroupDynamicMembershipOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1641,12 +1641,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1660,7 +1660,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1671,12 +1671,12 @@ fqn: str
 ---
 
 
-### DataAzureadGroupDynamicMembershipOutputReference <a name="DataAzureadGroupDynamicMembershipOutputReference" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference"></a>
+### DataAzureadGroupDynamicMembershipOutputReference <a name="DataAzureadGroupDynamicMembershipOutputReference" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1688,22 +1688,22 @@ dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1711,7 +1711,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1719,7 +1719,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1731,29 +1731,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1761,13 +1761,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1775,13 +1775,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1789,13 +1789,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1803,13 +1803,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1817,13 +1817,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1831,13 +1831,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1845,13 +1845,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1859,13 +1859,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1873,13 +1873,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1887,13 +1887,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1903,13 +1903,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1924,15 +1924,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership">DataAzureadGroupDynamicMembership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership">DataAzureadGroupDynamicMembership</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1946,7 +1946,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1956,17 +1956,17 @@ fqn: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.enabled"></a>
 
 ```python
 enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.rule"></a>
 
 ```python
 rule: str
@@ -1976,23 +1976,23 @@ rule: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembershipOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DataAzureadGroupDynamicMembership
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership">DataAzureadGroupDynamicMembership</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupDynamicMembership">DataAzureadGroupDynamicMembership</a>
 
 ---
 
 
-### DataAzureadGroupTimeoutsOutputReference <a name="DataAzureadGroupTimeoutsOutputReference" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference"></a>
+### DataAzureadGroupTimeoutsOutputReference <a name="DataAzureadGroupTimeoutsOutputReference" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import data_azuread_group
+from cdktn_provider_azuread import data_azuread_group
 
 dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2002,20 +2002,20 @@ dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2027,30 +2027,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2058,13 +2058,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2072,13 +2072,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2086,13 +2086,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2100,13 +2100,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2114,13 +2114,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2128,13 +2128,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2142,13 +2142,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2156,13 +2156,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2170,13 +2170,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2184,13 +2184,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2200,13 +2200,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2216,7 +2216,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
@@ -2227,15 +2227,15 @@ def reset_read() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2249,7 +2249,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2259,7 +2259,7 @@ fqn: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -2269,7 +2269,7 @@ read_input: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -2279,13 +2279,13 @@ read: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DataAzureadGroupTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.dataAzureadGroup.DataAzureadGroupTimeouts">DataAzureadGroupTimeouts</a>
 
 ---
 

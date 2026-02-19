@@ -1,28 +1,28 @@
-# `privilegedAccessGroupAssignmentSchedule` Submodule <a name="`privilegedAccessGroupAssignmentSchedule` Submodule" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule"></a>
+# `privilegedAccessGroupAssignmentSchedule` Submodule <a name="`privilegedAccessGroupAssignmentSchedule` Submodule" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### PrivilegedAccessGroupAssignmentSchedule <a name="PrivilegedAccessGroupAssignmentSchedule" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule"></a>
+### PrivilegedAccessGroupAssignmentSchedule <a name="PrivilegedAccessGroupAssignmentSchedule" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule azuread_privileged_access_group_assignment_schedule}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 new privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule(scope: Construct, id: string, config: PrivilegedAccessGroupAssignmentScheduleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig">PrivilegedAccessGroupAssignmentScheduleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig">PrivilegedAccessGroupAssignmentScheduleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig">PrivilegedAccessGroupAssignmentScheduleConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig">PrivilegedAccessGroupAssignmentScheduleConfig</a>
 
 ---
 
@@ -50,43 +50,43 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetDuration">resetDuration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetExpirationDate">resetExpirationDate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetJustification">resetJustification</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetPermanentAssignment">resetPermanentAssignment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetStartDate">resetStartDate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketNumber">resetTicketNumber</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketSystem">resetTicketSystem</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetDuration">resetDuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetExpirationDate">resetExpirationDate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetJustification">resetJustification</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetPermanentAssignment">resetPermanentAssignment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetStartDate">resetStartDate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketNumber">resetTicketNumber</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketSystem">resetTicketSystem</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toString"></a>
 
 ```typescript
 public toString(): string
@@ -94,25 +94,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -120,7 +120,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -128,7 +128,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -136,19 +136,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -156,7 +156,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -164,7 +164,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -172,151 +172,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -326,7 +326,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -342,7 +342,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -358,7 +358,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -366,7 +366,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -374,67 +374,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: PrivilegedAccessGroupAssignmentScheduleTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
 
 ---
 
-##### `resetDuration` <a name="resetDuration" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetDuration"></a>
+##### `resetDuration` <a name="resetDuration" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetDuration"></a>
 
 ```typescript
 public resetDuration(): void
 ```
 
-##### `resetExpirationDate` <a name="resetExpirationDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetExpirationDate"></a>
+##### `resetExpirationDate` <a name="resetExpirationDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetExpirationDate"></a>
 
 ```typescript
 public resetExpirationDate(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetJustification` <a name="resetJustification" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetJustification"></a>
+##### `resetJustification` <a name="resetJustification" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetJustification"></a>
 
 ```typescript
 public resetJustification(): void
 ```
 
-##### `resetPermanentAssignment` <a name="resetPermanentAssignment" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetPermanentAssignment"></a>
+##### `resetPermanentAssignment` <a name="resetPermanentAssignment" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetPermanentAssignment"></a>
 
 ```typescript
 public resetPermanentAssignment(): void
 ```
 
-##### `resetStartDate` <a name="resetStartDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetStartDate"></a>
+##### `resetStartDate` <a name="resetStartDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetStartDate"></a>
 
 ```typescript
 public resetStartDate(): void
 ```
 
-##### `resetTicketNumber` <a name="resetTicketNumber" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketNumber"></a>
+##### `resetTicketNumber` <a name="resetTicketNumber" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketNumber"></a>
 
 ```typescript
 public resetTicketNumber(): void
 ```
 
-##### `resetTicketSystem` <a name="resetTicketSystem" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketSystem"></a>
+##### `resetTicketSystem` <a name="resetTicketSystem" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTicketSystem"></a>
 
 ```typescript
 public resetTicketSystem(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -444,17 +444,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PrivilegedAccessGroupAssignmentSchedule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a PrivilegedAccessGroupAssignmentSchedule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct(x: any)
 ```
@@ -475,7 +475,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -483,45 +483,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a PrivilegedAccessGroupAssignmentSchedule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a PrivilegedAccessGroupAssignmentSchedule resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -529,7 +529,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the PrivilegedAccessGroupAssig
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -547,9 +547,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the PrivilegedAccessGroupAssignmentSchedule to import is found.
 
@@ -559,49 +559,49 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference">PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentTypeInput">assignmentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.durationInput">durationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDateInput">expirationDateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justificationInput">justificationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignmentInput">permanentAssignmentInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalIdInput">principalIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumberInput">ticketNumberInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystemInput">ticketSystemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentType">assignmentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.duration">duration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDate">expirationDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupId">groupId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justification">justification</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignment">permanentAssignment</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalId">principalId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumber">ticketNumber</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystem">ticketSystem</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference">PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentTypeInput">assignmentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.durationInput">durationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDateInput">expirationDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupIdInput">groupIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justificationInput">justificationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignmentInput">permanentAssignmentInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalIdInput">principalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumberInput">ticketNumberInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystemInput">ticketSystemInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentType">assignmentType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.duration">duration</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDate">expirationDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupId">groupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justification">justification</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignment">permanentAssignment</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalId">principalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDate">startDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumber">ticketNumber</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystem">ticketSystem</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -613,17 +613,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -633,7 +633,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -643,7 +643,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -653,7 +653,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -663,37 +663,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -703,47 +703,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -753,17 +753,17 @@ public readonly status: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference">PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference">PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference</a>
 
 ---
 
-##### `assignmentTypeInput`<sup>Optional</sup> <a name="assignmentTypeInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentTypeInput"></a>
+##### `assignmentTypeInput`<sup>Optional</sup> <a name="assignmentTypeInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentTypeInput"></a>
 
 ```typescript
 public readonly assignmentTypeInput: string;
@@ -773,7 +773,7 @@ public readonly assignmentTypeInput: string;
 
 ---
 
-##### `durationInput`<sup>Optional</sup> <a name="durationInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.durationInput"></a>
+##### `durationInput`<sup>Optional</sup> <a name="durationInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.durationInput"></a>
 
 ```typescript
 public readonly durationInput: string;
@@ -783,7 +783,7 @@ public readonly durationInput: string;
 
 ---
 
-##### `expirationDateInput`<sup>Optional</sup> <a name="expirationDateInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDateInput"></a>
+##### `expirationDateInput`<sup>Optional</sup> <a name="expirationDateInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDateInput"></a>
 
 ```typescript
 public readonly expirationDateInput: string;
@@ -793,7 +793,7 @@ public readonly expirationDateInput: string;
 
 ---
 
-##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupIdInput"></a>
+##### `groupIdInput`<sup>Optional</sup> <a name="groupIdInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupIdInput"></a>
 
 ```typescript
 public readonly groupIdInput: string;
@@ -803,7 +803,7 @@ public readonly groupIdInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -813,7 +813,7 @@ public readonly idInput: string;
 
 ---
 
-##### `justificationInput`<sup>Optional</sup> <a name="justificationInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justificationInput"></a>
+##### `justificationInput`<sup>Optional</sup> <a name="justificationInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justificationInput"></a>
 
 ```typescript
 public readonly justificationInput: string;
@@ -823,17 +823,17 @@ public readonly justificationInput: string;
 
 ---
 
-##### `permanentAssignmentInput`<sup>Optional</sup> <a name="permanentAssignmentInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignmentInput"></a>
+##### `permanentAssignmentInput`<sup>Optional</sup> <a name="permanentAssignmentInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignmentInput"></a>
 
 ```typescript
 public readonly permanentAssignmentInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `principalIdInput`<sup>Optional</sup> <a name="principalIdInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalIdInput"></a>
+##### `principalIdInput`<sup>Optional</sup> <a name="principalIdInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalIdInput"></a>
 
 ```typescript
 public readonly principalIdInput: string;
@@ -843,7 +843,7 @@ public readonly principalIdInput: string;
 
 ---
 
-##### `startDateInput`<sup>Optional</sup> <a name="startDateInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDateInput"></a>
+##### `startDateInput`<sup>Optional</sup> <a name="startDateInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDateInput"></a>
 
 ```typescript
 public readonly startDateInput: string;
@@ -853,7 +853,7 @@ public readonly startDateInput: string;
 
 ---
 
-##### `ticketNumberInput`<sup>Optional</sup> <a name="ticketNumberInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumberInput"></a>
+##### `ticketNumberInput`<sup>Optional</sup> <a name="ticketNumberInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumberInput"></a>
 
 ```typescript
 public readonly ticketNumberInput: string;
@@ -863,7 +863,7 @@ public readonly ticketNumberInput: string;
 
 ---
 
-##### `ticketSystemInput`<sup>Optional</sup> <a name="ticketSystemInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystemInput"></a>
+##### `ticketSystemInput`<sup>Optional</sup> <a name="ticketSystemInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystemInput"></a>
 
 ```typescript
 public readonly ticketSystemInput: string;
@@ -873,17 +873,17 @@ public readonly ticketSystemInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | PrivilegedAccessGroupAssignmentScheduleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
 
 ---
 
-##### `assignmentType`<sup>Required</sup> <a name="assignmentType" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentType"></a>
+##### `assignmentType`<sup>Required</sup> <a name="assignmentType" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.assignmentType"></a>
 
 ```typescript
 public readonly assignmentType: string;
@@ -893,7 +893,7 @@ public readonly assignmentType: string;
 
 ---
 
-##### `duration`<sup>Required</sup> <a name="duration" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.duration"></a>
+##### `duration`<sup>Required</sup> <a name="duration" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.duration"></a>
 
 ```typescript
 public readonly duration: string;
@@ -903,7 +903,7 @@ public readonly duration: string;
 
 ---
 
-##### `expirationDate`<sup>Required</sup> <a name="expirationDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDate"></a>
+##### `expirationDate`<sup>Required</sup> <a name="expirationDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.expirationDate"></a>
 
 ```typescript
 public readonly expirationDate: string;
@@ -913,7 +913,7 @@ public readonly expirationDate: string;
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupId"></a>
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.groupId"></a>
 
 ```typescript
 public readonly groupId: string;
@@ -923,7 +923,7 @@ public readonly groupId: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -933,7 +933,7 @@ public readonly id: string;
 
 ---
 
-##### `justification`<sup>Required</sup> <a name="justification" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justification"></a>
+##### `justification`<sup>Required</sup> <a name="justification" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.justification"></a>
 
 ```typescript
 public readonly justification: string;
@@ -943,17 +943,17 @@ public readonly justification: string;
 
 ---
 
-##### `permanentAssignment`<sup>Required</sup> <a name="permanentAssignment" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignment"></a>
+##### `permanentAssignment`<sup>Required</sup> <a name="permanentAssignment" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.permanentAssignment"></a>
 
 ```typescript
 public readonly permanentAssignment: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalId"></a>
+##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.principalId"></a>
 
 ```typescript
 public readonly principalId: string;
@@ -963,7 +963,7 @@ public readonly principalId: string;
 
 ---
 
-##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDate"></a>
+##### `startDate`<sup>Required</sup> <a name="startDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.startDate"></a>
 
 ```typescript
 public readonly startDate: string;
@@ -973,7 +973,7 @@ public readonly startDate: string;
 
 ---
 
-##### `ticketNumber`<sup>Required</sup> <a name="ticketNumber" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumber"></a>
+##### `ticketNumber`<sup>Required</sup> <a name="ticketNumber" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketNumber"></a>
 
 ```typescript
 public readonly ticketNumber: string;
@@ -983,7 +983,7 @@ public readonly ticketNumber: string;
 
 ---
 
-##### `ticketSystem`<sup>Required</sup> <a name="ticketSystem" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystem"></a>
+##### `ticketSystem`<sup>Required</sup> <a name="ticketSystem" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.ticketSystem"></a>
 
 ```typescript
 public readonly ticketSystem: string;
@@ -997,11 +997,11 @@ public readonly ticketSystem: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1013,12 +1013,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### PrivilegedAccessGroupAssignmentScheduleConfig <a name="PrivilegedAccessGroupAssignmentScheduleConfig" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig"></a>
+### PrivilegedAccessGroupAssignmentScheduleConfig <a name="PrivilegedAccessGroupAssignmentScheduleConfig" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.Initializer"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 const privilegedAccessGroupAssignmentScheduleConfig: privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig = { ... }
 ```
@@ -1027,99 +1027,99 @@ const privilegedAccessGroupAssignmentScheduleConfig: privilegedAccessGroupAssign
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.assignmentType">assignmentType</a></code> | <code>string</code> | The ID of the assignment to the group. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.groupId">groupId</a></code> | <code>string</code> | The ID of the Group representing the scope of the assignment. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.principalId">principalId</a></code> | <code>string</code> | The ID of the Principal assigned to the schedule. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.duration">duration</a></code> | <code>string</code> | The duration of the assignment, formatted as an ISO8601 duration string (e.g. P3D for 3 days). |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.expirationDate">expirationDate</a></code> | <code>string</code> | The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z). |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#id PrivilegedAccessGroupAssignmentSchedule#id}. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.justification">justification</a></code> | <code>string</code> | The justification for the assignment. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.permanentAssignment">permanentAssignment</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the assignment permanent. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.startDate">startDate</a></code> | <code>string</code> | The date that this assignment starts, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z). |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketNumber">ticketNumber</a></code> | <code>string</code> | The ticket number authorising the assignment. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketSystem">ticketSystem</a></code> | <code>string</code> | The ticket system authorising the assignment. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.assignmentType">assignmentType</a></code> | <code>string</code> | The ID of the assignment to the group. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.groupId">groupId</a></code> | <code>string</code> | The ID of the Group representing the scope of the assignment. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.principalId">principalId</a></code> | <code>string</code> | The ID of the Principal assigned to the schedule. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.duration">duration</a></code> | <code>string</code> | The duration of the assignment, formatted as an ISO8601 duration string (e.g. P3D for 3 days). |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.expirationDate">expirationDate</a></code> | <code>string</code> | The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z). |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#id PrivilegedAccessGroupAssignmentSchedule#id}. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.justification">justification</a></code> | <code>string</code> | The justification for the assignment. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.permanentAssignment">permanentAssignment</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is the assignment permanent. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.startDate">startDate</a></code> | <code>string</code> | The date that this assignment starts, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z). |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketNumber">ticketNumber</a></code> | <code>string</code> | The ticket number authorising the assignment. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketSystem">ticketSystem</a></code> | <code>string</code> | The ticket system authorising the assignment. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `assignmentType`<sup>Required</sup> <a name="assignmentType" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.assignmentType"></a>
+##### `assignmentType`<sup>Required</sup> <a name="assignmentType" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.assignmentType"></a>
 
 ```typescript
 public readonly assignmentType: string;
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.groupId"></a>
+##### `groupId`<sup>Required</sup> <a name="groupId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.groupId"></a>
 
 ```typescript
 public readonly groupId: string;
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.principalId"></a>
+##### `principalId`<sup>Required</sup> <a name="principalId" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.principalId"></a>
 
 ```typescript
 public readonly principalId: string;
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.duration"></a>
+##### `duration`<sup>Optional</sup> <a name="duration" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.duration"></a>
 
 ```typescript
 public readonly duration: string;
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `expirationDate`<sup>Optional</sup> <a name="expirationDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.expirationDate"></a>
+##### `expirationDate`<sup>Optional</sup> <a name="expirationDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.expirationDate"></a>
 
 ```typescript
 public readonly expirationDate: string;
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1204,7 +1204,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `justification`<sup>Optional</sup> <a name="justification" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.justification"></a>
+##### `justification`<sup>Optional</sup> <a name="justification" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.justification"></a>
 
 ```typescript
 public readonly justification: string;
@@ -1218,13 +1218,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `permanentAssignment`<sup>Optional</sup> <a name="permanentAssignment" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.permanentAssignment"></a>
+##### `permanentAssignment`<sup>Optional</sup> <a name="permanentAssignment" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.permanentAssignment"></a>
 
 ```typescript
 public readonly permanentAssignment: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is the assignment permanent.
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `startDate`<sup>Optional</sup> <a name="startDate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.startDate"></a>
+##### `startDate`<sup>Optional</sup> <a name="startDate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.startDate"></a>
 
 ```typescript
 public readonly startDate: string;
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ticketNumber`<sup>Optional</sup> <a name="ticketNumber" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketNumber"></a>
+##### `ticketNumber`<sup>Optional</sup> <a name="ticketNumber" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketNumber"></a>
 
 ```typescript
 public readonly ticketNumber: string;
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ticketSystem`<sup>Optional</sup> <a name="ticketSystem" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketSystem"></a>
+##### `ticketSystem`<sup>Optional</sup> <a name="ticketSystem" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.ticketSystem"></a>
 
 ```typescript
 public readonly ticketSystem: string;
@@ -1274,13 +1274,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: PrivilegedAccessGroupAssignmentScheduleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
 
 timeouts block.
 
@@ -1288,12 +1288,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### PrivilegedAccessGroupAssignmentScheduleTimeouts <a name="PrivilegedAccessGroupAssignmentScheduleTimeouts" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts"></a>
+### PrivilegedAccessGroupAssignmentScheduleTimeouts <a name="PrivilegedAccessGroupAssignmentScheduleTimeouts" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.Initializer"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 const privilegedAccessGroupAssignmentScheduleTimeouts: privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts = { ... }
 ```
@@ -1302,14 +1302,14 @@ const privilegedAccessGroupAssignmentScheduleTimeouts: privilegedAccessGroupAssi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#create PrivilegedAccessGroupAssignmentSchedule#create}. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#delete PrivilegedAccessGroupAssignmentSchedule#delete}. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#read PrivilegedAccessGroupAssignmentSchedule#read}. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#update PrivilegedAccessGroupAssignmentSchedule#update}. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#create PrivilegedAccessGroupAssignmentSchedule#create}. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#delete PrivilegedAccessGroupAssignmentSchedule#delete}. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#read PrivilegedAccessGroupAssignmentSchedule#read}. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_assignment_schedule#update PrivilegedAccessGroupAssignmentSchedule#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1359,32 +1359,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference <a name="PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference"></a>
+### PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference <a name="PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { privilegedAccessGroupAssignmentSchedule } from '@cdktf/provider-azuread'
+import { privilegedAccessGroupAssignmentSchedule } from '@cdktn/provider-azuread'
 
 new privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1396,153 +1396,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1550,13 +1550,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1566,25 +1566,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1595,21 +1595,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1623,7 +1623,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1633,7 +1633,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1643,7 +1643,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1653,7 +1653,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1663,7 +1663,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1673,7 +1673,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1683,7 +1683,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1693,7 +1693,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1703,7 +1703,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1713,13 +1713,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | PrivilegedAccessGroupAssignmentScheduleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts">PrivilegedAccessGroupAssignmentScheduleTimeouts</a>
 
 ---
 

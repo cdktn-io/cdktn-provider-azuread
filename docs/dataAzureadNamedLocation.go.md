@@ -1,28 +1,28 @@
-# `dataAzureadNamedLocation` Submodule <a name="`dataAzureadNamedLocation` Submodule" id="@cdktf/provider-azuread.dataAzureadNamedLocation"></a>
+# `dataAzureadNamedLocation` Submodule <a name="`dataAzureadNamedLocation` Submodule" id="@cdktn/provider-azuread.dataAzureadNamedLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataAzureadNamedLocation <a name="DataAzureadNamedLocation" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation"></a>
+### DataAzureadNamedLocation <a name="DataAzureadNamedLocation" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location azuread_named_location}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocation(scope Construct, id *string, config DataAzureadNamedLocationConfig) DataAzureadNamedLocation
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig">DataAzureadNamedLocationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig">DataAzureadNamedLocationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig">DataAzureadNamedLocationConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig">DataAzureadNamedLocationConfig</a>
 
 ---
 
@@ -50,30 +50,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toString"></a>
 
 ```go
 func ToString() *string
@@ -81,25 +81,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -107,7 +107,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -115,7 +115,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -123,7 +123,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -131,13 +131,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -145,145 +145,145 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value DataAzureadNamedLocationTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -293,17 +293,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataAzureadNamedLocation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DataAzureadNamedLocation resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -332,45 +332,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.DataAzureadNamedLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DataAzureadNamedLocation resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataAzureadNamedLocation resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -378,7 +378,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAzureadNamedLocation t
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -396,9 +396,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataAzureadNamedLocation to import is found.
 
@@ -408,31 +408,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.country">Country</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList">DataAzureadNamedLocationCountryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.ip">Ip</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList">DataAzureadNamedLocationIpList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference">DataAzureadNamedLocationTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.country">Country</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList">DataAzureadNamedLocationCountryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.ip">Ip</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList">DataAzureadNamedLocationIpList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference">DataAzureadNamedLocationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.node"></a>
 
 ```go
 func Node() Node
@@ -444,17 +444,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -464,7 +464,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -474,7 +474,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -484,7 +484,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -494,17 +494,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -514,7 +514,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -524,57 +524,57 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Country`<sup>Required</sup> <a name="Country" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.country"></a>
+##### `Country`<sup>Required</sup> <a name="Country" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.country"></a>
 
 ```go
 func Country() DataAzureadNamedLocationCountryList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList">DataAzureadNamedLocationCountryList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList">DataAzureadNamedLocationCountryList</a>
 
 ---
 
-##### `Ip`<sup>Required</sup> <a name="Ip" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.ip"></a>
+##### `Ip`<sup>Required</sup> <a name="Ip" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.ip"></a>
 
 ```go
 func Ip() DataAzureadNamedLocationIpList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList">DataAzureadNamedLocationIpList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList">DataAzureadNamedLocationIpList</a>
 
 ---
 
-##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.objectId"></a>
+##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.objectId"></a>
 
 ```go
 func ObjectId() *string
@@ -584,17 +584,17 @@ func ObjectId() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeouts"></a>
 
 ```go
 func Timeouts() DataAzureadNamedLocationTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference">DataAzureadNamedLocationTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference">DataAzureadNamedLocationTimeoutsOutputReference</a>
 
 ---
 
-##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayNameInput"></a>
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayNameInput"></a>
 
 ```go
 func DisplayNameInput() *string
@@ -604,7 +604,7 @@ func DisplayNameInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -614,7 +614,7 @@ func IdInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -624,7 +624,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -634,7 +634,7 @@ func DisplayName() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.id"></a>
 
 ```go
 func Id() *string
@@ -648,11 +648,11 @@ func Id() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocation.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -664,24 +664,24 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzureadNamedLocationConfig <a name="DataAzureadNamedLocationConfig" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig"></a>
+### DataAzureadNamedLocationConfig <a name="DataAzureadNamedLocationConfig" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts,
 }
 ```
 
@@ -689,20 +689,20 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -712,7 +712,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -722,47 +722,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -772,7 +772,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.displayName"></a>
 
 ```go
 DisplayName *string
@@ -784,7 +784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.id"></a>
 
 ```go
 Id *string
@@ -799,13 +799,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationConfig.property.timeouts"></a>
 
 ```go
 Timeouts DataAzureadNamedLocationTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts">DataAzureadNamedLocationTimeouts</a>
 
 timeouts block.
 
@@ -813,12 +813,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DataAzureadNamedLocationCountry <a name="DataAzureadNamedLocationCountry" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry"></a>
+### DataAzureadNamedLocationCountry <a name="DataAzureadNamedLocationCountry" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationCountry {
 
@@ -826,12 +826,12 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedl
 ```
 
 
-### DataAzureadNamedLocationIp <a name="DataAzureadNamedLocationIp" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp"></a>
+### DataAzureadNamedLocationIp <a name="DataAzureadNamedLocationIp" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationIp {
 
@@ -839,12 +839,12 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedl
 ```
 
 
-### DataAzureadNamedLocationTimeouts <a name="DataAzureadNamedLocationTimeouts" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts"></a>
+### DataAzureadNamedLocationTimeouts <a name="DataAzureadNamedLocationTimeouts" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 &dataazureadnamedlocation.DataAzureadNamedLocationTimeouts {
 	Read: *string,
@@ -855,11 +855,11 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}. |
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -873,33 +873,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataAzureadNamedLocationCountryList <a name="DataAzureadNamedLocationCountryList" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList"></a>
+### DataAzureadNamedLocationCountryList <a name="DataAzureadNamedLocationCountryList" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationCountryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadNamedLocationCountryList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -907,7 +907,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -919,15 +919,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -937,19 +937,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -957,13 +957,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.toString"></a>
 
 ```go
 func ToString() *string
@@ -973,13 +973,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get"></a>
 
 ```go
 func Get(index *f64) DataAzureadNamedLocationCountryOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -992,12 +992,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1011,7 +1011,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1022,34 +1022,34 @@ func Fqn() *string
 ---
 
 
-### DataAzureadNamedLocationCountryOutputReference <a name="DataAzureadNamedLocationCountryOutputReference" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference"></a>
+### DataAzureadNamedLocationCountryOutputReference <a name="DataAzureadNamedLocationCountryOutputReference" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationCountryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadNamedLocationCountryOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1057,7 +1057,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1065,7 +1065,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1077,149 +1077,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1227,13 +1227,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1248,16 +1248,16 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countriesAndRegions">CountriesAndRegions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countryLookupMethod">CountryLookupMethod</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions">IncludeUnknownCountriesAndRegions</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry">DataAzureadNamedLocationCountry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countriesAndRegions">CountriesAndRegions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countryLookupMethod">CountryLookupMethod</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions">IncludeUnknownCountriesAndRegions</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry">DataAzureadNamedLocationCountry</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1271,7 +1271,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1281,7 +1281,7 @@ func Fqn() *string
 
 ---
 
-##### `CountriesAndRegions`<sup>Required</sup> <a name="CountriesAndRegions" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countriesAndRegions"></a>
+##### `CountriesAndRegions`<sup>Required</sup> <a name="CountriesAndRegions" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countriesAndRegions"></a>
 
 ```go
 func CountriesAndRegions() *[]*string
@@ -1291,7 +1291,7 @@ func CountriesAndRegions() *[]*string
 
 ---
 
-##### `CountryLookupMethod`<sup>Required</sup> <a name="CountryLookupMethod" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countryLookupMethod"></a>
+##### `CountryLookupMethod`<sup>Required</sup> <a name="CountryLookupMethod" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.countryLookupMethod"></a>
 
 ```go
 func CountryLookupMethod() *string
@@ -1301,54 +1301,54 @@ func CountryLookupMethod() *string
 
 ---
 
-##### `IncludeUnknownCountriesAndRegions`<sup>Required</sup> <a name="IncludeUnknownCountriesAndRegions" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions"></a>
+##### `IncludeUnknownCountriesAndRegions`<sup>Required</sup> <a name="IncludeUnknownCountriesAndRegions" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.includeUnknownCountriesAndRegions"></a>
 
 ```go
 func IncludeUnknownCountriesAndRegions() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountryOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DataAzureadNamedLocationCountry
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry">DataAzureadNamedLocationCountry</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationCountry">DataAzureadNamedLocationCountry</a>
 
 ---
 
 
-### DataAzureadNamedLocationIpList <a name="DataAzureadNamedLocationIpList" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList"></a>
+### DataAzureadNamedLocationIpList <a name="DataAzureadNamedLocationIpList" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadNamedLocationIpList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1356,7 +1356,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1368,15 +1368,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1386,19 +1386,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1406,13 +1406,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1422,13 +1422,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get"></a>
 
 ```go
 func Get(index *f64) DataAzureadNamedLocationIpOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1441,12 +1441,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1460,7 +1460,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1471,34 +1471,34 @@ func Fqn() *string
 ---
 
 
-### DataAzureadNamedLocationIpOutputReference <a name="DataAzureadNamedLocationIpOutputReference" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference"></a>
+### DataAzureadNamedLocationIpOutputReference <a name="DataAzureadNamedLocationIpOutputReference" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadNamedLocationIpOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1506,7 +1506,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1514,7 +1514,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1526,149 +1526,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1676,13 +1676,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1697,15 +1697,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.trusted">Trusted</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp">DataAzureadNamedLocationIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.trusted">Trusted</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp">DataAzureadNamedLocationIp</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1719,7 +1719,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1729,7 +1729,7 @@ func Fqn() *string
 
 ---
 
-##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.ipRanges"></a>
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.ipRanges"></a>
 
 ```go
 func IpRanges() *[]*string
@@ -1739,53 +1739,53 @@ func IpRanges() *[]*string
 
 ---
 
-##### `Trusted`<sup>Required</sup> <a name="Trusted" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.trusted"></a>
+##### `Trusted`<sup>Required</sup> <a name="Trusted" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.trusted"></a>
 
 ```go
 func Trusted() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIpOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() DataAzureadNamedLocationIp
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp">DataAzureadNamedLocationIp</a>
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationIp">DataAzureadNamedLocationIp</a>
 
 ---
 
 
-### DataAzureadNamedLocationTimeoutsOutputReference <a name="DataAzureadNamedLocationTimeoutsOutputReference" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference"></a>
+### DataAzureadNamedLocationTimeoutsOutputReference <a name="DataAzureadNamedLocationTimeoutsOutputReference" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/dataazureadnamedlocation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureadnamedlocation"
 
 dataazureadnamedlocation.NewDataAzureadNamedLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadNamedLocationTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1797,150 +1797,150 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1948,13 +1948,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1964,7 +1964,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
@@ -1975,15 +1975,15 @@ func ResetRead()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1997,7 +1997,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2007,7 +2007,7 @@ func Fqn() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -2017,7 +2017,7 @@ func ReadInput() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -2027,7 +2027,7 @@ func Read() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.dataAzureadNamedLocation.DataAzureadNamedLocationTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

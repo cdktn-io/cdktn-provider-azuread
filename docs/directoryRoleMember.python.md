@@ -1,15 +1,15 @@
-# `directoryRoleMember` Submodule <a name="`directoryRoleMember` Submodule" id="@cdktf/provider-azuread.directoryRoleMember"></a>
+# `directoryRoleMember` Submodule <a name="`directoryRoleMember` Submodule" id="@cdktn/provider-azuread.directoryRoleMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DirectoryRoleMember <a name="DirectoryRoleMember" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember"></a>
+### DirectoryRoleMember <a name="DirectoryRoleMember" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member azuread_directory_role_member}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMember(
   scope: Construct,
@@ -30,23 +30,23 @@ directoryRoleMember.DirectoryRoleMember(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#id DirectoryRoleMember#id}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.roleObjectId">role_object_id</a></code> | <code>str</code> | The object ID of the directory role. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#id DirectoryRoleMember#id}. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.roleObjectId">role_object_id</a></code> | <code>str</code> | The object ID of the directory role. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -54,7 +54,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -64,49 +64,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `member_object_id`<sup>Optional</sup> <a name="member_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.memberObjectId"></a>
+##### `member_object_id`<sup>Optional</sup> <a name="member_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.memberObjectId"></a>
 
 - *Type:* str
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role_object_id`<sup>Optional</sup> <a name="role_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.roleObjectId"></a>
+##### `role_object_id`<sup>Optional</sup> <a name="role_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.roleObjectId"></a>
 
 - *Type:* str
 
@@ -137,9 +137,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
 
 timeouts block.
 
@@ -151,38 +151,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetMemberObjectId">reset_member_object_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetRoleObjectId">reset_role_object_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetMemberObjectId">reset_member_object_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetRoleObjectId">reset_role_object_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toString"></a>
 
 ```python
 def to_string() -> str
@@ -190,7 +190,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride"></a>
 
 ```python
 def add_override(
@@ -199,19 +199,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -221,7 +221,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -229,7 +229,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -237,19 +237,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -257,7 +257,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -267,7 +267,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -275,7 +275,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -283,13 +283,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -297,13 +297,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -311,13 +311,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -325,13 +325,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -339,13 +339,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -353,13 +353,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -367,13 +367,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -381,13 +381,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -395,19 +395,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom"></a>
 
 ```python
 def import_from(
@@ -416,19 +416,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -436,13 +436,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -454,7 +454,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -462,7 +462,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo"></a>
 
 ```python
 def move_to(
@@ -473,7 +473,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -481,7 +481,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -489,7 +489,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -499,7 +499,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -507,7 +507,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -517,7 +517,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -525,7 +525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -533,7 +533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -541,25 +541,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_member_object_id` <a name="reset_member_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetMemberObjectId"></a>
+##### `reset_member_object_id` <a name="reset_member_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetMemberObjectId"></a>
 
 ```python
 def reset_member_object_id() -> None
 ```
 
-##### `reset_role_object_id` <a name="reset_role_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetRoleObjectId"></a>
+##### `reset_role_object_id` <a name="reset_role_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetRoleObjectId"></a>
 
 ```python
 def reset_role_object_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -569,17 +569,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DirectoryRoleMember resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DirectoryRoleMember resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMember.is_construct(
   x: typing.Any
@@ -602,7 +602,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -610,42 +610,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMember.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMember.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMember.generate_config_for_import(
   scope: Construct,
@@ -655,9 +655,9 @@ directoryRoleMember.DirectoryRoleMember.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DirectoryRoleMember resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DirectoryRoleMember resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -665,7 +665,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -673,7 +673,7 @@ The construct id used in the generated config for the DirectoryRoleMember to imp
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -683,9 +683,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DirectoryRoleMember to import is found.
 
@@ -695,32 +695,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference">DirectoryRoleMemberTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectIdInput">member_object_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectIdInput">role_object_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectId">member_object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectId">role_object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference">DirectoryRoleMemberTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectIdInput">member_object_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectIdInput">role_object_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectId">member_object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectId">role_object_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.node"></a>
 
 ```python
 node: Node
@@ -732,17 +732,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.fqn"></a>
 
 ```python
 fqn: str
@@ -752,7 +752,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -762,7 +762,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -772,7 +772,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -782,37 +782,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -822,57 +822,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeouts"></a>
 
 ```python
 timeouts: DirectoryRoleMemberTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference">DirectoryRoleMemberTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference">DirectoryRoleMemberTimeoutsOutputReference</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.idInput"></a>
 
 ```python
 id_input: str
@@ -882,7 +882,7 @@ id_input: str
 
 ---
 
-##### `member_object_id_input`<sup>Optional</sup> <a name="member_object_id_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectIdInput"></a>
+##### `member_object_id_input`<sup>Optional</sup> <a name="member_object_id_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectIdInput"></a>
 
 ```python
 member_object_id_input: str
@@ -892,7 +892,7 @@ member_object_id_input: str
 
 ---
 
-##### `role_object_id_input`<sup>Optional</sup> <a name="role_object_id_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectIdInput"></a>
+##### `role_object_id_input`<sup>Optional</sup> <a name="role_object_id_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectIdInput"></a>
 
 ```python
 role_object_id_input: str
@@ -902,17 +902,17 @@ role_object_id_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | DirectoryRoleMemberTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.id"></a>
 
 ```python
 id: str
@@ -922,7 +922,7 @@ id: str
 
 ---
 
-##### `member_object_id`<sup>Required</sup> <a name="member_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectId"></a>
+##### `member_object_id`<sup>Required</sup> <a name="member_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.memberObjectId"></a>
 
 ```python
 member_object_id: str
@@ -932,7 +932,7 @@ member_object_id: str
 
 ---
 
-##### `role_object_id`<sup>Required</sup> <a name="role_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectId"></a>
+##### `role_object_id`<sup>Required</sup> <a name="role_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.roleObjectId"></a>
 
 ```python
 role_object_id: str
@@ -946,11 +946,11 @@ role_object_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMember.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -962,12 +962,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DirectoryRoleMemberConfig <a name="DirectoryRoleMemberConfig" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig"></a>
+### DirectoryRoleMemberConfig <a name="DirectoryRoleMemberConfig" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMemberConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -988,91 +988,91 @@ directoryRoleMember.DirectoryRoleMemberConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#id DirectoryRoleMember#id}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.roleObjectId">role_object_id</a></code> | <code>str</code> | The object ID of the directory role. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#id DirectoryRoleMember#id}. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.memberObjectId">member_object_id</a></code> | <code>str</code> | The object ID of the member. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.roleObjectId">role_object_id</a></code> | <code>str</code> | The object ID of the directory role. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.id"></a>
 
 ```python
 id: str
@@ -1087,7 +1087,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `member_object_id`<sup>Optional</sup> <a name="member_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.memberObjectId"></a>
+##### `member_object_id`<sup>Optional</sup> <a name="member_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.memberObjectId"></a>
 
 ```python
 member_object_id: str
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role_object_id`<sup>Optional</sup> <a name="role_object_id" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.roleObjectId"></a>
+##### `role_object_id`<sup>Optional</sup> <a name="role_object_id" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.roleObjectId"></a>
 
 ```python
 role_object_id: str
@@ -1115,13 +1115,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberConfig.property.timeouts"></a>
 
 ```python
 timeouts: DirectoryRoleMemberTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
 
 timeouts block.
 
@@ -1129,12 +1129,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DirectoryRoleMemberTimeouts <a name="DirectoryRoleMemberTimeouts" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts"></a>
+### DirectoryRoleMemberTimeouts <a name="DirectoryRoleMemberTimeouts" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMemberTimeouts(
   create: str = None,
@@ -1147,13 +1147,13 @@ directoryRoleMember.DirectoryRoleMemberTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#create DirectoryRoleMember#create}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#delete DirectoryRoleMember#delete}. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#read DirectoryRoleMember#read}. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#create DirectoryRoleMember#create}. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#delete DirectoryRoleMember#delete}. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_member#read DirectoryRoleMember#read}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1191,12 +1191,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DirectoryRoleMemberTimeoutsOutputReference <a name="DirectoryRoleMemberTimeoutsOutputReference" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference"></a>
+### DirectoryRoleMemberTimeoutsOutputReference <a name="DirectoryRoleMemberTimeoutsOutputReference" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import directory_role_member
+from cdktn_provider_azuread import directory_role_member
 
 directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1206,20 +1206,20 @@ directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1231,32 +1231,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1264,13 +1264,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1278,13 +1278,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1292,13 +1292,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1306,13 +1306,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1320,13 +1320,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1334,13 +1334,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1348,13 +1348,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1362,13 +1362,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1376,13 +1376,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1390,13 +1390,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1406,13 +1406,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1422,19 +1422,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
@@ -1445,19 +1445,19 @@ def reset_read() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1471,7 +1471,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1481,7 +1481,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1491,7 +1491,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1501,7 +1501,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -1511,7 +1511,7 @@ read_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1521,7 +1521,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1531,7 +1531,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -1541,13 +1541,13 @@ read: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | DirectoryRoleMemberTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.directoryRoleMember.DirectoryRoleMemberTimeouts">DirectoryRoleMemberTimeouts</a>
 
 ---
 

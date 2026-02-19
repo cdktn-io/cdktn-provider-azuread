@@ -1,28 +1,28 @@
-# `applicationKnownClients` Submodule <a name="`applicationKnownClients` Submodule" id="@cdktf/provider-azuread.applicationKnownClients"></a>
+# `applicationKnownClients` Submodule <a name="`applicationKnownClients` Submodule" id="@cdktn/provider-azuread.applicationKnownClients"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ApplicationKnownClients <a name="ApplicationKnownClients" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients"></a>
+### ApplicationKnownClients <a name="ApplicationKnownClients" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients azuread_application_known_clients}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 new applicationKnownClients.ApplicationKnownClients(scope: Construct, id: string, config: ApplicationKnownClientsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig">ApplicationKnownClientsConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig">ApplicationKnownClientsConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig">ApplicationKnownClientsConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig">ApplicationKnownClientsConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toString"></a>
 
 ```typescript
 public toString(): string
@@ -87,25 +87,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -113,7 +113,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -129,19 +129,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -149,7 +149,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -157,7 +157,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -335,7 +335,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -359,7 +359,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -367,25 +367,25 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: ApplicationKnownClientsTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -395,17 +395,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ApplicationKnownClients resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ApplicationKnownClients resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 applicationKnownClients.ApplicationKnownClients.isConstruct(x: any)
 ```
@@ -426,7 +426,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -434,45 +434,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 applicationKnownClients.ApplicationKnownClients.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 applicationKnownClients.ApplicationKnownClients.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 applicationKnownClients.ApplicationKnownClients.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ApplicationKnownClients resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApplicationKnownClients resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -480,7 +480,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ApplicationKnownClients to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -498,9 +498,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApplicationKnownClients to import is found.
 
@@ -510,32 +510,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference">ApplicationKnownClientsTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationIdInput">applicationIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIdsInput">knownClientIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationId">applicationId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIds">knownClientIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference">ApplicationKnownClientsTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationIdInput">applicationIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIdsInput">knownClientIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationId">applicationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIds">knownClientIds</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -547,17 +547,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -567,7 +567,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -577,7 +577,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -587,7 +587,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -597,37 +597,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -637,57 +637,57 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ApplicationKnownClientsTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference">ApplicationKnownClientsTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference">ApplicationKnownClientsTimeoutsOutputReference</a>
 
 ---
 
-##### `applicationIdInput`<sup>Optional</sup> <a name="applicationIdInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationIdInput"></a>
+##### `applicationIdInput`<sup>Optional</sup> <a name="applicationIdInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationIdInput"></a>
 
 ```typescript
 public readonly applicationIdInput: string;
@@ -697,7 +697,7 @@ public readonly applicationIdInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -707,7 +707,7 @@ public readonly idInput: string;
 
 ---
 
-##### `knownClientIdsInput`<sup>Optional</sup> <a name="knownClientIdsInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIdsInput"></a>
+##### `knownClientIdsInput`<sup>Optional</sup> <a name="knownClientIdsInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIdsInput"></a>
 
 ```typescript
 public readonly knownClientIdsInput: string[];
@@ -717,17 +717,17 @@ public readonly knownClientIdsInput: string[];
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | ApplicationKnownClientsTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
 
 ---
 
-##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationId"></a>
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.applicationId"></a>
 
 ```typescript
 public readonly applicationId: string;
@@ -737,7 +737,7 @@ public readonly applicationId: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -747,7 +747,7 @@ public readonly id: string;
 
 ---
 
-##### `knownClientIds`<sup>Required</sup> <a name="knownClientIds" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIds"></a>
+##### `knownClientIds`<sup>Required</sup> <a name="knownClientIds" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.knownClientIds"></a>
 
 ```typescript
 public readonly knownClientIds: string[];
@@ -761,11 +761,11 @@ public readonly knownClientIds: string[];
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClients.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -777,12 +777,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ApplicationKnownClientsConfig <a name="ApplicationKnownClientsConfig" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig"></a>
+### ApplicationKnownClientsConfig <a name="ApplicationKnownClientsConfig" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.Initializer"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 const applicationKnownClientsConfig: applicationKnownClients.ApplicationKnownClientsConfig = { ... }
 ```
@@ -791,91 +791,91 @@ const applicationKnownClientsConfig: applicationKnownClients.ApplicationKnownCli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The resource ID of the application to which this API access is granted. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.knownClientIds">knownClientIds</a></code> | <code>string[]</code> | A list of known client IDs, used for bundling consent if you have a solution that includes an API and a client application. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#id ApplicationKnownClients#id}. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The resource ID of the application to which this API access is granted. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.knownClientIds">knownClientIds</a></code> | <code>string[]</code> | A list of known client IDs, used for bundling consent if you have a solution that includes an API and a client application. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#id ApplicationKnownClients#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.applicationId"></a>
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.applicationId"></a>
 
 ```typescript
 public readonly applicationId: string;
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `knownClientIds`<sup>Required</sup> <a name="knownClientIds" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.knownClientIds"></a>
+##### `knownClientIds`<sup>Required</sup> <a name="knownClientIds" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.knownClientIds"></a>
 
 ```typescript
 public readonly knownClientIds: string[];
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -918,13 +918,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ApplicationKnownClientsTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
 
 timeouts block.
 
@@ -932,12 +932,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ApplicationKnownClientsTimeouts <a name="ApplicationKnownClientsTimeouts" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts"></a>
+### ApplicationKnownClientsTimeouts <a name="ApplicationKnownClientsTimeouts" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.Initializer"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 const applicationKnownClientsTimeouts: applicationKnownClients.ApplicationKnownClientsTimeouts = { ... }
 ```
@@ -946,14 +946,14 @@ const applicationKnownClientsTimeouts: applicationKnownClients.ApplicationKnownC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#create ApplicationKnownClients#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#delete ApplicationKnownClients#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#read ApplicationKnownClients#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#update ApplicationKnownClients#update}. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#create ApplicationKnownClients#create}. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#delete ApplicationKnownClients#delete}. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#read ApplicationKnownClients#read}. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_known_clients#update ApplicationKnownClients#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1003,32 +1003,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ApplicationKnownClientsTimeoutsOutputReference <a name="ApplicationKnownClientsTimeoutsOutputReference" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference"></a>
+### ApplicationKnownClientsTimeoutsOutputReference <a name="ApplicationKnownClientsTimeoutsOutputReference" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { applicationKnownClients } from '@cdktf/provider-azuread'
+import { applicationKnownClients } from '@cdktn/provider-azuread'
 
 new applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1040,153 +1040,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1194,13 +1194,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1210,25 +1210,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1239,21 +1239,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1267,7 +1267,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1277,7 +1277,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1287,7 +1287,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1297,7 +1297,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1307,7 +1307,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1317,7 +1317,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1327,7 +1327,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1337,7 +1337,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1347,7 +1347,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1357,13 +1357,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | ApplicationKnownClientsTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationKnownClients.ApplicationKnownClientsTimeouts">ApplicationKnownClientsTimeouts</a>
 
 ---
 

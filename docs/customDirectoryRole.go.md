@@ -1,28 +1,28 @@
-# `customDirectoryRole` Submodule <a name="`customDirectoryRole` Submodule" id="@cdktf/provider-azuread.customDirectoryRole"></a>
+# `customDirectoryRole` Submodule <a name="`customDirectoryRole` Submodule" id="@cdktn/provider-azuread.customDirectoryRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### CustomDirectoryRole <a name="CustomDirectoryRole" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole"></a>
+### CustomDirectoryRole <a name="CustomDirectoryRole" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRole(scope Construct, id *string, config CustomDirectoryRoleConfig) CustomDirectoryRole
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig">CustomDirectoryRoleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig">CustomDirectoryRoleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig">CustomDirectoryRoleConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig">CustomDirectoryRoleConfig</a>
 
 ---
 
@@ -50,39 +50,39 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions">PutPermissions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTemplateId">ResetTemplateId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions">PutPermissions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTemplateId">ResetTemplateId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toString"></a>
 
 ```go
 func ToString() *string
@@ -90,25 +90,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -116,7 +116,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -124,7 +124,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -132,19 +132,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -152,7 +152,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -160,7 +160,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -168,151 +168,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -322,7 +322,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -330,7 +330,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -338,7 +338,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -346,7 +346,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -354,7 +354,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -362,7 +362,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -370,49 +370,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutPermissions` <a name="PutPermissions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions"></a>
+##### `PutPermissions` <a name="PutPermissions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions"></a>
 
 ```go
 func PutPermissions(value interface{})
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putPermissions.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value CustomDirectoryRoleTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a>
 
 ---
 
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetDescription"></a>
+##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetDescription"></a>
 
 ```go
 func ResetDescription()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTemplateId` <a name="ResetTemplateId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTemplateId"></a>
+##### `ResetTemplateId` <a name="ResetTemplateId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTemplateId"></a>
 
 ```go
 func ResetTemplateId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -422,17 +422,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a CustomDirectoryRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a CustomDirectoryRole resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -461,45 +461,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.CustomDirectoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a CustomDirectoryRole resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CustomDirectoryRole resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -507,7 +507,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the CustomDirectoryRole to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -525,9 +525,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CustomDirectoryRole to import is found.
 
@@ -537,41 +537,41 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissions">Permissions</a></code> | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList">CustomDirectoryRolePermissionsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference">CustomDirectoryRoleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissionsInput">PermissionsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateIdInput">TemplateIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateId">TemplateId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.version">Version</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissions">Permissions</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList">CustomDirectoryRolePermissionsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference">CustomDirectoryRoleTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissionsInput">PermissionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateIdInput">TemplateIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateId">TemplateId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.version">Version</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.node"></a>
 
 ```go
 func Node() Node
@@ -583,17 +583,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -603,7 +603,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -613,7 +613,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -623,7 +623,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -633,17 +633,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -653,7 +653,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -663,7 +663,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -673,37 +673,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -713,7 +713,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.objectId"></a>
+##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.objectId"></a>
 
 ```go
 func ObjectId() *string
@@ -723,27 +723,27 @@ func ObjectId() *string
 
 ---
 
-##### `Permissions`<sup>Required</sup> <a name="Permissions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissions"></a>
+##### `Permissions`<sup>Required</sup> <a name="Permissions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissions"></a>
 
 ```go
 func Permissions() CustomDirectoryRolePermissionsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList">CustomDirectoryRolePermissionsList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList">CustomDirectoryRolePermissionsList</a>
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeouts"></a>
 
 ```go
 func Timeouts() CustomDirectoryRoleTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference">CustomDirectoryRoleTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference">CustomDirectoryRoleTimeoutsOutputReference</a>
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.descriptionInput"></a>
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.descriptionInput"></a>
 
 ```go
 func DescriptionInput() *string
@@ -753,7 +753,7 @@ func DescriptionInput() *string
 
 ---
 
-##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayNameInput"></a>
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayNameInput"></a>
 
 ```go
 func DisplayNameInput() *string
@@ -763,7 +763,7 @@ func DisplayNameInput() *string
 
 ---
 
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabledInput"></a>
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabledInput"></a>
 
 ```go
 func EnabledInput() interface{}
@@ -773,7 +773,7 @@ func EnabledInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -783,7 +783,7 @@ func IdInput() *string
 
 ---
 
-##### `PermissionsInput`<sup>Optional</sup> <a name="PermissionsInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissionsInput"></a>
+##### `PermissionsInput`<sup>Optional</sup> <a name="PermissionsInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.permissionsInput"></a>
 
 ```go
 func PermissionsInput() interface{}
@@ -793,7 +793,7 @@ func PermissionsInput() interface{}
 
 ---
 
-##### `TemplateIdInput`<sup>Optional</sup> <a name="TemplateIdInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateIdInput"></a>
+##### `TemplateIdInput`<sup>Optional</sup> <a name="TemplateIdInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateIdInput"></a>
 
 ```go
 func TemplateIdInput() *string
@@ -803,7 +803,7 @@ func TemplateIdInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -813,7 +813,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.versionInput"></a>
+##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.versionInput"></a>
 
 ```go
 func VersionInput() *string
@@ -823,7 +823,7 @@ func VersionInput() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.description"></a>
 
 ```go
 func Description() *string
@@ -833,7 +833,7 @@ func Description() *string
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -843,7 +843,7 @@ func DisplayName() *string
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.enabled"></a>
 
 ```go
 func Enabled() interface{}
@@ -853,7 +853,7 @@ func Enabled() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.id"></a>
 
 ```go
 func Id() *string
@@ -863,7 +863,7 @@ func Id() *string
 
 ---
 
-##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateId"></a>
+##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.templateId"></a>
 
 ```go
 func TemplateId() *string
@@ -873,7 +873,7 @@ func TemplateId() *string
 
 ---
 
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.version"></a>
 
 ```go
 func Version() *string
@@ -887,11 +887,11 @@ func Version() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -903,20 +903,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### CustomDirectoryRoleConfig <a name="CustomDirectoryRoleConfig" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig"></a>
+### CustomDirectoryRoleConfig <a name="CustomDirectoryRoleConfig" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	Enabled: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryro
 	Description: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.customDirectoryRole.CustomDirectoryRoleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.customDirectoryRole.CustomDirectoryRoleTimeouts,
 }
 ```
 
@@ -933,25 +933,25 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the custom directory role. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Indicates whether the role is enabled for assignment. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version">Version</a></code> | <code>*string</code> | The version of the role definition. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the custom directory role. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Custom template identifier that is typically used if one needs an identifier to be the same across different directories. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the custom directory role. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Indicates whether the role is enabled for assignment. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions">Permissions</a></code> | <code>interface{}</code> | permissions block. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version">Version</a></code> | <code>*string</code> | The version of the role definition. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the custom directory role. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | Custom template identifier that is typically used if one needs an identifier to be the same across different directories. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -961,7 +961,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -971,47 +971,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1021,7 +1021,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.displayName"></a>
 
 ```go
 DisplayName *string
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.enabled"></a>
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.enabled"></a>
 
 ```go
 Enabled interface{}
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Permissions`<sup>Required</sup> <a name="Permissions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions"></a>
+##### `Permissions`<sup>Required</sup> <a name="Permissions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions"></a>
 
 ```go
 Permissions interface{}
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version"></a>
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version"></a>
 
 ```go
 Version *string
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description"></a>
 
 ```go
 Description *string
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1106,7 +1106,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `TemplateId`<sup>Optional</sup> <a name="TemplateId" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId"></a>
+##### `TemplateId`<sup>Optional</sup> <a name="TemplateId" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId"></a>
 
 ```go
 TemplateId *string
@@ -1120,13 +1120,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts"></a>
 
 ```go
 Timeouts CustomDirectoryRoleTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a>
 
 timeouts block.
 
@@ -1134,12 +1134,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### CustomDirectoryRolePermissions <a name="CustomDirectoryRolePermissions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions"></a>
+### CustomDirectoryRolePermissions <a name="CustomDirectoryRolePermissions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRolePermissions {
 	AllowedResourceActions: *[]*string,
@@ -1150,11 +1150,11 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.property.allowedResourceActions">AllowedResourceActions</a></code> | <code>*[]*string</code> | Set of tasks that can be performed on a resource. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.property.allowedResourceActions">AllowedResourceActions</a></code> | <code>*[]*string</code> | Set of tasks that can be performed on a resource. |
 
 ---
 
-##### `AllowedResourceActions`<sup>Required</sup> <a name="AllowedResourceActions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.property.allowedResourceActions"></a>
+##### `AllowedResourceActions`<sup>Required</sup> <a name="AllowedResourceActions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions.property.allowedResourceActions"></a>
 
 ```go
 AllowedResourceActions *[]*string
@@ -1168,12 +1168,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### CustomDirectoryRoleTimeouts <a name="CustomDirectoryRoleTimeouts" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts"></a>
+### CustomDirectoryRoleTimeouts <a name="CustomDirectoryRoleTimeouts" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 &customdirectoryrole.CustomDirectoryRoleTimeouts {
 	Create: *string,
@@ -1187,14 +1187,14 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1244,33 +1244,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### CustomDirectoryRolePermissionsList <a name="CustomDirectoryRolePermissionsList" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList"></a>
+### CustomDirectoryRolePermissionsList <a name="CustomDirectoryRolePermissionsList" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CustomDirectoryRolePermissionsList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1278,7 +1278,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -1290,15 +1290,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey"></a>
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey"></a>
 
 ```go
 func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
@@ -1308,19 +1308,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1328,13 +1328,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.toString"></a>
 
 ```go
 func ToString() *string
@@ -1344,13 +1344,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get"></a>
+##### `Get` <a name="Get" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get"></a>
 
 ```go
 func Get(index *f64) CustomDirectoryRolePermissionsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -1363,13 +1363,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1383,7 +1383,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1393,7 +1393,7 @@ func Fqn() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsList.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -1404,34 +1404,34 @@ func InternalValue() interface{}
 ---
 
 
-### CustomDirectoryRolePermissionsOutputReference <a name="CustomDirectoryRolePermissionsOutputReference" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference"></a>
+### CustomDirectoryRolePermissionsOutputReference <a name="CustomDirectoryRolePermissionsOutputReference" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRolePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CustomDirectoryRolePermissionsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1439,7 +1439,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -1447,7 +1447,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -1459,149 +1459,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1609,13 +1609,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1630,15 +1630,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActionsInput">AllowedResourceActionsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActions">AllowedResourceActions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActionsInput">AllowedResourceActionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActions">AllowedResourceActions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1652,7 +1652,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1662,7 +1662,7 @@ func Fqn() *string
 
 ---
 
-##### `AllowedResourceActionsInput`<sup>Optional</sup> <a name="AllowedResourceActionsInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActionsInput"></a>
+##### `AllowedResourceActionsInput`<sup>Optional</sup> <a name="AllowedResourceActionsInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActionsInput"></a>
 
 ```go
 func AllowedResourceActionsInput() *[]*string
@@ -1672,7 +1672,7 @@ func AllowedResourceActionsInput() *[]*string
 
 ---
 
-##### `AllowedResourceActions`<sup>Required</sup> <a name="AllowedResourceActions" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActions"></a>
+##### `AllowedResourceActions`<sup>Required</sup> <a name="AllowedResourceActions" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.allowedResourceActions"></a>
 
 ```go
 func AllowedResourceActions() *[]*string
@@ -1682,7 +1682,7 @@ func AllowedResourceActions() *[]*string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissionsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -1693,32 +1693,32 @@ func InternalValue() interface{}
 ---
 
 
-### CustomDirectoryRoleTimeoutsOutputReference <a name="CustomDirectoryRoleTimeoutsOutputReference" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference"></a>
+### CustomDirectoryRoleTimeoutsOutputReference <a name="CustomDirectoryRoleTimeoutsOutputReference" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/customdirectoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/customdirectoryrole"
 
 customdirectoryrole.NewCustomDirectoryRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomDirectoryRoleTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1730,153 +1730,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1884,13 +1884,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1900,25 +1900,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1929,21 +1929,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1957,7 +1957,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1967,7 +1967,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1977,7 +1977,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1987,7 +1987,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1997,7 +1997,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -2007,7 +2007,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -2017,7 +2017,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -2027,7 +2027,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -2037,7 +2037,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -2047,7 +2047,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

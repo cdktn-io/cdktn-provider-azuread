@@ -1,28 +1,28 @@
-# `applicationRegistration` Submodule <a name="`applicationRegistration` Submodule" id="@cdktf/provider-azuread.applicationRegistration"></a>
+# `applicationRegistration` Submodule <a name="`applicationRegistration` Submodule" id="@cdktn/provider-azuread.applicationRegistration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ApplicationRegistration <a name="ApplicationRegistration" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration"></a>
+### ApplicationRegistration <a name="ApplicationRegistration" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration azuread_application_registration}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 new applicationRegistration.ApplicationRegistration(scope: Construct, id: string, config: ApplicationRegistrationConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig">ApplicationRegistrationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig">ApplicationRegistrationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig">ApplicationRegistrationConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig">ApplicationRegistrationConfig</a>
 
 ---
 
@@ -50,50 +50,50 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims">resetGroupMembershipClaims</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl">resetHomepageUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled">resetImplicitAccessTokenIssuanceEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled">resetImplicitIdTokenIssuanceEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl">resetLogoutUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl">resetMarketingUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes">resetNotes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl">resetPrivacyStatementUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion">resetRequestedAccessTokenVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference">resetServiceManagementReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience">resetSignInAudience</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl">resetSupportUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl">resetTermsOfServiceUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims">resetGroupMembershipClaims</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl">resetHomepageUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled">resetImplicitAccessTokenIssuanceEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled">resetImplicitIdTokenIssuanceEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl">resetLogoutUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl">resetMarketingUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes">resetNotes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl">resetPrivacyStatementUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion">resetRequestedAccessTokenVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference">resetServiceManagementReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience">resetSignInAudience</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl">resetSupportUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl">resetTermsOfServiceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toString"></a>
 
 ```typescript
 public toString(): string
@@ -101,25 +101,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -127,7 +127,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -135,7 +135,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -143,19 +143,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -163,7 +163,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -171,7 +171,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -179,151 +179,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -333,7 +333,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -341,7 +341,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -349,7 +349,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -357,7 +357,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -365,7 +365,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -373,7 +373,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -381,109 +381,109 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: ApplicationRegistrationTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 ---
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetGroupMembershipClaims` <a name="resetGroupMembershipClaims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims"></a>
+##### `resetGroupMembershipClaims` <a name="resetGroupMembershipClaims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims"></a>
 
 ```typescript
 public resetGroupMembershipClaims(): void
 ```
 
-##### `resetHomepageUrl` <a name="resetHomepageUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl"></a>
+##### `resetHomepageUrl` <a name="resetHomepageUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl"></a>
 
 ```typescript
 public resetHomepageUrl(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetImplicitAccessTokenIssuanceEnabled` <a name="resetImplicitAccessTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled"></a>
+##### `resetImplicitAccessTokenIssuanceEnabled` <a name="resetImplicitAccessTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled"></a>
 
 ```typescript
 public resetImplicitAccessTokenIssuanceEnabled(): void
 ```
 
-##### `resetImplicitIdTokenIssuanceEnabled` <a name="resetImplicitIdTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled"></a>
+##### `resetImplicitIdTokenIssuanceEnabled` <a name="resetImplicitIdTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled"></a>
 
 ```typescript
 public resetImplicitIdTokenIssuanceEnabled(): void
 ```
 
-##### `resetLogoutUrl` <a name="resetLogoutUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl"></a>
+##### `resetLogoutUrl` <a name="resetLogoutUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl"></a>
 
 ```typescript
 public resetLogoutUrl(): void
 ```
 
-##### `resetMarketingUrl` <a name="resetMarketingUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl"></a>
+##### `resetMarketingUrl` <a name="resetMarketingUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl"></a>
 
 ```typescript
 public resetMarketingUrl(): void
 ```
 
-##### `resetNotes` <a name="resetNotes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes"></a>
+##### `resetNotes` <a name="resetNotes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes"></a>
 
 ```typescript
 public resetNotes(): void
 ```
 
-##### `resetPrivacyStatementUrl` <a name="resetPrivacyStatementUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl"></a>
+##### `resetPrivacyStatementUrl` <a name="resetPrivacyStatementUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl"></a>
 
 ```typescript
 public resetPrivacyStatementUrl(): void
 ```
 
-##### `resetRequestedAccessTokenVersion` <a name="resetRequestedAccessTokenVersion" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion"></a>
+##### `resetRequestedAccessTokenVersion` <a name="resetRequestedAccessTokenVersion" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion"></a>
 
 ```typescript
 public resetRequestedAccessTokenVersion(): void
 ```
 
-##### `resetServiceManagementReference` <a name="resetServiceManagementReference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference"></a>
+##### `resetServiceManagementReference` <a name="resetServiceManagementReference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference"></a>
 
 ```typescript
 public resetServiceManagementReference(): void
 ```
 
-##### `resetSignInAudience` <a name="resetSignInAudience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience"></a>
+##### `resetSignInAudience` <a name="resetSignInAudience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience"></a>
 
 ```typescript
 public resetSignInAudience(): void
 ```
 
-##### `resetSupportUrl` <a name="resetSupportUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl"></a>
+##### `resetSupportUrl` <a name="resetSupportUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl"></a>
 
 ```typescript
 public resetSupportUrl(): void
 ```
 
-##### `resetTermsOfServiceUrl` <a name="resetTermsOfServiceUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl"></a>
+##### `resetTermsOfServiceUrl` <a name="resetTermsOfServiceUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl"></a>
 
 ```typescript
 public resetTermsOfServiceUrl(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -493,17 +493,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ApplicationRegistration resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 applicationRegistration.ApplicationRegistration.isConstruct(x: any)
 ```
@@ -524,7 +524,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -532,45 +532,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 applicationRegistration.ApplicationRegistration.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 applicationRegistration.ApplicationRegistration.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 applicationRegistration.ApplicationRegistration.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApplicationRegistration resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -578,7 +578,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the ApplicationRegistration to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -596,9 +596,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApplicationRegistration to import is found.
 
@@ -608,62 +608,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft">disabledByMicrosoft</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain">publisherDomain</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput">groupMembershipClaimsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput">homepageUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput">implicitAccessTokenIssuanceEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput">implicitIdTokenIssuanceEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput">logoutUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput">marketingUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput">notesInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput">privacyStatementUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput">requestedAccessTokenVersionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput">serviceManagementReferenceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput">signInAudienceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput">supportUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput">termsOfServiceUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims">groupMembershipClaims</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl">homepageUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled">implicitAccessTokenIssuanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled">implicitIdTokenIssuanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl">logoutUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes">notes</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion">requestedAccessTokenVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience">signInAudience</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl">supportUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl">termsOfServiceUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft">disabledByMicrosoft</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId">objectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain">publisherDomain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput">groupMembershipClaimsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput">homepageUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput">implicitAccessTokenIssuanceEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput">implicitIdTokenIssuanceEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput">logoutUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput">marketingUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput">notesInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput">privacyStatementUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput">requestedAccessTokenVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput">serviceManagementReferenceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput">signInAudienceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput">supportUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput">termsOfServiceUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims">groupMembershipClaims</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl">homepageUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled">implicitAccessTokenIssuanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled">implicitIdTokenIssuanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl">logoutUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes">notes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion">requestedAccessTokenVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience">signInAudience</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl">supportUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl">termsOfServiceUrl</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -675,17 +675,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -695,7 +695,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -705,7 +705,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -715,7 +715,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -725,37 +725,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -765,47 +765,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `clientId`<sup>Required</sup> <a name="clientId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId"></a>
+##### `clientId`<sup>Required</sup> <a name="clientId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId"></a>
 
 ```typescript
 public readonly clientId: string;
@@ -815,7 +815,7 @@ public readonly clientId: string;
 
 ---
 
-##### `disabledByMicrosoft`<sup>Required</sup> <a name="disabledByMicrosoft" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft"></a>
+##### `disabledByMicrosoft`<sup>Required</sup> <a name="disabledByMicrosoft" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft"></a>
 
 ```typescript
 public readonly disabledByMicrosoft: string;
@@ -825,7 +825,7 @@ public readonly disabledByMicrosoft: string;
 
 ---
 
-##### `objectId`<sup>Required</sup> <a name="objectId" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId"></a>
+##### `objectId`<sup>Required</sup> <a name="objectId" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId"></a>
 
 ```typescript
 public readonly objectId: string;
@@ -835,7 +835,7 @@ public readonly objectId: string;
 
 ---
 
-##### `publisherDomain`<sup>Required</sup> <a name="publisherDomain" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain"></a>
+##### `publisherDomain`<sup>Required</sup> <a name="publisherDomain" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain"></a>
 
 ```typescript
 public readonly publisherDomain: string;
@@ -845,17 +845,17 @@ public readonly publisherDomain: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ApplicationRegistrationTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a>
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -865,7 +865,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput"></a>
+##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput"></a>
 
 ```typescript
 public readonly displayNameInput: string;
@@ -875,7 +875,7 @@ public readonly displayNameInput: string;
 
 ---
 
-##### `groupMembershipClaimsInput`<sup>Optional</sup> <a name="groupMembershipClaimsInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput"></a>
+##### `groupMembershipClaimsInput`<sup>Optional</sup> <a name="groupMembershipClaimsInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput"></a>
 
 ```typescript
 public readonly groupMembershipClaimsInput: string[];
@@ -885,7 +885,7 @@ public readonly groupMembershipClaimsInput: string[];
 
 ---
 
-##### `homepageUrlInput`<sup>Optional</sup> <a name="homepageUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput"></a>
+##### `homepageUrlInput`<sup>Optional</sup> <a name="homepageUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput"></a>
 
 ```typescript
 public readonly homepageUrlInput: string;
@@ -895,7 +895,7 @@ public readonly homepageUrlInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -905,27 +905,27 @@ public readonly idInput: string;
 
 ---
 
-##### `implicitAccessTokenIssuanceEnabledInput`<sup>Optional</sup> <a name="implicitAccessTokenIssuanceEnabledInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput"></a>
+##### `implicitAccessTokenIssuanceEnabledInput`<sup>Optional</sup> <a name="implicitAccessTokenIssuanceEnabledInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput"></a>
 
 ```typescript
 public readonly implicitAccessTokenIssuanceEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `implicitIdTokenIssuanceEnabledInput`<sup>Optional</sup> <a name="implicitIdTokenIssuanceEnabledInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput"></a>
+##### `implicitIdTokenIssuanceEnabledInput`<sup>Optional</sup> <a name="implicitIdTokenIssuanceEnabledInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput"></a>
 
 ```typescript
 public readonly implicitIdTokenIssuanceEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `logoutUrlInput`<sup>Optional</sup> <a name="logoutUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput"></a>
+##### `logoutUrlInput`<sup>Optional</sup> <a name="logoutUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput"></a>
 
 ```typescript
 public readonly logoutUrlInput: string;
@@ -935,7 +935,7 @@ public readonly logoutUrlInput: string;
 
 ---
 
-##### `marketingUrlInput`<sup>Optional</sup> <a name="marketingUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput"></a>
+##### `marketingUrlInput`<sup>Optional</sup> <a name="marketingUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput"></a>
 
 ```typescript
 public readonly marketingUrlInput: string;
@@ -945,7 +945,7 @@ public readonly marketingUrlInput: string;
 
 ---
 
-##### `notesInput`<sup>Optional</sup> <a name="notesInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput"></a>
+##### `notesInput`<sup>Optional</sup> <a name="notesInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput"></a>
 
 ```typescript
 public readonly notesInput: string;
@@ -955,7 +955,7 @@ public readonly notesInput: string;
 
 ---
 
-##### `privacyStatementUrlInput`<sup>Optional</sup> <a name="privacyStatementUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput"></a>
+##### `privacyStatementUrlInput`<sup>Optional</sup> <a name="privacyStatementUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput"></a>
 
 ```typescript
 public readonly privacyStatementUrlInput: string;
@@ -965,7 +965,7 @@ public readonly privacyStatementUrlInput: string;
 
 ---
 
-##### `requestedAccessTokenVersionInput`<sup>Optional</sup> <a name="requestedAccessTokenVersionInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput"></a>
+##### `requestedAccessTokenVersionInput`<sup>Optional</sup> <a name="requestedAccessTokenVersionInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput"></a>
 
 ```typescript
 public readonly requestedAccessTokenVersionInput: number;
@@ -975,7 +975,7 @@ public readonly requestedAccessTokenVersionInput: number;
 
 ---
 
-##### `serviceManagementReferenceInput`<sup>Optional</sup> <a name="serviceManagementReferenceInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput"></a>
+##### `serviceManagementReferenceInput`<sup>Optional</sup> <a name="serviceManagementReferenceInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput"></a>
 
 ```typescript
 public readonly serviceManagementReferenceInput: string;
@@ -985,7 +985,7 @@ public readonly serviceManagementReferenceInput: string;
 
 ---
 
-##### `signInAudienceInput`<sup>Optional</sup> <a name="signInAudienceInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput"></a>
+##### `signInAudienceInput`<sup>Optional</sup> <a name="signInAudienceInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput"></a>
 
 ```typescript
 public readonly signInAudienceInput: string;
@@ -995,7 +995,7 @@ public readonly signInAudienceInput: string;
 
 ---
 
-##### `supportUrlInput`<sup>Optional</sup> <a name="supportUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput"></a>
+##### `supportUrlInput`<sup>Optional</sup> <a name="supportUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput"></a>
 
 ```typescript
 public readonly supportUrlInput: string;
@@ -1005,7 +1005,7 @@ public readonly supportUrlInput: string;
 
 ---
 
-##### `termsOfServiceUrlInput`<sup>Optional</sup> <a name="termsOfServiceUrlInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput"></a>
+##### `termsOfServiceUrlInput`<sup>Optional</sup> <a name="termsOfServiceUrlInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput"></a>
 
 ```typescript
 public readonly termsOfServiceUrlInput: string;
@@ -1015,17 +1015,17 @@ public readonly termsOfServiceUrlInput: string;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | ApplicationRegistrationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1035,7 +1035,7 @@ public readonly description: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -1045,7 +1045,7 @@ public readonly displayName: string;
 
 ---
 
-##### `groupMembershipClaims`<sup>Required</sup> <a name="groupMembershipClaims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims"></a>
+##### `groupMembershipClaims`<sup>Required</sup> <a name="groupMembershipClaims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims"></a>
 
 ```typescript
 public readonly groupMembershipClaims: string[];
@@ -1055,7 +1055,7 @@ public readonly groupMembershipClaims: string[];
 
 ---
 
-##### `homepageUrl`<sup>Required</sup> <a name="homepageUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl"></a>
+##### `homepageUrl`<sup>Required</sup> <a name="homepageUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl"></a>
 
 ```typescript
 public readonly homepageUrl: string;
@@ -1065,7 +1065,7 @@ public readonly homepageUrl: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1075,27 +1075,27 @@ public readonly id: string;
 
 ---
 
-##### `implicitAccessTokenIssuanceEnabled`<sup>Required</sup> <a name="implicitAccessTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled"></a>
+##### `implicitAccessTokenIssuanceEnabled`<sup>Required</sup> <a name="implicitAccessTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly implicitAccessTokenIssuanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `implicitIdTokenIssuanceEnabled`<sup>Required</sup> <a name="implicitIdTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled"></a>
+##### `implicitIdTokenIssuanceEnabled`<sup>Required</sup> <a name="implicitIdTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly implicitIdTokenIssuanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `logoutUrl`<sup>Required</sup> <a name="logoutUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl"></a>
+##### `logoutUrl`<sup>Required</sup> <a name="logoutUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl"></a>
 
 ```typescript
 public readonly logoutUrl: string;
@@ -1105,7 +1105,7 @@ public readonly logoutUrl: string;
 
 ---
 
-##### `marketingUrl`<sup>Required</sup> <a name="marketingUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl"></a>
+##### `marketingUrl`<sup>Required</sup> <a name="marketingUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl"></a>
 
 ```typescript
 public readonly marketingUrl: string;
@@ -1115,7 +1115,7 @@ public readonly marketingUrl: string;
 
 ---
 
-##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes"></a>
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes"></a>
 
 ```typescript
 public readonly notes: string;
@@ -1125,7 +1125,7 @@ public readonly notes: string;
 
 ---
 
-##### `privacyStatementUrl`<sup>Required</sup> <a name="privacyStatementUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl"></a>
+##### `privacyStatementUrl`<sup>Required</sup> <a name="privacyStatementUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl"></a>
 
 ```typescript
 public readonly privacyStatementUrl: string;
@@ -1135,7 +1135,7 @@ public readonly privacyStatementUrl: string;
 
 ---
 
-##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="requestedAccessTokenVersion" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion"></a>
+##### `requestedAccessTokenVersion`<sup>Required</sup> <a name="requestedAccessTokenVersion" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion"></a>
 
 ```typescript
 public readonly requestedAccessTokenVersion: number;
@@ -1145,7 +1145,7 @@ public readonly requestedAccessTokenVersion: number;
 
 ---
 
-##### `serviceManagementReference`<sup>Required</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference"></a>
+##### `serviceManagementReference`<sup>Required</sup> <a name="serviceManagementReference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference"></a>
 
 ```typescript
 public readonly serviceManagementReference: string;
@@ -1155,7 +1155,7 @@ public readonly serviceManagementReference: string;
 
 ---
 
-##### `signInAudience`<sup>Required</sup> <a name="signInAudience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience"></a>
+##### `signInAudience`<sup>Required</sup> <a name="signInAudience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience"></a>
 
 ```typescript
 public readonly signInAudience: string;
@@ -1165,7 +1165,7 @@ public readonly signInAudience: string;
 
 ---
 
-##### `supportUrl`<sup>Required</sup> <a name="supportUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl"></a>
+##### `supportUrl`<sup>Required</sup> <a name="supportUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl"></a>
 
 ```typescript
 public readonly supportUrl: string;
@@ -1175,7 +1175,7 @@ public readonly supportUrl: string;
 
 ---
 
-##### `termsOfServiceUrl`<sup>Required</sup> <a name="termsOfServiceUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl"></a>
+##### `termsOfServiceUrl`<sup>Required</sup> <a name="termsOfServiceUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl"></a>
 
 ```typescript
 public readonly termsOfServiceUrl: string;
@@ -1189,11 +1189,11 @@ public readonly termsOfServiceUrl: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1205,12 +1205,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ApplicationRegistrationConfig <a name="ApplicationRegistrationConfig" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig"></a>
+### ApplicationRegistrationConfig <a name="ApplicationRegistrationConfig" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.Initializer"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 const applicationRegistrationConfig: applicationRegistration.ApplicationRegistrationConfig = { ... }
 ```
@@ -1219,104 +1219,104 @@ const applicationRegistrationConfig: applicationRegistration.ApplicationRegistra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description">description</a></code> | <code>string</code> | Description of the application as shown to end users. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims">groupMembershipClaims</a></code> | <code>string[]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl">homepageUrl</a></code> | <code>string</code> | URL of the home page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled">implicitAccessTokenIssuanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled">implicitIdTokenIssuanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl">logoutUrl</a></code> | <code>string</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | URL of the marketing page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes">notes</a></code> | <code>string</code> | User-specified notes relevant for the management of the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | URL of the privacy statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion">requestedAccessTokenVersion</a></code> | <code>number</code> | The access token version expected by this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | References application or contact information from a service or asset management database. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience">signInAudience</a></code> | <code>string</code> | The Microsoft account types that are supported for the current application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl">supportUrl</a></code> | <code>string</code> | URL of the support page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl">termsOfServiceUrl</a></code> | <code>string</code> | URL of the terms of service statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description">description</a></code> | <code>string</code> | Description of the application as shown to end users. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims">groupMembershipClaims</a></code> | <code>string[]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl">homepageUrl</a></code> | <code>string</code> | URL of the home page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled">implicitAccessTokenIssuanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled">implicitIdTokenIssuanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl">logoutUrl</a></code> | <code>string</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl">marketingUrl</a></code> | <code>string</code> | URL of the marketing page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes">notes</a></code> | <code>string</code> | User-specified notes relevant for the management of the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl">privacyStatementUrl</a></code> | <code>string</code> | URL of the privacy statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion">requestedAccessTokenVersion</a></code> | <code>number</code> | The access token version expected by this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference">serviceManagementReference</a></code> | <code>string</code> | References application or contact information from a service or asset management database. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience">signInAudience</a></code> | <code>string</code> | The Microsoft account types that are supported for the current application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl">supportUrl</a></code> | <code>string</code> | URL of the support page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl">termsOfServiceUrl</a></code> | <code>string</code> | URL of the terms of service statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName"></a>
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `groupMembershipClaims`<sup>Optional</sup> <a name="groupMembershipClaims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims"></a>
+##### `groupMembershipClaims`<sup>Optional</sup> <a name="groupMembershipClaims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims"></a>
 
 ```typescript
 public readonly groupMembershipClaims: string[];
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `homepageUrl`<sup>Optional</sup> <a name="homepageUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl"></a>
+##### `homepageUrl`<sup>Optional</sup> <a name="homepageUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl"></a>
 
 ```typescript
 public readonly homepageUrl: string;
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1387,13 +1387,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `implicitAccessTokenIssuanceEnabled`<sup>Optional</sup> <a name="implicitAccessTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled"></a>
+##### `implicitAccessTokenIssuanceEnabled`<sup>Optional</sup> <a name="implicitAccessTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly implicitAccessTokenIssuanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether this application can request an access token using OAuth implicit flow.
 
@@ -1401,13 +1401,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `implicitIdTokenIssuanceEnabled`<sup>Optional</sup> <a name="implicitIdTokenIssuanceEnabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled"></a>
+##### `implicitIdTokenIssuanceEnabled`<sup>Optional</sup> <a name="implicitIdTokenIssuanceEnabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled"></a>
 
 ```typescript
 public readonly implicitIdTokenIssuanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether this application can request an ID token using OAuth implicit flow.
 
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `logoutUrl`<sup>Optional</sup> <a name="logoutUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl"></a>
+##### `logoutUrl`<sup>Optional</sup> <a name="logoutUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl"></a>
 
 ```typescript
 public readonly logoutUrl: string;
@@ -1429,7 +1429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `marketingUrl`<sup>Optional</sup> <a name="marketingUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl"></a>
+##### `marketingUrl`<sup>Optional</sup> <a name="marketingUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl"></a>
 
 ```typescript
 public readonly marketingUrl: string;
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes"></a>
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes"></a>
 
 ```typescript
 public readonly notes: string;
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `privacyStatementUrl`<sup>Optional</sup> <a name="privacyStatementUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl"></a>
+##### `privacyStatementUrl`<sup>Optional</sup> <a name="privacyStatementUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl"></a>
 
 ```typescript
 public readonly privacyStatementUrl: string;
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `requestedAccessTokenVersion`<sup>Optional</sup> <a name="requestedAccessTokenVersion" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion"></a>
+##### `requestedAccessTokenVersion`<sup>Optional</sup> <a name="requestedAccessTokenVersion" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion"></a>
 
 ```typescript
 public readonly requestedAccessTokenVersion: number;
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `serviceManagementReference`<sup>Optional</sup> <a name="serviceManagementReference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference"></a>
+##### `serviceManagementReference`<sup>Optional</sup> <a name="serviceManagementReference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference"></a>
 
 ```typescript
 public readonly serviceManagementReference: string;
@@ -1499,7 +1499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `signInAudience`<sup>Optional</sup> <a name="signInAudience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience"></a>
+##### `signInAudience`<sup>Optional</sup> <a name="signInAudience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience"></a>
 
 ```typescript
 public readonly signInAudience: string;
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `supportUrl`<sup>Optional</sup> <a name="supportUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl"></a>
+##### `supportUrl`<sup>Optional</sup> <a name="supportUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl"></a>
 
 ```typescript
 public readonly supportUrl: string;
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `termsOfServiceUrl`<sup>Optional</sup> <a name="termsOfServiceUrl" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl"></a>
+##### `termsOfServiceUrl`<sup>Optional</sup> <a name="termsOfServiceUrl" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl"></a>
 
 ```typescript
 public readonly termsOfServiceUrl: string;
@@ -1541,13 +1541,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ApplicationRegistrationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 timeouts block.
 
@@ -1555,12 +1555,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ApplicationRegistrationTimeouts <a name="ApplicationRegistrationTimeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts"></a>
+### ApplicationRegistrationTimeouts <a name="ApplicationRegistrationTimeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.Initializer"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 const applicationRegistrationTimeouts: applicationRegistration.ApplicationRegistrationTimeouts = { ... }
 ```
@@ -1569,14 +1569,14 @@ const applicationRegistrationTimeouts: applicationRegistration.ApplicationRegist
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1626,32 +1626,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ApplicationRegistrationTimeoutsOutputReference <a name="ApplicationRegistrationTimeoutsOutputReference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference"></a>
+### ApplicationRegistrationTimeoutsOutputReference <a name="ApplicationRegistrationTimeoutsOutputReference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { applicationRegistration } from '@cdktf/provider-azuread'
+import { applicationRegistration } from '@cdktn/provider-azuread'
 
 new applicationRegistration.ApplicationRegistrationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1663,153 +1663,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead">resetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1817,13 +1817,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1833,25 +1833,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetRead` <a name="resetRead" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead"></a>
+##### `resetRead` <a name="resetRead" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead"></a>
 
 ```typescript
 public resetRead(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1862,21 +1862,21 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput">readInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1890,7 +1890,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1900,7 +1900,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1910,7 +1910,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1920,7 +1920,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput"></a>
+##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput"></a>
 
 ```typescript
 public readonly readInput: string;
@@ -1930,7 +1930,7 @@ public readonly readInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1940,7 +1940,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1950,7 +1950,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1960,7 +1960,7 @@ public readonly delete: string;
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read"></a>
 
 ```typescript
 public readonly read: string;
@@ -1970,7 +1970,7 @@ public readonly read: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1980,13 +1980,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | ApplicationRegistrationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 ---
 

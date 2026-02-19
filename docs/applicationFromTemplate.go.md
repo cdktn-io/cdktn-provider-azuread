@@ -1,28 +1,28 @@
-# `applicationFromTemplate` Submodule <a name="`applicationFromTemplate` Submodule" id="@cdktf/provider-azuread.applicationFromTemplate"></a>
+# `applicationFromTemplate` Submodule <a name="`applicationFromTemplate` Submodule" id="@cdktn/provider-azuread.applicationFromTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ApplicationFromTemplate <a name="ApplicationFromTemplate" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate"></a>
+### ApplicationFromTemplate <a name="ApplicationFromTemplate" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template azuread_application_from_template}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplate(scope Construct, id *string, config ApplicationFromTemplateConfig) ApplicationFromTemplate
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig">ApplicationFromTemplateConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig">ApplicationFromTemplateConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig">ApplicationFromTemplateConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig">ApplicationFromTemplateConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toString"></a>
 
 ```go
 func ToString() *string
@@ -87,25 +87,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -113,7 +113,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -129,19 +129,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -149,7 +149,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -157,7 +157,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -335,7 +335,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -359,7 +359,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -367,25 +367,25 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value ApplicationFromTemplateTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -395,17 +395,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ApplicationFromTemplate resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a ApplicationFromTemplate resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -434,45 +434,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.ApplicationFromTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a ApplicationFromTemplate resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApplicationFromTemplate resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -480,7 +480,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ApplicationFromTemplate to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -498,9 +498,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApplicationFromTemplate to import is found.
 
@@ -510,36 +510,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalObjectId">ServicePrincipalObjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference">ApplicationFromTemplateTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateIdInput">TemplateIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateId">TemplateId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationId">ApplicationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationObjectId">ApplicationObjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalId">ServicePrincipalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalObjectId">ServicePrincipalObjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference">ApplicationFromTemplateTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateIdInput">TemplateIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateId">TemplateId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.node"></a>
 
 ```go
 func Node() Node
@@ -551,17 +551,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -571,7 +571,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -581,7 +581,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -591,7 +591,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -601,17 +601,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -621,7 +621,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -631,7 +631,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -641,37 +641,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -681,7 +681,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationId"></a>
+##### `ApplicationId`<sup>Required</sup> <a name="ApplicationId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationId"></a>
 
 ```go
 func ApplicationId() *string
@@ -691,7 +691,7 @@ func ApplicationId() *string
 
 ---
 
-##### `ApplicationObjectId`<sup>Required</sup> <a name="ApplicationObjectId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationObjectId"></a>
+##### `ApplicationObjectId`<sup>Required</sup> <a name="ApplicationObjectId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.applicationObjectId"></a>
 
 ```go
 func ApplicationObjectId() *string
@@ -701,7 +701,7 @@ func ApplicationObjectId() *string
 
 ---
 
-##### `ServicePrincipalId`<sup>Required</sup> <a name="ServicePrincipalId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalId"></a>
+##### `ServicePrincipalId`<sup>Required</sup> <a name="ServicePrincipalId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalId"></a>
 
 ```go
 func ServicePrincipalId() *string
@@ -711,7 +711,7 @@ func ServicePrincipalId() *string
 
 ---
 
-##### `ServicePrincipalObjectId`<sup>Required</sup> <a name="ServicePrincipalObjectId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalObjectId"></a>
+##### `ServicePrincipalObjectId`<sup>Required</sup> <a name="ServicePrincipalObjectId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.servicePrincipalObjectId"></a>
 
 ```go
 func ServicePrincipalObjectId() *string
@@ -721,17 +721,17 @@ func ServicePrincipalObjectId() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeouts"></a>
 
 ```go
 func Timeouts() ApplicationFromTemplateTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference">ApplicationFromTemplateTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference">ApplicationFromTemplateTimeoutsOutputReference</a>
 
 ---
 
-##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayNameInput"></a>
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayNameInput"></a>
 
 ```go
 func DisplayNameInput() *string
@@ -741,7 +741,7 @@ func DisplayNameInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -751,7 +751,7 @@ func IdInput() *string
 
 ---
 
-##### `TemplateIdInput`<sup>Optional</sup> <a name="TemplateIdInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateIdInput"></a>
+##### `TemplateIdInput`<sup>Optional</sup> <a name="TemplateIdInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateIdInput"></a>
 
 ```go
 func TemplateIdInput() *string
@@ -761,7 +761,7 @@ func TemplateIdInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -771,7 +771,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -781,7 +781,7 @@ func DisplayName() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.id"></a>
 
 ```go
 func Id() *string
@@ -791,7 +791,7 @@ func Id() *string
 
 ---
 
-##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateId"></a>
+##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.templateId"></a>
 
 ```go
 func TemplateId() *string
@@ -805,11 +805,11 @@ func TemplateId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplate.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -821,25 +821,25 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ApplicationFromTemplateConfig <a name="ApplicationFromTemplateConfig" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig"></a>
+### ApplicationFromTemplateConfig <a name="ApplicationFromTemplateConfig" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	TemplateId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.applicationFromTemplate.ApplicationFromTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.applicationFromTemplate.ApplicationFromTemplateTimeouts,
 }
 ```
 
@@ -847,21 +847,21 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | The UUID of the template to instantiate for this application. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.templateId">TemplateId</a></code> | <code>*string</code> | The UUID of the template to instantiate for this application. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#id ApplicationFromTemplate#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -871,7 +871,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -881,47 +881,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -931,7 +931,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.displayName"></a>
 
 ```go
 DisplayName *string
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.templateId"></a>
+##### `TemplateId`<sup>Required</sup> <a name="TemplateId" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.templateId"></a>
 
 ```go
 TemplateId *string
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.id"></a>
 
 ```go
 Id *string
@@ -974,13 +974,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateConfig.property.timeouts"></a>
 
 ```go
 Timeouts ApplicationFromTemplateTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts">ApplicationFromTemplateTimeouts</a>
 
 timeouts block.
 
@@ -988,12 +988,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ApplicationFromTemplateTimeouts <a name="ApplicationFromTemplateTimeouts" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts"></a>
+### ApplicationFromTemplateTimeouts <a name="ApplicationFromTemplateTimeouts" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 &applicationfromtemplate.ApplicationFromTemplateTimeouts {
 	Create: *string,
@@ -1007,14 +1007,14 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#create ApplicationFromTemplate#create}. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#delete ApplicationFromTemplate#delete}. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#read ApplicationFromTemplate#read}. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_from_template#update ApplicationFromTemplate#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -1064,32 +1064,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ApplicationFromTemplateTimeoutsOutputReference <a name="ApplicationFromTemplateTimeoutsOutputReference" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference"></a>
+### ApplicationFromTemplateTimeoutsOutputReference <a name="ApplicationFromTemplateTimeoutsOutputReference" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/applicationfromtemplate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/applicationfromtemplate"
 
 applicationfromtemplate.NewApplicationFromTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFromTemplateTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1101,153 +1101,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1255,13 +1255,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1271,25 +1271,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -1300,21 +1300,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1328,7 +1328,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1338,7 +1338,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1348,7 +1348,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1358,7 +1358,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -1368,7 +1368,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -1378,7 +1378,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1388,7 +1388,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1398,7 +1398,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -1408,7 +1408,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -1418,7 +1418,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.applicationFromTemplate.ApplicationFromTemplateTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

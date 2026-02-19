@@ -1,15 +1,15 @@
-# `groupWithoutMembers` Submodule <a name="`groupWithoutMembers` Submodule" id="@cdktf/provider-azuread.groupWithoutMembers"></a>
+# `groupWithoutMembers` Submodule <a name="`groupWithoutMembers` Submodule" id="@cdktn/provider-azuread.groupWithoutMembers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### GroupWithoutMembers <a name="GroupWithoutMembers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers"></a>
+### GroupWithoutMembers <a name="GroupWithoutMembers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members azuread_group_without_members}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembers(
   scope: Construct,
@@ -49,42 +49,42 @@ groupWithoutMembers.GroupWithoutMembers(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | dynamic_membership block. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | dynamic_membership block. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -92,7 +92,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -102,49 +102,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.displayName"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.administrativeUnitIds"></a>
+##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.administrativeUnitIds"></a>
 
 - *Type:* typing.List[str]
 
@@ -166,9 +166,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.assignableToRole"></a>
+##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.assignableToRole"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether this group can be assigned to an Azure Active Directory role.
 
@@ -178,9 +178,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.autoSubscribeNewMembers"></a>
+##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.autoSubscribeNewMembers"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `behaviors`<sup>Optional</sup> <a name="behaviors" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.behaviors"></a>
+##### `behaviors`<sup>Optional</sup> <a name="behaviors" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.behaviors"></a>
 
 - *Type:* typing.List[str]
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -208,9 +208,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dynamic_membership`<sup>Optional</sup> <a name="dynamic_membership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dynamicMembership"></a>
+##### `dynamic_membership`<sup>Optional</sup> <a name="dynamic_membership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.dynamicMembership"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
 
 dynamic_membership block.
 
@@ -218,9 +218,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.externalSendersAllowed"></a>
+##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.externalSendersAllowed"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether people external to the organization can send messages to the group.
 
@@ -228,9 +228,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromAddressLists"></a>
+##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromAddressLists"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
@@ -238,9 +238,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromOutlookClients"></a>
+##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.hideFromOutlookClients"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -259,9 +259,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailEnabled"></a>
+##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a mail enabled, with a shared group mailbox.
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.mailNickname"></a>
 
 - *Type:* str
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.onpremisesGroupType"></a>
+##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.onpremisesGroupType"></a>
 
 - *Type:* str
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.owners"></a>
+##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.owners"></a>
 
 - *Type:* typing.List[str]
 
@@ -301,9 +301,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.preventDuplicateNames"></a>
+##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.preventDuplicateNames"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If `true`, will return an error if an existing group is found with the same name.
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `provisioning_options`<sup>Optional</sup> <a name="provisioning_options" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioningOptions"></a>
+##### `provisioning_options`<sup>Optional</sup> <a name="provisioning_options" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.provisioningOptions"></a>
 
 - *Type:* typing.List[str]
 
@@ -321,9 +321,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.securityEnabled"></a>
+##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.securityEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a security group for controlling access to in-app resources.
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `theme`<sup>Optional</sup> <a name="theme" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.theme"></a>
+##### `theme`<sup>Optional</sup> <a name="theme" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.theme"></a>
 
 - *Type:* str
 
@@ -343,9 +343,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
 
 timeouts block.
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.types"></a>
 
 - *Type:* typing.List[str]
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.visibility"></a>
+##### `visibility`<sup>Optional</sup> <a name="visibility" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.visibility"></a>
 
 - *Type:* str
 
@@ -375,9 +375,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.writebackEnabled"></a>
+##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer.parameter.writebackEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
@@ -389,57 +389,57 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership">put_dynamic_membership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAdministrativeUnitIds">reset_administrative_unit_ids</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAssignableToRole">reset_assignable_to_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAutoSubscribeNewMembers">reset_auto_subscribe_new_members</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetBehaviors">reset_behaviors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDynamicMembership">reset_dynamic_membership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetExternalSendersAllowed">reset_external_senders_allowed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromAddressLists">reset_hide_from_address_lists</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromOutlookClients">reset_hide_from_outlook_clients</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailEnabled">reset_mail_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOnpremisesGroupType">reset_onpremises_group_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOwners">reset_owners</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetPreventDuplicateNames">reset_prevent_duplicate_names</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetProvisioningOptions">reset_provisioning_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetSecurityEnabled">reset_security_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTheme">reset_theme</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTypes">reset_types</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetVisibility">reset_visibility</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetWritebackEnabled">reset_writeback_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership">put_dynamic_membership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAdministrativeUnitIds">reset_administrative_unit_ids</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAssignableToRole">reset_assignable_to_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAutoSubscribeNewMembers">reset_auto_subscribe_new_members</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetBehaviors">reset_behaviors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDynamicMembership">reset_dynamic_membership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetExternalSendersAllowed">reset_external_senders_allowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromAddressLists">reset_hide_from_address_lists</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromOutlookClients">reset_hide_from_outlook_clients</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailEnabled">reset_mail_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOnpremisesGroupType">reset_onpremises_group_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOwners">reset_owners</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetPreventDuplicateNames">reset_prevent_duplicate_names</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetProvisioningOptions">reset_provisioning_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetSecurityEnabled">reset_security_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTheme">reset_theme</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTypes">reset_types</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetVisibility">reset_visibility</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetWritebackEnabled">reset_writeback_enabled</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toString"></a>
 
 ```python
 def to_string() -> str
@@ -447,7 +447,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride"></a>
 
 ```python
 def add_override(
@@ -456,19 +456,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -478,7 +478,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -486,7 +486,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -494,19 +494,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -514,7 +514,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -524,7 +524,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -532,7 +532,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -540,13 +540,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -554,13 +554,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -568,13 +568,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -582,13 +582,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -596,13 +596,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -610,13 +610,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -624,13 +624,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -638,13 +638,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -652,19 +652,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom"></a>
 
 ```python
 def import_from(
@@ -673,19 +673,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -693,13 +693,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -711,7 +711,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -719,7 +719,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo"></a>
 
 ```python
 def move_to(
@@ -730,7 +730,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -738,7 +738,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -746,7 +746,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -756,7 +756,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -764,7 +764,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_dynamic_membership` <a name="put_dynamic_membership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership"></a>
+##### `put_dynamic_membership` <a name="put_dynamic_membership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership"></a>
 
 ```python
 def put_dynamic_membership(
@@ -773,15 +773,15 @@ def put_dynamic_membership(
 ) -> None
 ```
 
-###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership.parameter.enabled"></a>
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}.
 
 ---
 
-###### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership.parameter.rule"></a>
+###### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putDynamicMembership.parameter.rule"></a>
 
 - *Type:* str
 
@@ -791,7 +791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -802,7 +802,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -834,133 +834,133 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_administrative_unit_ids` <a name="reset_administrative_unit_ids" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAdministrativeUnitIds"></a>
+##### `reset_administrative_unit_ids` <a name="reset_administrative_unit_ids" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAdministrativeUnitIds"></a>
 
 ```python
 def reset_administrative_unit_ids() -> None
 ```
 
-##### `reset_assignable_to_role` <a name="reset_assignable_to_role" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAssignableToRole"></a>
+##### `reset_assignable_to_role` <a name="reset_assignable_to_role" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAssignableToRole"></a>
 
 ```python
 def reset_assignable_to_role() -> None
 ```
 
-##### `reset_auto_subscribe_new_members` <a name="reset_auto_subscribe_new_members" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAutoSubscribeNewMembers"></a>
+##### `reset_auto_subscribe_new_members` <a name="reset_auto_subscribe_new_members" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetAutoSubscribeNewMembers"></a>
 
 ```python
 def reset_auto_subscribe_new_members() -> None
 ```
 
-##### `reset_behaviors` <a name="reset_behaviors" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetBehaviors"></a>
+##### `reset_behaviors` <a name="reset_behaviors" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetBehaviors"></a>
 
 ```python
 def reset_behaviors() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_dynamic_membership` <a name="reset_dynamic_membership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDynamicMembership"></a>
+##### `reset_dynamic_membership` <a name="reset_dynamic_membership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetDynamicMembership"></a>
 
 ```python
 def reset_dynamic_membership() -> None
 ```
 
-##### `reset_external_senders_allowed` <a name="reset_external_senders_allowed" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetExternalSendersAllowed"></a>
+##### `reset_external_senders_allowed` <a name="reset_external_senders_allowed" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetExternalSendersAllowed"></a>
 
 ```python
 def reset_external_senders_allowed() -> None
 ```
 
-##### `reset_hide_from_address_lists` <a name="reset_hide_from_address_lists" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromAddressLists"></a>
+##### `reset_hide_from_address_lists` <a name="reset_hide_from_address_lists" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromAddressLists"></a>
 
 ```python
 def reset_hide_from_address_lists() -> None
 ```
 
-##### `reset_hide_from_outlook_clients` <a name="reset_hide_from_outlook_clients" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromOutlookClients"></a>
+##### `reset_hide_from_outlook_clients` <a name="reset_hide_from_outlook_clients" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetHideFromOutlookClients"></a>
 
 ```python
 def reset_hide_from_outlook_clients() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_mail_enabled` <a name="reset_mail_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailEnabled"></a>
+##### `reset_mail_enabled` <a name="reset_mail_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailEnabled"></a>
 
 ```python
 def reset_mail_enabled() -> None
 ```
 
-##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailNickname"></a>
+##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetMailNickname"></a>
 
 ```python
 def reset_mail_nickname() -> None
 ```
 
-##### `reset_onpremises_group_type` <a name="reset_onpremises_group_type" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOnpremisesGroupType"></a>
+##### `reset_onpremises_group_type` <a name="reset_onpremises_group_type" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOnpremisesGroupType"></a>
 
 ```python
 def reset_onpremises_group_type() -> None
 ```
 
-##### `reset_owners` <a name="reset_owners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOwners"></a>
+##### `reset_owners` <a name="reset_owners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetOwners"></a>
 
 ```python
 def reset_owners() -> None
 ```
 
-##### `reset_prevent_duplicate_names` <a name="reset_prevent_duplicate_names" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetPreventDuplicateNames"></a>
+##### `reset_prevent_duplicate_names` <a name="reset_prevent_duplicate_names" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetPreventDuplicateNames"></a>
 
 ```python
 def reset_prevent_duplicate_names() -> None
 ```
 
-##### `reset_provisioning_options` <a name="reset_provisioning_options" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetProvisioningOptions"></a>
+##### `reset_provisioning_options` <a name="reset_provisioning_options" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetProvisioningOptions"></a>
 
 ```python
 def reset_provisioning_options() -> None
 ```
 
-##### `reset_security_enabled` <a name="reset_security_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetSecurityEnabled"></a>
+##### `reset_security_enabled` <a name="reset_security_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetSecurityEnabled"></a>
 
 ```python
 def reset_security_enabled() -> None
 ```
 
-##### `reset_theme` <a name="reset_theme" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTheme"></a>
+##### `reset_theme` <a name="reset_theme" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTheme"></a>
 
 ```python
 def reset_theme() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_types` <a name="reset_types" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTypes"></a>
+##### `reset_types` <a name="reset_types" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetTypes"></a>
 
 ```python
 def reset_types() -> None
 ```
 
-##### `reset_visibility` <a name="reset_visibility" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetVisibility"></a>
+##### `reset_visibility` <a name="reset_visibility" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetVisibility"></a>
 
 ```python
 def reset_visibility() -> None
 ```
 
-##### `reset_writeback_enabled` <a name="reset_writeback_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetWritebackEnabled"></a>
+##### `reset_writeback_enabled` <a name="reset_writeback_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.resetWritebackEnabled"></a>
 
 ```python
 def reset_writeback_enabled() -> None
@@ -970,17 +970,17 @@ def reset_writeback_enabled() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a GroupWithoutMembers resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a GroupWithoutMembers resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembers.is_construct(
   x: typing.Any
@@ -1003,7 +1003,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1011,42 +1011,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembers.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembers.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembers.generate_config_for_import(
   scope: Construct,
@@ -1056,9 +1056,9 @@ groupWithoutMembers.GroupWithoutMembers.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a GroupWithoutMembers resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a GroupWithoutMembers resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1066,7 +1066,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1074,7 +1074,7 @@ The construct id used in the generated config for the GroupWithoutMembers to imp
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1084,9 +1084,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the GroupWithoutMembers to import is found.
 
@@ -1096,79 +1096,79 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference">GroupWithoutMembersDynamicMembershipOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mail">mail</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesNetbiosName">onpremises_netbios_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference">GroupWithoutMembersTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIdsInput">administrative_unit_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRoleInput">assignable_to_role_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembersInput">auto_subscribe_new_members_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviorsInput">behaviors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembershipInput">dynamic_membership_input</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowedInput">external_senders_allowed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressListsInput">hide_from_address_lists_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClientsInput">hide_from_outlook_clients_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabledInput">mail_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupTypeInput">onpremises_group_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptionsInput">provisioning_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabledInput">security_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.themeInput">theme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.theme">theme</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference">GroupWithoutMembersDynamicMembershipOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mail">mail</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesNetbiosName">onpremises_netbios_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference">GroupWithoutMembersTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIdsInput">administrative_unit_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRoleInput">assignable_to_role_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembersInput">auto_subscribe_new_members_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviorsInput">behaviors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembershipInput">dynamic_membership_input</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowedInput">external_senders_allowed_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressListsInput">hide_from_address_lists_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClientsInput">hide_from_outlook_clients_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabledInput">mail_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupTypeInput">onpremises_group_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNamesInput">prevent_duplicate_names_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptionsInput">provisioning_options_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabledInput">security_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.themeInput">theme_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabledInput">writeback_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.theme">theme</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.types">types</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.node"></a>
 
 ```python
 node: Node
@@ -1180,17 +1180,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1200,7 +1200,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1210,7 +1210,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1220,7 +1220,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1230,37 +1230,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1270,57 +1270,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `dynamic_membership`<sup>Required</sup> <a name="dynamic_membership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembership"></a>
+##### `dynamic_membership`<sup>Required</sup> <a name="dynamic_membership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembership"></a>
 
 ```python
 dynamic_membership: GroupWithoutMembersDynamicMembershipOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference">GroupWithoutMembersDynamicMembershipOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference">GroupWithoutMembersDynamicMembershipOutputReference</a>
 
 ---
 
-##### `mail`<sup>Required</sup> <a name="mail" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mail"></a>
+##### `mail`<sup>Required</sup> <a name="mail" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mail"></a>
 
 ```python
 mail: str
@@ -1330,7 +1330,7 @@ mail: str
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1340,7 +1340,7 @@ object_id: str
 
 ---
 
-##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesDomainName"></a>
+##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesDomainName"></a>
 
 ```python
 onpremises_domain_name: str
@@ -1350,7 +1350,7 @@ onpremises_domain_name: str
 
 ---
 
-##### `onpremises_netbios_name`<sup>Required</sup> <a name="onpremises_netbios_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesNetbiosName"></a>
+##### `onpremises_netbios_name`<sup>Required</sup> <a name="onpremises_netbios_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesNetbiosName"></a>
 
 ```python
 onpremises_netbios_name: str
@@ -1360,7 +1360,7 @@ onpremises_netbios_name: str
 
 ---
 
-##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSamAccountName"></a>
+##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSamAccountName"></a>
 
 ```python
 onpremises_sam_account_name: str
@@ -1370,7 +1370,7 @@ onpremises_sam_account_name: str
 
 ---
 
-##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSecurityIdentifier"></a>
+##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSecurityIdentifier"></a>
 
 ```python
 onpremises_security_identifier: str
@@ -1380,17 +1380,17 @@ onpremises_security_identifier: str
 
 ---
 
-##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSyncEnabled"></a>
+##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesSyncEnabled"></a>
 
 ```python
 onpremises_sync_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preferredLanguage"></a>
+##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preferredLanguage"></a>
 
 ```python
 preferred_language: str
@@ -1400,7 +1400,7 @@ preferred_language: str
 
 ---
 
-##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.proxyAddresses"></a>
+##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.proxyAddresses"></a>
 
 ```python
 proxy_addresses: typing.List[str]
@@ -1410,17 +1410,17 @@ proxy_addresses: typing.List[str]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeouts"></a>
 
 ```python
 timeouts: GroupWithoutMembersTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference">GroupWithoutMembersTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference">GroupWithoutMembersTimeoutsOutputReference</a>
 
 ---
 
-##### `administrative_unit_ids_input`<sup>Optional</sup> <a name="administrative_unit_ids_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIdsInput"></a>
+##### `administrative_unit_ids_input`<sup>Optional</sup> <a name="administrative_unit_ids_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIdsInput"></a>
 
 ```python
 administrative_unit_ids_input: typing.List[str]
@@ -1430,27 +1430,27 @@ administrative_unit_ids_input: typing.List[str]
 
 ---
 
-##### `assignable_to_role_input`<sup>Optional</sup> <a name="assignable_to_role_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRoleInput"></a>
+##### `assignable_to_role_input`<sup>Optional</sup> <a name="assignable_to_role_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRoleInput"></a>
 
 ```python
 assignable_to_role_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `auto_subscribe_new_members_input`<sup>Optional</sup> <a name="auto_subscribe_new_members_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembersInput"></a>
+##### `auto_subscribe_new_members_input`<sup>Optional</sup> <a name="auto_subscribe_new_members_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembersInput"></a>
 
 ```python
 auto_subscribe_new_members_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `behaviors_input`<sup>Optional</sup> <a name="behaviors_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviorsInput"></a>
+##### `behaviors_input`<sup>Optional</sup> <a name="behaviors_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviorsInput"></a>
 
 ```python
 behaviors_input: typing.List[str]
@@ -1460,7 +1460,7 @@ behaviors_input: typing.List[str]
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1470,7 +1470,7 @@ description_input: str
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayNameInput"></a>
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1480,47 +1480,47 @@ display_name_input: str
 
 ---
 
-##### `dynamic_membership_input`<sup>Optional</sup> <a name="dynamic_membership_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembershipInput"></a>
+##### `dynamic_membership_input`<sup>Optional</sup> <a name="dynamic_membership_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.dynamicMembershipInput"></a>
 
 ```python
 dynamic_membership_input: GroupWithoutMembersDynamicMembership
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
 
 ---
 
-##### `external_senders_allowed_input`<sup>Optional</sup> <a name="external_senders_allowed_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowedInput"></a>
+##### `external_senders_allowed_input`<sup>Optional</sup> <a name="external_senders_allowed_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowedInput"></a>
 
 ```python
 external_senders_allowed_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide_from_address_lists_input`<sup>Optional</sup> <a name="hide_from_address_lists_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressListsInput"></a>
+##### `hide_from_address_lists_input`<sup>Optional</sup> <a name="hide_from_address_lists_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressListsInput"></a>
 
 ```python
 hide_from_address_lists_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide_from_outlook_clients_input`<sup>Optional</sup> <a name="hide_from_outlook_clients_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClientsInput"></a>
+##### `hide_from_outlook_clients_input`<sup>Optional</sup> <a name="hide_from_outlook_clients_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClientsInput"></a>
 
 ```python
 hide_from_outlook_clients_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1530,17 +1530,17 @@ id_input: str
 
 ---
 
-##### `mail_enabled_input`<sup>Optional</sup> <a name="mail_enabled_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabledInput"></a>
+##### `mail_enabled_input`<sup>Optional</sup> <a name="mail_enabled_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabledInput"></a>
 
 ```python
 mail_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNicknameInput"></a>
+##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNicknameInput"></a>
 
 ```python
 mail_nickname_input: str
@@ -1550,7 +1550,7 @@ mail_nickname_input: str
 
 ---
 
-##### `onpremises_group_type_input`<sup>Optional</sup> <a name="onpremises_group_type_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupTypeInput"></a>
+##### `onpremises_group_type_input`<sup>Optional</sup> <a name="onpremises_group_type_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupTypeInput"></a>
 
 ```python
 onpremises_group_type_input: str
@@ -1560,7 +1560,7 @@ onpremises_group_type_input: str
 
 ---
 
-##### `owners_input`<sup>Optional</sup> <a name="owners_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.ownersInput"></a>
+##### `owners_input`<sup>Optional</sup> <a name="owners_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.ownersInput"></a>
 
 ```python
 owners_input: typing.List[str]
@@ -1570,17 +1570,17 @@ owners_input: typing.List[str]
 
 ---
 
-##### `prevent_duplicate_names_input`<sup>Optional</sup> <a name="prevent_duplicate_names_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNamesInput"></a>
+##### `prevent_duplicate_names_input`<sup>Optional</sup> <a name="prevent_duplicate_names_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNamesInput"></a>
 
 ```python
 prevent_duplicate_names_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `provisioning_options_input`<sup>Optional</sup> <a name="provisioning_options_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptionsInput"></a>
+##### `provisioning_options_input`<sup>Optional</sup> <a name="provisioning_options_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptionsInput"></a>
 
 ```python
 provisioning_options_input: typing.List[str]
@@ -1590,17 +1590,17 @@ provisioning_options_input: typing.List[str]
 
 ---
 
-##### `security_enabled_input`<sup>Optional</sup> <a name="security_enabled_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabledInput"></a>
+##### `security_enabled_input`<sup>Optional</sup> <a name="security_enabled_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabledInput"></a>
 
 ```python
 security_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `theme_input`<sup>Optional</sup> <a name="theme_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.themeInput"></a>
+##### `theme_input`<sup>Optional</sup> <a name="theme_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.themeInput"></a>
 
 ```python
 theme_input: str
@@ -1610,17 +1610,17 @@ theme_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | GroupWithoutMembersTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
 
 ---
 
-##### `types_input`<sup>Optional</sup> <a name="types_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.typesInput"></a>
+##### `types_input`<sup>Optional</sup> <a name="types_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.typesInput"></a>
 
 ```python
 types_input: typing.List[str]
@@ -1630,7 +1630,7 @@ types_input: typing.List[str]
 
 ---
 
-##### `visibility_input`<sup>Optional</sup> <a name="visibility_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibilityInput"></a>
+##### `visibility_input`<sup>Optional</sup> <a name="visibility_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibilityInput"></a>
 
 ```python
 visibility_input: str
@@ -1640,17 +1640,17 @@ visibility_input: str
 
 ---
 
-##### `writeback_enabled_input`<sup>Optional</sup> <a name="writeback_enabled_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabledInput"></a>
+##### `writeback_enabled_input`<sup>Optional</sup> <a name="writeback_enabled_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabledInput"></a>
 
 ```python
 writeback_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `administrative_unit_ids`<sup>Required</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIds"></a>
+##### `administrative_unit_ids`<sup>Required</sup> <a name="administrative_unit_ids" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.administrativeUnitIds"></a>
 
 ```python
 administrative_unit_ids: typing.List[str]
@@ -1660,27 +1660,27 @@ administrative_unit_ids: typing.List[str]
 
 ---
 
-##### `assignable_to_role`<sup>Required</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRole"></a>
+##### `assignable_to_role`<sup>Required</sup> <a name="assignable_to_role" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.assignableToRole"></a>
 
 ```python
 assignable_to_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `auto_subscribe_new_members`<sup>Required</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembers"></a>
+##### `auto_subscribe_new_members`<sup>Required</sup> <a name="auto_subscribe_new_members" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.autoSubscribeNewMembers"></a>
 
 ```python
 auto_subscribe_new_members: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `behaviors`<sup>Required</sup> <a name="behaviors" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviors"></a>
+##### `behaviors`<sup>Required</sup> <a name="behaviors" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.behaviors"></a>
 
 ```python
 behaviors: typing.List[str]
@@ -1690,7 +1690,7 @@ behaviors: typing.List[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.description"></a>
 
 ```python
 description: str
@@ -1700,7 +1700,7 @@ description: str
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1710,37 +1710,37 @@ display_name: str
 
 ---
 
-##### `external_senders_allowed`<sup>Required</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowed"></a>
+##### `external_senders_allowed`<sup>Required</sup> <a name="external_senders_allowed" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.externalSendersAllowed"></a>
 
 ```python
 external_senders_allowed: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide_from_address_lists`<sup>Required</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressLists"></a>
+##### `hide_from_address_lists`<sup>Required</sup> <a name="hide_from_address_lists" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromAddressLists"></a>
 
 ```python
 hide_from_address_lists: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide_from_outlook_clients`<sup>Required</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClients"></a>
+##### `hide_from_outlook_clients`<sup>Required</sup> <a name="hide_from_outlook_clients" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.hideFromOutlookClients"></a>
 
 ```python
 hide_from_outlook_clients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.id"></a>
 
 ```python
 id: str
@@ -1750,17 +1750,17 @@ id: str
 
 ---
 
-##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabled"></a>
+##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailEnabled"></a>
 
 ```python
 mail_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNickname"></a>
+##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -1770,7 +1770,7 @@ mail_nickname: str
 
 ---
 
-##### `onpremises_group_type`<sup>Required</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupType"></a>
+##### `onpremises_group_type`<sup>Required</sup> <a name="onpremises_group_type" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.onpremisesGroupType"></a>
 
 ```python
 onpremises_group_type: str
@@ -1780,7 +1780,7 @@ onpremises_group_type: str
 
 ---
 
-##### `owners`<sup>Required</sup> <a name="owners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="owners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.owners"></a>
 
 ```python
 owners: typing.List[str]
@@ -1790,17 +1790,17 @@ owners: typing.List[str]
 
 ---
 
-##### `prevent_duplicate_names`<sup>Required</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNames"></a>
+##### `prevent_duplicate_names`<sup>Required</sup> <a name="prevent_duplicate_names" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.preventDuplicateNames"></a>
 
 ```python
 prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `provisioning_options`<sup>Required</sup> <a name="provisioning_options" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptions"></a>
+##### `provisioning_options`<sup>Required</sup> <a name="provisioning_options" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.provisioningOptions"></a>
 
 ```python
 provisioning_options: typing.List[str]
@@ -1810,17 +1810,17 @@ provisioning_options: typing.List[str]
 
 ---
 
-##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabled"></a>
+##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.securityEnabled"></a>
 
 ```python
 security_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `theme`<sup>Required</sup> <a name="theme" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.theme"></a>
+##### `theme`<sup>Required</sup> <a name="theme" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.theme"></a>
 
 ```python
 theme: str
@@ -1830,7 +1830,7 @@ theme: str
 
 ---
 
-##### `types`<sup>Required</sup> <a name="types" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.types"></a>
+##### `types`<sup>Required</sup> <a name="types" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.types"></a>
 
 ```python
 types: typing.List[str]
@@ -1840,7 +1840,7 @@ types: typing.List[str]
 
 ---
 
-##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibility"></a>
+##### `visibility`<sup>Required</sup> <a name="visibility" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.visibility"></a>
 
 ```python
 visibility: str
@@ -1850,13 +1850,13 @@ visibility: str
 
 ---
 
-##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabled"></a>
+##### `writeback_enabled`<sup>Required</sup> <a name="writeback_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.writebackEnabled"></a>
 
 ```python
 writeback_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1864,11 +1864,11 @@ writeback_enabled: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1880,12 +1880,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### GroupWithoutMembersConfig <a name="GroupWithoutMembersConfig" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig"></a>
+### GroupWithoutMembersConfig <a name="GroupWithoutMembersConfig" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembersConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1925,110 +1925,110 @@ groupWithoutMembers.GroupWithoutMembersConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.description">description</a></code> | <code>str</code> | The description for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | dynamic_membership block. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktf.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.administrativeUnitIds">administrative_unit_ids</a></code> | <code>typing.List[str]</code> | The administrative unit IDs in which the group should be. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.assignableToRole">assignable_to_role</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether this group can be assigned to an Azure Active Directory role. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.autoSubscribeNewMembers">auto_subscribe_new_members</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether new members added to the group will be auto-subscribed to receive email notifications. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | The group behaviours for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.description">description</a></code> | <code>str</code> | The description for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dynamicMembership">dynamic_membership</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | dynamic_membership block. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.externalSendersAllowed">external_senders_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether people external to the organization can send messages to the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromAddressLists">hide_from_address_lists</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromOutlookClients">hide_from_outlook_clients</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a mail enabled, with a shared group mailbox. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the group, unique in the organisation. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.onpremisesGroupType">onpremises_group_type</a></code> | <code>str</code> | Indicates the target on-premise group type the group will be written back as. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A set of owners who own this group. Supported object types are Users or Service Principals. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.preventDuplicateNames">prevent_duplicate_names</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, will return an error if an existing group is found with the same name. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioningOptions">provisioning_options</a></code> | <code>typing.List[str]</code> | The group provisioning options for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.securityEnabled">security_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the group is a security group for controlling access to in-app resources. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.theme">theme</a></code> | <code>str</code> | The colour theme for a Microsoft 365 group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.types">types</a></code> | <code>typing.List[str]</code> | A set of group types to configure for the group. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.visibility">visibility</a></code> | <code>str</code> | Specifies the group join policy and group content visibility. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.writebackEnabled">writeback_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -2042,7 +2042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.administrativeUnitIds"></a>
+##### `administrative_unit_ids`<sup>Optional</sup> <a name="administrative_unit_ids" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.administrativeUnitIds"></a>
 
 ```python
 administrative_unit_ids: typing.List[str]
@@ -2058,13 +2058,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.assignableToRole"></a>
+##### `assignable_to_role`<sup>Optional</sup> <a name="assignable_to_role" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.assignableToRole"></a>
 
 ```python
 assignable_to_role: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether this group can be assigned to an Azure Active Directory role.
 
@@ -2074,13 +2074,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.autoSubscribeNewMembers"></a>
+##### `auto_subscribe_new_members`<sup>Optional</sup> <a name="auto_subscribe_new_members" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.autoSubscribeNewMembers"></a>
 
 ```python
 auto_subscribe_new_members: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
@@ -2088,7 +2088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `behaviors`<sup>Optional</sup> <a name="behaviors" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.behaviors"></a>
+##### `behaviors`<sup>Optional</sup> <a name="behaviors" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.behaviors"></a>
 
 ```python
 behaviors: typing.List[str]
@@ -2102,7 +2102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.description"></a>
 
 ```python
 description: str
@@ -2116,13 +2116,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dynamic_membership`<sup>Optional</sup> <a name="dynamic_membership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dynamicMembership"></a>
+##### `dynamic_membership`<sup>Optional</sup> <a name="dynamic_membership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.dynamicMembership"></a>
 
 ```python
 dynamic_membership: GroupWithoutMembersDynamicMembership
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
 
 dynamic_membership block.
 
@@ -2130,13 +2130,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.externalSendersAllowed"></a>
+##### `external_senders_allowed`<sup>Optional</sup> <a name="external_senders_allowed" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.externalSendersAllowed"></a>
 
 ```python
 external_senders_allowed: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether people external to the organization can send messages to the group.
 
@@ -2144,13 +2144,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromAddressLists"></a>
+##### `hide_from_address_lists`<sup>Optional</sup> <a name="hide_from_address_lists" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromAddressLists"></a>
 
 ```python
 hide_from_address_lists: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
@@ -2158,13 +2158,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromOutlookClients"></a>
+##### `hide_from_outlook_clients`<sup>Optional</sup> <a name="hide_from_outlook_clients" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromOutlookClients"></a>
 
 ```python
 hide_from_outlook_clients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id"></a>
 
 ```python
 id: str
@@ -2187,13 +2187,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailEnabled"></a>
+##### `mail_enabled`<sup>Optional</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailEnabled"></a>
 
 ```python
 mail_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a mail enabled, with a shared group mailbox.
 
@@ -2203,7 +2203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -2217,7 +2217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.onpremisesGroupType"></a>
+##### `onpremises_group_type`<sup>Optional</sup> <a name="onpremises_group_type" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.onpremisesGroupType"></a>
 
 ```python
 onpremises_group_type: str
@@ -2231,7 +2231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.owners"></a>
+##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.owners"></a>
 
 ```python
 owners: typing.List[str]
@@ -2245,13 +2245,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.preventDuplicateNames"></a>
+##### `prevent_duplicate_names`<sup>Optional</sup> <a name="prevent_duplicate_names" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.preventDuplicateNames"></a>
 
 ```python
 prevent_duplicate_names: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If `true`, will return an error if an existing group is found with the same name.
 
@@ -2259,7 +2259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `provisioning_options`<sup>Optional</sup> <a name="provisioning_options" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioningOptions"></a>
+##### `provisioning_options`<sup>Optional</sup> <a name="provisioning_options" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.provisioningOptions"></a>
 
 ```python
 provisioning_options: typing.List[str]
@@ -2273,13 +2273,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.securityEnabled"></a>
+##### `security_enabled`<sup>Optional</sup> <a name="security_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.securityEnabled"></a>
 
 ```python
 security_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the group is a security group for controlling access to in-app resources.
 
@@ -2289,7 +2289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `theme`<sup>Optional</sup> <a name="theme" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.theme"></a>
+##### `theme`<sup>Optional</sup> <a name="theme" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.theme"></a>
 
 ```python
 theme: str
@@ -2303,13 +2303,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.timeouts"></a>
 
 ```python
 timeouts: GroupWithoutMembersTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
 
 timeouts block.
 
@@ -2317,7 +2317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `types`<sup>Optional</sup> <a name="types" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.types"></a>
+##### `types`<sup>Optional</sup> <a name="types" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.types"></a>
 
 ```python
 types: typing.List[str]
@@ -2333,7 +2333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `visibility`<sup>Optional</sup> <a name="visibility" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.visibility"></a>
+##### `visibility`<sup>Optional</sup> <a name="visibility" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.visibility"></a>
 
 ```python
 visibility: str
@@ -2347,13 +2347,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.writebackEnabled"></a>
+##### `writeback_enabled`<sup>Optional</sup> <a name="writeback_enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.writebackEnabled"></a>
 
 ```python
 writeback_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
@@ -2361,12 +2361,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### GroupWithoutMembersDynamicMembership <a name="GroupWithoutMembersDynamicMembership" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership"></a>
+### GroupWithoutMembersDynamicMembership <a name="GroupWithoutMembersDynamicMembership" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembersDynamicMembership(
   enabled: bool | IResolvable,
@@ -2378,24 +2378,24 @@ groupWithoutMembers.GroupWithoutMembersDynamicMembership(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.rule">rule</a></code> | <code>str</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.rule">rule</a></code> | <code>str</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}.
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.rule"></a>
 
 ```python
 rule: str
@@ -2409,12 +2409,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### GroupWithoutMembersTimeouts <a name="GroupWithoutMembersTimeouts" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts"></a>
+### GroupWithoutMembersTimeouts <a name="GroupWithoutMembersTimeouts" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembersTimeouts(
   create: str = None,
@@ -2428,14 +2428,14 @@ groupWithoutMembers.GroupWithoutMembersTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#create GroupWithoutMembers#create}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#read GroupWithoutMembers#read}. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#update GroupWithoutMembers#update}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#create GroupWithoutMembers#create}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#read GroupWithoutMembers#read}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#update GroupWithoutMembers#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2447,7 +2447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2459,7 +2459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -2471,7 +2471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2485,12 +2485,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### GroupWithoutMembersDynamicMembershipOutputReference <a name="GroupWithoutMembersDynamicMembershipOutputReference" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference"></a>
+### GroupWithoutMembersDynamicMembershipOutputReference <a name="GroupWithoutMembersDynamicMembershipOutputReference" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2500,20 +2500,20 @@ groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2525,29 +2525,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2555,13 +2555,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2569,13 +2569,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2583,13 +2583,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2597,13 +2597,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2611,13 +2611,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2625,13 +2625,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2639,13 +2639,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2653,13 +2653,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2667,13 +2667,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2681,13 +2681,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2697,13 +2697,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2718,17 +2718,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.ruleInput">rule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.rule">rule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2742,7 +2742,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2752,17 +2752,17 @@ fqn: str
 
 ---
 
-##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabledInput"></a>
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabledInput"></a>
 
 ```python
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `rule_input`<sup>Optional</sup> <a name="rule_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.ruleInput"></a>
+##### `rule_input`<sup>Optional</sup> <a name="rule_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.ruleInput"></a>
 
 ```python
 rule_input: str
@@ -2772,17 +2772,17 @@ rule_input: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `rule`<sup>Required</sup> <a name="rule" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.rule"></a>
+##### `rule`<sup>Required</sup> <a name="rule" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.rule"></a>
 
 ```python
 rule: str
@@ -2792,23 +2792,23 @@ rule: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembershipOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GroupWithoutMembersDynamicMembership
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
+- *Type:* <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership">GroupWithoutMembersDynamicMembership</a>
 
 ---
 
 
-### GroupWithoutMembersTimeoutsOutputReference <a name="GroupWithoutMembersTimeoutsOutputReference" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference"></a>
+### GroupWithoutMembersTimeoutsOutputReference <a name="GroupWithoutMembersTimeoutsOutputReference" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import group_without_members
+from cdktn_provider_azuread import group_without_members
 
 groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2818,20 +2818,20 @@ groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2843,33 +2843,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2877,13 +2877,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2891,13 +2891,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2905,13 +2905,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2919,13 +2919,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2933,13 +2933,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2947,13 +2947,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2961,13 +2961,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2975,13 +2975,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2989,13 +2989,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3003,13 +3003,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3019,13 +3019,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3035,25 +3035,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -3064,21 +3064,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3092,7 +3092,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3102,7 +3102,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -3112,7 +3112,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -3122,7 +3122,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -3132,7 +3132,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -3142,7 +3142,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -3152,7 +3152,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -3162,7 +3162,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -3172,7 +3172,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -3182,13 +3182,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | GroupWithoutMembersTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts">GroupWithoutMembersTimeouts</a>
 
 ---
 

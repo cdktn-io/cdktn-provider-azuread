@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-azuread.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-azuread.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AzureadProvider <a name="AzureadProvider" id="@cdktf/provider-azuread.provider.AzureadProvider"></a>
+### AzureadProvider <a name="AzureadProvider" id="@cdktn/provider-azuread.provider.AzureadProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs azuread}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.provider.AzureadProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 provider.NewAzureadProvider(scope Construct, id *string, config AzureadProviderConfig) AzureadProvider
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig">AzureadProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig">AzureadProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-azuread.provider.AzureadProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-azuread.provider.AzureadProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig">AzureadProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig">AzureadProviderConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetAdoPipelineServiceConnectionId">ResetAdoPipelineServiceConnectionId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetAlias">ResetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificate">ResetClientCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePassword">ResetClientCertificatePassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePath">ResetClientCertificatePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientId">ResetClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientIdFilePath">ResetClientIdFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath">ResetClientSecretFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId">ResetDisableTerraformPartnerId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetMetadataHost">ResetMetadataHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetMsiEndpoint">ResetMsiEndpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestToken">ResetOidcRequestToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestUrl">ResetOidcRequestUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcToken">ResetOidcToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetOidcTokenFilePath">ResetOidcTokenFilePath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetPartnerId">ResetPartnerId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetTenantId">ResetTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetUseAksWorkloadIdentity">ResetUseAksWorkloadIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetUseCli">ResetUseCli</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetUseMsi">ResetUseMsi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.resetUseOidc">ResetUseOidc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetAdoPipelineServiceConnectionId">ResetAdoPipelineServiceConnectionId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificate">ResetClientCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificatePassword">ResetClientCertificatePassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificatePath">ResetClientCertificatePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientId">ResetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientIdFilePath">ResetClientIdFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath">ResetClientSecretFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId">ResetDisableTerraformPartnerId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetMetadataHost">ResetMetadataHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetMsiEndpoint">ResetMsiEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetOidcRequestToken">ResetOidcRequestToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetOidcRequestUrl">ResetOidcRequestUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetOidcToken">ResetOidcToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetOidcTokenFilePath">ResetOidcTokenFilePath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetPartnerId">ResetPartnerId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetTenantId">ResetTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetUseAksWorkloadIdentity">ResetUseAksWorkloadIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetUseCli">ResetUseCli</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetUseMsi">ResetUseMsi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.resetUseOidc">ResetUseOidc</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.provider.AzureadProvider.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.provider.AzureadProvider.toString"></a>
 
 ```go
 func ToString() *string
@@ -91,25 +91,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azuread.provider.AzureadProvider.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azuread.provider.AzureadProvider.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.provider.AzureadProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.provider.AzureadProvider.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.provider.AzureadProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.provider.AzureadProvider.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azuread.provider.AzureadProvider.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azuread.provider.AzureadProvider.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -117,7 +117,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.provider.AzureadProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.provider.AzureadProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -133,19 +133,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.provider.AzureadProvider.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azuread.provider.AzureadProvider.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.provider.AzureadProvider.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azuread.provider.AzureadProvider.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azuread.provider.AzureadProvider.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azuread.provider.AzureadProvider.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -153,139 +153,139 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ResetAdoPipelineServiceConnectionId` <a name="ResetAdoPipelineServiceConnectionId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetAdoPipelineServiceConnectionId"></a>
+##### `ResetAdoPipelineServiceConnectionId` <a name="ResetAdoPipelineServiceConnectionId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetAdoPipelineServiceConnectionId"></a>
 
 ```go
 func ResetAdoPipelineServiceConnectionId()
 ```
 
-##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-azuread.provider.AzureadProvider.resetAlias"></a>
+##### `ResetAlias` <a name="ResetAlias" id="@cdktn/provider-azuread.provider.AzureadProvider.resetAlias"></a>
 
 ```go
 func ResetAlias()
 ```
 
-##### `ResetClientCertificate` <a name="ResetClientCertificate" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificate"></a>
+##### `ResetClientCertificate` <a name="ResetClientCertificate" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificate"></a>
 
 ```go
 func ResetClientCertificate()
 ```
 
-##### `ResetClientCertificatePassword` <a name="ResetClientCertificatePassword" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePassword"></a>
+##### `ResetClientCertificatePassword` <a name="ResetClientCertificatePassword" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificatePassword"></a>
 
 ```go
 func ResetClientCertificatePassword()
 ```
 
-##### `ResetClientCertificatePath` <a name="ResetClientCertificatePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientCertificatePath"></a>
+##### `ResetClientCertificatePath` <a name="ResetClientCertificatePath" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientCertificatePath"></a>
 
 ```go
 func ResetClientCertificatePath()
 ```
 
-##### `ResetClientId` <a name="ResetClientId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientId"></a>
+##### `ResetClientId` <a name="ResetClientId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientId"></a>
 
 ```go
 func ResetClientId()
 ```
 
-##### `ResetClientIdFilePath` <a name="ResetClientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientIdFilePath"></a>
+##### `ResetClientIdFilePath` <a name="ResetClientIdFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientIdFilePath"></a>
 
 ```go
 func ResetClientIdFilePath()
 ```
 
-##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecret"></a>
+##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientSecret"></a>
 
 ```go
 func ResetClientSecret()
 ```
 
-##### `ResetClientSecretFilePath` <a name="ResetClientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath"></a>
+##### `ResetClientSecretFilePath` <a name="ResetClientSecretFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.resetClientSecretFilePath"></a>
 
 ```go
 func ResetClientSecretFilePath()
 ```
 
-##### `ResetDisableTerraformPartnerId` <a name="ResetDisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId"></a>
+##### `ResetDisableTerraformPartnerId` <a name="ResetDisableTerraformPartnerId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetDisableTerraformPartnerId"></a>
 
 ```go
 func ResetDisableTerraformPartnerId()
 ```
 
-##### `ResetEnvironment` <a name="ResetEnvironment" id="@cdktf/provider-azuread.provider.AzureadProvider.resetEnvironment"></a>
+##### `ResetEnvironment` <a name="ResetEnvironment" id="@cdktn/provider-azuread.provider.AzureadProvider.resetEnvironment"></a>
 
 ```go
 func ResetEnvironment()
 ```
 
-##### `ResetMetadataHost` <a name="ResetMetadataHost" id="@cdktf/provider-azuread.provider.AzureadProvider.resetMetadataHost"></a>
+##### `ResetMetadataHost` <a name="ResetMetadataHost" id="@cdktn/provider-azuread.provider.AzureadProvider.resetMetadataHost"></a>
 
 ```go
 func ResetMetadataHost()
 ```
 
-##### `ResetMsiEndpoint` <a name="ResetMsiEndpoint" id="@cdktf/provider-azuread.provider.AzureadProvider.resetMsiEndpoint"></a>
+##### `ResetMsiEndpoint` <a name="ResetMsiEndpoint" id="@cdktn/provider-azuread.provider.AzureadProvider.resetMsiEndpoint"></a>
 
 ```go
 func ResetMsiEndpoint()
 ```
 
-##### `ResetOidcRequestToken` <a name="ResetOidcRequestToken" id="@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestToken"></a>
+##### `ResetOidcRequestToken` <a name="ResetOidcRequestToken" id="@cdktn/provider-azuread.provider.AzureadProvider.resetOidcRequestToken"></a>
 
 ```go
 func ResetOidcRequestToken()
 ```
 
-##### `ResetOidcRequestUrl` <a name="ResetOidcRequestUrl" id="@cdktf/provider-azuread.provider.AzureadProvider.resetOidcRequestUrl"></a>
+##### `ResetOidcRequestUrl` <a name="ResetOidcRequestUrl" id="@cdktn/provider-azuread.provider.AzureadProvider.resetOidcRequestUrl"></a>
 
 ```go
 func ResetOidcRequestUrl()
 ```
 
-##### `ResetOidcToken` <a name="ResetOidcToken" id="@cdktf/provider-azuread.provider.AzureadProvider.resetOidcToken"></a>
+##### `ResetOidcToken` <a name="ResetOidcToken" id="@cdktn/provider-azuread.provider.AzureadProvider.resetOidcToken"></a>
 
 ```go
 func ResetOidcToken()
 ```
 
-##### `ResetOidcTokenFilePath` <a name="ResetOidcTokenFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.resetOidcTokenFilePath"></a>
+##### `ResetOidcTokenFilePath` <a name="ResetOidcTokenFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.resetOidcTokenFilePath"></a>
 
 ```go
 func ResetOidcTokenFilePath()
 ```
 
-##### `ResetPartnerId` <a name="ResetPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetPartnerId"></a>
+##### `ResetPartnerId` <a name="ResetPartnerId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetPartnerId"></a>
 
 ```go
 func ResetPartnerId()
 ```
 
-##### `ResetTenantId` <a name="ResetTenantId" id="@cdktf/provider-azuread.provider.AzureadProvider.resetTenantId"></a>
+##### `ResetTenantId` <a name="ResetTenantId" id="@cdktn/provider-azuread.provider.AzureadProvider.resetTenantId"></a>
 
 ```go
 func ResetTenantId()
 ```
 
-##### `ResetUseAksWorkloadIdentity` <a name="ResetUseAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProvider.resetUseAksWorkloadIdentity"></a>
+##### `ResetUseAksWorkloadIdentity` <a name="ResetUseAksWorkloadIdentity" id="@cdktn/provider-azuread.provider.AzureadProvider.resetUseAksWorkloadIdentity"></a>
 
 ```go
 func ResetUseAksWorkloadIdentity()
 ```
 
-##### `ResetUseCli` <a name="ResetUseCli" id="@cdktf/provider-azuread.provider.AzureadProvider.resetUseCli"></a>
+##### `ResetUseCli` <a name="ResetUseCli" id="@cdktn/provider-azuread.provider.AzureadProvider.resetUseCli"></a>
 
 ```go
 func ResetUseCli()
 ```
 
-##### `ResetUseMsi` <a name="ResetUseMsi" id="@cdktf/provider-azuread.provider.AzureadProvider.resetUseMsi"></a>
+##### `ResetUseMsi` <a name="ResetUseMsi" id="@cdktn/provider-azuread.provider.AzureadProvider.resetUseMsi"></a>
 
 ```go
 func ResetUseMsi()
 ```
 
-##### `ResetUseOidc` <a name="ResetUseOidc" id="@cdktf/provider-azuread.provider.AzureadProvider.resetUseOidc"></a>
+##### `ResetUseOidc` <a name="ResetUseOidc" id="@cdktn/provider-azuread.provider.AzureadProvider.resetUseOidc"></a>
 
 ```go
 func ResetUseOidc()
@@ -295,17 +295,17 @@ func ResetUseOidc()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a AzureadProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a AzureadProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.provider.AzureadProvider.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.provider.AzureadProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 provider.AzureadProvider_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.provider.AzureadProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.provider.AzureadProvider.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -334,45 +334,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.provider.AzureadProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 provider.AzureadProvider_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.provider.AzureadProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformProvider"></a>
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-azuread.provider.AzureadProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 provider.AzureadProvider_IsTerraformProvider(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.provider.AzureadProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.provider.AzureadProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 provider.AzureadProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a AzureadProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AzureadProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -380,7 +380,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -388,7 +388,7 @@ The construct id used in the generated config for the AzureadProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -398,9 +398,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.provider.AzureadProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AzureadProvider to import is found.
 
@@ -410,64 +410,64 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionIdInput">AdoPipelineServiceConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificateInput">ClientCertificateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePasswordInput">ClientCertificatePasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePathInput">ClientCertificatePathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput">ClientIdFilePathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">ClientSecretFilePathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">DisableTerraformPartnerIdInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput">EnvironmentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput">MetadataHostInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">MsiEndpointInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestTokenInput">OidcRequestTokenInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrlInput">OidcRequestUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePathInput">OidcTokenFilePathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenInput">OidcTokenInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerIdInput">PartnerIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantIdInput">TenantIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">UseAksWorkloadIdentityInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput">UseCliInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput">UseMsiInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput">UseOidcInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId">AdoPipelineServiceConnectionId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificate">ClientCertificate</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.environment">Environment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost">MetadataHost</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint">MsiEndpoint</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestToken">OidcRequestToken</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrl">OidcRequestUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcToken">OidcToken</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.partnerId">PartnerId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useCli">UseCli</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi">UseMsi</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc">UseOidc</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionIdInput">AdoPipelineServiceConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificateInput">ClientCertificateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePasswordInput">ClientCertificatePasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePathInput">ClientCertificatePathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput">ClientIdFilePathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput">ClientSecretFilePathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput">DisableTerraformPartnerIdInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.environmentInput">EnvironmentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.metadataHostInput">MetadataHostInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.msiEndpointInput">MsiEndpointInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestTokenInput">OidcRequestTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestUrlInput">OidcRequestUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePathInput">OidcTokenFilePathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenInput">OidcTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.partnerIdInput">PartnerIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.tenantIdInput">TenantIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput">UseAksWorkloadIdentityInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useCliInput">UseCliInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useMsiInput">UseMsiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useOidcInput">UseOidcInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId">AdoPipelineServiceConnectionId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificate">ClientCertificate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.environment">Environment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.metadataHost">MetadataHost</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.msiEndpoint">MsiEndpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestToken">OidcRequestToken</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestUrl">OidcRequestUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcToken">OidcToken</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.partnerId">PartnerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.tenantId">TenantId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useCli">UseCli</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useMsi">UseMsi</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.useOidc">UseOidc</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azuread.provider.AzureadProvider.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azuread.provider.AzureadProvider.property.node"></a>
 
 ```go
 func Node() Node
@@ -479,17 +479,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azuread.provider.AzureadProvider.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azuread.provider.AzureadProvider.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.provider.AzureadProvider.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.provider.AzureadProvider.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -499,7 +499,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -509,7 +509,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-azuread.provider.AzureadProvider.property.metaAttributes"></a>
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktn/provider-azuread.provider.AzureadProvider.property.metaAttributes"></a>
 
 ```go
 func MetaAttributes() *map[string]interface{}
@@ -519,7 +519,7 @@ func MetaAttributes() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azuread.provider.AzureadProvider.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azuread.provider.AzureadProvider.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -529,17 +529,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azuread.provider.AzureadProvider.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azuread.provider.AzureadProvider.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-azuread.provider.AzureadProvider.property.terraformProviderSource"></a>
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktn/provider-azuread.provider.AzureadProvider.property.terraformProviderSource"></a>
 
 ```go
 func TerraformProviderSource() *string
@@ -549,7 +549,7 @@ func TerraformProviderSource() *string
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-azuread.provider.AzureadProvider.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-azuread.provider.AzureadProvider.property.alias"></a>
 
 ```go
 func Alias() *string
@@ -559,7 +559,7 @@ func Alias() *string
 
 ---
 
-##### `AdoPipelineServiceConnectionIdInput`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionIdInput"></a>
+##### `AdoPipelineServiceConnectionIdInput`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionIdInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionIdInput"></a>
 
 ```go
 func AdoPipelineServiceConnectionIdInput() *string
@@ -569,7 +569,7 @@ func AdoPipelineServiceConnectionIdInput() *string
 
 ---
 
-##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.aliasInput"></a>
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.aliasInput"></a>
 
 ```go
 func AliasInput() *string
@@ -579,7 +579,7 @@ func AliasInput() *string
 
 ---
 
-##### `ClientCertificateInput`<sup>Optional</sup> <a name="ClientCertificateInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificateInput"></a>
+##### `ClientCertificateInput`<sup>Optional</sup> <a name="ClientCertificateInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificateInput"></a>
 
 ```go
 func ClientCertificateInput() *string
@@ -589,7 +589,7 @@ func ClientCertificateInput() *string
 
 ---
 
-##### `ClientCertificatePasswordInput`<sup>Optional</sup> <a name="ClientCertificatePasswordInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePasswordInput"></a>
+##### `ClientCertificatePasswordInput`<sup>Optional</sup> <a name="ClientCertificatePasswordInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePasswordInput"></a>
 
 ```go
 func ClientCertificatePasswordInput() *string
@@ -599,7 +599,7 @@ func ClientCertificatePasswordInput() *string
 
 ---
 
-##### `ClientCertificatePathInput`<sup>Optional</sup> <a name="ClientCertificatePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePathInput"></a>
+##### `ClientCertificatePathInput`<sup>Optional</sup> <a name="ClientCertificatePathInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePathInput"></a>
 
 ```go
 func ClientCertificatePathInput() *string
@@ -609,7 +609,7 @@ func ClientCertificatePathInput() *string
 
 ---
 
-##### `ClientIdFilePathInput`<sup>Optional</sup> <a name="ClientIdFilePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput"></a>
+##### `ClientIdFilePathInput`<sup>Optional</sup> <a name="ClientIdFilePathInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdFilePathInput"></a>
 
 ```go
 func ClientIdFilePathInput() *string
@@ -619,7 +619,7 @@ func ClientIdFilePathInput() *string
 
 ---
 
-##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdInput"></a>
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdInput"></a>
 
 ```go
 func ClientIdInput() *string
@@ -629,7 +629,7 @@ func ClientIdInput() *string
 
 ---
 
-##### `ClientSecretFilePathInput`<sup>Optional</sup> <a name="ClientSecretFilePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput"></a>
+##### `ClientSecretFilePathInput`<sup>Optional</sup> <a name="ClientSecretFilePathInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretFilePathInput"></a>
 
 ```go
 func ClientSecretFilePathInput() *string
@@ -639,7 +639,7 @@ func ClientSecretFilePathInput() *string
 
 ---
 
-##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretInput"></a>
+##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretInput"></a>
 
 ```go
 func ClientSecretInput() *string
@@ -649,7 +649,7 @@ func ClientSecretInput() *string
 
 ---
 
-##### `DisableTerraformPartnerIdInput`<sup>Optional</sup> <a name="DisableTerraformPartnerIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput"></a>
+##### `DisableTerraformPartnerIdInput`<sup>Optional</sup> <a name="DisableTerraformPartnerIdInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerIdInput"></a>
 
 ```go
 func DisableTerraformPartnerIdInput() interface{}
@@ -659,7 +659,7 @@ func DisableTerraformPartnerIdInput() interface{}
 
 ---
 
-##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.environmentInput"></a>
+##### `EnvironmentInput`<sup>Optional</sup> <a name="EnvironmentInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.environmentInput"></a>
 
 ```go
 func EnvironmentInput() *string
@@ -669,7 +669,7 @@ func EnvironmentInput() *string
 
 ---
 
-##### `MetadataHostInput`<sup>Optional</sup> <a name="MetadataHostInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHostInput"></a>
+##### `MetadataHostInput`<sup>Optional</sup> <a name="MetadataHostInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.metadataHostInput"></a>
 
 ```go
 func MetadataHostInput() *string
@@ -679,7 +679,7 @@ func MetadataHostInput() *string
 
 ---
 
-##### `MsiEndpointInput`<sup>Optional</sup> <a name="MsiEndpointInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpointInput"></a>
+##### `MsiEndpointInput`<sup>Optional</sup> <a name="MsiEndpointInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.msiEndpointInput"></a>
 
 ```go
 func MsiEndpointInput() *string
@@ -689,7 +689,7 @@ func MsiEndpointInput() *string
 
 ---
 
-##### `OidcRequestTokenInput`<sup>Optional</sup> <a name="OidcRequestTokenInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestTokenInput"></a>
+##### `OidcRequestTokenInput`<sup>Optional</sup> <a name="OidcRequestTokenInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestTokenInput"></a>
 
 ```go
 func OidcRequestTokenInput() *string
@@ -699,7 +699,7 @@ func OidcRequestTokenInput() *string
 
 ---
 
-##### `OidcRequestUrlInput`<sup>Optional</sup> <a name="OidcRequestUrlInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrlInput"></a>
+##### `OidcRequestUrlInput`<sup>Optional</sup> <a name="OidcRequestUrlInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestUrlInput"></a>
 
 ```go
 func OidcRequestUrlInput() *string
@@ -709,7 +709,7 @@ func OidcRequestUrlInput() *string
 
 ---
 
-##### `OidcTokenFilePathInput`<sup>Optional</sup> <a name="OidcTokenFilePathInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePathInput"></a>
+##### `OidcTokenFilePathInput`<sup>Optional</sup> <a name="OidcTokenFilePathInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePathInput"></a>
 
 ```go
 func OidcTokenFilePathInput() *string
@@ -719,7 +719,7 @@ func OidcTokenFilePathInput() *string
 
 ---
 
-##### `OidcTokenInput`<sup>Optional</sup> <a name="OidcTokenInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenInput"></a>
+##### `OidcTokenInput`<sup>Optional</sup> <a name="OidcTokenInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenInput"></a>
 
 ```go
 func OidcTokenInput() *string
@@ -729,7 +729,7 @@ func OidcTokenInput() *string
 
 ---
 
-##### `PartnerIdInput`<sup>Optional</sup> <a name="PartnerIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.partnerIdInput"></a>
+##### `PartnerIdInput`<sup>Optional</sup> <a name="PartnerIdInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.partnerIdInput"></a>
 
 ```go
 func PartnerIdInput() *string
@@ -739,7 +739,7 @@ func PartnerIdInput() *string
 
 ---
 
-##### `TenantIdInput`<sup>Optional</sup> <a name="TenantIdInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.tenantIdInput"></a>
+##### `TenantIdInput`<sup>Optional</sup> <a name="TenantIdInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.tenantIdInput"></a>
 
 ```go
 func TenantIdInput() *string
@@ -749,7 +749,7 @@ func TenantIdInput() *string
 
 ---
 
-##### `UseAksWorkloadIdentityInput`<sup>Optional</sup> <a name="UseAksWorkloadIdentityInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput"></a>
+##### `UseAksWorkloadIdentityInput`<sup>Optional</sup> <a name="UseAksWorkloadIdentityInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentityInput"></a>
 
 ```go
 func UseAksWorkloadIdentityInput() interface{}
@@ -759,7 +759,7 @@ func UseAksWorkloadIdentityInput() interface{}
 
 ---
 
-##### `UseCliInput`<sup>Optional</sup> <a name="UseCliInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCliInput"></a>
+##### `UseCliInput`<sup>Optional</sup> <a name="UseCliInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useCliInput"></a>
 
 ```go
 func UseCliInput() interface{}
@@ -769,7 +769,7 @@ func UseCliInput() interface{}
 
 ---
 
-##### `UseMsiInput`<sup>Optional</sup> <a name="UseMsiInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsiInput"></a>
+##### `UseMsiInput`<sup>Optional</sup> <a name="UseMsiInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useMsiInput"></a>
 
 ```go
 func UseMsiInput() interface{}
@@ -779,7 +779,7 @@ func UseMsiInput() interface{}
 
 ---
 
-##### `UseOidcInput`<sup>Optional</sup> <a name="UseOidcInput" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidcInput"></a>
+##### `UseOidcInput`<sup>Optional</sup> <a name="UseOidcInput" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useOidcInput"></a>
 
 ```go
 func UseOidcInput() interface{}
@@ -789,7 +789,7 @@ func UseOidcInput() interface{}
 
 ---
 
-##### `AdoPipelineServiceConnectionId`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId"></a>
+##### `AdoPipelineServiceConnectionId`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.adoPipelineServiceConnectionId"></a>
 
 ```go
 func AdoPipelineServiceConnectionId() *string
@@ -799,7 +799,7 @@ func AdoPipelineServiceConnectionId() *string
 
 ---
 
-##### `ClientCertificate`<sup>Optional</sup> <a name="ClientCertificate" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificate"></a>
+##### `ClientCertificate`<sup>Optional</sup> <a name="ClientCertificate" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificate"></a>
 
 ```go
 func ClientCertificate() *string
@@ -809,7 +809,7 @@ func ClientCertificate() *string
 
 ---
 
-##### `ClientCertificatePassword`<sup>Optional</sup> <a name="ClientCertificatePassword" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword"></a>
+##### `ClientCertificatePassword`<sup>Optional</sup> <a name="ClientCertificatePassword" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePassword"></a>
 
 ```go
 func ClientCertificatePassword() *string
@@ -819,7 +819,7 @@ func ClientCertificatePassword() *string
 
 ---
 
-##### `ClientCertificatePath`<sup>Optional</sup> <a name="ClientCertificatePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientCertificatePath"></a>
+##### `ClientCertificatePath`<sup>Optional</sup> <a name="ClientCertificatePath" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientCertificatePath"></a>
 
 ```go
 func ClientCertificatePath() *string
@@ -829,7 +829,7 @@ func ClientCertificatePath() *string
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientId"></a>
 
 ```go
 func ClientId() *string
@@ -839,7 +839,7 @@ func ClientId() *string
 
 ---
 
-##### `ClientIdFilePath`<sup>Optional</sup> <a name="ClientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientIdFilePath"></a>
+##### `ClientIdFilePath`<sup>Optional</sup> <a name="ClientIdFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientIdFilePath"></a>
 
 ```go
 func ClientIdFilePath() *string
@@ -849,7 +849,7 @@ func ClientIdFilePath() *string
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecret"></a>
 
 ```go
 func ClientSecret() *string
@@ -859,7 +859,7 @@ func ClientSecret() *string
 
 ---
 
-##### `ClientSecretFilePath`<sup>Optional</sup> <a name="ClientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath"></a>
+##### `ClientSecretFilePath`<sup>Optional</sup> <a name="ClientSecretFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.property.clientSecretFilePath"></a>
 
 ```go
 func ClientSecretFilePath() *string
@@ -869,7 +869,7 @@ func ClientSecretFilePath() *string
 
 ---
 
-##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId"></a>
+##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.disableTerraformPartnerId"></a>
 
 ```go
 func DisableTerraformPartnerId() interface{}
@@ -879,7 +879,7 @@ func DisableTerraformPartnerId() interface{}
 
 ---
 
-##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktf/provider-azuread.provider.AzureadProvider.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktn/provider-azuread.provider.AzureadProvider.property.environment"></a>
 
 ```go
 func Environment() *string
@@ -889,7 +889,7 @@ func Environment() *string
 
 ---
 
-##### `MetadataHost`<sup>Optional</sup> <a name="MetadataHost" id="@cdktf/provider-azuread.provider.AzureadProvider.property.metadataHost"></a>
+##### `MetadataHost`<sup>Optional</sup> <a name="MetadataHost" id="@cdktn/provider-azuread.provider.AzureadProvider.property.metadataHost"></a>
 
 ```go
 func MetadataHost() *string
@@ -899,7 +899,7 @@ func MetadataHost() *string
 
 ---
 
-##### `MsiEndpoint`<sup>Optional</sup> <a name="MsiEndpoint" id="@cdktf/provider-azuread.provider.AzureadProvider.property.msiEndpoint"></a>
+##### `MsiEndpoint`<sup>Optional</sup> <a name="MsiEndpoint" id="@cdktn/provider-azuread.provider.AzureadProvider.property.msiEndpoint"></a>
 
 ```go
 func MsiEndpoint() *string
@@ -909,7 +909,7 @@ func MsiEndpoint() *string
 
 ---
 
-##### `OidcRequestToken`<sup>Optional</sup> <a name="OidcRequestToken" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestToken"></a>
+##### `OidcRequestToken`<sup>Optional</sup> <a name="OidcRequestToken" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestToken"></a>
 
 ```go
 func OidcRequestToken() *string
@@ -919,7 +919,7 @@ func OidcRequestToken() *string
 
 ---
 
-##### `OidcRequestUrl`<sup>Optional</sup> <a name="OidcRequestUrl" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcRequestUrl"></a>
+##### `OidcRequestUrl`<sup>Optional</sup> <a name="OidcRequestUrl" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcRequestUrl"></a>
 
 ```go
 func OidcRequestUrl() *string
@@ -929,7 +929,7 @@ func OidcRequestUrl() *string
 
 ---
 
-##### `OidcToken`<sup>Optional</sup> <a name="OidcToken" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcToken"></a>
+##### `OidcToken`<sup>Optional</sup> <a name="OidcToken" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcToken"></a>
 
 ```go
 func OidcToken() *string
@@ -939,7 +939,7 @@ func OidcToken() *string
 
 ---
 
-##### `OidcTokenFilePath`<sup>Optional</sup> <a name="OidcTokenFilePath" id="@cdktf/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath"></a>
+##### `OidcTokenFilePath`<sup>Optional</sup> <a name="OidcTokenFilePath" id="@cdktn/provider-azuread.provider.AzureadProvider.property.oidcTokenFilePath"></a>
 
 ```go
 func OidcTokenFilePath() *string
@@ -949,7 +949,7 @@ func OidcTokenFilePath() *string
 
 ---
 
-##### `PartnerId`<sup>Optional</sup> <a name="PartnerId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.partnerId"></a>
+##### `PartnerId`<sup>Optional</sup> <a name="PartnerId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.partnerId"></a>
 
 ```go
 func PartnerId() *string
@@ -959,7 +959,7 @@ func PartnerId() *string
 
 ---
 
-##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktf/provider-azuread.provider.AzureadProvider.property.tenantId"></a>
+##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktn/provider-azuread.provider.AzureadProvider.property.tenantId"></a>
 
 ```go
 func TenantId() *string
@@ -969,7 +969,7 @@ func TenantId() *string
 
 ---
 
-##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity"></a>
+##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useAksWorkloadIdentity"></a>
 
 ```go
 func UseAksWorkloadIdentity() interface{}
@@ -979,7 +979,7 @@ func UseAksWorkloadIdentity() interface{}
 
 ---
 
-##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useCli"></a>
+##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useCli"></a>
 
 ```go
 func UseCli() interface{}
@@ -989,7 +989,7 @@ func UseCli() interface{}
 
 ---
 
-##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useMsi"></a>
+##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useMsi"></a>
 
 ```go
 func UseMsi() interface{}
@@ -999,7 +999,7 @@ func UseMsi() interface{}
 
 ---
 
-##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktf/provider-azuread.provider.AzureadProvider.property.useOidc"></a>
+##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktn/provider-azuread.provider.AzureadProvider.property.useOidc"></a>
 
 ```go
 func UseOidc() interface{}
@@ -1013,11 +1013,11 @@ func UseOidc() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azuread.provider.AzureadProvider.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azuread.provider.AzureadProvider.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1029,12 +1029,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AzureadProviderConfig <a name="AzureadProviderConfig" id="@cdktf/provider-azuread.provider.AzureadProviderConfig"></a>
+### AzureadProviderConfig <a name="AzureadProviderConfig" id="@cdktn/provider-azuread.provider.AzureadProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/provider"
 
 &provider.AzureadProviderConfig {
 	AdoPipelineServiceConnectionId: *string,
@@ -1067,33 +1067,33 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.adoPipelineServiceConnectionId">AdoPipelineServiceConnectionId</a></code> | <code>*string</code> | The Azure DevOps Pipeline Service Connection ID. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificate">ClientCertificate</a></code> | <code>*string</code> | Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>*string</code> | The password to decrypt the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>*string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The Client ID which should be used for service principal authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>*string</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>*string</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>interface{}</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment">Environment</a></code> | <code>*string</code> | The cloud environment which should be used. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">MetadataHost</a></code> | <code>*string</code> | The Hostname which should be used for the Azure Metadata Service. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">MsiEndpoint</a></code> | <code>*string</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestToken">OidcRequestToken</a></code> | <code>*string</code> | The bearer token for the request to the OIDC provider. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestUrl">OidcRequestUrl</a></code> | <code>*string</code> | The URL for the OIDC provider from which to request an ID token. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcToken">OidcToken</a></code> | <code>*string</code> | The ID token for use when authenticating as a Service Principal using OpenID Connect. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>*string</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.partnerId">PartnerId</a></code> | <code>*string</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>interface{}</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli">UseCli</a></code> | <code>interface{}</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi">UseMsi</a></code> | <code>interface{}</code> | Allow Managed Identity to be used for Authentication. |
-| <code><a href="#@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc">UseOidc</a></code> | <code>interface{}</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.adoPipelineServiceConnectionId">AdoPipelineServiceConnectionId</a></code> | <code>*string</code> | The Azure DevOps Pipeline Service Connection ID. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificate">ClientCertificate</a></code> | <code>*string</code> | Base64 encoded PKCS#12 certificate bundle to use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePassword">ClientCertificatePassword</a></code> | <code>*string</code> | The password to decrypt the Client Certificate. For use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePath">ClientCertificatePath</a></code> | <code>*string</code> | The path to the Client Certificate associated with the Service Principal for use when authenticating as a Service Principal using a Client Certificate. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | The Client ID which should be used for service principal authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath">ClientIdFilePath</a></code> | <code>*string</code> | The path to a file containing the Client ID which should be used for service principal authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The application password to use when authenticating as a Service Principal using a Client Secret. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath">ClientSecretFilePath</a></code> | <code>*string</code> | The path to a file containing the application password to use when authenticating as a Service Principal using a Client Secret. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId">DisableTerraformPartnerId</a></code> | <code>interface{}</code> | Disable the Terraform Partner ID, which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.environment">Environment</a></code> | <code>*string</code> | The cloud environment which should be used. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.metadataHost">MetadataHost</a></code> | <code>*string</code> | The Hostname which should be used for the Azure Metadata Service. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint">MsiEndpoint</a></code> | <code>*string</code> | The path to a custom endpoint for Managed Identity - in most circumstances this should be detected automatically. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestToken">OidcRequestToken</a></code> | <code>*string</code> | The bearer token for the request to the OIDC provider. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestUrl">OidcRequestUrl</a></code> | <code>*string</code> | The URL for the OIDC provider from which to request an ID token. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcToken">OidcToken</a></code> | <code>*string</code> | The ID token for use when authenticating as a Service Principal using OpenID Connect. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath">OidcTokenFilePath</a></code> | <code>*string</code> | The path to a file containing an ID token for use when authenticating as a Service Principal using OpenID Connect. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.partnerId">PartnerId</a></code> | <code>*string</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | The Tenant ID which should be used. Works with all authentication methods except Managed Identity. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity">UseAksWorkloadIdentity</a></code> | <code>interface{}</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useCli">UseCli</a></code> | <code>interface{}</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useMsi">UseMsi</a></code> | <code>interface{}</code> | Allow Managed Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useOidc">UseOidc</a></code> | <code>interface{}</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
-##### `AdoPipelineServiceConnectionId`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.adoPipelineServiceConnectionId"></a>
+##### `AdoPipelineServiceConnectionId`<sup>Optional</sup> <a name="AdoPipelineServiceConnectionId" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.adoPipelineServiceConnectionId"></a>
 
 ```go
 AdoPipelineServiceConnectionId *string
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.alias"></a>
 
 ```go
 Alias *string
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientCertificate`<sup>Optional</sup> <a name="ClientCertificate" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificate"></a>
+##### `ClientCertificate`<sup>Optional</sup> <a name="ClientCertificate" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificate"></a>
 
 ```go
 ClientCertificate *string
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientCertificatePassword`<sup>Optional</sup> <a name="ClientCertificatePassword" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePassword"></a>
+##### `ClientCertificatePassword`<sup>Optional</sup> <a name="ClientCertificatePassword" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePassword"></a>
 
 ```go
 ClientCertificatePassword *string
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientCertificatePath`<sup>Optional</sup> <a name="ClientCertificatePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePath"></a>
+##### `ClientCertificatePath`<sup>Optional</sup> <a name="ClientCertificatePath" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientCertificatePath"></a>
 
 ```go
 ClientCertificatePath *string
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientId"></a>
 
 ```go
 ClientId *string
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientIdFilePath`<sup>Optional</sup> <a name="ClientIdFilePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath"></a>
+##### `ClientIdFilePath`<sup>Optional</sup> <a name="ClientIdFilePath" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientIdFilePath"></a>
 
 ```go
 ClientIdFilePath *string
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientSecret"></a>
 
 ```go
 ClientSecret *string
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ClientSecretFilePath`<sup>Optional</sup> <a name="ClientSecretFilePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath"></a>
+##### `ClientSecretFilePath`<sup>Optional</sup> <a name="ClientSecretFilePath" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.clientSecretFilePath"></a>
 
 ```go
 ClientSecretFilePath *string
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId"></a>
+##### `DisableTerraformPartnerId`<sup>Optional</sup> <a name="DisableTerraformPartnerId" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.disableTerraformPartnerId"></a>
 
 ```go
 DisableTerraformPartnerId interface{}
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.environment"></a>
+##### `Environment`<sup>Optional</sup> <a name="Environment" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.environment"></a>
 
 ```go
 Environment *string
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `MetadataHost`<sup>Optional</sup> <a name="MetadataHost" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.metadataHost"></a>
+##### `MetadataHost`<sup>Optional</sup> <a name="MetadataHost" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.metadataHost"></a>
 
 ```go
 MetadataHost *string
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `MsiEndpoint`<sup>Optional</sup> <a name="MsiEndpoint" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint"></a>
+##### `MsiEndpoint`<sup>Optional</sup> <a name="MsiEndpoint" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.msiEndpoint"></a>
 
 ```go
 MsiEndpoint *string
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OidcRequestToken`<sup>Optional</sup> <a name="OidcRequestToken" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestToken"></a>
+##### `OidcRequestToken`<sup>Optional</sup> <a name="OidcRequestToken" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestToken"></a>
 
 ```go
 OidcRequestToken *string
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OidcRequestUrl`<sup>Optional</sup> <a name="OidcRequestUrl" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestUrl"></a>
+##### `OidcRequestUrl`<sup>Optional</sup> <a name="OidcRequestUrl" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcRequestUrl"></a>
 
 ```go
 OidcRequestUrl *string
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OidcToken`<sup>Optional</sup> <a name="OidcToken" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcToken"></a>
+##### `OidcToken`<sup>Optional</sup> <a name="OidcToken" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcToken"></a>
 
 ```go
 OidcToken *string
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OidcTokenFilePath`<sup>Optional</sup> <a name="OidcTokenFilePath" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath"></a>
+##### `OidcTokenFilePath`<sup>Optional</sup> <a name="OidcTokenFilePath" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.oidcTokenFilePath"></a>
 
 ```go
 OidcTokenFilePath *string
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PartnerId`<sup>Optional</sup> <a name="PartnerId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.partnerId"></a>
+##### `PartnerId`<sup>Optional</sup> <a name="PartnerId" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.partnerId"></a>
 
 ```go
 PartnerId *string
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.tenantId"></a>
+##### `TenantId`<sup>Optional</sup> <a name="TenantId" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.tenantId"></a>
 
 ```go
 TenantId *string
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity"></a>
+##### `UseAksWorkloadIdentity`<sup>Optional</sup> <a name="UseAksWorkloadIdentity" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useAksWorkloadIdentity"></a>
 
 ```go
 UseAksWorkloadIdentity interface{}
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useCli"></a>
+##### `UseCli`<sup>Optional</sup> <a name="UseCli" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useCli"></a>
 
 ```go
 UseCli interface{}
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useMsi"></a>
+##### `UseMsi`<sup>Optional</sup> <a name="UseMsi" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useMsi"></a>
 
 ```go
 UseMsi interface{}
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktf/provider-azuread.provider.AzureadProviderConfig.property.useOidc"></a>
+##### `UseOidc`<sup>Optional</sup> <a name="UseOidc" id="@cdktn/provider-azuread.provider.AzureadProviderConfig.property.useOidc"></a>
 
 ```go
 UseOidc interface{}

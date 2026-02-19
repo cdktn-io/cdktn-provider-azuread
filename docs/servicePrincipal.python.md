@@ -1,15 +1,15 @@
-# `servicePrincipal` Submodule <a name="`servicePrincipal` Submodule" id="@cdktf/provider-azuread.servicePrincipal"></a>
+# `servicePrincipal` Submodule <a name="`servicePrincipal` Submodule" id="@cdktn/provider-azuread.servicePrincipal"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ServicePrincipal <a name="ServicePrincipal" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal"></a>
+### ServicePrincipal <a name="ServicePrincipal" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal azuread_service_principal}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipal(
   scope: Construct,
@@ -43,36 +43,36 @@ servicePrincipal.ServicePrincipal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | The client ID of the application for which to create a service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the service principal account is enabled. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the service principal provided for internal end-users. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.features">features</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | features block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.featureTags">feature_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | feature_tags block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#id ServicePrincipal#id}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.loginUrl">login_url</a></code> | <code>str</code> | The URL where the service provider redirects the user to Azure AD to authenticate. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notes">notes</a></code> | <code>str</code> | Free text field to capture information about the service principal, typically used for operational purposes. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | The single sign-on mode configured for this application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | saml_single_sign_on block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A set of tags to apply to the service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.useExisting">use_existing</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, the resource will return an existing service principal instead of failing with an error. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | The client ID of the application for which to create a service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the service principal account is enabled. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the service principal provided for internal end-users. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.features">features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | features block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.featureTags">feature_tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | feature_tags block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#id ServicePrincipal#id}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.loginUrl">login_url</a></code> | <code>str</code> | The URL where the service provider redirects the user to Azure AD to authenticate. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notes">notes</a></code> | <code>str</code> | Free text field to capture information about the service principal, typically used for operational purposes. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | The single sign-on mode configured for this application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | saml_single_sign_on block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A set of tags to apply to the service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.useExisting">use_existing</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the resource will return an existing service principal instead of failing with an error. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -80,7 +80,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -90,49 +90,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.clientId"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.clientId"></a>
 
 - *Type:* str
 
@@ -142,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.accountEnabled"></a>
+##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.accountEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the service principal account is enabled.
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `alternative_names`<sup>Optional</sup> <a name="alternative_names" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.alternativeNames"></a>
+##### `alternative_names`<sup>Optional</sup> <a name="alternative_names" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.alternativeNames"></a>
 
 - *Type:* typing.List[str]
 
@@ -162,9 +162,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `app_role_assignment_required`<sup>Optional</sup> <a name="app_role_assignment_required" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.appRoleAssignmentRequired"></a>
+##### `app_role_assignment_required`<sup>Optional</sup> <a name="app_role_assignment_required" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.appRoleAssignmentRequired"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application.
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -182,9 +182,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.features"></a>
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.features"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
 
 features block.
 
@@ -192,9 +192,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.featureTags"></a>
+##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.featureTags"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
 
 feature_tags block.
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -213,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `login_url`<sup>Optional</sup> <a name="login_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.loginUrl"></a>
+##### `login_url`<sup>Optional</sup> <a name="login_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.loginUrl"></a>
 
 - *Type:* str
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notes"></a>
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notes"></a>
 
 - *Type:* str
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notification_email_addresses`<sup>Optional</sup> <a name="notification_email_addresses" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notificationEmailAddresses"></a>
+##### `notification_email_addresses`<sup>Optional</sup> <a name="notification_email_addresses" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.notificationEmailAddresses"></a>
 
 - *Type:* typing.List[str]
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.owners"></a>
+##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.owners"></a>
 
 - *Type:* typing.List[str]
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `preferred_single_sign_on_mode`<sup>Optional</sup> <a name="preferred_single_sign_on_mode" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.preferredSingleSignOnMode"></a>
+##### `preferred_single_sign_on_mode`<sup>Optional</sup> <a name="preferred_single_sign_on_mode" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.preferredSingleSignOnMode"></a>
 
 - *Type:* str
 
@@ -269,9 +269,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `saml_single_sign_on`<sup>Optional</sup> <a name="saml_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.samlSingleSignOn"></a>
+##### `saml_single_sign_on`<sup>Optional</sup> <a name="saml_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.samlSingleSignOn"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
 
 saml_single_sign_on block.
 
@@ -279,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.tags"></a>
 
 - *Type:* typing.List[str]
 
@@ -289,9 +289,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
 
 timeouts block.
 
@@ -299,9 +299,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `use_existing`<sup>Optional</sup> <a name="use_existing" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.useExisting"></a>
+##### `use_existing`<sup>Optional</sup> <a name="use_existing" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.Initializer.parameter.useExisting"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the resource will return an existing service principal instead of failing with an error.
 
@@ -313,53 +313,53 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures">put_features</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags">put_feature_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn">put_saml_single_sign_on</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAccountEnabled">reset_account_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAlternativeNames">reset_alternative_names</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired">reset_app_role_assignment_required</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatures">reset_features</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatureTags">reset_feature_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetLoginUrl">reset_login_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetNotes">reset_notes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetNotificationEmailAddresses">reset_notification_email_addresses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetOwners">reset_owners</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetPreferredSingleSignOnMode">reset_preferred_single_sign_on_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetSamlSingleSignOn">reset_saml_single_sign_on</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetUseExisting">reset_use_existing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures">put_features</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags">put_feature_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn">put_saml_single_sign_on</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAccountEnabled">reset_account_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAlternativeNames">reset_alternative_names</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired">reset_app_role_assignment_required</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatures">reset_features</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatureTags">reset_feature_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetLoginUrl">reset_login_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetNotes">reset_notes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetNotificationEmailAddresses">reset_notification_email_addresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetOwners">reset_owners</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetPreferredSingleSignOnMode">reset_preferred_single_sign_on_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetSamlSingleSignOn">reset_saml_single_sign_on</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetUseExisting">reset_use_existing</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toString"></a>
 
 ```python
 def to_string() -> str
@@ -367,7 +367,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addOverride"></a>
 
 ```python
 def add_override(
@@ -376,19 +376,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -398,7 +398,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -406,7 +406,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -414,19 +414,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -434,7 +434,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -444,7 +444,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -452,7 +452,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -460,13 +460,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -474,13 +474,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -488,13 +488,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -502,13 +502,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -516,13 +516,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -530,13 +530,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -544,13 +544,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -558,13 +558,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -572,19 +572,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.importFrom"></a>
 
 ```python
 def import_from(
@@ -593,19 +593,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -613,13 +613,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -631,7 +631,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -639,7 +639,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveTo"></a>
 
 ```python
 def move_to(
@@ -650,7 +650,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -658,7 +658,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -666,7 +666,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -676,7 +676,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -684,7 +684,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_features` <a name="put_features" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures"></a>
+##### `put_features` <a name="put_features" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures"></a>
 
 ```python
 def put_features(
@@ -692,13 +692,13 @@ def put_features(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatures.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
 
 ---
 
-##### `put_feature_tags` <a name="put_feature_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags"></a>
+##### `put_feature_tags` <a name="put_feature_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags"></a>
 
 ```python
 def put_feature_tags(
@@ -706,13 +706,13 @@ def put_feature_tags(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putFeatureTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
 
 ---
 
-##### `put_saml_single_sign_on` <a name="put_saml_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn"></a>
+##### `put_saml_single_sign_on` <a name="put_saml_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn"></a>
 
 ```python
 def put_saml_single_sign_on(
@@ -720,7 +720,7 @@ def put_saml_single_sign_on(
 ) -> None
 ```
 
-###### `relay_state`<sup>Optional</sup> <a name="relay_state" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn.parameter.relayState"></a>
+###### `relay_state`<sup>Optional</sup> <a name="relay_state" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putSamlSingleSignOn.parameter.relayState"></a>
 
 - *Type:* str
 
@@ -730,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -741,7 +741,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -749,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -757,7 +757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -765,7 +765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -773,97 +773,97 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_account_enabled` <a name="reset_account_enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAccountEnabled"></a>
+##### `reset_account_enabled` <a name="reset_account_enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAccountEnabled"></a>
 
 ```python
 def reset_account_enabled() -> None
 ```
 
-##### `reset_alternative_names` <a name="reset_alternative_names" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAlternativeNames"></a>
+##### `reset_alternative_names` <a name="reset_alternative_names" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAlternativeNames"></a>
 
 ```python
 def reset_alternative_names() -> None
 ```
 
-##### `reset_app_role_assignment_required` <a name="reset_app_role_assignment_required" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired"></a>
+##### `reset_app_role_assignment_required` <a name="reset_app_role_assignment_required" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetAppRoleAssignmentRequired"></a>
 
 ```python
 def reset_app_role_assignment_required() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_features` <a name="reset_features" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatures"></a>
+##### `reset_features` <a name="reset_features" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatures"></a>
 
 ```python
 def reset_features() -> None
 ```
 
-##### `reset_feature_tags` <a name="reset_feature_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatureTags"></a>
+##### `reset_feature_tags` <a name="reset_feature_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetFeatureTags"></a>
 
 ```python
 def reset_feature_tags() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_login_url` <a name="reset_login_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetLoginUrl"></a>
+##### `reset_login_url` <a name="reset_login_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetLoginUrl"></a>
 
 ```python
 def reset_login_url() -> None
 ```
 
-##### `reset_notes` <a name="reset_notes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetNotes"></a>
+##### `reset_notes` <a name="reset_notes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetNotes"></a>
 
 ```python
 def reset_notes() -> None
 ```
 
-##### `reset_notification_email_addresses` <a name="reset_notification_email_addresses" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetNotificationEmailAddresses"></a>
+##### `reset_notification_email_addresses` <a name="reset_notification_email_addresses" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetNotificationEmailAddresses"></a>
 
 ```python
 def reset_notification_email_addresses() -> None
 ```
 
-##### `reset_owners` <a name="reset_owners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetOwners"></a>
+##### `reset_owners` <a name="reset_owners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetOwners"></a>
 
 ```python
 def reset_owners() -> None
 ```
 
-##### `reset_preferred_single_sign_on_mode` <a name="reset_preferred_single_sign_on_mode" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetPreferredSingleSignOnMode"></a>
+##### `reset_preferred_single_sign_on_mode` <a name="reset_preferred_single_sign_on_mode" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetPreferredSingleSignOnMode"></a>
 
 ```python
 def reset_preferred_single_sign_on_mode() -> None
 ```
 
-##### `reset_saml_single_sign_on` <a name="reset_saml_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetSamlSingleSignOn"></a>
+##### `reset_saml_single_sign_on` <a name="reset_saml_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetSamlSingleSignOn"></a>
 
 ```python
 def reset_saml_single_sign_on() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_use_existing` <a name="reset_use_existing" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.resetUseExisting"></a>
+##### `reset_use_existing` <a name="reset_use_existing" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.resetUseExisting"></a>
 
 ```python
 def reset_use_existing() -> None
@@ -873,17 +873,17 @@ def reset_use_existing() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ServicePrincipal resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ServicePrincipal resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipal.is_construct(
   x: typing.Any
@@ -906,7 +906,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -914,42 +914,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipal.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipal.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipal.generate_config_for_import(
   scope: Construct,
@@ -959,9 +959,9 @@ servicePrincipal.ServicePrincipal.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ServicePrincipal resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ServicePrincipal resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -969,7 +969,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -977,7 +977,7 @@ The construct id used in the generated config for the ServicePrincipal to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -987,9 +987,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ServicePrincipal to import is found.
 
@@ -999,72 +999,72 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationTenantId">application_tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleIds">app_role_ids</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoles">app_roles</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList">ServicePrincipalAppRolesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.features">features</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList">ServicePrincipalFeaturesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTags">feature_tags</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList">ServicePrincipalFeatureTagsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.homepageUrl">homepage_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.logoutUrl">logout_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopeIds">oauth2_permission_scope_ids</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopes">oauth2_permission_scopes</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList">ServicePrincipalOauth2PermissionScopesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.redirectUris">redirect_uris</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlMetadataUrl">saml_metadata_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference">ServicePrincipalSamlSingleSignOnOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.servicePrincipalNames">service_principal_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference">ServicePrincipalTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabledInput">account_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNamesInput">alternative_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequiredInput">app_role_assignment_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featuresInput">features_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTagsInput">feature_tags_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrlInput">login_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddressesInput">notification_email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnModeInput">preferred_single_sign_on_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOnInput">saml_single_sign_on_input</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.useExistingInput">use_existing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrl">login_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notes">notes</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.useExisting">use_existing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationTenantId">application_tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleIds">app_role_ids</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoles">app_roles</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList">ServicePrincipalAppRolesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.features">features</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList">ServicePrincipalFeaturesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTags">feature_tags</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList">ServicePrincipalFeatureTagsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.homepageUrl">homepage_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.logoutUrl">logout_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopeIds">oauth2_permission_scope_ids</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopes">oauth2_permission_scopes</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList">ServicePrincipalOauth2PermissionScopesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.redirectUris">redirect_uris</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlMetadataUrl">saml_metadata_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference">ServicePrincipalSamlSingleSignOnOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.servicePrincipalNames">service_principal_names</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference">ServicePrincipalTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabledInput">account_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNamesInput">alternative_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequiredInput">app_role_assignment_required_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featuresInput">features_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTagsInput">feature_tags_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrlInput">login_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddressesInput">notification_email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.ownersInput">owners_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnModeInput">preferred_single_sign_on_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOnInput">saml_single_sign_on_input</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.useExistingInput">use_existing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrl">login_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notes">notes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.owners">owners</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.useExisting">use_existing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.node"></a>
 
 ```python
 node: Node
@@ -1076,17 +1076,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1096,7 +1096,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1106,7 +1106,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1116,7 +1116,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1126,37 +1126,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1166,47 +1166,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `application_tenant_id`<sup>Required</sup> <a name="application_tenant_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationTenantId"></a>
+##### `application_tenant_id`<sup>Required</sup> <a name="application_tenant_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.applicationTenantId"></a>
 
 ```python
 application_tenant_id: str
@@ -1216,27 +1216,27 @@ application_tenant_id: str
 
 ---
 
-##### `app_role_ids`<sup>Required</sup> <a name="app_role_ids" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleIds"></a>
+##### `app_role_ids`<sup>Required</sup> <a name="app_role_ids" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleIds"></a>
 
 ```python
 app_role_ids: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
-##### `app_roles`<sup>Required</sup> <a name="app_roles" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoles"></a>
+##### `app_roles`<sup>Required</sup> <a name="app_roles" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoles"></a>
 
 ```python
 app_roles: ServicePrincipalAppRolesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList">ServicePrincipalAppRolesList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList">ServicePrincipalAppRolesList</a>
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1246,27 +1246,27 @@ display_name: str
 
 ---
 
-##### `features`<sup>Required</sup> <a name="features" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.features"></a>
+##### `features`<sup>Required</sup> <a name="features" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.features"></a>
 
 ```python
 features: ServicePrincipalFeaturesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList">ServicePrincipalFeaturesList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList">ServicePrincipalFeaturesList</a>
 
 ---
 
-##### `feature_tags`<sup>Required</sup> <a name="feature_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTags"></a>
+##### `feature_tags`<sup>Required</sup> <a name="feature_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTags"></a>
 
 ```python
 feature_tags: ServicePrincipalFeatureTagsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList">ServicePrincipalFeatureTagsList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList">ServicePrincipalFeatureTagsList</a>
 
 ---
 
-##### `homepage_url`<sup>Required</sup> <a name="homepage_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.homepageUrl"></a>
+##### `homepage_url`<sup>Required</sup> <a name="homepage_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.homepageUrl"></a>
 
 ```python
 homepage_url: str
@@ -1276,7 +1276,7 @@ homepage_url: str
 
 ---
 
-##### `logout_url`<sup>Required</sup> <a name="logout_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.logoutUrl"></a>
+##### `logout_url`<sup>Required</sup> <a name="logout_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.logoutUrl"></a>
 
 ```python
 logout_url: str
@@ -1286,27 +1286,27 @@ logout_url: str
 
 ---
 
-##### `oauth2_permission_scope_ids`<sup>Required</sup> <a name="oauth2_permission_scope_ids" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopeIds"></a>
+##### `oauth2_permission_scope_ids`<sup>Required</sup> <a name="oauth2_permission_scope_ids" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopeIds"></a>
 
 ```python
 oauth2_permission_scope_ids: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
-##### `oauth2_permission_scopes`<sup>Required</sup> <a name="oauth2_permission_scopes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopes"></a>
+##### `oauth2_permission_scopes`<sup>Required</sup> <a name="oauth2_permission_scopes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.oauth2PermissionScopes"></a>
 
 ```python
 oauth2_permission_scopes: ServicePrincipalOauth2PermissionScopesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList">ServicePrincipalOauth2PermissionScopesList</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList">ServicePrincipalOauth2PermissionScopesList</a>
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1316,7 +1316,7 @@ object_id: str
 
 ---
 
-##### `redirect_uris`<sup>Required</sup> <a name="redirect_uris" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.redirectUris"></a>
+##### `redirect_uris`<sup>Required</sup> <a name="redirect_uris" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.redirectUris"></a>
 
 ```python
 redirect_uris: typing.List[str]
@@ -1326,7 +1326,7 @@ redirect_uris: typing.List[str]
 
 ---
 
-##### `saml_metadata_url`<sup>Required</sup> <a name="saml_metadata_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlMetadataUrl"></a>
+##### `saml_metadata_url`<sup>Required</sup> <a name="saml_metadata_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlMetadataUrl"></a>
 
 ```python
 saml_metadata_url: str
@@ -1336,17 +1336,17 @@ saml_metadata_url: str
 
 ---
 
-##### `saml_single_sign_on`<sup>Required</sup> <a name="saml_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOn"></a>
+##### `saml_single_sign_on`<sup>Required</sup> <a name="saml_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOn"></a>
 
 ```python
 saml_single_sign_on: ServicePrincipalSamlSingleSignOnOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference">ServicePrincipalSamlSingleSignOnOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference">ServicePrincipalSamlSingleSignOnOutputReference</a>
 
 ---
 
-##### `service_principal_names`<sup>Required</sup> <a name="service_principal_names" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.servicePrincipalNames"></a>
+##### `service_principal_names`<sup>Required</sup> <a name="service_principal_names" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.servicePrincipalNames"></a>
 
 ```python
 service_principal_names: typing.List[str]
@@ -1356,7 +1356,7 @@ service_principal_names: typing.List[str]
 
 ---
 
-##### `sign_in_audience`<sup>Required</sup> <a name="sign_in_audience" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.signInAudience"></a>
+##### `sign_in_audience`<sup>Required</sup> <a name="sign_in_audience" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.signInAudience"></a>
 
 ```python
 sign_in_audience: str
@@ -1366,17 +1366,17 @@ sign_in_audience: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.timeouts"></a>
 
 ```python
 timeouts: ServicePrincipalTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference">ServicePrincipalTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference">ServicePrincipalTimeoutsOutputReference</a>
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.type"></a>
 
 ```python
 type: str
@@ -1386,17 +1386,17 @@ type: str
 
 ---
 
-##### `account_enabled_input`<sup>Optional</sup> <a name="account_enabled_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabledInput"></a>
+##### `account_enabled_input`<sup>Optional</sup> <a name="account_enabled_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabledInput"></a>
 
 ```python
 account_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `alternative_names_input`<sup>Optional</sup> <a name="alternative_names_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNamesInput"></a>
+##### `alternative_names_input`<sup>Optional</sup> <a name="alternative_names_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNamesInput"></a>
 
 ```python
 alternative_names_input: typing.List[str]
@@ -1406,17 +1406,17 @@ alternative_names_input: typing.List[str]
 
 ---
 
-##### `app_role_assignment_required_input`<sup>Optional</sup> <a name="app_role_assignment_required_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequiredInput"></a>
+##### `app_role_assignment_required_input`<sup>Optional</sup> <a name="app_role_assignment_required_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequiredInput"></a>
 
 ```python
 app_role_assignment_required_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput"></a>
+##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.clientIdInput"></a>
 
 ```python
 client_id_input: str
@@ -1426,7 +1426,7 @@ client_id_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1436,27 +1436,27 @@ description_input: str
 
 ---
 
-##### `features_input`<sup>Optional</sup> <a name="features_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featuresInput"></a>
+##### `features_input`<sup>Optional</sup> <a name="features_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featuresInput"></a>
 
 ```python
 features_input: IResolvable | typing.List[ServicePrincipalFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
 
 ---
 
-##### `feature_tags_input`<sup>Optional</sup> <a name="feature_tags_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTagsInput"></a>
+##### `feature_tags_input`<sup>Optional</sup> <a name="feature_tags_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.featureTagsInput"></a>
 
 ```python
 feature_tags_input: IResolvable | typing.List[ServicePrincipalFeatureTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1466,7 +1466,7 @@ id_input: str
 
 ---
 
-##### `login_url_input`<sup>Optional</sup> <a name="login_url_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrlInput"></a>
+##### `login_url_input`<sup>Optional</sup> <a name="login_url_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrlInput"></a>
 
 ```python
 login_url_input: str
@@ -1476,7 +1476,7 @@ login_url_input: str
 
 ---
 
-##### `notes_input`<sup>Optional</sup> <a name="notes_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notesInput"></a>
+##### `notes_input`<sup>Optional</sup> <a name="notes_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notesInput"></a>
 
 ```python
 notes_input: str
@@ -1486,7 +1486,7 @@ notes_input: str
 
 ---
 
-##### `notification_email_addresses_input`<sup>Optional</sup> <a name="notification_email_addresses_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddressesInput"></a>
+##### `notification_email_addresses_input`<sup>Optional</sup> <a name="notification_email_addresses_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddressesInput"></a>
 
 ```python
 notification_email_addresses_input: typing.List[str]
@@ -1496,7 +1496,7 @@ notification_email_addresses_input: typing.List[str]
 
 ---
 
-##### `owners_input`<sup>Optional</sup> <a name="owners_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.ownersInput"></a>
+##### `owners_input`<sup>Optional</sup> <a name="owners_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.ownersInput"></a>
 
 ```python
 owners_input: typing.List[str]
@@ -1506,7 +1506,7 @@ owners_input: typing.List[str]
 
 ---
 
-##### `preferred_single_sign_on_mode_input`<sup>Optional</sup> <a name="preferred_single_sign_on_mode_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnModeInput"></a>
+##### `preferred_single_sign_on_mode_input`<sup>Optional</sup> <a name="preferred_single_sign_on_mode_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnModeInput"></a>
 
 ```python
 preferred_single_sign_on_mode_input: str
@@ -1516,17 +1516,17 @@ preferred_single_sign_on_mode_input: str
 
 ---
 
-##### `saml_single_sign_on_input`<sup>Optional</sup> <a name="saml_single_sign_on_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOnInput"></a>
+##### `saml_single_sign_on_input`<sup>Optional</sup> <a name="saml_single_sign_on_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.samlSingleSignOnInput"></a>
 
 ```python
 saml_single_sign_on_input: ServicePrincipalSamlSingleSignOn
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tagsInput"></a>
 
 ```python
 tags_input: typing.List[str]
@@ -1536,37 +1536,37 @@ tags_input: typing.List[str]
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ServicePrincipalTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
 
 ---
 
-##### `use_existing_input`<sup>Optional</sup> <a name="use_existing_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.useExistingInput"></a>
+##### `use_existing_input`<sup>Optional</sup> <a name="use_existing_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.useExistingInput"></a>
 
 ```python
 use_existing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `account_enabled`<sup>Required</sup> <a name="account_enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabled"></a>
+##### `account_enabled`<sup>Required</sup> <a name="account_enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.accountEnabled"></a>
 
 ```python
 account_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `alternative_names`<sup>Required</sup> <a name="alternative_names" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNames"></a>
+##### `alternative_names`<sup>Required</sup> <a name="alternative_names" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.alternativeNames"></a>
 
 ```python
 alternative_names: typing.List[str]
@@ -1576,17 +1576,17 @@ alternative_names: typing.List[str]
 
 ---
 
-##### `app_role_assignment_required`<sup>Required</sup> <a name="app_role_assignment_required" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequired"></a>
+##### `app_role_assignment_required`<sup>Required</sup> <a name="app_role_assignment_required" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.appRoleAssignmentRequired"></a>
 
 ```python
 app_role_assignment_required: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.clientId"></a>
 
 ```python
 client_id: str
@@ -1596,7 +1596,7 @@ client_id: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.description"></a>
 
 ```python
 description: str
@@ -1606,7 +1606,7 @@ description: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.id"></a>
 
 ```python
 id: str
@@ -1616,7 +1616,7 @@ id: str
 
 ---
 
-##### `login_url`<sup>Required</sup> <a name="login_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrl"></a>
+##### `login_url`<sup>Required</sup> <a name="login_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.loginUrl"></a>
 
 ```python
 login_url: str
@@ -1626,7 +1626,7 @@ login_url: str
 
 ---
 
-##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notes"></a>
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notes"></a>
 
 ```python
 notes: str
@@ -1636,7 +1636,7 @@ notes: str
 
 ---
 
-##### `notification_email_addresses`<sup>Required</sup> <a name="notification_email_addresses" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddresses"></a>
+##### `notification_email_addresses`<sup>Required</sup> <a name="notification_email_addresses" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.notificationEmailAddresses"></a>
 
 ```python
 notification_email_addresses: typing.List[str]
@@ -1646,7 +1646,7 @@ notification_email_addresses: typing.List[str]
 
 ---
 
-##### `owners`<sup>Required</sup> <a name="owners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.owners"></a>
+##### `owners`<sup>Required</sup> <a name="owners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.owners"></a>
 
 ```python
 owners: typing.List[str]
@@ -1656,7 +1656,7 @@ owners: typing.List[str]
 
 ---
 
-##### `preferred_single_sign_on_mode`<sup>Required</sup> <a name="preferred_single_sign_on_mode" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnMode"></a>
+##### `preferred_single_sign_on_mode`<sup>Required</sup> <a name="preferred_single_sign_on_mode" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.preferredSingleSignOnMode"></a>
 
 ```python
 preferred_single_sign_on_mode: str
@@ -1666,7 +1666,7 @@ preferred_single_sign_on_mode: str
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tags"></a>
 
 ```python
 tags: typing.List[str]
@@ -1676,13 +1676,13 @@ tags: typing.List[str]
 
 ---
 
-##### `use_existing`<sup>Required</sup> <a name="use_existing" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.useExisting"></a>
+##### `use_existing`<sup>Required</sup> <a name="use_existing" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.useExisting"></a>
 
 ```python
 use_existing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1690,11 +1690,11 @@ use_existing: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipal.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipal.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1706,23 +1706,23 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ServicePrincipalAppRoles <a name="ServicePrincipalAppRoles" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRoles"></a>
+### ServicePrincipalAppRoles <a name="ServicePrincipalAppRoles" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRoles"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRoles.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRoles.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalAppRoles()
 ```
 
 
-### ServicePrincipalConfig <a name="ServicePrincipalConfig" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig"></a>
+### ServicePrincipalConfig <a name="ServicePrincipalConfig" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1756,104 +1756,104 @@ servicePrincipal.ServicePrincipalConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId">client_id</a></code> | <code>str</code> | The client ID of the application for which to create a service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the service principal account is enabled. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.description">description</a></code> | <code>str</code> | Description of the service principal provided for internal end-users. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.features">features</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | features block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.featureTags">feature_tags</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | feature_tags block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#id ServicePrincipal#id}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.loginUrl">login_url</a></code> | <code>str</code> | The URL where the service provider redirects the user to Azure AD to authenticate. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notes">notes</a></code> | <code>str</code> | Free text field to capture information about the service principal, typically used for operational purposes. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | The single sign-on mode configured for this application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | saml_single_sign_on block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A set of tags to apply to the service principal. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.useExisting">use_existing</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, the resource will return an existing service principal instead of failing with an error. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId">client_id</a></code> | <code>str</code> | The client ID of the application for which to create a service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the service principal account is enabled. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.alternativeNames">alternative_names</a></code> | <code>typing.List[str]</code> | A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.appRoleAssignmentRequired">app_role_assignment_required</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.description">description</a></code> | <code>str</code> | Description of the service principal provided for internal end-users. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.features">features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | features block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.featureTags">feature_tags</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | feature_tags block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#id ServicePrincipal#id}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.loginUrl">login_url</a></code> | <code>str</code> | The URL where the service provider redirects the user to Azure AD to authenticate. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notes">notes</a></code> | <code>str</code> | Free text field to capture information about the service principal, typically used for operational purposes. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notificationEmailAddresses">notification_email_addresses</a></code> | <code>typing.List[str]</code> | List of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.owners">owners</a></code> | <code>typing.List[str]</code> | A list of object IDs of principals that will be granted ownership of the service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.preferredSingleSignOnMode">preferred_single_sign_on_mode</a></code> | <code>str</code> | The single sign-on mode configured for this application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.samlSingleSignOn">saml_single_sign_on</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | saml_single_sign_on block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A set of tags to apply to the service principal. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.useExisting">use_existing</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the resource will return an existing service principal instead of failing with an error. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.clientId"></a>
 
 ```python
 client_id: str
@@ -1867,13 +1867,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled"></a>
+##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.accountEnabled"></a>
 
 ```python
 account_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the service principal account is enabled.
 
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `alternative_names`<sup>Optional</sup> <a name="alternative_names" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.alternativeNames"></a>
+##### `alternative_names`<sup>Optional</sup> <a name="alternative_names" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.alternativeNames"></a>
 
 ```python
 alternative_names: typing.List[str]
@@ -1895,13 +1895,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `app_role_assignment_required`<sup>Optional</sup> <a name="app_role_assignment_required" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.appRoleAssignmentRequired"></a>
+##### `app_role_assignment_required`<sup>Optional</sup> <a name="app_role_assignment_required" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.appRoleAssignmentRequired"></a>
 
 ```python
 app_role_assignment_required: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal requires an app role assignment to a user or group before Azure AD will issue a user or access token to the application.
 
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.description"></a>
 
 ```python
 description: str
@@ -1923,13 +1923,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.features"></a>
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.features"></a>
 
 ```python
 features: IResolvable | typing.List[ServicePrincipalFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
 
 features block.
 
@@ -1937,13 +1937,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.featureTags"></a>
+##### `feature_tags`<sup>Optional</sup> <a name="feature_tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.featureTags"></a>
 
 ```python
 feature_tags: IResolvable | typing.List[ServicePrincipalFeatureTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
 
 feature_tags block.
 
@@ -1951,7 +1951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.id"></a>
 
 ```python
 id: str
@@ -1966,7 +1966,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `login_url`<sup>Optional</sup> <a name="login_url" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.loginUrl"></a>
+##### `login_url`<sup>Optional</sup> <a name="login_url" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.loginUrl"></a>
 
 ```python
 login_url: str
@@ -1982,7 +1982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notes"></a>
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notes"></a>
 
 ```python
 notes: str
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notification_email_addresses`<sup>Optional</sup> <a name="notification_email_addresses" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notificationEmailAddresses"></a>
+##### `notification_email_addresses`<sup>Optional</sup> <a name="notification_email_addresses" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.notificationEmailAddresses"></a>
 
 ```python
 notification_email_addresses: typing.List[str]
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.owners"></a>
+##### `owners`<sup>Optional</sup> <a name="owners" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.owners"></a>
 
 ```python
 owners: typing.List[str]
@@ -2026,7 +2026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `preferred_single_sign_on_mode`<sup>Optional</sup> <a name="preferred_single_sign_on_mode" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.preferredSingleSignOnMode"></a>
+##### `preferred_single_sign_on_mode`<sup>Optional</sup> <a name="preferred_single_sign_on_mode" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.preferredSingleSignOnMode"></a>
 
 ```python
 preferred_single_sign_on_mode: str
@@ -2042,13 +2042,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `saml_single_sign_on`<sup>Optional</sup> <a name="saml_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.samlSingleSignOn"></a>
+##### `saml_single_sign_on`<sup>Optional</sup> <a name="saml_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.samlSingleSignOn"></a>
 
 ```python
 saml_single_sign_on: ServicePrincipalSamlSingleSignOn
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
 
 saml_single_sign_on block.
 
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.tags"></a>
 
 ```python
 tags: typing.List[str]
@@ -2070,13 +2070,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.timeouts"></a>
 
 ```python
 timeouts: ServicePrincipalTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
 
 timeouts block.
 
@@ -2084,13 +2084,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `use_existing`<sup>Optional</sup> <a name="use_existing" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.useExisting"></a>
+##### `use_existing`<sup>Optional</sup> <a name="use_existing" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalConfig.property.useExisting"></a>
 
 ```python
 use_existing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the resource will return an existing service principal instead of failing with an error.
 
@@ -2098,12 +2098,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ServicePrincipalFeatures <a name="ServicePrincipalFeatures" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures"></a>
+### ServicePrincipalFeatures <a name="ServicePrincipalFeatures" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeatures(
   custom_single_sign_on_app: bool | IResolvable = None,
@@ -2117,20 +2117,20 @@ servicePrincipal.ServicePrincipalFeatures(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.customSingleSignOnApp">custom_single_sign_on_app</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents a custom SAML application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.enterpriseApplication">enterprise_application</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents an Enterprise Application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.galleryApplication">gallery_application</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents a gallery application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.visibleToUsers">visible_to_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this app is visible to users in My Apps and Office 365 Launcher. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.customSingleSignOnApp">custom_single_sign_on_app</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents a custom SAML application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.enterpriseApplication">enterprise_application</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents an Enterprise Application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.galleryApplication">gallery_application</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents a gallery application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.visibleToUsers">visible_to_users</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this app is visible to users in My Apps and Office 365 Launcher. |
 
 ---
 
-##### `custom_single_sign_on_app`<sup>Optional</sup> <a name="custom_single_sign_on_app" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.customSingleSignOnApp"></a>
+##### `custom_single_sign_on_app`<sup>Optional</sup> <a name="custom_single_sign_on_app" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.customSingleSignOnApp"></a>
 
 ```python
 custom_single_sign_on_app: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents a custom SAML application.
 
@@ -2138,13 +2138,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enterprise_application`<sup>Optional</sup> <a name="enterprise_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.enterpriseApplication"></a>
+##### `enterprise_application`<sup>Optional</sup> <a name="enterprise_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.enterpriseApplication"></a>
 
 ```python
 enterprise_application: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents an Enterprise Application.
 
@@ -2152,13 +2152,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `gallery_application`<sup>Optional</sup> <a name="gallery_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.galleryApplication"></a>
+##### `gallery_application`<sup>Optional</sup> <a name="gallery_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.galleryApplication"></a>
 
 ```python
 gallery_application: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents a gallery application.
 
@@ -2166,13 +2166,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `visible_to_users`<sup>Optional</sup> <a name="visible_to_users" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.visibleToUsers"></a>
+##### `visible_to_users`<sup>Optional</sup> <a name="visible_to_users" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures.property.visibleToUsers"></a>
 
 ```python
 visible_to_users: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this app is visible to users in My Apps and Office 365 Launcher.
 
@@ -2180,12 +2180,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ServicePrincipalFeatureTags <a name="ServicePrincipalFeatureTags" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags"></a>
+### ServicePrincipalFeatureTags <a name="ServicePrincipalFeatureTags" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeatureTags(
   custom_single_sign_on: bool | IResolvable = None,
@@ -2199,20 +2199,20 @@ servicePrincipal.ServicePrincipalFeatureTags(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents a custom SAML application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.enterprise">enterprise</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents an Enterprise Application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.gallery">gallery</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this service principal represents a gallery application. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.hide">hide</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this app is invisible to users in My Apps and Office 365 Launcher. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents a custom SAML application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.enterprise">enterprise</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents an Enterprise Application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.gallery">gallery</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this service principal represents a gallery application. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.hide">hide</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this app is invisible to users in My Apps and Office 365 Launcher. |
 
 ---
 
-##### `custom_single_sign_on`<sup>Optional</sup> <a name="custom_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.customSingleSignOn"></a>
+##### `custom_single_sign_on`<sup>Optional</sup> <a name="custom_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.customSingleSignOn"></a>
 
 ```python
 custom_single_sign_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents a custom SAML application.
 
@@ -2220,13 +2220,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enterprise`<sup>Optional</sup> <a name="enterprise" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.enterprise"></a>
+##### `enterprise`<sup>Optional</sup> <a name="enterprise" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.enterprise"></a>
 
 ```python
 enterprise: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents an Enterprise Application.
 
@@ -2234,13 +2234,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `gallery`<sup>Optional</sup> <a name="gallery" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.gallery"></a>
+##### `gallery`<sup>Optional</sup> <a name="gallery" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.gallery"></a>
 
 ```python
 gallery: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this service principal represents a gallery application.
 
@@ -2248,13 +2248,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hide`<sup>Optional</sup> <a name="hide" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.hide"></a>
+##### `hide`<sup>Optional</sup> <a name="hide" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags.property.hide"></a>
 
 ```python
 hide: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this app is invisible to users in My Apps and Office 365 Launcher.
 
@@ -2262,23 +2262,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ServicePrincipalOauth2PermissionScopes <a name="ServicePrincipalOauth2PermissionScopes" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes"></a>
+### ServicePrincipalOauth2PermissionScopes <a name="ServicePrincipalOauth2PermissionScopes" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalOauth2PermissionScopes()
 ```
 
 
-### ServicePrincipalSamlSingleSignOn <a name="ServicePrincipalSamlSingleSignOn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn"></a>
+### ServicePrincipalSamlSingleSignOn <a name="ServicePrincipalSamlSingleSignOn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalSamlSingleSignOn(
   relay_state: str = None
@@ -2289,11 +2289,11 @@ servicePrincipal.ServicePrincipalSamlSingleSignOn(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.property.relayState">relay_state</a></code> | <code>str</code> | The relative URI the service provider would redirect to after completion of the single sign-on flow. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.property.relayState">relay_state</a></code> | <code>str</code> | The relative URI the service provider would redirect to after completion of the single sign-on flow. |
 
 ---
 
-##### `relay_state`<sup>Optional</sup> <a name="relay_state" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.property.relayState"></a>
+##### `relay_state`<sup>Optional</sup> <a name="relay_state" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn.property.relayState"></a>
 
 ```python
 relay_state: str
@@ -2307,12 +2307,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ServicePrincipalTimeouts <a name="ServicePrincipalTimeouts" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts"></a>
+### ServicePrincipalTimeouts <a name="ServicePrincipalTimeouts" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalTimeouts(
   create: str = None,
@@ -2326,14 +2326,14 @@ servicePrincipal.ServicePrincipalTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#create ServicePrincipal#create}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#delete ServicePrincipal#delete}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#read ServicePrincipal#read}. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#update ServicePrincipal#update}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#create ServicePrincipal#create}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#delete ServicePrincipal#delete}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#read ServicePrincipal#read}. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#update ServicePrincipal#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -2369,7 +2369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2383,12 +2383,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ServicePrincipalAppRolesList <a name="ServicePrincipalAppRolesList" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList"></a>
+### ServicePrincipalAppRolesList <a name="ServicePrincipalAppRolesList" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalAppRolesList(
   terraform_resource: IInterpolatingParent,
@@ -2399,21 +2399,21 @@ servicePrincipal.ServicePrincipalAppRolesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2421,7 +2421,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2433,15 +2433,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2453,19 +2453,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve"></a>
 
 ```python
 def resolve(
@@ -2475,13 +2475,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2491,7 +2491,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get"></a>
 
 ```python
 def get(
@@ -2499,7 +2499,7 @@ def get(
 ) -> ServicePrincipalAppRolesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2512,12 +2512,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2531,7 +2531,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2542,12 +2542,12 @@ fqn: str
 ---
 
 
-### ServicePrincipalAppRolesOutputReference <a name="ServicePrincipalAppRolesOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference"></a>
+### ServicePrincipalAppRolesOutputReference <a name="ServicePrincipalAppRolesOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalAppRolesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2559,22 +2559,22 @@ servicePrincipal.ServicePrincipalAppRolesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2582,7 +2582,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2590,7 +2590,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2602,29 +2602,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2632,13 +2632,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2646,13 +2646,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2660,13 +2660,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2674,13 +2674,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2688,13 +2688,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2702,13 +2702,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2716,13 +2716,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2730,13 +2730,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2744,13 +2744,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2758,13 +2758,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2774,13 +2774,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2795,19 +2795,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.allowedMemberTypes">allowed_member_types</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRoles">ServicePrincipalAppRoles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.allowedMemberTypes">allowed_member_types</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRoles">ServicePrincipalAppRoles</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2821,7 +2821,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2831,7 +2831,7 @@ fqn: str
 
 ---
 
-##### `allowed_member_types`<sup>Required</sup> <a name="allowed_member_types" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.allowedMemberTypes"></a>
+##### `allowed_member_types`<sup>Required</sup> <a name="allowed_member_types" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.allowedMemberTypes"></a>
 
 ```python
 allowed_member_types: typing.List[str]
@@ -2841,7 +2841,7 @@ allowed_member_types: typing.List[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.description"></a>
 
 ```python
 description: str
@@ -2851,7 +2851,7 @@ description: str
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.displayName"></a>
 
 ```python
 display_name: str
@@ -2861,17 +2861,17 @@ display_name: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.enabled"></a>
 
 ```python
 enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.id"></a>
 
 ```python
 id: str
@@ -2881,7 +2881,7 @@ id: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.value"></a>
 
 ```python
 value: str
@@ -2891,23 +2891,23 @@ value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRolesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServicePrincipalAppRoles
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalAppRoles">ServicePrincipalAppRoles</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalAppRoles">ServicePrincipalAppRoles</a>
 
 ---
 
 
-### ServicePrincipalFeaturesList <a name="ServicePrincipalFeaturesList" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList"></a>
+### ServicePrincipalFeaturesList <a name="ServicePrincipalFeaturesList" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeaturesList(
   terraform_resource: IInterpolatingParent,
@@ -2918,21 +2918,21 @@ servicePrincipal.ServicePrincipalFeaturesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2940,7 +2940,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -2952,15 +2952,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -2972,19 +2972,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve"></a>
 
 ```python
 def resolve(
@@ -2994,13 +2994,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3010,7 +3010,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get"></a>
 
 ```python
 def get(
@@ -3018,7 +3018,7 @@ def get(
 ) -> ServicePrincipalFeaturesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3031,13 +3031,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3051,7 +3051,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3061,23 +3061,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ServicePrincipalFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>]
 
 ---
 
 
-### ServicePrincipalFeaturesOutputReference <a name="ServicePrincipalFeaturesOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference"></a>
+### ServicePrincipalFeaturesOutputReference <a name="ServicePrincipalFeaturesOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeaturesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3089,22 +3089,22 @@ servicePrincipal.ServicePrincipalFeaturesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3112,7 +3112,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3120,7 +3120,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3132,33 +3132,33 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetCustomSingleSignOnApp">reset_custom_single_sign_on_app</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetEnterpriseApplication">reset_enterprise_application</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetGalleryApplication">reset_gallery_application</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetVisibleToUsers">reset_visible_to_users</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetCustomSingleSignOnApp">reset_custom_single_sign_on_app</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetEnterpriseApplication">reset_enterprise_application</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetGalleryApplication">reset_gallery_application</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetVisibleToUsers">reset_visible_to_users</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3166,13 +3166,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3180,13 +3180,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3194,13 +3194,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3208,13 +3208,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3222,13 +3222,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3236,13 +3236,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3250,13 +3250,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3264,13 +3264,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3278,13 +3278,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3292,13 +3292,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3308,13 +3308,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3324,25 +3324,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_custom_single_sign_on_app` <a name="reset_custom_single_sign_on_app" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetCustomSingleSignOnApp"></a>
+##### `reset_custom_single_sign_on_app` <a name="reset_custom_single_sign_on_app" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetCustomSingleSignOnApp"></a>
 
 ```python
 def reset_custom_single_sign_on_app() -> None
 ```
 
-##### `reset_enterprise_application` <a name="reset_enterprise_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetEnterpriseApplication"></a>
+##### `reset_enterprise_application` <a name="reset_enterprise_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetEnterpriseApplication"></a>
 
 ```python
 def reset_enterprise_application() -> None
 ```
 
-##### `reset_gallery_application` <a name="reset_gallery_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetGalleryApplication"></a>
+##### `reset_gallery_application` <a name="reset_gallery_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetGalleryApplication"></a>
 
 ```python
 def reset_gallery_application() -> None
 ```
 
-##### `reset_visible_to_users` <a name="reset_visible_to_users" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetVisibleToUsers"></a>
+##### `reset_visible_to_users` <a name="reset_visible_to_users" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.resetVisibleToUsers"></a>
 
 ```python
 def reset_visible_to_users() -> None
@@ -3353,21 +3353,21 @@ def reset_visible_to_users() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnAppInput">custom_single_sign_on_app_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplicationInput">enterprise_application_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplicationInput">gallery_application_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsersInput">visible_to_users_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp">custom_single_sign_on_app</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplication">enterprise_application</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplication">gallery_application</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsers">visible_to_users</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnAppInput">custom_single_sign_on_app_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplicationInput">enterprise_application_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplicationInput">gallery_application_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsersInput">visible_to_users_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp">custom_single_sign_on_app</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplication">enterprise_application</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplication">gallery_application</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsers">visible_to_users</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3381,7 +3381,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3391,103 +3391,103 @@ fqn: str
 
 ---
 
-##### `custom_single_sign_on_app_input`<sup>Optional</sup> <a name="custom_single_sign_on_app_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnAppInput"></a>
+##### `custom_single_sign_on_app_input`<sup>Optional</sup> <a name="custom_single_sign_on_app_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnAppInput"></a>
 
 ```python
 custom_single_sign_on_app_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enterprise_application_input`<sup>Optional</sup> <a name="enterprise_application_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplicationInput"></a>
+##### `enterprise_application_input`<sup>Optional</sup> <a name="enterprise_application_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplicationInput"></a>
 
 ```python
 enterprise_application_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `gallery_application_input`<sup>Optional</sup> <a name="gallery_application_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplicationInput"></a>
+##### `gallery_application_input`<sup>Optional</sup> <a name="gallery_application_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplicationInput"></a>
 
 ```python
 gallery_application_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `visible_to_users_input`<sup>Optional</sup> <a name="visible_to_users_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsersInput"></a>
+##### `visible_to_users_input`<sup>Optional</sup> <a name="visible_to_users_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsersInput"></a>
 
 ```python
 visible_to_users_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `custom_single_sign_on_app`<sup>Required</sup> <a name="custom_single_sign_on_app" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp"></a>
+##### `custom_single_sign_on_app`<sup>Required</sup> <a name="custom_single_sign_on_app" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.customSingleSignOnApp"></a>
 
 ```python
 custom_single_sign_on_app: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enterprise_application`<sup>Required</sup> <a name="enterprise_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplication"></a>
+##### `enterprise_application`<sup>Required</sup> <a name="enterprise_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.enterpriseApplication"></a>
 
 ```python
 enterprise_application: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `gallery_application`<sup>Required</sup> <a name="gallery_application" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplication"></a>
+##### `gallery_application`<sup>Required</sup> <a name="gallery_application" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.galleryApplication"></a>
 
 ```python
 gallery_application: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `visible_to_users`<sup>Required</sup> <a name="visible_to_users" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsers"></a>
+##### `visible_to_users`<sup>Required</sup> <a name="visible_to_users" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.visibleToUsers"></a>
 
 ```python
 visible_to_users: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeaturesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ServicePrincipalFeatures
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatures">ServicePrincipalFeatures</a>
 
 ---
 
 
-### ServicePrincipalFeatureTagsList <a name="ServicePrincipalFeatureTagsList" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList"></a>
+### ServicePrincipalFeatureTagsList <a name="ServicePrincipalFeatureTagsList" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeatureTagsList(
   terraform_resource: IInterpolatingParent,
@@ -3498,21 +3498,21 @@ servicePrincipal.ServicePrincipalFeatureTagsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3520,7 +3520,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3532,15 +3532,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3552,19 +3552,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve"></a>
 
 ```python
 def resolve(
@@ -3574,13 +3574,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3590,7 +3590,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get"></a>
 
 ```python
 def get(
@@ -3598,7 +3598,7 @@ def get(
 ) -> ServicePrincipalFeatureTagsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3611,13 +3611,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3631,7 +3631,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3641,23 +3641,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ServicePrincipalFeatureTags]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>]
 
 ---
 
 
-### ServicePrincipalFeatureTagsOutputReference <a name="ServicePrincipalFeatureTagsOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference"></a>
+### ServicePrincipalFeatureTagsOutputReference <a name="ServicePrincipalFeatureTagsOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalFeatureTagsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3669,22 +3669,22 @@ servicePrincipal.ServicePrincipalFeatureTagsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3692,7 +3692,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3700,7 +3700,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3712,33 +3712,33 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetCustomSingleSignOn">reset_custom_single_sign_on</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetEnterprise">reset_enterprise</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetGallery">reset_gallery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetHide">reset_hide</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetCustomSingleSignOn">reset_custom_single_sign_on</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetEnterprise">reset_enterprise</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetGallery">reset_gallery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetHide">reset_hide</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3746,13 +3746,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3760,13 +3760,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3774,13 +3774,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3788,13 +3788,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3802,13 +3802,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3816,13 +3816,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3830,13 +3830,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3844,13 +3844,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3858,13 +3858,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3872,13 +3872,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3888,13 +3888,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3904,25 +3904,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_custom_single_sign_on` <a name="reset_custom_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetCustomSingleSignOn"></a>
+##### `reset_custom_single_sign_on` <a name="reset_custom_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetCustomSingleSignOn"></a>
 
 ```python
 def reset_custom_single_sign_on() -> None
 ```
 
-##### `reset_enterprise` <a name="reset_enterprise" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetEnterprise"></a>
+##### `reset_enterprise` <a name="reset_enterprise" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetEnterprise"></a>
 
 ```python
 def reset_enterprise() -> None
 ```
 
-##### `reset_gallery` <a name="reset_gallery" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetGallery"></a>
+##### `reset_gallery` <a name="reset_gallery" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetGallery"></a>
 
 ```python
 def reset_gallery() -> None
 ```
 
-##### `reset_hide` <a name="reset_hide" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetHide"></a>
+##### `reset_hide` <a name="reset_hide" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.resetHide"></a>
 
 ```python
 def reset_hide() -> None
@@ -3933,21 +3933,21 @@ def reset_hide() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOnInput">custom_single_sign_on_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterpriseInput">enterprise_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.galleryInput">gallery_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hideInput">hide_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hide">hide</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOnInput">custom_single_sign_on_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterpriseInput">enterprise_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.galleryInput">gallery_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hideInput">hide_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn">custom_single_sign_on</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterprise">enterprise</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.gallery">gallery</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hide">hide</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3961,7 +3961,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3971,103 +3971,103 @@ fqn: str
 
 ---
 
-##### `custom_single_sign_on_input`<sup>Optional</sup> <a name="custom_single_sign_on_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOnInput"></a>
+##### `custom_single_sign_on_input`<sup>Optional</sup> <a name="custom_single_sign_on_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOnInput"></a>
 
 ```python
 custom_single_sign_on_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enterprise_input`<sup>Optional</sup> <a name="enterprise_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterpriseInput"></a>
+##### `enterprise_input`<sup>Optional</sup> <a name="enterprise_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterpriseInput"></a>
 
 ```python
 enterprise_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `gallery_input`<sup>Optional</sup> <a name="gallery_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.galleryInput"></a>
+##### `gallery_input`<sup>Optional</sup> <a name="gallery_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.galleryInput"></a>
 
 ```python
 gallery_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide_input`<sup>Optional</sup> <a name="hide_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hideInput"></a>
+##### `hide_input`<sup>Optional</sup> <a name="hide_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hideInput"></a>
 
 ```python
 hide_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `custom_single_sign_on`<sup>Required</sup> <a name="custom_single_sign_on" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn"></a>
+##### `custom_single_sign_on`<sup>Required</sup> <a name="custom_single_sign_on" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.customSingleSignOn"></a>
 
 ```python
 custom_single_sign_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enterprise`<sup>Required</sup> <a name="enterprise" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterprise"></a>
+##### `enterprise`<sup>Required</sup> <a name="enterprise" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.enterprise"></a>
 
 ```python
 enterprise: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `gallery`<sup>Required</sup> <a name="gallery" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.gallery"></a>
+##### `gallery`<sup>Required</sup> <a name="gallery" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.gallery"></a>
 
 ```python
 gallery: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `hide`<sup>Required</sup> <a name="hide" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hide"></a>
+##### `hide`<sup>Required</sup> <a name="hide" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.hide"></a>
 
 ```python
 hide: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTagsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ServicePrincipalFeatureTags
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalFeatureTags">ServicePrincipalFeatureTags</a>
 
 ---
 
 
-### ServicePrincipalOauth2PermissionScopesList <a name="ServicePrincipalOauth2PermissionScopesList" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList"></a>
+### ServicePrincipalOauth2PermissionScopesList <a name="ServicePrincipalOauth2PermissionScopesList" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalOauth2PermissionScopesList(
   terraform_resource: IInterpolatingParent,
@@ -4078,21 +4078,21 @@ servicePrincipal.ServicePrincipalOauth2PermissionScopesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4100,7 +4100,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4112,15 +4112,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4132,19 +4132,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve"></a>
 
 ```python
 def resolve(
@@ -4154,13 +4154,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4170,7 +4170,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get"></a>
 
 ```python
 def get(
@@ -4178,7 +4178,7 @@ def get(
 ) -> ServicePrincipalOauth2PermissionScopesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4191,12 +4191,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4210,7 +4210,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4221,12 +4221,12 @@ fqn: str
 ---
 
 
-### ServicePrincipalOauth2PermissionScopesOutputReference <a name="ServicePrincipalOauth2PermissionScopesOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference"></a>
+### ServicePrincipalOauth2PermissionScopesOutputReference <a name="ServicePrincipalOauth2PermissionScopesOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4238,22 +4238,22 @@ servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4261,7 +4261,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4269,7 +4269,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4281,29 +4281,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4311,13 +4311,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4325,13 +4325,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4339,13 +4339,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4353,13 +4353,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4367,13 +4367,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4381,13 +4381,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4395,13 +4395,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4409,13 +4409,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4423,13 +4423,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4437,13 +4437,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4453,13 +4453,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4474,21 +4474,21 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription">admin_consent_description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName">admin_consent_display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription">user_consent_description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName">user_consent_display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes">ServicePrincipalOauth2PermissionScopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription">admin_consent_description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName">admin_consent_display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription">user_consent_description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName">user_consent_display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes">ServicePrincipalOauth2PermissionScopes</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4502,7 +4502,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4512,7 +4512,7 @@ fqn: str
 
 ---
 
-##### `admin_consent_description`<sup>Required</sup> <a name="admin_consent_description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription"></a>
+##### `admin_consent_description`<sup>Required</sup> <a name="admin_consent_description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDescription"></a>
 
 ```python
 admin_consent_description: str
@@ -4522,7 +4522,7 @@ admin_consent_description: str
 
 ---
 
-##### `admin_consent_display_name`<sup>Required</sup> <a name="admin_consent_display_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName"></a>
+##### `admin_consent_display_name`<sup>Required</sup> <a name="admin_consent_display_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.adminConsentDisplayName"></a>
 
 ```python
 admin_consent_display_name: str
@@ -4532,17 +4532,17 @@ admin_consent_display_name: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.enabled"></a>
 
 ```python
 enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.id"></a>
 
 ```python
 id: str
@@ -4552,7 +4552,7 @@ id: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -4562,7 +4562,7 @@ type: str
 
 ---
 
-##### `user_consent_description`<sup>Required</sup> <a name="user_consent_description" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription"></a>
+##### `user_consent_description`<sup>Required</sup> <a name="user_consent_description" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDescription"></a>
 
 ```python
 user_consent_description: str
@@ -4572,7 +4572,7 @@ user_consent_description: str
 
 ---
 
-##### `user_consent_display_name`<sup>Required</sup> <a name="user_consent_display_name" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName"></a>
+##### `user_consent_display_name`<sup>Required</sup> <a name="user_consent_display_name" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.userConsentDisplayName"></a>
 
 ```python
 user_consent_display_name: str
@@ -4582,7 +4582,7 @@ user_consent_display_name: str
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.value"></a>
 
 ```python
 value: str
@@ -4592,23 +4592,23 @@ value: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServicePrincipalOauth2PermissionScopes
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes">ServicePrincipalOauth2PermissionScopes</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalOauth2PermissionScopes">ServicePrincipalOauth2PermissionScopes</a>
 
 ---
 
 
-### ServicePrincipalSamlSingleSignOnOutputReference <a name="ServicePrincipalSamlSingleSignOnOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference"></a>
+### ServicePrincipalSamlSingleSignOnOutputReference <a name="ServicePrincipalSamlSingleSignOnOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4618,20 +4618,20 @@ servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4643,30 +4643,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resetRelayState">reset_relay_state</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resetRelayState">reset_relay_state</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4674,13 +4674,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4688,13 +4688,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4702,13 +4702,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4716,13 +4716,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4730,13 +4730,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4744,13 +4744,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4758,13 +4758,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4772,13 +4772,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4786,13 +4786,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4800,13 +4800,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4816,13 +4816,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4832,7 +4832,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_relay_state` <a name="reset_relay_state" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resetRelayState"></a>
+##### `reset_relay_state` <a name="reset_relay_state" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.resetRelayState"></a>
 
 ```python
 def reset_relay_state() -> None
@@ -4843,15 +4843,15 @@ def reset_relay_state() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayStateInput">relay_state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState">relay_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayStateInput">relay_state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState">relay_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4865,7 +4865,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4875,7 +4875,7 @@ fqn: str
 
 ---
 
-##### `relay_state_input`<sup>Optional</sup> <a name="relay_state_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayStateInput"></a>
+##### `relay_state_input`<sup>Optional</sup> <a name="relay_state_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayStateInput"></a>
 
 ```python
 relay_state_input: str
@@ -4885,7 +4885,7 @@ relay_state_input: str
 
 ---
 
-##### `relay_state`<sup>Required</sup> <a name="relay_state" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState"></a>
+##### `relay_state`<sup>Required</sup> <a name="relay_state" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.relayState"></a>
 
 ```python
 relay_state: str
@@ -4895,23 +4895,23 @@ relay_state: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOnOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ServicePrincipalSamlSingleSignOn
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
+- *Type:* <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalSamlSingleSignOn">ServicePrincipalSamlSingleSignOn</a>
 
 ---
 
 
-### ServicePrincipalTimeoutsOutputReference <a name="ServicePrincipalTimeoutsOutputReference" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference"></a>
+### ServicePrincipalTimeoutsOutputReference <a name="ServicePrincipalTimeoutsOutputReference" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import service_principal
+from cdktn_provider_azuread import service_principal
 
 servicePrincipal.ServicePrincipalTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4921,20 +4921,20 @@ servicePrincipal.ServicePrincipalTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4946,33 +4946,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4980,13 +4980,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4994,13 +4994,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5008,13 +5008,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5022,13 +5022,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5036,13 +5036,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5050,13 +5050,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5064,13 +5064,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5078,13 +5078,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5092,13 +5092,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5106,13 +5106,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5122,13 +5122,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5138,25 +5138,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -5167,21 +5167,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5195,7 +5195,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5205,7 +5205,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -5215,7 +5215,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -5225,7 +5225,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -5235,7 +5235,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -5245,7 +5245,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -5255,7 +5255,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -5265,7 +5265,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -5275,7 +5275,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -5285,13 +5285,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ServicePrincipalTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.servicePrincipal.ServicePrincipalTimeouts">ServicePrincipalTimeouts</a>
 
 ---
 

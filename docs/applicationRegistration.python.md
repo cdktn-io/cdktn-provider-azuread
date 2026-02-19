@@ -1,15 +1,15 @@
-# `applicationRegistration` Submodule <a name="`applicationRegistration` Submodule" id="@cdktf/provider-azuread.applicationRegistration"></a>
+# `applicationRegistration` Submodule <a name="`applicationRegistration` Submodule" id="@cdktn/provider-azuread.applicationRegistration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ApplicationRegistration <a name="ApplicationRegistration" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration"></a>
+### ApplicationRegistration <a name="ApplicationRegistration" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration azuread_application_registration}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistration(
   scope: Construct,
@@ -43,36 +43,36 @@ applicationRegistration.ApplicationRegistration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.homepageUrl">homepage_url</a></code> | <code>str</code> | URL of the home page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.logoutUrl">logout_url</a></code> | <code>str</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the marketing page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the privacy statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | The access token version expected by this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or contact information from a service or asset management database. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.supportUrl">support_url</a></code> | <code>str</code> | URL of the support page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | URL of the terms of service statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.homepageUrl">homepage_url</a></code> | <code>str</code> | URL of the home page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.logoutUrl">logout_url</a></code> | <code>str</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the marketing page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the privacy statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | The access token version expected by this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or contact information from a service or asset management database. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.supportUrl">support_url</a></code> | <code>str</code> | URL of the support page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | URL of the terms of service statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -80,7 +80,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -90,49 +90,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.displayName"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `group_membership_claims`<sup>Optional</sup> <a name="group_membership_claims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.groupMembershipClaims"></a>
+##### `group_membership_claims`<sup>Optional</sup> <a name="group_membership_claims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.groupMembershipClaims"></a>
 
 - *Type:* typing.List[str]
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `homepage_url`<sup>Optional</sup> <a name="homepage_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.homepageUrl"></a>
+##### `homepage_url`<sup>Optional</sup> <a name="homepage_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.homepageUrl"></a>
 
 - *Type:* str
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -183,9 +183,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `implicit_access_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitAccessTokenIssuanceEnabled"></a>
+##### `implicit_access_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitAccessTokenIssuanceEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this application can request an access token using OAuth implicit flow.
 
@@ -193,9 +193,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `implicit_id_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitIdTokenIssuanceEnabled"></a>
+##### `implicit_id_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.implicitIdTokenIssuanceEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this application can request an ID token using OAuth implicit flow.
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `logout_url`<sup>Optional</sup> <a name="logout_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.logoutUrl"></a>
+##### `logout_url`<sup>Optional</sup> <a name="logout_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.logoutUrl"></a>
 
 - *Type:* str
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `marketing_url`<sup>Optional</sup> <a name="marketing_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.marketingUrl"></a>
+##### `marketing_url`<sup>Optional</sup> <a name="marketing_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.marketingUrl"></a>
 
 - *Type:* str
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.notes"></a>
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.notes"></a>
 
 - *Type:* str
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `privacy_statement_url`<sup>Optional</sup> <a name="privacy_statement_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.privacyStatementUrl"></a>
+##### `privacy_statement_url`<sup>Optional</sup> <a name="privacy_statement_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.privacyStatementUrl"></a>
 
 - *Type:* str
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `requested_access_token_version`<sup>Optional</sup> <a name="requested_access_token_version" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.requestedAccessTokenVersion"></a>
+##### `requested_access_token_version`<sup>Optional</sup> <a name="requested_access_token_version" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.requestedAccessTokenVersion"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.serviceManagementReference"></a>
+##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.serviceManagementReference"></a>
 
 - *Type:* str
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `sign_in_audience`<sup>Optional</sup> <a name="sign_in_audience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.signInAudience"></a>
+##### `sign_in_audience`<sup>Optional</sup> <a name="sign_in_audience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.signInAudience"></a>
 
 - *Type:* str
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `support_url`<sup>Optional</sup> <a name="support_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.supportUrl"></a>
+##### `support_url`<sup>Optional</sup> <a name="support_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.supportUrl"></a>
 
 - *Type:* str
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `terms_of_service_url`<sup>Optional</sup> <a name="terms_of_service_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.termsOfServiceUrl"></a>
+##### `terms_of_service_url`<sup>Optional</sup> <a name="terms_of_service_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.termsOfServiceUrl"></a>
 
 - *Type:* str
 
@@ -293,9 +293,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 timeouts block.
 
@@ -307,50 +307,50 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims">reset_group_membership_claims</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl">reset_homepage_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled">reset_implicit_access_token_issuance_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled">reset_implicit_id_token_issuance_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl">reset_logout_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl">reset_marketing_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes">reset_notes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl">reset_privacy_statement_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion">reset_requested_access_token_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference">reset_service_management_reference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience">reset_sign_in_audience</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl">reset_support_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl">reset_terms_of_service_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims">reset_group_membership_claims</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl">reset_homepage_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled">reset_implicit_access_token_issuance_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled">reset_implicit_id_token_issuance_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl">reset_logout_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl">reset_marketing_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes">reset_notes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl">reset_privacy_statement_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion">reset_requested_access_token_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference">reset_service_management_reference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience">reset_sign_in_audience</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl">reset_support_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl">reset_terms_of_service_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toString"></a>
 
 ```python
 def to_string() -> str
@@ -358,7 +358,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride"></a>
 
 ```python
 def add_override(
@@ -367,19 +367,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -389,7 +389,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -397,7 +397,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -405,19 +405,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -425,7 +425,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -435,7 +435,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -443,7 +443,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -451,13 +451,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -465,13 +465,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -479,13 +479,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -493,13 +493,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -507,13 +507,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -521,13 +521,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -535,13 +535,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -549,13 +549,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -563,19 +563,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom"></a>
 
 ```python
 def import_from(
@@ -584,19 +584,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -604,13 +604,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -622,7 +622,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -630,7 +630,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo"></a>
 
 ```python
 def move_to(
@@ -641,7 +641,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -649,7 +649,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -657,7 +657,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -667,7 +667,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -675,7 +675,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -686,7 +686,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -694,7 +694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -702,7 +702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -710,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -718,97 +718,97 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_group_membership_claims` <a name="reset_group_membership_claims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims"></a>
+##### `reset_group_membership_claims` <a name="reset_group_membership_claims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetGroupMembershipClaims"></a>
 
 ```python
 def reset_group_membership_claims() -> None
 ```
 
-##### `reset_homepage_url` <a name="reset_homepage_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl"></a>
+##### `reset_homepage_url` <a name="reset_homepage_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetHomepageUrl"></a>
 
 ```python
 def reset_homepage_url() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_implicit_access_token_issuance_enabled` <a name="reset_implicit_access_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled"></a>
+##### `reset_implicit_access_token_issuance_enabled` <a name="reset_implicit_access_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitAccessTokenIssuanceEnabled"></a>
 
 ```python
 def reset_implicit_access_token_issuance_enabled() -> None
 ```
 
-##### `reset_implicit_id_token_issuance_enabled` <a name="reset_implicit_id_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled"></a>
+##### `reset_implicit_id_token_issuance_enabled` <a name="reset_implicit_id_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetImplicitIdTokenIssuanceEnabled"></a>
 
 ```python
 def reset_implicit_id_token_issuance_enabled() -> None
 ```
 
-##### `reset_logout_url` <a name="reset_logout_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl"></a>
+##### `reset_logout_url` <a name="reset_logout_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetLogoutUrl"></a>
 
 ```python
 def reset_logout_url() -> None
 ```
 
-##### `reset_marketing_url` <a name="reset_marketing_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl"></a>
+##### `reset_marketing_url` <a name="reset_marketing_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetMarketingUrl"></a>
 
 ```python
 def reset_marketing_url() -> None
 ```
 
-##### `reset_notes` <a name="reset_notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes"></a>
+##### `reset_notes` <a name="reset_notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetNotes"></a>
 
 ```python
 def reset_notes() -> None
 ```
 
-##### `reset_privacy_statement_url` <a name="reset_privacy_statement_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl"></a>
+##### `reset_privacy_statement_url` <a name="reset_privacy_statement_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetPrivacyStatementUrl"></a>
 
 ```python
 def reset_privacy_statement_url() -> None
 ```
 
-##### `reset_requested_access_token_version` <a name="reset_requested_access_token_version" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion"></a>
+##### `reset_requested_access_token_version` <a name="reset_requested_access_token_version" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetRequestedAccessTokenVersion"></a>
 
 ```python
 def reset_requested_access_token_version() -> None
 ```
 
-##### `reset_service_management_reference` <a name="reset_service_management_reference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference"></a>
+##### `reset_service_management_reference` <a name="reset_service_management_reference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetServiceManagementReference"></a>
 
 ```python
 def reset_service_management_reference() -> None
 ```
 
-##### `reset_sign_in_audience` <a name="reset_sign_in_audience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience"></a>
+##### `reset_sign_in_audience` <a name="reset_sign_in_audience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSignInAudience"></a>
 
 ```python
 def reset_sign_in_audience() -> None
 ```
 
-##### `reset_support_url` <a name="reset_support_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl"></a>
+##### `reset_support_url` <a name="reset_support_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetSupportUrl"></a>
 
 ```python
 def reset_support_url() -> None
 ```
 
-##### `reset_terms_of_service_url` <a name="reset_terms_of_service_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl"></a>
+##### `reset_terms_of_service_url` <a name="reset_terms_of_service_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTermsOfServiceUrl"></a>
 
 ```python
 def reset_terms_of_service_url() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -818,17 +818,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ApplicationRegistration resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistration.is_construct(
   x: typing.Any
@@ -851,7 +851,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -859,42 +859,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistration.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistration.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistration.generate_config_for_import(
   scope: Construct,
@@ -904,9 +904,9 @@ applicationRegistration.ApplicationRegistration.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApplicationRegistration resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -914,7 +914,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -922,7 +922,7 @@ The construct id used in the generated config for the ApplicationRegistration to
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -932,9 +932,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApplicationRegistration to import is found.
 
@@ -944,62 +944,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft">disabled_by_microsoft</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain">publisher_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput">group_membership_claims_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput">homepage_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput">implicit_access_token_issuance_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput">implicit_id_token_issuance_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput">logout_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput">marketing_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput">privacy_statement_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput">requested_access_token_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput">service_management_reference_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput">sign_in_audience_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput">support_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput">terms_of_service_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl">homepage_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl">logout_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl">marketing_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes">notes</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl">support_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft">disabled_by_microsoft</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain">publisher_domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput">group_membership_claims_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput">homepage_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput">implicit_access_token_issuance_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput">implicit_id_token_issuance_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput">logout_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput">marketing_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput">notes_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput">privacy_statement_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput">requested_access_token_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput">service_management_reference_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput">sign_in_audience_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput">support_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput">terms_of_service_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl">homepage_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl">logout_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl">marketing_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes">notes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl">support_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.node"></a>
 
 ```python
 node: Node
@@ -1011,17 +1011,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1031,7 +1031,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1041,7 +1041,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1051,7 +1051,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1061,37 +1061,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1101,47 +1101,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId"></a>
+##### `client_id`<sup>Required</sup> <a name="client_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.clientId"></a>
 
 ```python
 client_id: str
@@ -1151,7 +1151,7 @@ client_id: str
 
 ---
 
-##### `disabled_by_microsoft`<sup>Required</sup> <a name="disabled_by_microsoft" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft"></a>
+##### `disabled_by_microsoft`<sup>Required</sup> <a name="disabled_by_microsoft" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.disabledByMicrosoft"></a>
 
 ```python
 disabled_by_microsoft: str
@@ -1161,7 +1161,7 @@ disabled_by_microsoft: str
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1171,7 +1171,7 @@ object_id: str
 
 ---
 
-##### `publisher_domain`<sup>Required</sup> <a name="publisher_domain" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain"></a>
+##### `publisher_domain`<sup>Required</sup> <a name="publisher_domain" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.publisherDomain"></a>
 
 ```python
 publisher_domain: str
@@ -1181,17 +1181,17 @@ publisher_domain: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeouts"></a>
 
 ```python
 timeouts: ApplicationRegistrationTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference">ApplicationRegistrationTimeoutsOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1201,7 +1201,7 @@ description_input: str
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput"></a>
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1211,7 +1211,7 @@ display_name_input: str
 
 ---
 
-##### `group_membership_claims_input`<sup>Optional</sup> <a name="group_membership_claims_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput"></a>
+##### `group_membership_claims_input`<sup>Optional</sup> <a name="group_membership_claims_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaimsInput"></a>
 
 ```python
 group_membership_claims_input: typing.List[str]
@@ -1221,7 +1221,7 @@ group_membership_claims_input: typing.List[str]
 
 ---
 
-##### `homepage_url_input`<sup>Optional</sup> <a name="homepage_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput"></a>
+##### `homepage_url_input`<sup>Optional</sup> <a name="homepage_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrlInput"></a>
 
 ```python
 homepage_url_input: str
@@ -1231,7 +1231,7 @@ homepage_url_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1241,27 +1241,27 @@ id_input: str
 
 ---
 
-##### `implicit_access_token_issuance_enabled_input`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput"></a>
+##### `implicit_access_token_issuance_enabled_input`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabledInput"></a>
 
 ```python
 implicit_access_token_issuance_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `implicit_id_token_issuance_enabled_input`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput"></a>
+##### `implicit_id_token_issuance_enabled_input`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabledInput"></a>
 
 ```python
 implicit_id_token_issuance_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `logout_url_input`<sup>Optional</sup> <a name="logout_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput"></a>
+##### `logout_url_input`<sup>Optional</sup> <a name="logout_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrlInput"></a>
 
 ```python
 logout_url_input: str
@@ -1271,7 +1271,7 @@ logout_url_input: str
 
 ---
 
-##### `marketing_url_input`<sup>Optional</sup> <a name="marketing_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput"></a>
+##### `marketing_url_input`<sup>Optional</sup> <a name="marketing_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrlInput"></a>
 
 ```python
 marketing_url_input: str
@@ -1281,7 +1281,7 @@ marketing_url_input: str
 
 ---
 
-##### `notes_input`<sup>Optional</sup> <a name="notes_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput"></a>
+##### `notes_input`<sup>Optional</sup> <a name="notes_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notesInput"></a>
 
 ```python
 notes_input: str
@@ -1291,7 +1291,7 @@ notes_input: str
 
 ---
 
-##### `privacy_statement_url_input`<sup>Optional</sup> <a name="privacy_statement_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput"></a>
+##### `privacy_statement_url_input`<sup>Optional</sup> <a name="privacy_statement_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrlInput"></a>
 
 ```python
 privacy_statement_url_input: str
@@ -1301,7 +1301,7 @@ privacy_statement_url_input: str
 
 ---
 
-##### `requested_access_token_version_input`<sup>Optional</sup> <a name="requested_access_token_version_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput"></a>
+##### `requested_access_token_version_input`<sup>Optional</sup> <a name="requested_access_token_version_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersionInput"></a>
 
 ```python
 requested_access_token_version_input: typing.Union[int, float]
@@ -1311,7 +1311,7 @@ requested_access_token_version_input: typing.Union[int, float]
 
 ---
 
-##### `service_management_reference_input`<sup>Optional</sup> <a name="service_management_reference_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput"></a>
+##### `service_management_reference_input`<sup>Optional</sup> <a name="service_management_reference_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReferenceInput"></a>
 
 ```python
 service_management_reference_input: str
@@ -1321,7 +1321,7 @@ service_management_reference_input: str
 
 ---
 
-##### `sign_in_audience_input`<sup>Optional</sup> <a name="sign_in_audience_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput"></a>
+##### `sign_in_audience_input`<sup>Optional</sup> <a name="sign_in_audience_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudienceInput"></a>
 
 ```python
 sign_in_audience_input: str
@@ -1331,7 +1331,7 @@ sign_in_audience_input: str
 
 ---
 
-##### `support_url_input`<sup>Optional</sup> <a name="support_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput"></a>
+##### `support_url_input`<sup>Optional</sup> <a name="support_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrlInput"></a>
 
 ```python
 support_url_input: str
@@ -1341,7 +1341,7 @@ support_url_input: str
 
 ---
 
-##### `terms_of_service_url_input`<sup>Optional</sup> <a name="terms_of_service_url_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput"></a>
+##### `terms_of_service_url_input`<sup>Optional</sup> <a name="terms_of_service_url_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrlInput"></a>
 
 ```python
 terms_of_service_url_input: str
@@ -1351,17 +1351,17 @@ terms_of_service_url_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ApplicationRegistrationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.description"></a>
 
 ```python
 description: str
@@ -1371,7 +1371,7 @@ description: str
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1381,7 +1381,7 @@ display_name: str
 
 ---
 
-##### `group_membership_claims`<sup>Required</sup> <a name="group_membership_claims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims"></a>
+##### `group_membership_claims`<sup>Required</sup> <a name="group_membership_claims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.groupMembershipClaims"></a>
 
 ```python
 group_membership_claims: typing.List[str]
@@ -1391,7 +1391,7 @@ group_membership_claims: typing.List[str]
 
 ---
 
-##### `homepage_url`<sup>Required</sup> <a name="homepage_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl"></a>
+##### `homepage_url`<sup>Required</sup> <a name="homepage_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.homepageUrl"></a>
 
 ```python
 homepage_url: str
@@ -1401,7 +1401,7 @@ homepage_url: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.id"></a>
 
 ```python
 id: str
@@ -1411,27 +1411,27 @@ id: str
 
 ---
 
-##### `implicit_access_token_issuance_enabled`<sup>Required</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled"></a>
+##### `implicit_access_token_issuance_enabled`<sup>Required</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitAccessTokenIssuanceEnabled"></a>
 
 ```python
 implicit_access_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `implicit_id_token_issuance_enabled`<sup>Required</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled"></a>
+##### `implicit_id_token_issuance_enabled`<sup>Required</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.implicitIdTokenIssuanceEnabled"></a>
 
 ```python
 implicit_id_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `logout_url`<sup>Required</sup> <a name="logout_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl"></a>
+##### `logout_url`<sup>Required</sup> <a name="logout_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.logoutUrl"></a>
 
 ```python
 logout_url: str
@@ -1441,7 +1441,7 @@ logout_url: str
 
 ---
 
-##### `marketing_url`<sup>Required</sup> <a name="marketing_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl"></a>
+##### `marketing_url`<sup>Required</sup> <a name="marketing_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.marketingUrl"></a>
 
 ```python
 marketing_url: str
@@ -1451,7 +1451,7 @@ marketing_url: str
 
 ---
 
-##### `notes`<sup>Required</sup> <a name="notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes"></a>
+##### `notes`<sup>Required</sup> <a name="notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.notes"></a>
 
 ```python
 notes: str
@@ -1461,7 +1461,7 @@ notes: str
 
 ---
 
-##### `privacy_statement_url`<sup>Required</sup> <a name="privacy_statement_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl"></a>
+##### `privacy_statement_url`<sup>Required</sup> <a name="privacy_statement_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.privacyStatementUrl"></a>
 
 ```python
 privacy_statement_url: str
@@ -1471,7 +1471,7 @@ privacy_statement_url: str
 
 ---
 
-##### `requested_access_token_version`<sup>Required</sup> <a name="requested_access_token_version" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion"></a>
+##### `requested_access_token_version`<sup>Required</sup> <a name="requested_access_token_version" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.requestedAccessTokenVersion"></a>
 
 ```python
 requested_access_token_version: typing.Union[int, float]
@@ -1481,7 +1481,7 @@ requested_access_token_version: typing.Union[int, float]
 
 ---
 
-##### `service_management_reference`<sup>Required</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference"></a>
+##### `service_management_reference`<sup>Required</sup> <a name="service_management_reference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.serviceManagementReference"></a>
 
 ```python
 service_management_reference: str
@@ -1491,7 +1491,7 @@ service_management_reference: str
 
 ---
 
-##### `sign_in_audience`<sup>Required</sup> <a name="sign_in_audience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience"></a>
+##### `sign_in_audience`<sup>Required</sup> <a name="sign_in_audience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.signInAudience"></a>
 
 ```python
 sign_in_audience: str
@@ -1501,7 +1501,7 @@ sign_in_audience: str
 
 ---
 
-##### `support_url`<sup>Required</sup> <a name="support_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl"></a>
+##### `support_url`<sup>Required</sup> <a name="support_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.supportUrl"></a>
 
 ```python
 support_url: str
@@ -1511,7 +1511,7 @@ support_url: str
 
 ---
 
-##### `terms_of_service_url`<sup>Required</sup> <a name="terms_of_service_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl"></a>
+##### `terms_of_service_url`<sup>Required</sup> <a name="terms_of_service_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.termsOfServiceUrl"></a>
 
 ```python
 terms_of_service_url: str
@@ -1525,11 +1525,11 @@ terms_of_service_url: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1541,12 +1541,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ApplicationRegistrationConfig <a name="ApplicationRegistrationConfig" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig"></a>
+### ApplicationRegistrationConfig <a name="ApplicationRegistrationConfig" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistrationConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1580,104 +1580,104 @@ applicationRegistration.ApplicationRegistrationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl">homepage_url</a></code> | <code>str</code> | URL of the home page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl">logout_url</a></code> | <code>str</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the marketing page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the privacy statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | The access token version expected by this resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or contact information from a service or asset management database. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl">support_url</a></code> | <code>str</code> | URL of the support page for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | URL of the terms of service statement for the application. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description">description</a></code> | <code>str</code> | Description of the application as shown to end users. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims">group_membership_claims</a></code> | <code>typing.List[str]</code> | Configures the `groups` claim that the app expects issued in a user or OAuth access token. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl">homepage_url</a></code> | <code>str</code> | URL of the home page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#id ApplicationRegistration#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled">implicit_access_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this application can request an access token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled">implicit_id_token_issuance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this application can request an ID token using OAuth implicit flow. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl">logout_url</a></code> | <code>str</code> | URL of the logout page for the application, where the session is cleared for single sign-out. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl">marketing_url</a></code> | <code>str</code> | URL of the marketing page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes">notes</a></code> | <code>str</code> | User-specified notes relevant for the management of the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl">privacy_statement_url</a></code> | <code>str</code> | URL of the privacy statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion">requested_access_token_version</a></code> | <code>typing.Union[int, float]</code> | The access token version expected by this resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference">service_management_reference</a></code> | <code>str</code> | References application or contact information from a service or asset management database. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience">sign_in_audience</a></code> | <code>str</code> | The Microsoft account types that are supported for the current application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl">support_url</a></code> | <code>str</code> | URL of the support page for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl">terms_of_service_url</a></code> | <code>str</code> | URL of the terms of service statement for the application. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1691,7 +1691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.description"></a>
 
 ```python
 description: str
@@ -1705,7 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `group_membership_claims`<sup>Optional</sup> <a name="group_membership_claims" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims"></a>
+##### `group_membership_claims`<sup>Optional</sup> <a name="group_membership_claims" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.groupMembershipClaims"></a>
 
 ```python
 group_membership_claims: typing.List[str]
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `homepage_url`<sup>Optional</sup> <a name="homepage_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl"></a>
+##### `homepage_url`<sup>Optional</sup> <a name="homepage_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.homepageUrl"></a>
 
 ```python
 homepage_url: str
@@ -1733,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.id"></a>
 
 ```python
 id: str
@@ -1748,13 +1748,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `implicit_access_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled"></a>
+##### `implicit_access_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_access_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitAccessTokenIssuanceEnabled"></a>
 
 ```python
 implicit_access_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this application can request an access token using OAuth implicit flow.
 
@@ -1762,13 +1762,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `implicit_id_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled"></a>
+##### `implicit_id_token_issuance_enabled`<sup>Optional</sup> <a name="implicit_id_token_issuance_enabled" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.implicitIdTokenIssuanceEnabled"></a>
 
 ```python
 implicit_id_token_issuance_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this application can request an ID token using OAuth implicit flow.
 
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `logout_url`<sup>Optional</sup> <a name="logout_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl"></a>
+##### `logout_url`<sup>Optional</sup> <a name="logout_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.logoutUrl"></a>
 
 ```python
 logout_url: str
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `marketing_url`<sup>Optional</sup> <a name="marketing_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl"></a>
+##### `marketing_url`<sup>Optional</sup> <a name="marketing_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.marketingUrl"></a>
 
 ```python
 marketing_url: str
@@ -1804,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes"></a>
+##### `notes`<sup>Optional</sup> <a name="notes" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.notes"></a>
 
 ```python
 notes: str
@@ -1818,7 +1818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `privacy_statement_url`<sup>Optional</sup> <a name="privacy_statement_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl"></a>
+##### `privacy_statement_url`<sup>Optional</sup> <a name="privacy_statement_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.privacyStatementUrl"></a>
 
 ```python
 privacy_statement_url: str
@@ -1832,7 +1832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `requested_access_token_version`<sup>Optional</sup> <a name="requested_access_token_version" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion"></a>
+##### `requested_access_token_version`<sup>Optional</sup> <a name="requested_access_token_version" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.requestedAccessTokenVersion"></a>
 
 ```python
 requested_access_token_version: typing.Union[int, float]
@@ -1846,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference"></a>
+##### `service_management_reference`<sup>Optional</sup> <a name="service_management_reference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.serviceManagementReference"></a>
 
 ```python
 service_management_reference: str
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `sign_in_audience`<sup>Optional</sup> <a name="sign_in_audience" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience"></a>
+##### `sign_in_audience`<sup>Optional</sup> <a name="sign_in_audience" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.signInAudience"></a>
 
 ```python
 sign_in_audience: str
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `support_url`<sup>Optional</sup> <a name="support_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl"></a>
+##### `support_url`<sup>Optional</sup> <a name="support_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.supportUrl"></a>
 
 ```python
 support_url: str
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `terms_of_service_url`<sup>Optional</sup> <a name="terms_of_service_url" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl"></a>
+##### `terms_of_service_url`<sup>Optional</sup> <a name="terms_of_service_url" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.termsOfServiceUrl"></a>
 
 ```python
 terms_of_service_url: str
@@ -1902,13 +1902,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.property.timeouts"></a>
 
 ```python
 timeouts: ApplicationRegistrationTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 timeouts block.
 
@@ -1916,12 +1916,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ApplicationRegistrationTimeouts <a name="ApplicationRegistrationTimeouts" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts"></a>
+### ApplicationRegistrationTimeouts <a name="ApplicationRegistrationTimeouts" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistrationTimeouts(
   create: str = None,
@@ -1935,14 +1935,14 @@ applicationRegistration.ApplicationRegistrationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#create ApplicationRegistration#create}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#delete ApplicationRegistration#delete}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#read ApplicationRegistration#read}. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#update ApplicationRegistration#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1954,7 +1954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1966,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -1978,7 +1978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1992,12 +1992,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ApplicationRegistrationTimeoutsOutputReference <a name="ApplicationRegistrationTimeoutsOutputReference" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference"></a>
+### ApplicationRegistrationTimeoutsOutputReference <a name="ApplicationRegistrationTimeoutsOutputReference" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import application_registration
+from cdktn_provider_azuread import application_registration
 
 applicationRegistration.ApplicationRegistrationTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2007,20 +2007,20 @@ applicationRegistration.ApplicationRegistrationTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2032,33 +2032,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2066,13 +2066,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2080,13 +2080,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2094,13 +2094,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2108,13 +2108,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2122,13 +2122,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2136,13 +2136,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2150,13 +2150,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2164,13 +2164,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2178,13 +2178,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2192,13 +2192,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2208,13 +2208,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2224,25 +2224,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2253,21 +2253,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2281,7 +2281,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2291,7 +2291,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2301,7 +2301,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2311,7 +2311,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -2321,7 +2321,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2331,7 +2331,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2341,7 +2341,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2351,7 +2351,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -2361,7 +2361,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2371,13 +2371,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ApplicationRegistrationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts">ApplicationRegistrationTimeouts</a>
 
 ---
 
