@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationRegistrationConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationRegistrationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the application as shown to end users
   *
@@ -48,13 +48,13 @@ export interface ApplicationRegistrationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#implicit_access_token_issuance_enabled ApplicationRegistration#implicit_access_token_issuance_enabled}
   */
-  readonly implicitAccessTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
+  readonly implicitAccessTokenIssuanceEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether this application can request an ID token using OAuth implicit flow
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#implicit_id_token_issuance_enabled ApplicationRegistration#implicit_id_token_issuance_enabled}
   */
-  readonly implicitIdTokenIssuanceEnabled?: boolean | cdktf.IResolvable;
+  readonly implicitIdTokenIssuanceEnabled?: boolean | cdktn.IResolvable;
   /**
   * URL of the logout page for the application, where the session is cleared for single sign-out
   *
@@ -135,46 +135,46 @@ export interface ApplicationRegistrationTimeouts {
   readonly update?: string;
 }
 
-export function applicationRegistrationTimeoutsToTerraform(struct?: ApplicationRegistrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationRegistrationTimeoutsToTerraform(struct?: ApplicationRegistrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationRegistrationTimeoutsToHclTerraform(struct?: ApplicationRegistrationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationRegistrationTimeoutsToHclTerraform(struct?: ApplicationRegistrationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,19 +185,19 @@ export function applicationRegistrationTimeoutsToHclTerraform(struct?: Applicati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationRegistrationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationRegistrationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationRegistrationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationRegistrationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -222,7 +222,7 @@ export class ApplicationRegistrationTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationRegistrationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationRegistrationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -231,7 +231,7 @@ export class ApplicationRegistrationTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -313,7 +313,7 @@ export class ApplicationRegistrationTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration azuread_application_registration}
 */
-export class ApplicationRegistration extends cdktf.TerraformResource {
+export class ApplicationRegistration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -324,14 +324,14 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationRegistration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationRegistration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationRegistration to import
   * @param importFromId The id of the existing ApplicationRegistration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_registration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationRegistration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_registration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_registration", importId: importFromId, provider });
       }
 
   // ===========
@@ -426,7 +426,7 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   // group_membership_claims - computed: false, optional: true, required: false
   private _groupMembershipClaims?: string[]; 
   public get groupMembershipClaims() {
-    return cdktf.Fn.tolist(this.getListAttribute('group_membership_claims'));
+    return cdktn.Fn.tolist(this.getListAttribute('group_membership_claims'));
   }
   public set groupMembershipClaims(value: string[]) {
     this._groupMembershipClaims = value;
@@ -472,11 +472,11 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   }
 
   // implicit_access_token_issuance_enabled - computed: false, optional: true, required: false
-  private _implicitAccessTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
+  private _implicitAccessTokenIssuanceEnabled?: boolean | cdktn.IResolvable; 
   public get implicitAccessTokenIssuanceEnabled() {
     return this.getBooleanAttribute('implicit_access_token_issuance_enabled');
   }
-  public set implicitAccessTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
+  public set implicitAccessTokenIssuanceEnabled(value: boolean | cdktn.IResolvable) {
     this._implicitAccessTokenIssuanceEnabled = value;
   }
   public resetImplicitAccessTokenIssuanceEnabled() {
@@ -488,11 +488,11 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   }
 
   // implicit_id_token_issuance_enabled - computed: false, optional: true, required: false
-  private _implicitIdTokenIssuanceEnabled?: boolean | cdktf.IResolvable; 
+  private _implicitIdTokenIssuanceEnabled?: boolean | cdktn.IResolvable; 
   public get implicitIdTokenIssuanceEnabled() {
     return this.getBooleanAttribute('implicit_id_token_issuance_enabled');
   }
-  public set implicitIdTokenIssuanceEnabled(value: boolean | cdktf.IResolvable) {
+  public set implicitIdTokenIssuanceEnabled(value: boolean | cdktn.IResolvable) {
     this._implicitIdTokenIssuanceEnabled = value;
   }
   public resetImplicitIdTokenIssuanceEnabled() {
@@ -679,22 +679,22 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      group_membership_claims: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupMembershipClaims),
-      homepage_url: cdktf.stringToTerraform(this._homepageUrl),
-      id: cdktf.stringToTerraform(this._id),
-      implicit_access_token_issuance_enabled: cdktf.booleanToTerraform(this._implicitAccessTokenIssuanceEnabled),
-      implicit_id_token_issuance_enabled: cdktf.booleanToTerraform(this._implicitIdTokenIssuanceEnabled),
-      logout_url: cdktf.stringToTerraform(this._logoutUrl),
-      marketing_url: cdktf.stringToTerraform(this._marketingUrl),
-      notes: cdktf.stringToTerraform(this._notes),
-      privacy_statement_url: cdktf.stringToTerraform(this._privacyStatementUrl),
-      requested_access_token_version: cdktf.numberToTerraform(this._requestedAccessTokenVersion),
-      service_management_reference: cdktf.stringToTerraform(this._serviceManagementReference),
-      sign_in_audience: cdktf.stringToTerraform(this._signInAudience),
-      support_url: cdktf.stringToTerraform(this._supportUrl),
-      terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      group_membership_claims: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groupMembershipClaims),
+      homepage_url: cdktn.stringToTerraform(this._homepageUrl),
+      id: cdktn.stringToTerraform(this._id),
+      implicit_access_token_issuance_enabled: cdktn.booleanToTerraform(this._implicitAccessTokenIssuanceEnabled),
+      implicit_id_token_issuance_enabled: cdktn.booleanToTerraform(this._implicitIdTokenIssuanceEnabled),
+      logout_url: cdktn.stringToTerraform(this._logoutUrl),
+      marketing_url: cdktn.stringToTerraform(this._marketingUrl),
+      notes: cdktn.stringToTerraform(this._notes),
+      privacy_statement_url: cdktn.stringToTerraform(this._privacyStatementUrl),
+      requested_access_token_version: cdktn.numberToTerraform(this._requestedAccessTokenVersion),
+      service_management_reference: cdktn.stringToTerraform(this._serviceManagementReference),
+      sign_in_audience: cdktn.stringToTerraform(this._signInAudience),
+      support_url: cdktn.stringToTerraform(this._supportUrl),
+      terms_of_service_url: cdktn.stringToTerraform(this._termsOfServiceUrl),
       timeouts: applicationRegistrationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -702,97 +702,97 @@ export class ApplicationRegistration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_membership_claims: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupMembershipClaims),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groupMembershipClaims),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       homepage_url: {
-        value: cdktf.stringToHclTerraform(this._homepageUrl),
+        value: cdktn.stringToHclTerraform(this._homepageUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       implicit_access_token_issuance_enabled: {
-        value: cdktf.booleanToHclTerraform(this._implicitAccessTokenIssuanceEnabled),
+        value: cdktn.booleanToHclTerraform(this._implicitAccessTokenIssuanceEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       implicit_id_token_issuance_enabled: {
-        value: cdktf.booleanToHclTerraform(this._implicitIdTokenIssuanceEnabled),
+        value: cdktn.booleanToHclTerraform(this._implicitIdTokenIssuanceEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       logout_url: {
-        value: cdktf.stringToHclTerraform(this._logoutUrl),
+        value: cdktn.stringToHclTerraform(this._logoutUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       marketing_url: {
-        value: cdktf.stringToHclTerraform(this._marketingUrl),
+        value: cdktn.stringToHclTerraform(this._marketingUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privacy_statement_url: {
-        value: cdktf.stringToHclTerraform(this._privacyStatementUrl),
+        value: cdktn.stringToHclTerraform(this._privacyStatementUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requested_access_token_version: {
-        value: cdktf.numberToHclTerraform(this._requestedAccessTokenVersion),
+        value: cdktn.numberToHclTerraform(this._requestedAccessTokenVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       service_management_reference: {
-        value: cdktf.stringToHclTerraform(this._serviceManagementReference),
+        value: cdktn.stringToHclTerraform(this._serviceManagementReference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sign_in_audience: {
-        value: cdktf.stringToHclTerraform(this._signInAudience),
+        value: cdktn.stringToHclTerraform(this._signInAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       support_url: {
-        value: cdktf.stringToHclTerraform(this._supportUrl),
+        value: cdktn.stringToHclTerraform(this._supportUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terms_of_service_url: {
-        value: cdktf.stringToHclTerraform(this._termsOfServiceUrl),
+        value: cdktn.stringToHclTerraform(this._termsOfServiceUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

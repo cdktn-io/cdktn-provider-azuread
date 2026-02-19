@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicePrincipalTokenSigningCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalTokenSigningCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * A friendly name for the certificate
   *
@@ -59,39 +59,39 @@ export interface ServicePrincipalTokenSigningCertificateTimeouts {
   readonly read?: string;
 }
 
-export function servicePrincipalTokenSigningCertificateTimeoutsToTerraform(struct?: ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalTokenSigningCertificateTimeoutsToTerraform(struct?: ServicePrincipalTokenSigningCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function servicePrincipalTokenSigningCertificateTimeoutsToHclTerraform(struct?: ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalTokenSigningCertificateTimeoutsToHclTerraform(struct?: ServicePrincipalTokenSigningCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,19 +102,19 @@ export function servicePrincipalTokenSigningCertificateTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalTokenSigningCertificateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,7 +135,7 @@ export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalTokenSigningCertificateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalTokenSigningCertificateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -143,7 +143,7 @@ export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference exte
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -208,7 +208,7 @@ export class ServicePrincipalTokenSigningCertificateTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_token_signing_certificate azuread_service_principal_token_signing_certificate}
 */
-export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformResource {
+export class ServicePrincipalTokenSigningCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -219,14 +219,14 @@ export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicePrincipalTokenSigningCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicePrincipalTokenSigningCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalTokenSigningCertificate to import
   * @param importFromId The id of the existing ServicePrincipalTokenSigningCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_token_signing_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalTokenSigningCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_token_signing_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_token_signing_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -370,10 +370,10 @@ export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      id: cdktf.stringToTerraform(this._id),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      id: cdktn.stringToTerraform(this._id),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
       timeouts: servicePrincipalTokenSigningCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -381,25 +381,25 @@ export class ServicePrincipalTokenSigningCertificate extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

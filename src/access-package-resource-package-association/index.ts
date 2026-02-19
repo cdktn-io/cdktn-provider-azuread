@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessPackageResourcePackageAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface AccessPackageResourcePackageAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of access package this resource association is configured to
   *
@@ -59,39 +59,39 @@ export interface AccessPackageResourcePackageAssociationTimeouts {
   readonly read?: string;
 }
 
-export function accessPackageResourcePackageAssociationTimeoutsToTerraform(struct?: AccessPackageResourcePackageAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageResourcePackageAssociationTimeoutsToTerraform(struct?: AccessPackageResourcePackageAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function accessPackageResourcePackageAssociationTimeoutsToHclTerraform(struct?: AccessPackageResourcePackageAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageResourcePackageAssociationTimeoutsToHclTerraform(struct?: AccessPackageResourcePackageAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,19 +102,19 @@ export function accessPackageResourcePackageAssociationTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageResourcePackageAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AccessPackageResourcePackageAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccessPackageResourcePackageAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageResourcePackageAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,7 +135,7 @@ export class AccessPackageResourcePackageAssociationTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageResourcePackageAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageResourcePackageAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -143,7 +143,7 @@ export class AccessPackageResourcePackageAssociationTimeoutsOutputReference exte
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -208,7 +208,7 @@ export class AccessPackageResourcePackageAssociationTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_resource_package_association azuread_access_package_resource_package_association}
 */
-export class AccessPackageResourcePackageAssociation extends cdktf.TerraformResource {
+export class AccessPackageResourcePackageAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -219,14 +219,14 @@ export class AccessPackageResourcePackageAssociation extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessPackageResourcePackageAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessPackageResourcePackageAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessPackageResourcePackageAssociation to import
   * @param importFromId The id of the existing AccessPackageResourcePackageAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_resource_package_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessPackageResourcePackageAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_resource_package_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_resource_package_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -347,10 +347,10 @@ export class AccessPackageResourcePackageAssociation extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_package_id: cdktf.stringToTerraform(this._accessPackageId),
-      access_type: cdktf.stringToTerraform(this._accessType),
-      catalog_resource_association_id: cdktf.stringToTerraform(this._catalogResourceAssociationId),
-      id: cdktf.stringToTerraform(this._id),
+      access_package_id: cdktn.stringToTerraform(this._accessPackageId),
+      access_type: cdktn.stringToTerraform(this._accessType),
+      catalog_resource_association_id: cdktn.stringToTerraform(this._catalogResourceAssociationId),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: accessPackageResourcePackageAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -358,25 +358,25 @@ export class AccessPackageResourcePackageAssociation extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_package_id: {
-        value: cdktf.stringToHclTerraform(this._accessPackageId),
+        value: cdktn.stringToHclTerraform(this._accessPackageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_type: {
-        value: cdktf.stringToHclTerraform(this._accessType),
+        value: cdktn.stringToHclTerraform(this._accessType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       catalog_resource_association_id: {
-        value: cdktf.stringToHclTerraform(this._catalogResourceAssociationId),
+        value: cdktn.stringToHclTerraform(this._catalogResourceAssociationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

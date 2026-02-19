@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name for the group
   *
@@ -30,13 +30,13 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#include_transitive_members DataAzureadGroup#include_transitive_members}
   */
-  readonly includeTransitiveMembers?: boolean | cdktf.IResolvable;
+  readonly includeTransitiveMembers?: boolean | cdktn.IResolvable;
   /**
   * Whether the group is mail-enabled
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#mail_enabled DataAzureadGroup#mail_enabled}
   */
-  readonly mailEnabled?: boolean | cdktf.IResolvable;
+  readonly mailEnabled?: boolean | cdktn.IResolvable;
   /**
   * The mail alias for the group, unique in the organisation
   *
@@ -54,7 +54,7 @@ export interface DataAzureadGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#security_enabled DataAzureadGroup#security_enabled}
   */
-  readonly securityEnabled?: boolean | cdktf.IResolvable;
+  readonly securityEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,8 +66,8 @@ export interface DataAzureadGroupDynamicMembership {
 }
 
 export function dataAzureadGroupDynamicMembershipToTerraform(struct?: DataAzureadGroupDynamicMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -76,8 +76,8 @@ export function dataAzureadGroupDynamicMembershipToTerraform(struct?: DataAzurea
 
 
 export function dataAzureadGroupDynamicMembershipToHclTerraform(struct?: DataAzureadGroupDynamicMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -85,7 +85,7 @@ export function dataAzureadGroupDynamicMembershipToHclTerraform(struct?: DataAzu
   return attrs;
 }
 
-export class DataAzureadGroupDynamicMembershipOutputReference extends cdktf.ComplexObject {
+export class DataAzureadGroupDynamicMembershipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -94,7 +94,7 @@ export class DataAzureadGroupDynamicMembershipOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -124,14 +124,14 @@ export class DataAzureadGroupDynamicMembershipOutputReference extends cdktf.Comp
   }
 }
 
-export class DataAzureadGroupDynamicMembershipList extends cdktf.ComplexList {
+export class DataAzureadGroupDynamicMembershipList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -149,25 +149,25 @@ export interface DataAzureadGroupTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadGroupTimeoutsToTerraform(struct?: DataAzureadGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzureadGroupTimeoutsToHclTerraform(struct?: DataAzureadGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadGroupTimeoutsToHclTerraform(struct?: DataAzureadGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,19 +178,19 @@ export function dataAzureadGroupTimeoutsToHclTerraform(struct?: DataAzureadGroup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzureadGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -203,13 +203,13 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,7 +240,7 @@ export class DataAzureadGroupTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group azuread_group}
 */
-export class DataAzureadGroup extends cdktf.TerraformDataSource {
+export class DataAzureadGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -251,14 +251,14 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzureadGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzureadGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadGroup to import
   * @param importFromId The id of the existing DataAzureadGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -376,11 +376,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // include_transitive_members - computed: false, optional: true, required: false
-  private _includeTransitiveMembers?: boolean | cdktf.IResolvable; 
+  private _includeTransitiveMembers?: boolean | cdktn.IResolvable; 
   public get includeTransitiveMembers() {
     return this.getBooleanAttribute('include_transitive_members');
   }
-  public set includeTransitiveMembers(value: boolean | cdktf.IResolvable) {
+  public set includeTransitiveMembers(value: boolean | cdktn.IResolvable) {
     this._includeTransitiveMembers = value;
   }
   public resetIncludeTransitiveMembers() {
@@ -397,11 +397,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // mail_enabled - computed: true, optional: true, required: false
-  private _mailEnabled?: boolean | cdktf.IResolvable; 
+  private _mailEnabled?: boolean | cdktn.IResolvable; 
   public get mailEnabled() {
     return this.getBooleanAttribute('mail_enabled');
   }
-  public set mailEnabled(value: boolean | cdktf.IResolvable) {
+  public set mailEnabled(value: boolean | cdktn.IResolvable) {
     this._mailEnabled = value;
   }
   public resetMailEnabled() {
@@ -500,11 +500,11 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   }
 
   // security_enabled - computed: true, optional: true, required: false
-  private _securityEnabled?: boolean | cdktf.IResolvable; 
+  private _securityEnabled?: boolean | cdktn.IResolvable; 
   public get securityEnabled() {
     return this.getBooleanAttribute('security_enabled');
   }
-  public set securityEnabled(value: boolean | cdktf.IResolvable) {
+  public set securityEnabled(value: boolean | cdktn.IResolvable) {
     this._securityEnabled = value;
   }
   public resetSecurityEnabled() {
@@ -557,13 +557,13 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      include_transitive_members: cdktf.booleanToTerraform(this._includeTransitiveMembers),
-      mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
-      mail_nickname: cdktf.stringToTerraform(this._mailNickname),
-      object_id: cdktf.stringToTerraform(this._objectId),
-      security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      include_transitive_members: cdktn.booleanToTerraform(this._includeTransitiveMembers),
+      mail_enabled: cdktn.booleanToTerraform(this._mailEnabled),
+      mail_nickname: cdktn.stringToTerraform(this._mailNickname),
+      object_id: cdktn.stringToTerraform(this._objectId),
+      security_enabled: cdktn.booleanToTerraform(this._securityEnabled),
       timeouts: dataAzureadGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -571,43 +571,43 @@ export class DataAzureadGroup extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_transitive_members: {
-        value: cdktf.booleanToHclTerraform(this._includeTransitiveMembers),
+        value: cdktn.booleanToHclTerraform(this._includeTransitiveMembers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mail_enabled: {
-        value: cdktf.booleanToHclTerraform(this._mailEnabled),
+        value: cdktn.booleanToHclTerraform(this._mailEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mail_nickname: {
-        value: cdktf.stringToHclTerraform(this._mailNickname),
+        value: cdktn.stringToHclTerraform(this._mailNickname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_enabled: {
-        value: cdktf.booleanToHclTerraform(this._securityEnabled),
+        value: cdktn.booleanToHclTerraform(this._securityEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

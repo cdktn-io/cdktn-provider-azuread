@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationOptionalClaimsAConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationOptionalClaimsAConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource ID of the application to which these optional claims belong
   *
@@ -30,19 +30,19 @@ export interface ApplicationOptionalClaimsAConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#access_token ApplicationOptionalClaimsA#access_token}
   */
-  readonly accessToken?: ApplicationOptionalClaimsAccessTokenA[] | cdktf.IResolvable;
+  readonly accessToken?: ApplicationOptionalClaimsAccessTokenA[] | cdktn.IResolvable;
   /**
   * id_token block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#id_token ApplicationOptionalClaimsA#id_token}
   */
-  readonly idToken?: ApplicationOptionalClaimsIdTokenA[] | cdktf.IResolvable;
+  readonly idToken?: ApplicationOptionalClaimsIdTokenA[] | cdktn.IResolvable;
   /**
   * saml2_token block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#saml2_token ApplicationOptionalClaimsA#saml2_token}
   */
-  readonly saml2Token?: ApplicationOptionalClaimsSaml2TokenA[] | cdktf.IResolvable;
+  readonly saml2Token?: ApplicationOptionalClaimsSaml2TokenA[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -62,7 +62,7 @@ export interface ApplicationOptionalClaimsAccessTokenA {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
   */
-  readonly essential?: boolean | cdktf.IResolvable;
+  readonly essential?: boolean | cdktn.IResolvable;
   /**
   * The name of the optional claim
   *
@@ -77,46 +77,46 @@ export interface ApplicationOptionalClaimsAccessTokenA {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsAccessTokenAToTerraform(struct?: ApplicationOptionalClaimsAccessTokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsAccessTokenAToTerraform(struct?: ApplicationOptionalClaimsAccessTokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
-    essential: cdktf.booleanToTerraform(struct!.essential),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
+    additional_properties: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalProperties),
+    essential: cdktn.booleanToTerraform(struct!.essential),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function applicationOptionalClaimsAccessTokenAToHclTerraform(struct?: ApplicationOptionalClaimsAccessTokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsAccessTokenAToHclTerraform(struct?: ApplicationOptionalClaimsAccessTokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_properties: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalProperties),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     essential: {
-      value: cdktf.booleanToHclTerraform(struct!.essential),
+      value: cdktn.booleanToHclTerraform(struct!.essential),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,9 +127,9 @@ export function applicationOptionalClaimsAccessTokenAToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.ComplexObject {
+export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -137,11 +137,11 @@ export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationOptionalClaimsAccessTokenA | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationOptionalClaimsAccessTokenA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,7 +166,7 @@ export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationOptionalClaimsAccessTokenA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationOptionalClaimsAccessTokenA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -175,7 +175,7 @@ export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.
       this._name = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,11 +206,11 @@ export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.
   }
 
   // essential - computed: false, optional: true, required: false
-  private _essential?: boolean | cdktf.IResolvable; 
+  private _essential?: boolean | cdktn.IResolvable; 
   public get essential() {
     return this.getBooleanAttribute('essential');
   }
-  public set essential(value: boolean | cdktf.IResolvable) {
+  public set essential(value: boolean | cdktn.IResolvable) {
     this._essential = value;
   }
   public resetEssential() {
@@ -251,15 +251,15 @@ export class ApplicationOptionalClaimsAccessTokenAOutputReference extends cdktf.
   }
 }
 
-export class ApplicationOptionalClaimsAccessTokenAList extends cdktf.ComplexList {
-  public internalValue? : ApplicationOptionalClaimsAccessTokenA[] | cdktf.IResolvable
+export class ApplicationOptionalClaimsAccessTokenAList extends cdktn.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsAccessTokenA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,7 +282,7 @@ export interface ApplicationOptionalClaimsIdTokenA {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
   */
-  readonly essential?: boolean | cdktf.IResolvable;
+  readonly essential?: boolean | cdktn.IResolvable;
   /**
   * The name of the optional claim
   *
@@ -297,46 +297,46 @@ export interface ApplicationOptionalClaimsIdTokenA {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsIdTokenAToTerraform(struct?: ApplicationOptionalClaimsIdTokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsIdTokenAToTerraform(struct?: ApplicationOptionalClaimsIdTokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
-    essential: cdktf.booleanToTerraform(struct!.essential),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
+    additional_properties: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalProperties),
+    essential: cdktn.booleanToTerraform(struct!.essential),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function applicationOptionalClaimsIdTokenAToHclTerraform(struct?: ApplicationOptionalClaimsIdTokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsIdTokenAToHclTerraform(struct?: ApplicationOptionalClaimsIdTokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_properties: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalProperties),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     essential: {
-      value: cdktf.booleanToHclTerraform(struct!.essential),
+      value: cdktn.booleanToHclTerraform(struct!.essential),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,9 +347,9 @@ export function applicationOptionalClaimsIdTokenAToHclTerraform(struct?: Applica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.ComplexObject {
+export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,11 +357,11 @@ export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationOptionalClaimsIdTokenA | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationOptionalClaimsIdTokenA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -386,7 +386,7 @@ export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationOptionalClaimsIdTokenA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationOptionalClaimsIdTokenA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -395,7 +395,7 @@ export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.Comp
       this._name = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -426,11 +426,11 @@ export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.Comp
   }
 
   // essential - computed: false, optional: true, required: false
-  private _essential?: boolean | cdktf.IResolvable; 
+  private _essential?: boolean | cdktn.IResolvable; 
   public get essential() {
     return this.getBooleanAttribute('essential');
   }
-  public set essential(value: boolean | cdktf.IResolvable) {
+  public set essential(value: boolean | cdktn.IResolvable) {
     this._essential = value;
   }
   public resetEssential() {
@@ -471,15 +471,15 @@ export class ApplicationOptionalClaimsIdTokenAOutputReference extends cdktf.Comp
   }
 }
 
-export class ApplicationOptionalClaimsIdTokenAList extends cdktf.ComplexList {
-  public internalValue? : ApplicationOptionalClaimsIdTokenA[] | cdktf.IResolvable
+export class ApplicationOptionalClaimsIdTokenAList extends cdktn.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsIdTokenA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -502,7 +502,7 @@ export interface ApplicationOptionalClaimsSaml2TokenA {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
   */
-  readonly essential?: boolean | cdktf.IResolvable;
+  readonly essential?: boolean | cdktn.IResolvable;
   /**
   * The name of the optional claim
   *
@@ -517,46 +517,46 @@ export interface ApplicationOptionalClaimsSaml2TokenA {
   readonly source?: string;
 }
 
-export function applicationOptionalClaimsSaml2TokenAToTerraform(struct?: ApplicationOptionalClaimsSaml2TokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsSaml2TokenAToTerraform(struct?: ApplicationOptionalClaimsSaml2TokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_properties: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalProperties),
-    essential: cdktf.booleanToTerraform(struct!.essential),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
+    additional_properties: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalProperties),
+    essential: cdktn.booleanToTerraform(struct!.essential),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
-export function applicationOptionalClaimsSaml2TokenAToHclTerraform(struct?: ApplicationOptionalClaimsSaml2TokenA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsSaml2TokenAToHclTerraform(struct?: ApplicationOptionalClaimsSaml2TokenA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_properties: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalProperties),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalProperties),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     essential: {
-      value: cdktf.booleanToHclTerraform(struct!.essential),
+      value: cdktn.booleanToHclTerraform(struct!.essential),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -567,9 +567,9 @@ export function applicationOptionalClaimsSaml2TokenAToHclTerraform(struct?: Appl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.ComplexObject {
+export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -577,11 +577,11 @@ export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApplicationOptionalClaimsSaml2TokenA | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationOptionalClaimsSaml2TokenA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -606,7 +606,7 @@ export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationOptionalClaimsSaml2TokenA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationOptionalClaimsSaml2TokenA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -615,7 +615,7 @@ export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.C
       this._name = undefined;
       this._source = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -646,11 +646,11 @@ export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.C
   }
 
   // essential - computed: false, optional: true, required: false
-  private _essential?: boolean | cdktf.IResolvable; 
+  private _essential?: boolean | cdktn.IResolvable; 
   public get essential() {
     return this.getBooleanAttribute('essential');
   }
-  public set essential(value: boolean | cdktf.IResolvable) {
+  public set essential(value: boolean | cdktn.IResolvable) {
     this._essential = value;
   }
   public resetEssential() {
@@ -691,15 +691,15 @@ export class ApplicationOptionalClaimsSaml2TokenAOutputReference extends cdktf.C
   }
 }
 
-export class ApplicationOptionalClaimsSaml2TokenAList extends cdktf.ComplexList {
-  public internalValue? : ApplicationOptionalClaimsSaml2TokenA[] | cdktf.IResolvable
+export class ApplicationOptionalClaimsSaml2TokenAList extends cdktn.ComplexList {
+  public internalValue? : ApplicationOptionalClaimsSaml2TokenA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -729,46 +729,46 @@ export interface ApplicationOptionalClaimsTimeouts {
   readonly update?: string;
 }
 
-export function applicationOptionalClaimsTimeoutsToTerraform(struct?: ApplicationOptionalClaimsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsTimeoutsToTerraform(struct?: ApplicationOptionalClaimsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationOptionalClaimsTimeoutsToHclTerraform(struct?: ApplicationOptionalClaimsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationOptionalClaimsTimeoutsToHclTerraform(struct?: ApplicationOptionalClaimsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -779,19 +779,19 @@ export function applicationOptionalClaimsTimeoutsToHclTerraform(struct?: Applica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationOptionalClaimsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationOptionalClaimsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -816,7 +816,7 @@ export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationOptionalClaimsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationOptionalClaimsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -825,7 +825,7 @@ export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -907,7 +907,7 @@ export class ApplicationOptionalClaimsTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims azuread_application_optional_claims}
 */
-export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
+export class ApplicationOptionalClaimsA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -918,14 +918,14 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationOptionalClaimsA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationOptionalClaimsA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationOptionalClaimsA to import
   * @param importFromId The id of the existing ApplicationOptionalClaimsA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_optional_claims#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationOptionalClaimsA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_optional_claims", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_optional_claims", importId: importFromId, provider });
       }
 
   // ===========
@@ -1001,7 +1001,7 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
   public get accessToken() {
     return this._accessToken;
   }
-  public putAccessToken(value: ApplicationOptionalClaimsAccessTokenA[] | cdktf.IResolvable) {
+  public putAccessToken(value: ApplicationOptionalClaimsAccessTokenA[] | cdktn.IResolvable) {
     this._accessToken.internalValue = value;
   }
   public resetAccessToken() {
@@ -1017,7 +1017,7 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
   public get idToken() {
     return this._idToken;
   }
-  public putIdToken(value: ApplicationOptionalClaimsIdTokenA[] | cdktf.IResolvable) {
+  public putIdToken(value: ApplicationOptionalClaimsIdTokenA[] | cdktn.IResolvable) {
     this._idToken.internalValue = value;
   }
   public resetIdToken() {
@@ -1033,7 +1033,7 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
   public get saml2Token() {
     return this._saml2Token;
   }
-  public putSaml2Token(value: ApplicationOptionalClaimsSaml2TokenA[] | cdktf.IResolvable) {
+  public putSaml2Token(value: ApplicationOptionalClaimsSaml2TokenA[] | cdktn.IResolvable) {
     this._saml2Token.internalValue = value;
   }
   public resetSaml2Token() {
@@ -1066,11 +1066,11 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      id: cdktf.stringToTerraform(this._id),
-      access_token: cdktf.listMapper(applicationOptionalClaimsAccessTokenAToTerraform, true)(this._accessToken.internalValue),
-      id_token: cdktf.listMapper(applicationOptionalClaimsIdTokenAToTerraform, true)(this._idToken.internalValue),
-      saml2_token: cdktf.listMapper(applicationOptionalClaimsSaml2TokenAToTerraform, true)(this._saml2Token.internalValue),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      id: cdktn.stringToTerraform(this._id),
+      access_token: cdktn.listMapper(applicationOptionalClaimsAccessTokenAToTerraform, true)(this._accessToken.internalValue),
+      id_token: cdktn.listMapper(applicationOptionalClaimsIdTokenAToTerraform, true)(this._idToken.internalValue),
+      saml2_token: cdktn.listMapper(applicationOptionalClaimsSaml2TokenAToTerraform, true)(this._saml2Token.internalValue),
       timeouts: applicationOptionalClaimsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1078,31 +1078,31 @@ export class ApplicationOptionalClaimsA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_token: {
-        value: cdktf.listMapperHcl(applicationOptionalClaimsAccessTokenAToHclTerraform, true)(this._accessToken.internalValue),
+        value: cdktn.listMapperHcl(applicationOptionalClaimsAccessTokenAToHclTerraform, true)(this._accessToken.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationOptionalClaimsAccessTokenAList",
       },
       id_token: {
-        value: cdktf.listMapperHcl(applicationOptionalClaimsIdTokenAToHclTerraform, true)(this._idToken.internalValue),
+        value: cdktn.listMapperHcl(applicationOptionalClaimsIdTokenAToHclTerraform, true)(this._idToken.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationOptionalClaimsIdTokenAList",
       },
       saml2_token: {
-        value: cdktf.listMapperHcl(applicationOptionalClaimsSaml2TokenAToHclTerraform, true)(this._saml2Token.internalValue),
+        value: cdktn.listMapperHcl(applicationOptionalClaimsSaml2TokenAToHclTerraform, true)(this._saml2Token.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApplicationOptionalClaimsSaml2TokenAList",

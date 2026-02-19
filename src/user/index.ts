@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserConfig extends cdktf.TerraformMetaArguments {
+export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether or not the account should be enabled
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#account_enabled User#account_enabled}
   */
-  readonly accountEnabled?: boolean | cdktf.IResolvable;
+  readonly accountEnabled?: boolean | cdktn.IResolvable;
   /**
   * The age group of the user
   *
@@ -71,13 +71,13 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#disable_password_expiration User#disable_password_expiration}
   */
-  readonly disablePasswordExpiration?: boolean | cdktf.IResolvable;
+  readonly disablePasswordExpiration?: boolean | cdktn.IResolvable;
   /**
   * Whether the user is allowed weaker passwords than the default policy to be specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#disable_strong_password User#disable_strong_password}
   */
-  readonly disableStrongPassword?: boolean | cdktf.IResolvable;
+  readonly disableStrongPassword?: boolean | cdktn.IResolvable;
   /**
   * The name to display in the address book for the user
   *
@@ -119,7 +119,7 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#force_password_change User#force_password_change}
   */
-  readonly forcePasswordChange?: boolean | cdktf.IResolvable;
+  readonly forcePasswordChange?: boolean | cdktn.IResolvable;
   /**
   * The given name (first name) of the user
   *
@@ -204,7 +204,7 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#show_in_address_list User#show_in_address_list}
   */
-  readonly showInAddressList?: boolean | cdktf.IResolvable;
+  readonly showInAddressList?: boolean | cdktn.IResolvable;
   /**
   * The state or province in the user's address
   *
@@ -261,46 +261,46 @@ export interface UserTimeouts {
   readonly update?: string;
 }
 
-export function userTimeoutsToTerraform(struct?: UserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userTimeoutsToTerraform(struct?: UserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function userTimeoutsToHclTerraform(struct?: UserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userTimeoutsToHclTerraform(struct?: UserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,19 +311,19 @@ export function userTimeoutsToHclTerraform(struct?: UserTimeouts | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
+export class UserTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): UserTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): UserTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -348,7 +348,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: UserTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: UserTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -357,7 +357,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -439,7 +439,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user azuread_user}
 */
-export class User extends cdktf.TerraformResource {
+export class User extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -450,14 +450,14 @@ export class User extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
   * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -537,11 +537,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // account_enabled - computed: false, optional: true, required: false
-  private _accountEnabled?: boolean | cdktf.IResolvable; 
+  private _accountEnabled?: boolean | cdktn.IResolvable; 
   public get accountEnabled() {
     return this.getBooleanAttribute('account_enabled');
   }
-  public set accountEnabled(value: boolean | cdktf.IResolvable) {
+  public set accountEnabled(value: boolean | cdktn.IResolvable) {
     this._accountEnabled = value;
   }
   public resetAccountEnabled() {
@@ -686,11 +686,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // disable_password_expiration - computed: false, optional: true, required: false
-  private _disablePasswordExpiration?: boolean | cdktf.IResolvable; 
+  private _disablePasswordExpiration?: boolean | cdktn.IResolvable; 
   public get disablePasswordExpiration() {
     return this.getBooleanAttribute('disable_password_expiration');
   }
-  public set disablePasswordExpiration(value: boolean | cdktf.IResolvable) {
+  public set disablePasswordExpiration(value: boolean | cdktn.IResolvable) {
     this._disablePasswordExpiration = value;
   }
   public resetDisablePasswordExpiration() {
@@ -702,11 +702,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // disable_strong_password - computed: false, optional: true, required: false
-  private _disableStrongPassword?: boolean | cdktf.IResolvable; 
+  private _disableStrongPassword?: boolean | cdktn.IResolvable; 
   public get disableStrongPassword() {
     return this.getBooleanAttribute('disable_strong_password');
   }
-  public set disableStrongPassword(value: boolean | cdktf.IResolvable) {
+  public set disableStrongPassword(value: boolean | cdktn.IResolvable) {
     this._disableStrongPassword = value;
   }
   public resetDisableStrongPassword() {
@@ -816,11 +816,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // force_password_change - computed: false, optional: true, required: false
-  private _forcePasswordChange?: boolean | cdktf.IResolvable; 
+  private _forcePasswordChange?: boolean | cdktn.IResolvable; 
   public get forcePasswordChange() {
     return this.getBooleanAttribute('force_password_change');
   }
-  public set forcePasswordChange(value: boolean | cdktf.IResolvable) {
+  public set forcePasswordChange(value: boolean | cdktn.IResolvable) {
     this._forcePasswordChange = value;
   }
   public resetForcePasswordChange() {
@@ -1018,7 +1018,7 @@ export class User extends cdktf.TerraformResource {
   // other_mails - computed: false, optional: true, required: false
   private _otherMails?: string[]; 
   public get otherMails() {
-    return cdktf.Fn.tolist(this.getListAttribute('other_mails'));
+    return cdktn.Fn.tolist(this.getListAttribute('other_mails'));
   }
   public set otherMails(value: string[]) {
     this._otherMails = value;
@@ -1085,11 +1085,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // show_in_address_list - computed: false, optional: true, required: false
-  private _showInAddressList?: boolean | cdktf.IResolvable; 
+  private _showInAddressList?: boolean | cdktn.IResolvable; 
   public get showInAddressList() {
     return this.getBooleanAttribute('show_in_address_list');
   }
-  public set showInAddressList(value: boolean | cdktf.IResolvable) {
+  public set showInAddressList(value: boolean | cdktn.IResolvable) {
     this._showInAddressList = value;
   }
   public resetShowInAddressList() {
@@ -1204,43 +1204,43 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_enabled: cdktf.booleanToTerraform(this._accountEnabled),
-      age_group: cdktf.stringToTerraform(this._ageGroup),
-      business_phones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._businessPhones),
-      city: cdktf.stringToTerraform(this._city),
-      company_name: cdktf.stringToTerraform(this._companyName),
-      consent_provided_for_minor: cdktf.stringToTerraform(this._consentProvidedForMinor),
-      cost_center: cdktf.stringToTerraform(this._costCenter),
-      country: cdktf.stringToTerraform(this._country),
-      department: cdktf.stringToTerraform(this._department),
-      disable_password_expiration: cdktf.booleanToTerraform(this._disablePasswordExpiration),
-      disable_strong_password: cdktf.booleanToTerraform(this._disableStrongPassword),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      division: cdktf.stringToTerraform(this._division),
-      employee_hire_date: cdktf.stringToTerraform(this._employeeHireDate),
-      employee_id: cdktf.stringToTerraform(this._employeeId),
-      employee_type: cdktf.stringToTerraform(this._employeeType),
-      fax_number: cdktf.stringToTerraform(this._faxNumber),
-      force_password_change: cdktf.booleanToTerraform(this._forcePasswordChange),
-      given_name: cdktf.stringToTerraform(this._givenName),
-      id: cdktf.stringToTerraform(this._id),
-      job_title: cdktf.stringToTerraform(this._jobTitle),
-      mail: cdktf.stringToTerraform(this._mail),
-      mail_nickname: cdktf.stringToTerraform(this._mailNickname),
-      manager_id: cdktf.stringToTerraform(this._managerId),
-      mobile_phone: cdktf.stringToTerraform(this._mobilePhone),
-      office_location: cdktf.stringToTerraform(this._officeLocation),
-      onpremises_immutable_id: cdktf.stringToTerraform(this._onpremisesImmutableId),
-      other_mails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherMails),
-      password: cdktf.stringToTerraform(this._password),
-      postal_code: cdktf.stringToTerraform(this._postalCode),
-      preferred_language: cdktf.stringToTerraform(this._preferredLanguage),
-      show_in_address_list: cdktf.booleanToTerraform(this._showInAddressList),
-      state: cdktf.stringToTerraform(this._state),
-      street_address: cdktf.stringToTerraform(this._streetAddress),
-      surname: cdktf.stringToTerraform(this._surname),
-      usage_location: cdktf.stringToTerraform(this._usageLocation),
-      user_principal_name: cdktf.stringToTerraform(this._userPrincipalName),
+      account_enabled: cdktn.booleanToTerraform(this._accountEnabled),
+      age_group: cdktn.stringToTerraform(this._ageGroup),
+      business_phones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._businessPhones),
+      city: cdktn.stringToTerraform(this._city),
+      company_name: cdktn.stringToTerraform(this._companyName),
+      consent_provided_for_minor: cdktn.stringToTerraform(this._consentProvidedForMinor),
+      cost_center: cdktn.stringToTerraform(this._costCenter),
+      country: cdktn.stringToTerraform(this._country),
+      department: cdktn.stringToTerraform(this._department),
+      disable_password_expiration: cdktn.booleanToTerraform(this._disablePasswordExpiration),
+      disable_strong_password: cdktn.booleanToTerraform(this._disableStrongPassword),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      division: cdktn.stringToTerraform(this._division),
+      employee_hire_date: cdktn.stringToTerraform(this._employeeHireDate),
+      employee_id: cdktn.stringToTerraform(this._employeeId),
+      employee_type: cdktn.stringToTerraform(this._employeeType),
+      fax_number: cdktn.stringToTerraform(this._faxNumber),
+      force_password_change: cdktn.booleanToTerraform(this._forcePasswordChange),
+      given_name: cdktn.stringToTerraform(this._givenName),
+      id: cdktn.stringToTerraform(this._id),
+      job_title: cdktn.stringToTerraform(this._jobTitle),
+      mail: cdktn.stringToTerraform(this._mail),
+      mail_nickname: cdktn.stringToTerraform(this._mailNickname),
+      manager_id: cdktn.stringToTerraform(this._managerId),
+      mobile_phone: cdktn.stringToTerraform(this._mobilePhone),
+      office_location: cdktn.stringToTerraform(this._officeLocation),
+      onpremises_immutable_id: cdktn.stringToTerraform(this._onpremisesImmutableId),
+      other_mails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._otherMails),
+      password: cdktn.stringToTerraform(this._password),
+      postal_code: cdktn.stringToTerraform(this._postalCode),
+      preferred_language: cdktn.stringToTerraform(this._preferredLanguage),
+      show_in_address_list: cdktn.booleanToTerraform(this._showInAddressList),
+      state: cdktn.stringToTerraform(this._state),
+      street_address: cdktn.stringToTerraform(this._streetAddress),
+      surname: cdktn.stringToTerraform(this._surname),
+      usage_location: cdktn.stringToTerraform(this._usageLocation),
+      user_principal_name: cdktn.stringToTerraform(this._userPrincipalName),
       timeouts: userTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1248,223 +1248,223 @@ export class User extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_enabled: {
-        value: cdktf.booleanToHclTerraform(this._accountEnabled),
+        value: cdktn.booleanToHclTerraform(this._accountEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       age_group: {
-        value: cdktf.stringToHclTerraform(this._ageGroup),
+        value: cdktn.stringToHclTerraform(this._ageGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_phones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._businessPhones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._businessPhones),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       city: {
-        value: cdktf.stringToHclTerraform(this._city),
+        value: cdktn.stringToHclTerraform(this._city),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       company_name: {
-        value: cdktf.stringToHclTerraform(this._companyName),
+        value: cdktn.stringToHclTerraform(this._companyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       consent_provided_for_minor: {
-        value: cdktf.stringToHclTerraform(this._consentProvidedForMinor),
+        value: cdktn.stringToHclTerraform(this._consentProvidedForMinor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cost_center: {
-        value: cdktf.stringToHclTerraform(this._costCenter),
+        value: cdktn.stringToHclTerraform(this._costCenter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       country: {
-        value: cdktf.stringToHclTerraform(this._country),
+        value: cdktn.stringToHclTerraform(this._country),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       department: {
-        value: cdktf.stringToHclTerraform(this._department),
+        value: cdktn.stringToHclTerraform(this._department),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_password_expiration: {
-        value: cdktf.booleanToHclTerraform(this._disablePasswordExpiration),
+        value: cdktn.booleanToHclTerraform(this._disablePasswordExpiration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_strong_password: {
-        value: cdktf.booleanToHclTerraform(this._disableStrongPassword),
+        value: cdktn.booleanToHclTerraform(this._disableStrongPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       division: {
-        value: cdktf.stringToHclTerraform(this._division),
+        value: cdktn.stringToHclTerraform(this._division),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       employee_hire_date: {
-        value: cdktf.stringToHclTerraform(this._employeeHireDate),
+        value: cdktn.stringToHclTerraform(this._employeeHireDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       employee_id: {
-        value: cdktf.stringToHclTerraform(this._employeeId),
+        value: cdktn.stringToHclTerraform(this._employeeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       employee_type: {
-        value: cdktf.stringToHclTerraform(this._employeeType),
+        value: cdktn.stringToHclTerraform(this._employeeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fax_number: {
-        value: cdktf.stringToHclTerraform(this._faxNumber),
+        value: cdktn.stringToHclTerraform(this._faxNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_password_change: {
-        value: cdktf.booleanToHclTerraform(this._forcePasswordChange),
+        value: cdktn.booleanToHclTerraform(this._forcePasswordChange),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       given_name: {
-        value: cdktf.stringToHclTerraform(this._givenName),
+        value: cdktn.stringToHclTerraform(this._givenName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_title: {
-        value: cdktf.stringToHclTerraform(this._jobTitle),
+        value: cdktn.stringToHclTerraform(this._jobTitle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mail: {
-        value: cdktf.stringToHclTerraform(this._mail),
+        value: cdktn.stringToHclTerraform(this._mail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mail_nickname: {
-        value: cdktf.stringToHclTerraform(this._mailNickname),
+        value: cdktn.stringToHclTerraform(this._mailNickname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       manager_id: {
-        value: cdktf.stringToHclTerraform(this._managerId),
+        value: cdktn.stringToHclTerraform(this._managerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mobile_phone: {
-        value: cdktf.stringToHclTerraform(this._mobilePhone),
+        value: cdktn.stringToHclTerraform(this._mobilePhone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       office_location: {
-        value: cdktf.stringToHclTerraform(this._officeLocation),
+        value: cdktn.stringToHclTerraform(this._officeLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       onpremises_immutable_id: {
-        value: cdktf.stringToHclTerraform(this._onpremisesImmutableId),
+        value: cdktn.stringToHclTerraform(this._onpremisesImmutableId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       other_mails: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._otherMails),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._otherMails),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       postal_code: {
-        value: cdktf.stringToHclTerraform(this._postalCode),
+        value: cdktn.stringToHclTerraform(this._postalCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preferred_language: {
-        value: cdktf.stringToHclTerraform(this._preferredLanguage),
+        value: cdktn.stringToHclTerraform(this._preferredLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       show_in_address_list: {
-        value: cdktf.booleanToHclTerraform(this._showInAddressList),
+        value: cdktn.booleanToHclTerraform(this._showInAddressList),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       street_address: {
-        value: cdktf.stringToHclTerraform(this._streetAddress),
+        value: cdktn.stringToHclTerraform(this._streetAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       surname: {
-        value: cdktf.stringToHclTerraform(this._surname),
+        value: cdktn.stringToHclTerraform(this._surname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       usage_location: {
-        value: cdktf.stringToHclTerraform(this._usageLocation),
+        value: cdktn.stringToHclTerraform(this._usageLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_principal_name: {
-        value: cdktf.stringToHclTerraform(this._userPrincipalName),
+        value: cdktn.stringToHclTerraform(this._userPrincipalName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

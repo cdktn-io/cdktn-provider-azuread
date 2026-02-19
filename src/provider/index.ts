@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -65,7 +65,7 @@ export interface AzureadProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#disable_terraform_partner_id AzureadProvider#disable_terraform_partner_id}
   */
-  readonly disableTerraformPartnerId?: boolean | cdktf.IResolvable;
+  readonly disableTerraformPartnerId?: boolean | cdktn.IResolvable;
   /**
   * The cloud environment which should be used. Possible values are: `global` (also `public`), `usgovernmentl4` (also `usgovernment`), `usgovernmentl5` (also `dod`), and `china`. Defaults to `global`. Not used and should not be specified when `metadata_host` is specified.
   *
@@ -125,25 +125,25 @@ export interface AzureadProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#use_aks_workload_identity AzureadProvider#use_aks_workload_identity}
   */
-  readonly useAksWorkloadIdentity?: boolean | cdktf.IResolvable;
+  readonly useAksWorkloadIdentity?: boolean | cdktn.IResolvable;
   /**
   * Allow Azure CLI to be used for Authentication
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#use_cli AzureadProvider#use_cli}
   */
-  readonly useCli?: boolean | cdktf.IResolvable;
+  readonly useCli?: boolean | cdktn.IResolvable;
   /**
   * Allow Managed Identity to be used for Authentication
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#use_msi AzureadProvider#use_msi}
   */
-  readonly useMsi?: boolean | cdktf.IResolvable;
+  readonly useMsi?: boolean | cdktn.IResolvable;
   /**
   * Allow OpenID Connect to be used for authentication
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#use_oidc AzureadProvider#use_oidc}
   */
-  readonly useOidc?: boolean | cdktf.IResolvable;
+  readonly useOidc?: boolean | cdktn.IResolvable;
   /**
   * Alias name
   *
@@ -155,7 +155,7 @@ export interface AzureadProviderConfig {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs azuread}
 */
-export class AzureadProvider extends cdktf.TerraformProvider {
+export class AzureadProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -166,14 +166,14 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureadProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureadProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureadProvider to import
   * @param importFromId The id of the existing AzureadProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureadProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread", importId: importFromId, provider });
       }
 
   // ===========
@@ -355,11 +355,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // disable_terraform_partner_id - computed: false, optional: true, required: false
-  private _disableTerraformPartnerId?: boolean | cdktf.IResolvable; 
+  private _disableTerraformPartnerId?: boolean | cdktn.IResolvable; 
   public get disableTerraformPartnerId() {
     return this._disableTerraformPartnerId;
   }
-  public set disableTerraformPartnerId(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableTerraformPartnerId(value: boolean | cdktn.IResolvable | undefined) {
     this._disableTerraformPartnerId = value;
   }
   public resetDisableTerraformPartnerId() {
@@ -515,11 +515,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_aks_workload_identity - computed: false, optional: true, required: false
-  private _useAksWorkloadIdentity?: boolean | cdktf.IResolvable; 
+  private _useAksWorkloadIdentity?: boolean | cdktn.IResolvable; 
   public get useAksWorkloadIdentity() {
     return this._useAksWorkloadIdentity;
   }
-  public set useAksWorkloadIdentity(value: boolean | cdktf.IResolvable | undefined) {
+  public set useAksWorkloadIdentity(value: boolean | cdktn.IResolvable | undefined) {
     this._useAksWorkloadIdentity = value;
   }
   public resetUseAksWorkloadIdentity() {
@@ -531,11 +531,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_cli - computed: false, optional: true, required: false
-  private _useCli?: boolean | cdktf.IResolvable; 
+  private _useCli?: boolean | cdktn.IResolvable; 
   public get useCli() {
     return this._useCli;
   }
-  public set useCli(value: boolean | cdktf.IResolvable | undefined) {
+  public set useCli(value: boolean | cdktn.IResolvable | undefined) {
     this._useCli = value;
   }
   public resetUseCli() {
@@ -547,11 +547,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_msi - computed: false, optional: true, required: false
-  private _useMsi?: boolean | cdktf.IResolvable; 
+  private _useMsi?: boolean | cdktn.IResolvable; 
   public get useMsi() {
     return this._useMsi;
   }
-  public set useMsi(value: boolean | cdktf.IResolvable | undefined) {
+  public set useMsi(value: boolean | cdktn.IResolvable | undefined) {
     this._useMsi = value;
   }
   public resetUseMsi() {
@@ -563,11 +563,11 @@ export class AzureadProvider extends cdktf.TerraformProvider {
   }
 
   // use_oidc - computed: false, optional: true, required: false
-  private _useOidc?: boolean | cdktf.IResolvable; 
+  private _useOidc?: boolean | cdktn.IResolvable; 
   public get useOidc() {
     return this._useOidc;
   }
-  public set useOidc(value: boolean | cdktf.IResolvable | undefined) {
+  public set useOidc(value: boolean | cdktn.IResolvable | undefined) {
     this._useOidc = value;
   }
   public resetUseOidc() {
@@ -600,168 +600,168 @@ export class AzureadProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ado_pipeline_service_connection_id: cdktf.stringToTerraform(this._adoPipelineServiceConnectionId),
-      client_certificate: cdktf.stringToTerraform(this._clientCertificate),
-      client_certificate_password: cdktf.stringToTerraform(this._clientCertificatePassword),
-      client_certificate_path: cdktf.stringToTerraform(this._clientCertificatePath),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_id_file_path: cdktf.stringToTerraform(this._clientIdFilePath),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      client_secret_file_path: cdktf.stringToTerraform(this._clientSecretFilePath),
-      disable_terraform_partner_id: cdktf.booleanToTerraform(this._disableTerraformPartnerId),
-      environment: cdktf.stringToTerraform(this._environment),
-      metadata_host: cdktf.stringToTerraform(this._metadataHost),
-      msi_endpoint: cdktf.stringToTerraform(this._msiEndpoint),
-      oidc_request_token: cdktf.stringToTerraform(this._oidcRequestToken),
-      oidc_request_url: cdktf.stringToTerraform(this._oidcRequestUrl),
-      oidc_token: cdktf.stringToTerraform(this._oidcToken),
-      oidc_token_file_path: cdktf.stringToTerraform(this._oidcTokenFilePath),
-      partner_id: cdktf.stringToTerraform(this._partnerId),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
-      use_aks_workload_identity: cdktf.booleanToTerraform(this._useAksWorkloadIdentity),
-      use_cli: cdktf.booleanToTerraform(this._useCli),
-      use_msi: cdktf.booleanToTerraform(this._useMsi),
-      use_oidc: cdktf.booleanToTerraform(this._useOidc),
-      alias: cdktf.stringToTerraform(this._alias),
+      ado_pipeline_service_connection_id: cdktn.stringToTerraform(this._adoPipelineServiceConnectionId),
+      client_certificate: cdktn.stringToTerraform(this._clientCertificate),
+      client_certificate_password: cdktn.stringToTerraform(this._clientCertificatePassword),
+      client_certificate_path: cdktn.stringToTerraform(this._clientCertificatePath),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_id_file_path: cdktn.stringToTerraform(this._clientIdFilePath),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      client_secret_file_path: cdktn.stringToTerraform(this._clientSecretFilePath),
+      disable_terraform_partner_id: cdktn.booleanToTerraform(this._disableTerraformPartnerId),
+      environment: cdktn.stringToTerraform(this._environment),
+      metadata_host: cdktn.stringToTerraform(this._metadataHost),
+      msi_endpoint: cdktn.stringToTerraform(this._msiEndpoint),
+      oidc_request_token: cdktn.stringToTerraform(this._oidcRequestToken),
+      oidc_request_url: cdktn.stringToTerraform(this._oidcRequestUrl),
+      oidc_token: cdktn.stringToTerraform(this._oidcToken),
+      oidc_token_file_path: cdktn.stringToTerraform(this._oidcTokenFilePath),
+      partner_id: cdktn.stringToTerraform(this._partnerId),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
+      use_aks_workload_identity: cdktn.booleanToTerraform(this._useAksWorkloadIdentity),
+      use_cli: cdktn.booleanToTerraform(this._useCli),
+      use_msi: cdktn.booleanToTerraform(this._useMsi),
+      use_oidc: cdktn.booleanToTerraform(this._useOidc),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ado_pipeline_service_connection_id: {
-        value: cdktf.stringToHclTerraform(this._adoPipelineServiceConnectionId),
+        value: cdktn.stringToHclTerraform(this._adoPipelineServiceConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate: {
-        value: cdktf.stringToHclTerraform(this._clientCertificate),
+        value: cdktn.stringToHclTerraform(this._clientCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_password: {
-        value: cdktf.stringToHclTerraform(this._clientCertificatePassword),
+        value: cdktn.stringToHclTerraform(this._clientCertificatePassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_path: {
-        value: cdktf.stringToHclTerraform(this._clientCertificatePath),
+        value: cdktn.stringToHclTerraform(this._clientCertificatePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id_file_path: {
-        value: cdktf.stringToHclTerraform(this._clientIdFilePath),
+        value: cdktn.stringToHclTerraform(this._clientIdFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret_file_path: {
-        value: cdktf.stringToHclTerraform(this._clientSecretFilePath),
+        value: cdktn.stringToHclTerraform(this._clientSecretFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_terraform_partner_id: {
-        value: cdktf.booleanToHclTerraform(this._disableTerraformPartnerId),
+        value: cdktn.booleanToHclTerraform(this._disableTerraformPartnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata_host: {
-        value: cdktf.stringToHclTerraform(this._metadataHost),
+        value: cdktn.stringToHclTerraform(this._metadataHost),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       msi_endpoint: {
-        value: cdktf.stringToHclTerraform(this._msiEndpoint),
+        value: cdktn.stringToHclTerraform(this._msiEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_request_token: {
-        value: cdktf.stringToHclTerraform(this._oidcRequestToken),
+        value: cdktn.stringToHclTerraform(this._oidcRequestToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_request_url: {
-        value: cdktf.stringToHclTerraform(this._oidcRequestUrl),
+        value: cdktn.stringToHclTerraform(this._oidcRequestUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_token: {
-        value: cdktf.stringToHclTerraform(this._oidcToken),
+        value: cdktn.stringToHclTerraform(this._oidcToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_token_file_path: {
-        value: cdktf.stringToHclTerraform(this._oidcTokenFilePath),
+        value: cdktn.stringToHclTerraform(this._oidcTokenFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_id: {
-        value: cdktf.stringToHclTerraform(this._partnerId),
+        value: cdktn.stringToHclTerraform(this._partnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_aks_workload_identity: {
-        value: cdktf.booleanToHclTerraform(this._useAksWorkloadIdentity),
+        value: cdktn.booleanToHclTerraform(this._useAksWorkloadIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_cli: {
-        value: cdktf.booleanToHclTerraform(this._useCli),
+        value: cdktn.booleanToHclTerraform(this._useCli),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_msi: {
-        value: cdktf.booleanToHclTerraform(this._useMsi),
+        value: cdktn.booleanToHclTerraform(this._useMsi),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_oidc: {
-        value: cdktf.booleanToHclTerraform(this._useOidc),
+        value: cdktn.booleanToHclTerraform(this._useOidc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

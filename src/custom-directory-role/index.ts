@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments {
+export interface CustomDirectoryRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the custom directory role
   *
@@ -29,7 +29,7 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}
   *
@@ -54,7 +54,7 @@ export interface CustomDirectoryRoleConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
   */
-  readonly permissions: CustomDirectoryRolePermissions[] | cdktf.IResolvable;
+  readonly permissions: CustomDirectoryRolePermissions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -71,25 +71,25 @@ export interface CustomDirectoryRolePermissions {
   readonly allowedResourceActions: string[];
 }
 
-export function customDirectoryRolePermissionsToTerraform(struct?: CustomDirectoryRolePermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customDirectoryRolePermissionsToTerraform(struct?: CustomDirectoryRolePermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_resource_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResourceActions),
+    allowed_resource_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResourceActions),
   }
 }
 
 
-export function customDirectoryRolePermissionsToHclTerraform(struct?: CustomDirectoryRolePermissions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customDirectoryRolePermissionsToHclTerraform(struct?: CustomDirectoryRolePermissions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_resource_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResourceActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResourceActions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -100,9 +100,9 @@ export function customDirectoryRolePermissionsToHclTerraform(struct?: CustomDire
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomDirectoryRolePermissionsOutputReference extends cdktf.ComplexObject {
+export class CustomDirectoryRolePermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,11 +110,11 @@ export class CustomDirectoryRolePermissionsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomDirectoryRolePermissions | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomDirectoryRolePermissions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -127,13 +127,13 @@ export class CustomDirectoryRolePermissionsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomDirectoryRolePermissions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomDirectoryRolePermissions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._allowedResourceActions = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -147,7 +147,7 @@ export class CustomDirectoryRolePermissionsOutputReference extends cdktf.Complex
   // allowed_resource_actions - computed: false, optional: false, required: true
   private _allowedResourceActions?: string[]; 
   public get allowedResourceActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_resource_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_resource_actions'));
   }
   public set allowedResourceActions(value: string[]) {
     this._allowedResourceActions = value;
@@ -158,15 +158,15 @@ export class CustomDirectoryRolePermissionsOutputReference extends cdktf.Complex
   }
 }
 
-export class CustomDirectoryRolePermissionsList extends cdktf.ComplexList {
-  public internalValue? : CustomDirectoryRolePermissions[] | cdktf.IResolvable
+export class CustomDirectoryRolePermissionsList extends cdktn.ComplexList {
+  public internalValue? : CustomDirectoryRolePermissions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,46 +196,46 @@ export interface CustomDirectoryRoleTimeouts {
   readonly update?: string;
 }
 
-export function customDirectoryRoleTimeoutsToTerraform(struct?: CustomDirectoryRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customDirectoryRoleTimeoutsToTerraform(struct?: CustomDirectoryRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function customDirectoryRoleTimeoutsToHclTerraform(struct?: CustomDirectoryRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customDirectoryRoleTimeoutsToHclTerraform(struct?: CustomDirectoryRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -246,19 +246,19 @@ export function customDirectoryRoleTimeoutsToHclTerraform(struct?: CustomDirecto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CustomDirectoryRoleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomDirectoryRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomDirectoryRoleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -283,7 +283,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomDirectoryRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomDirectoryRoleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -292,7 +292,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -374,7 +374,7 @@ export class CustomDirectoryRoleTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role azuread_custom_directory_role}
 */
-export class CustomDirectoryRole extends cdktf.TerraformResource {
+export class CustomDirectoryRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -385,14 +385,14 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomDirectoryRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomDirectoryRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomDirectoryRole to import
   * @param importFromId The id of the existing CustomDirectoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomDirectoryRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_custom_directory_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_custom_directory_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -466,11 +466,11 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -533,7 +533,7 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   public get permissions() {
     return this._permissions;
   }
-  public putPermissions(value: CustomDirectoryRolePermissions[] | cdktf.IResolvable) {
+  public putPermissions(value: CustomDirectoryRolePermissions[] | cdktn.IResolvable) {
     this._permissions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -563,13 +563,13 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      template_id: cdktf.stringToTerraform(this._templateId),
-      version: cdktf.stringToTerraform(this._version),
-      permissions: cdktf.listMapper(customDirectoryRolePermissionsToTerraform, true)(this._permissions.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      template_id: cdktn.stringToTerraform(this._templateId),
+      version: cdktn.stringToTerraform(this._version),
+      permissions: cdktn.listMapper(customDirectoryRolePermissionsToTerraform, true)(this._permissions.internalValue),
       timeouts: customDirectoryRoleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -577,43 +577,43 @@ export class CustomDirectoryRole extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_id: {
-        value: cdktf.stringToHclTerraform(this._templateId),
+        value: cdktn.stringToHclTerraform(this._templateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.listMapperHcl(customDirectoryRolePermissionsToHclTerraform, true)(this._permissions.internalValue),
+        value: cdktn.listMapperHcl(customDirectoryRolePermissionsToHclTerraform, true)(this._permissions.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CustomDirectoryRolePermissionsList",

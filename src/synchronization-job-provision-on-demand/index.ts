@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SynchronizationJobProvisionOnDemandConfig extends cdktf.TerraformMetaArguments {
+export interface SynchronizationJobProvisionOnDemandConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_job_provision_on_demand#id SynchronizationJobProvisionOnDemand#id}
   *
@@ -40,7 +40,7 @@ export interface SynchronizationJobProvisionOnDemandConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_job_provision_on_demand#parameter SynchronizationJobProvisionOnDemand#parameter}
   */
-  readonly parameter: SynchronizationJobProvisionOnDemandParameter[] | cdktf.IResolvable;
+  readonly parameter: SynchronizationJobProvisionOnDemandParameter[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,32 +63,32 @@ export interface SynchronizationJobProvisionOnDemandParameterSubject {
   readonly objectTypeName: string;
 }
 
-export function synchronizationJobProvisionOnDemandParameterSubjectToTerraform(struct?: SynchronizationJobProvisionOnDemandParameterSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandParameterSubjectToTerraform(struct?: SynchronizationJobProvisionOnDemandParameterSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    object_type_name: cdktf.stringToTerraform(struct!.objectTypeName),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    object_type_name: cdktn.stringToTerraform(struct!.objectTypeName),
   }
 }
 
 
-export function synchronizationJobProvisionOnDemandParameterSubjectToHclTerraform(struct?: SynchronizationJobProvisionOnDemandParameterSubject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandParameterSubjectToHclTerraform(struct?: SynchronizationJobProvisionOnDemandParameterSubject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_type_name: {
-      value: cdktf.stringToHclTerraform(struct!.objectTypeName),
+      value: cdktn.stringToHclTerraform(struct!.objectTypeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -99,9 +99,9 @@ export function synchronizationJobProvisionOnDemandParameterSubjectToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynchronizationJobProvisionOnDemandParameterSubjectOutputReference extends cdktf.ComplexObject {
+export class SynchronizationJobProvisionOnDemandParameterSubjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class SynchronizationJobProvisionOnDemandParameterSubjectOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SynchronizationJobProvisionOnDemandParameterSubject | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationJobProvisionOnDemandParameterSubject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class SynchronizationJobProvisionOnDemandParameterSubjectOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynchronizationJobProvisionOnDemandParameterSubject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationJobProvisionOnDemandParameterSubject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._objectId = undefined;
       this._objectTypeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,15 +176,15 @@ export class SynchronizationJobProvisionOnDemandParameterSubjectOutputReference 
   }
 }
 
-export class SynchronizationJobProvisionOnDemandParameterSubjectList extends cdktf.ComplexList {
-  public internalValue? : SynchronizationJobProvisionOnDemandParameterSubject[] | cdktf.IResolvable
+export class SynchronizationJobProvisionOnDemandParameterSubjectList extends cdktn.ComplexList {
+  public internalValue? : SynchronizationJobProvisionOnDemandParameterSubject[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,35 +207,35 @@ export interface SynchronizationJobProvisionOnDemandParameter {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_job_provision_on_demand#subject SynchronizationJobProvisionOnDemand#subject}
   */
-  readonly subject: SynchronizationJobProvisionOnDemandParameterSubject[] | cdktf.IResolvable;
+  readonly subject: SynchronizationJobProvisionOnDemandParameterSubject[] | cdktn.IResolvable;
 }
 
-export function synchronizationJobProvisionOnDemandParameterToTerraform(struct?: SynchronizationJobProvisionOnDemandParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandParameterToTerraform(struct?: SynchronizationJobProvisionOnDemandParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
-    subject: cdktf.listMapper(synchronizationJobProvisionOnDemandParameterSubjectToTerraform, true)(struct!.subject),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
+    subject: cdktn.listMapper(synchronizationJobProvisionOnDemandParameterSubjectToTerraform, true)(struct!.subject),
   }
 }
 
 
-export function synchronizationJobProvisionOnDemandParameterToHclTerraform(struct?: SynchronizationJobProvisionOnDemandParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandParameterToHclTerraform(struct?: SynchronizationJobProvisionOnDemandParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.listMapperHcl(synchronizationJobProvisionOnDemandParameterSubjectToHclTerraform, true)(struct!.subject),
+      value: cdktn.listMapperHcl(synchronizationJobProvisionOnDemandParameterSubjectToHclTerraform, true)(struct!.subject),
       isBlock: true,
       type: "list",
       storageClassType: "SynchronizationJobProvisionOnDemandParameterSubjectList",
@@ -246,9 +246,9 @@ export function synchronizationJobProvisionOnDemandParameterToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynchronizationJobProvisionOnDemandParameterOutputReference extends cdktf.ComplexObject {
+export class SynchronizationJobProvisionOnDemandParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -256,11 +256,11 @@ export class SynchronizationJobProvisionOnDemandParameterOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SynchronizationJobProvisionOnDemandParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationJobProvisionOnDemandParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -277,14 +277,14 @@ export class SynchronizationJobProvisionOnDemandParameterOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynchronizationJobProvisionOnDemandParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationJobProvisionOnDemandParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ruleId = undefined;
       this._subject.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -314,7 +314,7 @@ export class SynchronizationJobProvisionOnDemandParameterOutputReference extends
   public get subject() {
     return this._subject;
   }
-  public putSubject(value: SynchronizationJobProvisionOnDemandParameterSubject[] | cdktf.IResolvable) {
+  public putSubject(value: SynchronizationJobProvisionOnDemandParameterSubject[] | cdktn.IResolvable) {
     this._subject.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -323,15 +323,15 @@ export class SynchronizationJobProvisionOnDemandParameterOutputReference extends
   }
 }
 
-export class SynchronizationJobProvisionOnDemandParameterList extends cdktf.ComplexList {
-  public internalValue? : SynchronizationJobProvisionOnDemandParameter[] | cdktf.IResolvable
+export class SynchronizationJobProvisionOnDemandParameterList extends cdktn.ComplexList {
+  public internalValue? : SynchronizationJobProvisionOnDemandParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -357,39 +357,39 @@ export interface SynchronizationJobProvisionOnDemandTimeouts {
   readonly read?: string;
 }
 
-export function synchronizationJobProvisionOnDemandTimeoutsToTerraform(struct?: SynchronizationJobProvisionOnDemandTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandTimeoutsToTerraform(struct?: SynchronizationJobProvisionOnDemandTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function synchronizationJobProvisionOnDemandTimeoutsToHclTerraform(struct?: SynchronizationJobProvisionOnDemandTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationJobProvisionOnDemandTimeoutsToHclTerraform(struct?: SynchronizationJobProvisionOnDemandTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -400,19 +400,19 @@ export function synchronizationJobProvisionOnDemandTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynchronizationJobProvisionOnDemandTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynchronizationJobProvisionOnDemandTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SynchronizationJobProvisionOnDemandTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationJobProvisionOnDemandTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -433,7 +433,7 @@ export class SynchronizationJobProvisionOnDemandTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynchronizationJobProvisionOnDemandTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationJobProvisionOnDemandTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -441,7 +441,7 @@ export class SynchronizationJobProvisionOnDemandTimeoutsOutputReference extends 
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -506,7 +506,7 @@ export class SynchronizationJobProvisionOnDemandTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_job_provision_on_demand azuread_synchronization_job_provision_on_demand}
 */
-export class SynchronizationJobProvisionOnDemand extends cdktf.TerraformResource {
+export class SynchronizationJobProvisionOnDemand extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -517,14 +517,14 @@ export class SynchronizationJobProvisionOnDemand extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SynchronizationJobProvisionOnDemand resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SynchronizationJobProvisionOnDemand resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynchronizationJobProvisionOnDemand to import
   * @param importFromId The id of the existing SynchronizationJobProvisionOnDemand that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_job_provision_on_demand#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynchronizationJobProvisionOnDemand to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_synchronization_job_provision_on_demand", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_synchronization_job_provision_on_demand", importId: importFromId, provider });
       }
 
   // ===========
@@ -629,7 +629,7 @@ export class SynchronizationJobProvisionOnDemand extends cdktf.TerraformResource
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: SynchronizationJobProvisionOnDemandParameter[] | cdktf.IResolvable) {
+  public putParameter(value: SynchronizationJobProvisionOnDemandParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -659,11 +659,11 @@ export class SynchronizationJobProvisionOnDemand extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      synchronization_job_id: cdktf.stringToTerraform(this._synchronizationJobId),
-      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
-      parameter: cdktf.listMapper(synchronizationJobProvisionOnDemandParameterToTerraform, true)(this._parameter.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      synchronization_job_id: cdktn.stringToTerraform(this._synchronizationJobId),
+      triggers: cdktn.hashMapper(cdktn.stringToTerraform)(this._triggers),
+      parameter: cdktn.listMapper(synchronizationJobProvisionOnDemandParameterToTerraform, true)(this._parameter.internalValue),
       timeouts: synchronizationJobProvisionOnDemandTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -671,31 +671,31 @@ export class SynchronizationJobProvisionOnDemand extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synchronization_job_id: {
-        value: cdktf.stringToHclTerraform(this._synchronizationJobId),
+        value: cdktn.stringToHclTerraform(this._synchronizationJobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       triggers: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._triggers),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       parameter: {
-        value: cdktf.listMapperHcl(synchronizationJobProvisionOnDemandParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(synchronizationJobProvisionOnDemandParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SynchronizationJobProvisionOnDemandParameterList",

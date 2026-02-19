@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivilegedAccessGroupEligibilityScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface PrivilegedAccessGroupEligibilityScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the assignment to the group
   *
@@ -54,7 +54,7 @@ export interface PrivilegedAccessGroupEligibilityScheduleConfig extends cdktf.Te
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_eligibility_schedule#permanent_assignment PrivilegedAccessGroupEligibilitySchedule#permanent_assignment}
   */
-  readonly permanentAssignment?: boolean | cdktf.IResolvable;
+  readonly permanentAssignment?: boolean | cdktn.IResolvable;
   /**
   * The ID of the Principal assigned to the schedule
   *
@@ -105,46 +105,46 @@ export interface PrivilegedAccessGroupEligibilityScheduleTimeouts {
   readonly update?: string;
 }
 
-export function privilegedAccessGroupEligibilityScheduleTimeoutsToTerraform(struct?: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessGroupEligibilityScheduleTimeoutsToTerraform(struct?: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privilegedAccessGroupEligibilityScheduleTimeoutsToHclTerraform(struct?: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privilegedAccessGroupEligibilityScheduleTimeoutsToHclTerraform(struct?: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,19 +155,19 @@ export function privilegedAccessGroupEligibilityScheduleTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -192,7 +192,7 @@ export class PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivilegedAccessGroupEligibilityScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -201,7 +201,7 @@ export class PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -283,7 +283,7 @@ export class PrivilegedAccessGroupEligibilityScheduleTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_eligibility_schedule azuread_privileged_access_group_eligibility_schedule}
 */
-export class PrivilegedAccessGroupEligibilitySchedule extends cdktf.TerraformResource {
+export class PrivilegedAccessGroupEligibilitySchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -294,14 +294,14 @@ export class PrivilegedAccessGroupEligibilitySchedule extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivilegedAccessGroupEligibilitySchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivilegedAccessGroupEligibilitySchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivilegedAccessGroupEligibilitySchedule to import
   * @param importFromId The id of the existing PrivilegedAccessGroupEligibilitySchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/privileged_access_group_eligibility_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivilegedAccessGroupEligibilitySchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_privileged_access_group_eligibility_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_privileged_access_group_eligibility_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -440,11 +440,11 @@ export class PrivilegedAccessGroupEligibilitySchedule extends cdktf.TerraformRes
   }
 
   // permanent_assignment - computed: true, optional: true, required: false
-  private _permanentAssignment?: boolean | cdktf.IResolvable; 
+  private _permanentAssignment?: boolean | cdktn.IResolvable; 
   public get permanentAssignment() {
     return this.getBooleanAttribute('permanent_assignment');
   }
-  public set permanentAssignment(value: boolean | cdktf.IResolvable) {
+  public set permanentAssignment(value: boolean | cdktn.IResolvable) {
     this._permanentAssignment = value;
   }
   public resetPermanentAssignment() {
@@ -543,17 +543,17 @@ export class PrivilegedAccessGroupEligibilitySchedule extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignment_type: cdktf.stringToTerraform(this._assignmentType),
-      duration: cdktf.stringToTerraform(this._duration),
-      expiration_date: cdktf.stringToTerraform(this._expirationDate),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      justification: cdktf.stringToTerraform(this._justification),
-      permanent_assignment: cdktf.booleanToTerraform(this._permanentAssignment),
-      principal_id: cdktf.stringToTerraform(this._principalId),
-      start_date: cdktf.stringToTerraform(this._startDate),
-      ticket_number: cdktf.stringToTerraform(this._ticketNumber),
-      ticket_system: cdktf.stringToTerraform(this._ticketSystem),
+      assignment_type: cdktn.stringToTerraform(this._assignmentType),
+      duration: cdktn.stringToTerraform(this._duration),
+      expiration_date: cdktn.stringToTerraform(this._expirationDate),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      justification: cdktn.stringToTerraform(this._justification),
+      permanent_assignment: cdktn.booleanToTerraform(this._permanentAssignment),
+      principal_id: cdktn.stringToTerraform(this._principalId),
+      start_date: cdktn.stringToTerraform(this._startDate),
+      ticket_number: cdktn.stringToTerraform(this._ticketNumber),
+      ticket_system: cdktn.stringToTerraform(this._ticketSystem),
       timeouts: privilegedAccessGroupEligibilityScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -561,67 +561,67 @@ export class PrivilegedAccessGroupEligibilitySchedule extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assignment_type: {
-        value: cdktf.stringToHclTerraform(this._assignmentType),
+        value: cdktn.stringToHclTerraform(this._assignmentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.stringToHclTerraform(this._duration),
+        value: cdktn.stringToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiration_date: {
-        value: cdktf.stringToHclTerraform(this._expirationDate),
+        value: cdktn.stringToHclTerraform(this._expirationDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       justification: {
-        value: cdktf.stringToHclTerraform(this._justification),
+        value: cdktn.stringToHclTerraform(this._justification),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permanent_assignment: {
-        value: cdktf.booleanToHclTerraform(this._permanentAssignment),
+        value: cdktn.booleanToHclTerraform(this._permanentAssignment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       principal_id: {
-        value: cdktf.stringToHclTerraform(this._principalId),
+        value: cdktn.stringToHclTerraform(this._principalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ticket_number: {
-        value: cdktf.stringToHclTerraform(this._ticketNumber),
+        value: cdktn.stringToHclTerraform(this._ticketNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ticket_system: {
-        value: cdktf.stringToHclTerraform(this._ticketSystem),
+        value: cdktn.stringToHclTerraform(this._ticketSystem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzureadDirectoryRoleTemplatesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadDirectoryRoleTemplatesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/directory_role_templates#id DataAzureadDirectoryRoleTemplates#id}
   *
@@ -30,8 +30,8 @@ export interface DataAzureadDirectoryRoleTemplatesRoleTemplates {
 }
 
 export function dataAzureadDirectoryRoleTemplatesRoleTemplatesToTerraform(struct?: DataAzureadDirectoryRoleTemplatesRoleTemplates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -40,8 +40,8 @@ export function dataAzureadDirectoryRoleTemplatesRoleTemplatesToTerraform(struct
 
 
 export function dataAzureadDirectoryRoleTemplatesRoleTemplatesToHclTerraform(struct?: DataAzureadDirectoryRoleTemplatesRoleTemplates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -49,7 +49,7 @@ export function dataAzureadDirectoryRoleTemplatesRoleTemplatesToHclTerraform(str
   return attrs;
 }
 
-export class DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference extends cdktf.ComplexObject {
+export class DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -58,7 +58,7 @@ export class DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -93,14 +93,14 @@ export class DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference exten
   }
 }
 
-export class DataAzureadDirectoryRoleTemplatesRoleTemplatesList extends cdktf.ComplexList {
+export class DataAzureadDirectoryRoleTemplatesRoleTemplatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,25 +118,25 @@ export interface DataAzureadDirectoryRoleTemplatesTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadDirectoryRoleTemplatesTimeoutsToTerraform(struct?: DataAzureadDirectoryRoleTemplatesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadDirectoryRoleTemplatesTimeoutsToTerraform(struct?: DataAzureadDirectoryRoleTemplatesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzureadDirectoryRoleTemplatesTimeoutsToHclTerraform(struct?: DataAzureadDirectoryRoleTemplatesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadDirectoryRoleTemplatesTimeoutsToHclTerraform(struct?: DataAzureadDirectoryRoleTemplatesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function dataAzureadDirectoryRoleTemplatesTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzureadDirectoryRoleTemplatesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadDirectoryRoleTemplatesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,13 +172,13 @@ export class DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadDirectoryRoleTemplatesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadDirectoryRoleTemplatesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -209,7 +209,7 @@ export class DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/directory_role_templates azuread_directory_role_templates}
 */
-export class DataAzureadDirectoryRoleTemplates extends cdktf.TerraformDataSource {
+export class DataAzureadDirectoryRoleTemplates extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -220,14 +220,14 @@ export class DataAzureadDirectoryRoleTemplates extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzureadDirectoryRoleTemplates resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzureadDirectoryRoleTemplates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadDirectoryRoleTemplates to import
   * @param importFromId The id of the existing DataAzureadDirectoryRoleTemplates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/directory_role_templates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadDirectoryRoleTemplates to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_directory_role_templates", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_directory_role_templates", importId: importFromId, provider });
       }
 
   // ===========
@@ -314,7 +314,7 @@ export class DataAzureadDirectoryRoleTemplates extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: dataAzureadDirectoryRoleTemplatesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -322,7 +322,7 @@ export class DataAzureadDirectoryRoleTemplates extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

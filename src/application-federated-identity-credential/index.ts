@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationFederatedIdentityCredentialConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationFederatedIdentityCredentialConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource ID of the application for which this federated identity credential should be created
   *
@@ -81,46 +81,46 @@ export interface ApplicationFederatedIdentityCredentialTimeouts {
   readonly update?: string;
 }
 
-export function applicationFederatedIdentityCredentialTimeoutsToTerraform(struct?: ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationFederatedIdentityCredentialTimeoutsToTerraform(struct?: ApplicationFederatedIdentityCredentialTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationFederatedIdentityCredentialTimeoutsToHclTerraform(struct?: ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationFederatedIdentityCredentialTimeoutsToHclTerraform(struct?: ApplicationFederatedIdentityCredentialTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function applicationFederatedIdentityCredentialTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationFederatedIdentityCredentialTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationFederatedIdentityCredentialTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationFederatedIdentityCredentialTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class ApplicationFederatedIdentityCredentialTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_federated_identity_credential azuread_application_federated_identity_credential}
 */
-export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResource {
+export class ApplicationFederatedIdentityCredential extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationFederatedIdentityCredential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationFederatedIdentityCredential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationFederatedIdentityCredential to import
   * @param importFromId The id of the existing ApplicationFederatedIdentityCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_federated_identity_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationFederatedIdentityCredential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_federated_identity_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_federated_identity_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -445,13 +445,13 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(this._audiences),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      issuer: cdktf.stringToTerraform(this._issuer),
-      subject: cdktf.stringToTerraform(this._subject),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(this._audiences),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      issuer: cdktn.stringToTerraform(this._issuer),
+      subject: cdktn.stringToTerraform(this._subject),
       timeouts: applicationFederatedIdentityCredentialTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -459,43 +459,43 @@ export class ApplicationFederatedIdentityCredential extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       audiences: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._audiences),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._audiences),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuer: {
-        value: cdktf.stringToHclTerraform(this._issuer),
+        value: cdktn.stringToHclTerraform(this._issuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject: {
-        value: cdktf.stringToHclTerraform(this._subject),
+        value: cdktn.stringToHclTerraform(this._subject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

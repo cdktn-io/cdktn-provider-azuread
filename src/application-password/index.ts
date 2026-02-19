@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationPasswordAConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationPasswordAConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource ID of the application for which this password should be created
   *
@@ -81,46 +81,46 @@ export interface ApplicationPasswordTimeouts {
   readonly update?: string;
 }
 
-export function applicationPasswordTimeoutsToTerraform(struct?: ApplicationPasswordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationPasswordTimeoutsToTerraform(struct?: ApplicationPasswordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationPasswordTimeoutsToHclTerraform(struct?: ApplicationPasswordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationPasswordTimeoutsToHclTerraform(struct?: ApplicationPasswordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function applicationPasswordTimeoutsToHclTerraform(struct?: ApplicationPa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationPasswordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationPasswordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationPasswordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationPasswordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationPasswordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class ApplicationPasswordTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_password azuread_application_password}
 */
-export class ApplicationPasswordA extends cdktf.TerraformResource {
+export class ApplicationPasswordA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class ApplicationPasswordA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationPasswordA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationPasswordA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationPasswordA to import
   * @param importFromId The id of the existing ApplicationPasswordA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationPasswordA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_password", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_password", importId: importFromId, provider });
       }
 
   // ===========
@@ -462,13 +462,13 @@ export class ApplicationPasswordA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      end_date_relative: cdktf.stringToTerraform(this._endDateRelative),
-      id: cdktf.stringToTerraform(this._id),
-      rotate_when_changed: cdktf.hashMapper(cdktf.stringToTerraform)(this._rotateWhenChanged),
-      start_date: cdktf.stringToTerraform(this._startDate),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      end_date_relative: cdktn.stringToTerraform(this._endDateRelative),
+      id: cdktn.stringToTerraform(this._id),
+      rotate_when_changed: cdktn.hashMapper(cdktn.stringToTerraform)(this._rotateWhenChanged),
+      start_date: cdktn.stringToTerraform(this._startDate),
       timeouts: applicationPasswordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -476,43 +476,43 @@ export class ApplicationPasswordA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date_relative: {
-        value: cdktf.stringToHclTerraform(this._endDateRelative),
+        value: cdktn.stringToHclTerraform(this._endDateRelative),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotate_when_changed: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._rotateWhenChanged),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._rotateWhenChanged),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

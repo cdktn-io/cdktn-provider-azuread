@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GroupRoleManagementPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface GroupRoleManagementPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the group to which this policy is assigned
   *
@@ -77,32 +77,32 @@ export interface GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApp
   readonly type?: string;
 }
 
-export function groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    type: cdktf.stringToTerraform(struct!.type),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,9 +113,9 @@ export function groupRoleManagementPolicyActivationRulesApprovalStagePrimaryAppr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprove
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktf.IResolvable | undefined {
+  public get internalValue(): GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprove
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._objectId = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,15 +193,15 @@ export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprove
   }
 }
 
-export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList extends cdktf.ComplexList {
-  public internalValue? : GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktf.IResolvable
+export class GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList extends cdktn.ComplexList {
+  public internalValue? : GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -218,28 +218,28 @@ export interface GroupRoleManagementPolicyActivationRulesApprovalStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#primary_approver GroupRoleManagementPolicy#primary_approver}
   */
-  readonly primaryApprover: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktf.IResolvable;
+  readonly primaryApprover: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktn.IResolvable;
 }
 
 export function groupRoleManagementPolicyActivationRulesApprovalStageToTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference | GroupRoleManagementPolicyActivationRulesApprovalStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    primary_approver: cdktf.listMapper(groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform, true)(struct!.primaryApprover),
+    primary_approver: cdktn.listMapper(groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform, true)(struct!.primaryApprover),
   }
 }
 
 
 export function groupRoleManagementPolicyActivationRulesApprovalStageToHclTerraform(struct?: GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference | GroupRoleManagementPolicyActivationRulesApprovalStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     primary_approver: {
-      value: cdktf.listMapperHcl(groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform, true)(struct!.primaryApprover),
+      value: cdktn.listMapperHcl(groupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform, true)(struct!.primaryApprover),
       isBlock: true,
       type: "set",
       storageClassType: "GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList",
@@ -250,14 +250,14 @@ export function groupRoleManagementPolicyActivationRulesApprovalStageToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyActivationRulesApprovalStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -287,7 +287,7 @@ export class GroupRoleManagementPolicyActivationRulesApprovalStageOutputReferenc
   public get primaryApprover() {
     return this._primaryApprover;
   }
-  public putPrimaryApprover(value: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktf.IResolvable) {
+  public putPrimaryApprover(value: GroupRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktn.IResolvable) {
     this._primaryApprover.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -307,25 +307,25 @@ export interface GroupRoleManagementPolicyActivationRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_approval GroupRoleManagementPolicy#require_approval}
   */
-  readonly requireApproval?: boolean | cdktf.IResolvable;
+  readonly requireApproval?: boolean | cdktn.IResolvable;
   /**
   * Whether a justification is required during activation
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
   */
-  readonly requireJustification?: boolean | cdktf.IResolvable;
+  readonly requireJustification?: boolean | cdktn.IResolvable;
   /**
   * Whether multi-factor authentication is required during activation
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
   */
-  readonly requireMultifactorAuthentication?: boolean | cdktf.IResolvable;
+  readonly requireMultifactorAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Whether ticket information is required during activation
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
   */
-  readonly requireTicketInfo?: boolean | cdktf.IResolvable;
+  readonly requireTicketInfo?: boolean | cdktn.IResolvable;
   /**
   * Whether a conditional access context is required during activation
   *
@@ -341,60 +341,60 @@ export interface GroupRoleManagementPolicyActivationRules {
 }
 
 export function groupRoleManagementPolicyActivationRulesToTerraform(struct?: GroupRoleManagementPolicyActivationRulesOutputReference | GroupRoleManagementPolicyActivationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_duration: cdktf.stringToTerraform(struct!.maximumDuration),
-    require_approval: cdktf.booleanToTerraform(struct!.requireApproval),
-    require_justification: cdktf.booleanToTerraform(struct!.requireJustification),
-    require_multifactor_authentication: cdktf.booleanToTerraform(struct!.requireMultifactorAuthentication),
-    require_ticket_info: cdktf.booleanToTerraform(struct!.requireTicketInfo),
-    required_conditional_access_authentication_context: cdktf.stringToTerraform(struct!.requiredConditionalAccessAuthenticationContext),
+    maximum_duration: cdktn.stringToTerraform(struct!.maximumDuration),
+    require_approval: cdktn.booleanToTerraform(struct!.requireApproval),
+    require_justification: cdktn.booleanToTerraform(struct!.requireJustification),
+    require_multifactor_authentication: cdktn.booleanToTerraform(struct!.requireMultifactorAuthentication),
+    require_ticket_info: cdktn.booleanToTerraform(struct!.requireTicketInfo),
+    required_conditional_access_authentication_context: cdktn.stringToTerraform(struct!.requiredConditionalAccessAuthenticationContext),
     approval_stage: groupRoleManagementPolicyActivationRulesApprovalStageToTerraform(struct!.approvalStage),
   }
 }
 
 
 export function groupRoleManagementPolicyActivationRulesToHclTerraform(struct?: GroupRoleManagementPolicyActivationRulesOutputReference | GroupRoleManagementPolicyActivationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_duration: {
-      value: cdktf.stringToHclTerraform(struct!.maximumDuration),
+      value: cdktn.stringToHclTerraform(struct!.maximumDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_approval: {
-      value: cdktf.booleanToHclTerraform(struct!.requireApproval),
+      value: cdktn.booleanToHclTerraform(struct!.requireApproval),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_justification: {
-      value: cdktf.booleanToHclTerraform(struct!.requireJustification),
+      value: cdktn.booleanToHclTerraform(struct!.requireJustification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_multifactor_authentication: {
-      value: cdktf.booleanToHclTerraform(struct!.requireMultifactorAuthentication),
+      value: cdktn.booleanToHclTerraform(struct!.requireMultifactorAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_ticket_info: {
-      value: cdktf.booleanToHclTerraform(struct!.requireTicketInfo),
+      value: cdktn.booleanToHclTerraform(struct!.requireTicketInfo),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     required_conditional_access_authentication_context: {
-      value: cdktf.stringToHclTerraform(struct!.requiredConditionalAccessAuthenticationContext),
+      value: cdktn.stringToHclTerraform(struct!.requiredConditionalAccessAuthenticationContext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -411,14 +411,14 @@ export function groupRoleManagementPolicyActivationRulesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -496,11 +496,11 @@ export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdk
   }
 
   // require_approval - computed: true, optional: true, required: false
-  private _requireApproval?: boolean | cdktf.IResolvable; 
+  private _requireApproval?: boolean | cdktn.IResolvable; 
   public get requireApproval() {
     return this.getBooleanAttribute('require_approval');
   }
-  public set requireApproval(value: boolean | cdktf.IResolvable) {
+  public set requireApproval(value: boolean | cdktn.IResolvable) {
     this._requireApproval = value;
   }
   public resetRequireApproval() {
@@ -512,11 +512,11 @@ export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdk
   }
 
   // require_justification - computed: true, optional: true, required: false
-  private _requireJustification?: boolean | cdktf.IResolvable; 
+  private _requireJustification?: boolean | cdktn.IResolvable; 
   public get requireJustification() {
     return this.getBooleanAttribute('require_justification');
   }
-  public set requireJustification(value: boolean | cdktf.IResolvable) {
+  public set requireJustification(value: boolean | cdktn.IResolvable) {
     this._requireJustification = value;
   }
   public resetRequireJustification() {
@@ -528,11 +528,11 @@ export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdk
   }
 
   // require_multifactor_authentication - computed: true, optional: true, required: false
-  private _requireMultifactorAuthentication?: boolean | cdktf.IResolvable; 
+  private _requireMultifactorAuthentication?: boolean | cdktn.IResolvable; 
   public get requireMultifactorAuthentication() {
     return this.getBooleanAttribute('require_multifactor_authentication');
   }
-  public set requireMultifactorAuthentication(value: boolean | cdktf.IResolvable) {
+  public set requireMultifactorAuthentication(value: boolean | cdktn.IResolvable) {
     this._requireMultifactorAuthentication = value;
   }
   public resetRequireMultifactorAuthentication() {
@@ -544,11 +544,11 @@ export class GroupRoleManagementPolicyActivationRulesOutputReference extends cdk
   }
 
   // require_ticket_info - computed: true, optional: true, required: false
-  private _requireTicketInfo?: boolean | cdktf.IResolvable; 
+  private _requireTicketInfo?: boolean | cdktn.IResolvable; 
   public get requireTicketInfo() {
     return this.getBooleanAttribute('require_ticket_info');
   }
-  public set requireTicketInfo(value: boolean | cdktf.IResolvable) {
+  public set requireTicketInfo(value: boolean | cdktn.IResolvable) {
     this._requireTicketInfo = value;
   }
   public resetRequireTicketInfo() {
@@ -597,7 +597,7 @@ export interface GroupRoleManagementPolicyActiveAssignmentRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
   */
-  readonly expirationRequired?: boolean | cdktf.IResolvable;
+  readonly expirationRequired?: boolean | cdktn.IResolvable;
   /**
   * The duration after which assignments expire
   *
@@ -609,68 +609,68 @@ export interface GroupRoleManagementPolicyActiveAssignmentRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_justification GroupRoleManagementPolicy#require_justification}
   */
-  readonly requireJustification?: boolean | cdktf.IResolvable;
+  readonly requireJustification?: boolean | cdktn.IResolvable;
   /**
   * Whether multi-factor authentication is required to make an assignment
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_multifactor_authentication GroupRoleManagementPolicy#require_multifactor_authentication}
   */
-  readonly requireMultifactorAuthentication?: boolean | cdktf.IResolvable;
+  readonly requireMultifactorAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Whether ticket information is required to make an assignment
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#require_ticket_info GroupRoleManagementPolicy#require_ticket_info}
   */
-  readonly requireTicketInfo?: boolean | cdktf.IResolvable;
+  readonly requireTicketInfo?: boolean | cdktn.IResolvable;
 }
 
 export function groupRoleManagementPolicyActiveAssignmentRulesToTerraform(struct?: GroupRoleManagementPolicyActiveAssignmentRulesOutputReference | GroupRoleManagementPolicyActiveAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expiration_required: cdktf.booleanToTerraform(struct!.expirationRequired),
-    expire_after: cdktf.stringToTerraform(struct!.expireAfter),
-    require_justification: cdktf.booleanToTerraform(struct!.requireJustification),
-    require_multifactor_authentication: cdktf.booleanToTerraform(struct!.requireMultifactorAuthentication),
-    require_ticket_info: cdktf.booleanToTerraform(struct!.requireTicketInfo),
+    expiration_required: cdktn.booleanToTerraform(struct!.expirationRequired),
+    expire_after: cdktn.stringToTerraform(struct!.expireAfter),
+    require_justification: cdktn.booleanToTerraform(struct!.requireJustification),
+    require_multifactor_authentication: cdktn.booleanToTerraform(struct!.requireMultifactorAuthentication),
+    require_ticket_info: cdktn.booleanToTerraform(struct!.requireTicketInfo),
   }
 }
 
 
 export function groupRoleManagementPolicyActiveAssignmentRulesToHclTerraform(struct?: GroupRoleManagementPolicyActiveAssignmentRulesOutputReference | GroupRoleManagementPolicyActiveAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expiration_required: {
-      value: cdktf.booleanToHclTerraform(struct!.expirationRequired),
+      value: cdktn.booleanToHclTerraform(struct!.expirationRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expire_after: {
-      value: cdktf.stringToHclTerraform(struct!.expireAfter),
+      value: cdktn.stringToHclTerraform(struct!.expireAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_justification: {
-      value: cdktf.booleanToHclTerraform(struct!.requireJustification),
+      value: cdktn.booleanToHclTerraform(struct!.requireJustification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_multifactor_authentication: {
-      value: cdktf.booleanToHclTerraform(struct!.requireMultifactorAuthentication),
+      value: cdktn.booleanToHclTerraform(struct!.requireMultifactorAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_ticket_info: {
-      value: cdktf.booleanToHclTerraform(struct!.requireTicketInfo),
+      value: cdktn.booleanToHclTerraform(struct!.requireTicketInfo),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -681,14 +681,14 @@ export function groupRoleManagementPolicyActiveAssignmentRulesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -738,11 +738,11 @@ export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference exten
   }
 
   // expiration_required - computed: true, optional: true, required: false
-  private _expirationRequired?: boolean | cdktf.IResolvable; 
+  private _expirationRequired?: boolean | cdktn.IResolvable; 
   public get expirationRequired() {
     return this.getBooleanAttribute('expiration_required');
   }
-  public set expirationRequired(value: boolean | cdktf.IResolvable) {
+  public set expirationRequired(value: boolean | cdktn.IResolvable) {
     this._expirationRequired = value;
   }
   public resetExpirationRequired() {
@@ -770,11 +770,11 @@ export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference exten
   }
 
   // require_justification - computed: true, optional: true, required: false
-  private _requireJustification?: boolean | cdktf.IResolvable; 
+  private _requireJustification?: boolean | cdktn.IResolvable; 
   public get requireJustification() {
     return this.getBooleanAttribute('require_justification');
   }
-  public set requireJustification(value: boolean | cdktf.IResolvable) {
+  public set requireJustification(value: boolean | cdktn.IResolvable) {
     this._requireJustification = value;
   }
   public resetRequireJustification() {
@@ -786,11 +786,11 @@ export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference exten
   }
 
   // require_multifactor_authentication - computed: true, optional: true, required: false
-  private _requireMultifactorAuthentication?: boolean | cdktf.IResolvable; 
+  private _requireMultifactorAuthentication?: boolean | cdktn.IResolvable; 
   public get requireMultifactorAuthentication() {
     return this.getBooleanAttribute('require_multifactor_authentication');
   }
-  public set requireMultifactorAuthentication(value: boolean | cdktf.IResolvable) {
+  public set requireMultifactorAuthentication(value: boolean | cdktn.IResolvable) {
     this._requireMultifactorAuthentication = value;
   }
   public resetRequireMultifactorAuthentication() {
@@ -802,11 +802,11 @@ export class GroupRoleManagementPolicyActiveAssignmentRulesOutputReference exten
   }
 
   // require_ticket_info - computed: true, optional: true, required: false
-  private _requireTicketInfo?: boolean | cdktf.IResolvable; 
+  private _requireTicketInfo?: boolean | cdktn.IResolvable; 
   public get requireTicketInfo() {
     return this.getBooleanAttribute('require_ticket_info');
   }
-  public set requireTicketInfo(value: boolean | cdktf.IResolvable) {
+  public set requireTicketInfo(value: boolean | cdktn.IResolvable) {
     this._requireTicketInfo = value;
   }
   public resetRequireTicketInfo() {
@@ -823,7 +823,7 @@ export interface GroupRoleManagementPolicyEligibleAssignmentRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#expiration_required GroupRoleManagementPolicy#expiration_required}
   */
-  readonly expirationRequired?: boolean | cdktf.IResolvable;
+  readonly expirationRequired?: boolean | cdktn.IResolvable;
   /**
   * The duration after which assignments expire
   *
@@ -833,31 +833,31 @@ export interface GroupRoleManagementPolicyEligibleAssignmentRules {
 }
 
 export function groupRoleManagementPolicyEligibleAssignmentRulesToTerraform(struct?: GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference | GroupRoleManagementPolicyEligibleAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expiration_required: cdktf.booleanToTerraform(struct!.expirationRequired),
-    expire_after: cdktf.stringToTerraform(struct!.expireAfter),
+    expiration_required: cdktn.booleanToTerraform(struct!.expirationRequired),
+    expire_after: cdktn.stringToTerraform(struct!.expireAfter),
   }
 }
 
 
 export function groupRoleManagementPolicyEligibleAssignmentRulesToHclTerraform(struct?: GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference | GroupRoleManagementPolicyEligibleAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expiration_required: {
-      value: cdktf.booleanToHclTerraform(struct!.expirationRequired),
+      value: cdktn.booleanToHclTerraform(struct!.expirationRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expire_after: {
-      value: cdktf.stringToHclTerraform(struct!.expireAfter),
+      value: cdktn.stringToHclTerraform(struct!.expireAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -868,14 +868,14 @@ export function groupRoleManagementPolicyEligibleAssignmentRulesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -907,11 +907,11 @@ export class GroupRoleManagementPolicyEligibleAssignmentRulesOutputReference ext
   }
 
   // expiration_required - computed: true, optional: true, required: false
-  private _expirationRequired?: boolean | cdktf.IResolvable; 
+  private _expirationRequired?: boolean | cdktn.IResolvable; 
   public get expirationRequired() {
     return this.getBooleanAttribute('expiration_required');
   }
-  public set expirationRequired(value: boolean | cdktf.IResolvable) {
+  public set expirationRequired(value: boolean | cdktn.IResolvable) {
     this._expirationRequired = value;
   }
   public resetExpirationRequired() {
@@ -950,7 +950,7 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdmi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -960,38 +960,38 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdmi
 }
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1002,14 +1002,14 @@ export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAdmin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1049,7 +1049,7 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNot
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1063,11 +1063,11 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNot
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1100,7 +1100,7 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAppr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -1110,38 +1110,38 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAppr
 }
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1152,14 +1152,14 @@ export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAppro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1199,7 +1199,7 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApprover
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1213,11 +1213,11 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsApprover
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1250,7 +1250,7 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssi
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -1260,38 +1260,38 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssi
 }
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1302,14 +1302,14 @@ export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsAssig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1349,7 +1349,7 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssignee
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1363,11 +1363,11 @@ export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsAssignee
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1410,8 +1410,8 @@ export interface GroupRoleManagementPolicyNotificationRulesActiveAssignments {
 }
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1423,8 +1423,8 @@ export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsToTer
 
 
 export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference | GroupRoleManagementPolicyNotificationRulesActiveAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1452,14 +1452,14 @@ export function groupRoleManagementPolicyNotificationRulesActiveAssignmentsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1556,7 +1556,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAd
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -1566,38 +1566,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAd
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1608,14 +1608,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAdm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1655,7 +1655,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminN
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1669,11 +1669,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAdminN
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1706,7 +1706,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -1716,38 +1716,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAp
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1758,14 +1758,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleActivationsApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1805,7 +1805,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsApprov
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1819,11 +1819,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsApprov
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1856,7 +1856,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAs
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -1866,38 +1866,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivationsAs
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1908,14 +1908,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleActivationsAss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1955,7 +1955,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssign
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -1969,11 +1969,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsAssign
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2016,8 +2016,8 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleActivations {
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2029,8 +2029,8 @@ export function groupRoleManagementPolicyNotificationRulesEligibleActivationsToT
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleActivationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleActivations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2058,14 +2058,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleActivationsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2162,7 +2162,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAd
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -2172,38 +2172,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAd
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2214,14 +2214,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2261,7 +2261,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminN
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -2275,11 +2275,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminN
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2312,7 +2312,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -2322,38 +2322,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAp
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2364,14 +2364,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2411,7 +2411,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApprov
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -2425,11 +2425,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsApprov
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2462,7 +2462,7 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAs
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#default_recipients GroupRoleManagementPolicy#default_recipients}
   */
-  readonly defaultRecipients: boolean | cdktf.IResolvable;
+  readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
@@ -2472,38 +2472,38 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAs
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    default_recipients: cdktf.booleanToTerraform(struct!.defaultRecipients),
-    notification_level: cdktf.stringToTerraform(struct!.notificationLevel),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    default_recipients: cdktn.booleanToTerraform(struct!.defaultRecipients),
+    notification_level: cdktn.stringToTerraform(struct!.notificationLevel),
   }
 }
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     default_recipients: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultRecipients),
+      value: cdktn.booleanToHclTerraform(struct!.defaultRecipients),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notification_level: {
-      value: cdktf.stringToHclTerraform(struct!.notificationLevel),
+      value: cdktn.stringToHclTerraform(struct!.notificationLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2514,14 +2514,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsAss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2561,7 +2561,7 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssign
   // additional_recipients - computed: true, optional: true, required: false
   private _additionalRecipients?: string[]; 
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
   public set additionalRecipients(value: string[]) {
     this._additionalRecipients = value;
@@ -2575,11 +2575,11 @@ export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsAssign
   }
 
   // default_recipients - computed: false, optional: false, required: true
-  private _defaultRecipients?: boolean | cdktf.IResolvable; 
+  private _defaultRecipients?: boolean | cdktn.IResolvable; 
   public get defaultRecipients() {
     return this.getBooleanAttribute('default_recipients');
   }
-  public set defaultRecipients(value: boolean | cdktf.IResolvable) {
+  public set defaultRecipients(value: boolean | cdktn.IResolvable) {
     this._defaultRecipients = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2622,8 +2622,8 @@ export interface GroupRoleManagementPolicyNotificationRulesEligibleAssignments {
 }
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2635,8 +2635,8 @@ export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsToT
 
 
 export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference | GroupRoleManagementPolicyNotificationRulesEligibleAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2664,14 +2664,14 @@ export function groupRoleManagementPolicyNotificationRulesEligibleAssignmentsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2778,8 +2778,8 @@ export interface GroupRoleManagementPolicyNotificationRules {
 }
 
 export function groupRoleManagementPolicyNotificationRulesToTerraform(struct?: GroupRoleManagementPolicyNotificationRulesOutputReference | GroupRoleManagementPolicyNotificationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2791,8 +2791,8 @@ export function groupRoleManagementPolicyNotificationRulesToTerraform(struct?: G
 
 
 export function groupRoleManagementPolicyNotificationRulesToHclTerraform(struct?: GroupRoleManagementPolicyNotificationRulesOutputReference | GroupRoleManagementPolicyNotificationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2820,14 +2820,14 @@ export function groupRoleManagementPolicyNotificationRulesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyNotificationRulesOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyNotificationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2931,46 +2931,46 @@ export interface GroupRoleManagementPolicyTimeouts {
   readonly update?: string;
 }
 
-export function groupRoleManagementPolicyTimeoutsToTerraform(struct?: GroupRoleManagementPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupRoleManagementPolicyTimeoutsToTerraform(struct?: GroupRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function groupRoleManagementPolicyTimeoutsToHclTerraform(struct?: GroupRoleManagementPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupRoleManagementPolicyTimeoutsToHclTerraform(struct?: GroupRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2981,19 +2981,19 @@ export function groupRoleManagementPolicyTimeoutsToHclTerraform(struct?: GroupRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GroupRoleManagementPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GroupRoleManagementPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3018,7 +3018,7 @@ export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupRoleManagementPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GroupRoleManagementPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3027,7 +3027,7 @@ export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3109,7 +3109,7 @@ export class GroupRoleManagementPolicyTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy azuread_group_role_management_policy}
 */
-export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
+export class GroupRoleManagementPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3120,14 +3120,14 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GroupRoleManagementPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GroupRoleManagementPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupRoleManagementPolicy to import
   * @param importFromId The id of the existing GroupRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupRoleManagementPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group_role_management_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group_role_management_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -3309,9 +3309,9 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      role_id: cdktf.stringToTerraform(this._roleId),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      role_id: cdktn.stringToTerraform(this._roleId),
       activation_rules: groupRoleManagementPolicyActivationRulesToTerraform(this._activationRules.internalValue),
       active_assignment_rules: groupRoleManagementPolicyActiveAssignmentRulesToTerraform(this._activeAssignmentRules.internalValue),
       eligible_assignment_rules: groupRoleManagementPolicyEligibleAssignmentRulesToTerraform(this._eligibleAssignmentRules.internalValue),
@@ -3323,19 +3323,19 @@ export class GroupRoleManagementPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
