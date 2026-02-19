@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadUsersConfig extends cdktn.TerraformMetaArguments {
   /**
   * The employee identifier assigned to the user by the organisation
   *
@@ -30,7 +30,7 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/users#ignore_missing DataAzureadUsers#ignore_missing}
   */
-  readonly ignoreMissing?: boolean | cdktf.IResolvable;
+  readonly ignoreMissing?: boolean | cdktn.IResolvable;
   /**
   * The email aliases of the users
   *
@@ -54,7 +54,7 @@ export interface DataAzureadUsersConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/users#return_all DataAzureadUsers#return_all}
   */
-  readonly returnAll?: boolean | cdktf.IResolvable;
+  readonly returnAll?: boolean | cdktn.IResolvable;
   /**
   * The user principal names (UPNs) of the users
   *
@@ -72,8 +72,8 @@ export interface DataAzureadUsersUsers {
 }
 
 export function dataAzureadUsersUsersToTerraform(struct?: DataAzureadUsersUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function dataAzureadUsersUsersToTerraform(struct?: DataAzureadUsersUsers)
 
 
 export function dataAzureadUsersUsersToHclTerraform(struct?: DataAzureadUsersUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function dataAzureadUsersUsersToHclTerraform(struct?: DataAzureadUsersUse
   return attrs;
 }
 
-export class DataAzureadUsersUsersOutputReference extends cdktf.ComplexObject {
+export class DataAzureadUsersUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class DataAzureadUsersUsersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -175,14 +175,14 @@ export class DataAzureadUsersUsersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DataAzureadUsersUsersList extends cdktf.ComplexList {
+export class DataAzureadUsersUsersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,25 +200,25 @@ export interface DataAzureadUsersTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadUsersTimeoutsToTerraform(struct?: DataAzureadUsersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzureadUsersTimeoutsToHclTerraform(struct?: DataAzureadUsersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadUsersTimeoutsToHclTerraform(struct?: DataAzureadUsersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,19 +229,19 @@ export function dataAzureadUsersTimeoutsToHclTerraform(struct?: DataAzureadUsers
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadUsersTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzureadUsersTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadUsersTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -254,13 +254,13 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadUsersTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadUsersTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -291,7 +291,7 @@ export class DataAzureadUsersTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/users azuread_users}
 */
-export class DataAzureadUsers extends cdktf.TerraformDataSource {
+export class DataAzureadUsers extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -302,14 +302,14 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzureadUsers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzureadUsers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadUsers to import
   * @param importFromId The id of the existing DataAzureadUsers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadUsers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_users", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_users", importId: importFromId, provider });
       }
 
   // ===========
@@ -387,11 +387,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // ignore_missing - computed: false, optional: true, required: false
-  private _ignoreMissing?: boolean | cdktf.IResolvable; 
+  private _ignoreMissing?: boolean | cdktn.IResolvable; 
   public get ignoreMissing() {
     return this.getBooleanAttribute('ignore_missing');
   }
-  public set ignoreMissing(value: boolean | cdktf.IResolvable) {
+  public set ignoreMissing(value: boolean | cdktn.IResolvable) {
     this._ignoreMissing = value;
   }
   public resetIgnoreMissing() {
@@ -451,11 +451,11 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   }
 
   // return_all - computed: false, optional: true, required: false
-  private _returnAll?: boolean | cdktf.IResolvable; 
+  private _returnAll?: boolean | cdktn.IResolvable; 
   public get returnAll() {
     return this.getBooleanAttribute('return_all');
   }
-  public set returnAll(value: boolean | cdktf.IResolvable) {
+  public set returnAll(value: boolean | cdktn.IResolvable) {
     this._returnAll = value;
   }
   public resetReturnAll() {
@@ -510,14 +510,14 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      employee_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._employeeIds),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_missing: cdktf.booleanToTerraform(this._ignoreMissing),
-      mail_nicknames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mailNicknames),
-      mails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mails),
-      object_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._objectIds),
-      return_all: cdktf.booleanToTerraform(this._returnAll),
-      user_principal_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userPrincipalNames),
+      employee_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._employeeIds),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_missing: cdktn.booleanToTerraform(this._ignoreMissing),
+      mail_nicknames: cdktn.listMapper(cdktn.stringToTerraform, false)(this._mailNicknames),
+      mails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._mails),
+      object_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._objectIds),
+      return_all: cdktn.booleanToTerraform(this._returnAll),
+      user_principal_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userPrincipalNames),
       timeouts: dataAzureadUsersTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -525,49 +525,49 @@ export class DataAzureadUsers extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       employee_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._employeeIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._employeeIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_missing: {
-        value: cdktf.booleanToHclTerraform(this._ignoreMissing),
+        value: cdktn.booleanToHclTerraform(this._ignoreMissing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mail_nicknames: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mailNicknames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._mailNicknames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       mails: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mails),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._mails),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       object_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._objectIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._objectIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       return_all: {
-        value: cdktf.booleanToHclTerraform(this._returnAll),
+        value: cdktn.booleanToHclTerraform(this._returnAll),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       user_principal_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userPrincipalNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userPrincipalNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

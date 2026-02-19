@@ -1,28 +1,28 @@
-# `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-azuread.user"></a>
+# `user` Submodule <a name="`user` Submodule" id="@cdktn/provider-azuread.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### User <a name="User" id="@cdktf/provider-azuread.user.User"></a>
+### User <a name="User" id="@cdktn/provider-azuread.user.User"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user azuread_user}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.user.User.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserConfig">UserConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserConfig">UserConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.user.User.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.user.User.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-azuread.user.User.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-azuread.user.User.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserConfig">UserConfig</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserConfig">UserConfig</a>
 
 ---
 
@@ -50,70 +50,70 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.user.User.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.user.User.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.user.User.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.user.User.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetAccountEnabled">ResetAccountEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetAgeGroup">ResetAgeGroup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetBusinessPhones">ResetBusinessPhones</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCity">ResetCity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCompanyName">ResetCompanyName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetConsentProvidedForMinor">ResetConsentProvidedForMinor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCostCenter">ResetCostCenter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCountry">ResetCountry</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDepartment">ResetDepartment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDisablePasswordExpiration">ResetDisablePasswordExpiration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDisableStrongPassword">ResetDisableStrongPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDivision">ResetDivision</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeHireDate">ResetEmployeeHireDate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeId">ResetEmployeeId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeType">ResetEmployeeType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetFaxNumber">ResetFaxNumber</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetForcePasswordChange">ResetForcePasswordChange</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetGivenName">ResetGivenName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetJobTitle">ResetJobTitle</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMail">ResetMail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMailNickname">ResetMailNickname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetManagerId">ResetManagerId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMobilePhone">ResetMobilePhone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOfficeLocation">ResetOfficeLocation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOnpremisesImmutableId">ResetOnpremisesImmutableId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOtherMails">ResetOtherMails</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPreferredLanguage">ResetPreferredLanguage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetShowInAddressList">ResetShowInAddressList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetState">ResetState</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetSurname">ResetSurname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetUsageLocation">ResetUsageLocation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.user.User.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.user.User.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.user.User.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.user.User.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetAccountEnabled">ResetAccountEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetAgeGroup">ResetAgeGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetBusinessPhones">ResetBusinessPhones</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCity">ResetCity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCompanyName">ResetCompanyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetConsentProvidedForMinor">ResetConsentProvidedForMinor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCostCenter">ResetCostCenter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCountry">ResetCountry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDepartment">ResetDepartment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDisablePasswordExpiration">ResetDisablePasswordExpiration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDisableStrongPassword">ResetDisableStrongPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDivision">ResetDivision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeHireDate">ResetEmployeeHireDate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeId">ResetEmployeeId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeType">ResetEmployeeType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetFaxNumber">ResetFaxNumber</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetForcePasswordChange">ResetForcePasswordChange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetGivenName">ResetGivenName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetJobTitle">ResetJobTitle</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMail">ResetMail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMailNickname">ResetMailNickname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetManagerId">ResetManagerId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMobilePhone">ResetMobilePhone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOfficeLocation">ResetOfficeLocation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOnpremisesImmutableId">ResetOnpremisesImmutableId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOtherMails">ResetOtherMails</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPostalCode">ResetPostalCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPreferredLanguage">ResetPreferredLanguage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetShowInAddressList">ResetShowInAddressList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetState">ResetState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetSurname">ResetSurname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetUsageLocation">ResetUsageLocation</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.user.User.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.user.User.toString"></a>
 
 ```go
 func ToString() *string
@@ -121,25 +121,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-azuread.user.User.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azuread.user.User.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.user.User.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.user.User.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.user.User.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.user.User.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-azuread.user.User.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azuread.user.User.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -147,7 +147,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-azuread.user.User.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-azuread.user.User.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -155,7 +155,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-azuread.user.User.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azuread.user.User.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -163,19 +163,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-azuread.user.User.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azuread.user.User.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-azuread.user.User.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azuread.user.User.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-azuread.user.User.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azuread.user.User.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -183,7 +183,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-azuread.user.User.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azuread.user.User.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -191,7 +191,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.user.User.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.user.User.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -199,151 +199,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.user.User.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.user.User.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.user.User.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.user.User.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.user.User.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.user.User.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.user.User.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.user.User.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.user.User.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.user.User.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.user.User.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.user.User.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.user.User.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.user.User.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.user.User.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.user.User.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.user.User.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.user.User.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-azuread.user.User.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azuread.user.User.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-azuread.user.User.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azuread.user.User.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.user.User.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.user.User.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.User.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.User.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-azuread.user.User.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azuread.user.User.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -353,7 +353,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -361,7 +361,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-azuread.user.User.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azuread.user.User.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -369,7 +369,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-azuread.user.User.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-azuread.user.User.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -377,7 +377,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.user.User.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.user.User.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -385,7 +385,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-azuread.user.User.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azuread.user.User.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -393,7 +393,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -401,229 +401,229 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-azuread.user.User.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azuread.user.User.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value UserTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.user.User.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.user.User.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
-##### `ResetAccountEnabled` <a name="ResetAccountEnabled" id="@cdktf/provider-azuread.user.User.resetAccountEnabled"></a>
+##### `ResetAccountEnabled` <a name="ResetAccountEnabled" id="@cdktn/provider-azuread.user.User.resetAccountEnabled"></a>
 
 ```go
 func ResetAccountEnabled()
 ```
 
-##### `ResetAgeGroup` <a name="ResetAgeGroup" id="@cdktf/provider-azuread.user.User.resetAgeGroup"></a>
+##### `ResetAgeGroup` <a name="ResetAgeGroup" id="@cdktn/provider-azuread.user.User.resetAgeGroup"></a>
 
 ```go
 func ResetAgeGroup()
 ```
 
-##### `ResetBusinessPhones` <a name="ResetBusinessPhones" id="@cdktf/provider-azuread.user.User.resetBusinessPhones"></a>
+##### `ResetBusinessPhones` <a name="ResetBusinessPhones" id="@cdktn/provider-azuread.user.User.resetBusinessPhones"></a>
 
 ```go
 func ResetBusinessPhones()
 ```
 
-##### `ResetCity` <a name="ResetCity" id="@cdktf/provider-azuread.user.User.resetCity"></a>
+##### `ResetCity` <a name="ResetCity" id="@cdktn/provider-azuread.user.User.resetCity"></a>
 
 ```go
 func ResetCity()
 ```
 
-##### `ResetCompanyName` <a name="ResetCompanyName" id="@cdktf/provider-azuread.user.User.resetCompanyName"></a>
+##### `ResetCompanyName` <a name="ResetCompanyName" id="@cdktn/provider-azuread.user.User.resetCompanyName"></a>
 
 ```go
 func ResetCompanyName()
 ```
 
-##### `ResetConsentProvidedForMinor` <a name="ResetConsentProvidedForMinor" id="@cdktf/provider-azuread.user.User.resetConsentProvidedForMinor"></a>
+##### `ResetConsentProvidedForMinor` <a name="ResetConsentProvidedForMinor" id="@cdktn/provider-azuread.user.User.resetConsentProvidedForMinor"></a>
 
 ```go
 func ResetConsentProvidedForMinor()
 ```
 
-##### `ResetCostCenter` <a name="ResetCostCenter" id="@cdktf/provider-azuread.user.User.resetCostCenter"></a>
+##### `ResetCostCenter` <a name="ResetCostCenter" id="@cdktn/provider-azuread.user.User.resetCostCenter"></a>
 
 ```go
 func ResetCostCenter()
 ```
 
-##### `ResetCountry` <a name="ResetCountry" id="@cdktf/provider-azuread.user.User.resetCountry"></a>
+##### `ResetCountry` <a name="ResetCountry" id="@cdktn/provider-azuread.user.User.resetCountry"></a>
 
 ```go
 func ResetCountry()
 ```
 
-##### `ResetDepartment` <a name="ResetDepartment" id="@cdktf/provider-azuread.user.User.resetDepartment"></a>
+##### `ResetDepartment` <a name="ResetDepartment" id="@cdktn/provider-azuread.user.User.resetDepartment"></a>
 
 ```go
 func ResetDepartment()
 ```
 
-##### `ResetDisablePasswordExpiration` <a name="ResetDisablePasswordExpiration" id="@cdktf/provider-azuread.user.User.resetDisablePasswordExpiration"></a>
+##### `ResetDisablePasswordExpiration` <a name="ResetDisablePasswordExpiration" id="@cdktn/provider-azuread.user.User.resetDisablePasswordExpiration"></a>
 
 ```go
 func ResetDisablePasswordExpiration()
 ```
 
-##### `ResetDisableStrongPassword` <a name="ResetDisableStrongPassword" id="@cdktf/provider-azuread.user.User.resetDisableStrongPassword"></a>
+##### `ResetDisableStrongPassword` <a name="ResetDisableStrongPassword" id="@cdktn/provider-azuread.user.User.resetDisableStrongPassword"></a>
 
 ```go
 func ResetDisableStrongPassword()
 ```
 
-##### `ResetDivision` <a name="ResetDivision" id="@cdktf/provider-azuread.user.User.resetDivision"></a>
+##### `ResetDivision` <a name="ResetDivision" id="@cdktn/provider-azuread.user.User.resetDivision"></a>
 
 ```go
 func ResetDivision()
 ```
 
-##### `ResetEmployeeHireDate` <a name="ResetEmployeeHireDate" id="@cdktf/provider-azuread.user.User.resetEmployeeHireDate"></a>
+##### `ResetEmployeeHireDate` <a name="ResetEmployeeHireDate" id="@cdktn/provider-azuread.user.User.resetEmployeeHireDate"></a>
 
 ```go
 func ResetEmployeeHireDate()
 ```
 
-##### `ResetEmployeeId` <a name="ResetEmployeeId" id="@cdktf/provider-azuread.user.User.resetEmployeeId"></a>
+##### `ResetEmployeeId` <a name="ResetEmployeeId" id="@cdktn/provider-azuread.user.User.resetEmployeeId"></a>
 
 ```go
 func ResetEmployeeId()
 ```
 
-##### `ResetEmployeeType` <a name="ResetEmployeeType" id="@cdktf/provider-azuread.user.User.resetEmployeeType"></a>
+##### `ResetEmployeeType` <a name="ResetEmployeeType" id="@cdktn/provider-azuread.user.User.resetEmployeeType"></a>
 
 ```go
 func ResetEmployeeType()
 ```
 
-##### `ResetFaxNumber` <a name="ResetFaxNumber" id="@cdktf/provider-azuread.user.User.resetFaxNumber"></a>
+##### `ResetFaxNumber` <a name="ResetFaxNumber" id="@cdktn/provider-azuread.user.User.resetFaxNumber"></a>
 
 ```go
 func ResetFaxNumber()
 ```
 
-##### `ResetForcePasswordChange` <a name="ResetForcePasswordChange" id="@cdktf/provider-azuread.user.User.resetForcePasswordChange"></a>
+##### `ResetForcePasswordChange` <a name="ResetForcePasswordChange" id="@cdktn/provider-azuread.user.User.resetForcePasswordChange"></a>
 
 ```go
 func ResetForcePasswordChange()
 ```
 
-##### `ResetGivenName` <a name="ResetGivenName" id="@cdktf/provider-azuread.user.User.resetGivenName"></a>
+##### `ResetGivenName` <a name="ResetGivenName" id="@cdktn/provider-azuread.user.User.resetGivenName"></a>
 
 ```go
 func ResetGivenName()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-azuread.user.User.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azuread.user.User.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetJobTitle` <a name="ResetJobTitle" id="@cdktf/provider-azuread.user.User.resetJobTitle"></a>
+##### `ResetJobTitle` <a name="ResetJobTitle" id="@cdktn/provider-azuread.user.User.resetJobTitle"></a>
 
 ```go
 func ResetJobTitle()
 ```
 
-##### `ResetMail` <a name="ResetMail" id="@cdktf/provider-azuread.user.User.resetMail"></a>
+##### `ResetMail` <a name="ResetMail" id="@cdktn/provider-azuread.user.User.resetMail"></a>
 
 ```go
 func ResetMail()
 ```
 
-##### `ResetMailNickname` <a name="ResetMailNickname" id="@cdktf/provider-azuread.user.User.resetMailNickname"></a>
+##### `ResetMailNickname` <a name="ResetMailNickname" id="@cdktn/provider-azuread.user.User.resetMailNickname"></a>
 
 ```go
 func ResetMailNickname()
 ```
 
-##### `ResetManagerId` <a name="ResetManagerId" id="@cdktf/provider-azuread.user.User.resetManagerId"></a>
+##### `ResetManagerId` <a name="ResetManagerId" id="@cdktn/provider-azuread.user.User.resetManagerId"></a>
 
 ```go
 func ResetManagerId()
 ```
 
-##### `ResetMobilePhone` <a name="ResetMobilePhone" id="@cdktf/provider-azuread.user.User.resetMobilePhone"></a>
+##### `ResetMobilePhone` <a name="ResetMobilePhone" id="@cdktn/provider-azuread.user.User.resetMobilePhone"></a>
 
 ```go
 func ResetMobilePhone()
 ```
 
-##### `ResetOfficeLocation` <a name="ResetOfficeLocation" id="@cdktf/provider-azuread.user.User.resetOfficeLocation"></a>
+##### `ResetOfficeLocation` <a name="ResetOfficeLocation" id="@cdktn/provider-azuread.user.User.resetOfficeLocation"></a>
 
 ```go
 func ResetOfficeLocation()
 ```
 
-##### `ResetOnpremisesImmutableId` <a name="ResetOnpremisesImmutableId" id="@cdktf/provider-azuread.user.User.resetOnpremisesImmutableId"></a>
+##### `ResetOnpremisesImmutableId` <a name="ResetOnpremisesImmutableId" id="@cdktn/provider-azuread.user.User.resetOnpremisesImmutableId"></a>
 
 ```go
 func ResetOnpremisesImmutableId()
 ```
 
-##### `ResetOtherMails` <a name="ResetOtherMails" id="@cdktf/provider-azuread.user.User.resetOtherMails"></a>
+##### `ResetOtherMails` <a name="ResetOtherMails" id="@cdktn/provider-azuread.user.User.resetOtherMails"></a>
 
 ```go
 func ResetOtherMails()
 ```
 
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-azuread.user.User.resetPassword"></a>
+##### `ResetPassword` <a name="ResetPassword" id="@cdktn/provider-azuread.user.User.resetPassword"></a>
 
 ```go
 func ResetPassword()
 ```
 
-##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktf/provider-azuread.user.User.resetPostalCode"></a>
+##### `ResetPostalCode` <a name="ResetPostalCode" id="@cdktn/provider-azuread.user.User.resetPostalCode"></a>
 
 ```go
 func ResetPostalCode()
 ```
 
-##### `ResetPreferredLanguage` <a name="ResetPreferredLanguage" id="@cdktf/provider-azuread.user.User.resetPreferredLanguage"></a>
+##### `ResetPreferredLanguage` <a name="ResetPreferredLanguage" id="@cdktn/provider-azuread.user.User.resetPreferredLanguage"></a>
 
 ```go
 func ResetPreferredLanguage()
 ```
 
-##### `ResetShowInAddressList` <a name="ResetShowInAddressList" id="@cdktf/provider-azuread.user.User.resetShowInAddressList"></a>
+##### `ResetShowInAddressList` <a name="ResetShowInAddressList" id="@cdktn/provider-azuread.user.User.resetShowInAddressList"></a>
 
 ```go
 func ResetShowInAddressList()
 ```
 
-##### `ResetState` <a name="ResetState" id="@cdktf/provider-azuread.user.User.resetState"></a>
+##### `ResetState` <a name="ResetState" id="@cdktn/provider-azuread.user.User.resetState"></a>
 
 ```go
 func ResetState()
 ```
 
-##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktf/provider-azuread.user.User.resetStreetAddress"></a>
+##### `ResetStreetAddress` <a name="ResetStreetAddress" id="@cdktn/provider-azuread.user.User.resetStreetAddress"></a>
 
 ```go
 func ResetStreetAddress()
 ```
 
-##### `ResetSurname` <a name="ResetSurname" id="@cdktf/provider-azuread.user.User.resetSurname"></a>
+##### `ResetSurname` <a name="ResetSurname" id="@cdktn/provider-azuread.user.User.resetSurname"></a>
 
 ```go
 func ResetSurname()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-azuread.user.User.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azuread.user.User.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
 ```
 
-##### `ResetUsageLocation` <a name="ResetUsageLocation" id="@cdktf/provider-azuread.user.User.resetUsageLocation"></a>
+##### `ResetUsageLocation` <a name="ResetUsageLocation" id="@cdktn/provider-azuread.user.User.resetUsageLocation"></a>
 
 ```go
 func ResetUsageLocation()
@@ -633,17 +633,17 @@ func ResetUsageLocation()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.user.User.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-azuread.user.User.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -672,45 +672,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-azuread.user.User.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-azuread.user.User.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-azuread.user.User.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -718,7 +718,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -726,7 +726,7 @@ The construct id used in the generated config for the User to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -736,9 +736,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the User to import is found.
 
@@ -748,113 +748,113 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.aboutMe">AboutMe</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.creationType">CreationType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.externalUserState">ExternalUserState</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.imAddresses">ImAddresses</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesDistinguishedName">OnpremisesDistinguishedName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesDomainName">OnpremisesDomainName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSamAccountName">OnpremisesSamAccountName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSecurityIdentifier">OnpremisesSecurityIdentifier</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSyncEnabled">OnpremisesSyncEnabled</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesUserPrincipalName">OnpremisesUserPrincipalName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.proxyAddresses">ProxyAddresses</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userType">UserType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">AccountEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroupInput">AgeGroupInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhonesInput">BusinessPhonesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.cityInput">CityInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.companyNameInput">CompanyNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.consentProvidedForMinorInput">ConsentProvidedForMinorInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.countryInput">CountryInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.departmentInput">DepartmentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">DisablePasswordExpirationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">DisableStrongPasswordInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.divisionInput">DivisionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDateInput">EmployeeHireDateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeIdInput">EmployeeIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeTypeInput">EmployeeTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumberInput">FaxNumberInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">ForcePasswordChangeInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.givenNameInput">GivenNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitleInput">JobTitleInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailInput">MailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailNicknameInput">MailNicknameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.managerIdInput">ManagerIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mobilePhoneInput">MobilePhoneInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.officeLocationInput">OfficeLocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesImmutableIdInput">OnpremisesImmutableIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.otherMailsInput">OtherMailsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.postalCodeInput">PostalCodeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguageInput">PreferredLanguageInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">ShowInAddressListInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">StreetAddressInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">SurnameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">UsageLocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">UserPrincipalNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">AccountEnabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroup">AgeGroup</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhones">BusinessPhones</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.city">City</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.companyName">CompanyName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.consentProvidedForMinor">ConsentProvidedForMinor</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.costCenter">CostCenter</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.country">Country</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.department">Department</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.division">Division</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDate">EmployeeHireDate</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeId">EmployeeId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeType">EmployeeType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumber">FaxNumber</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.givenName">GivenName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitle">JobTitle</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mail">Mail</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.managerId">ManagerId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mobilePhone">MobilePhone</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.officeLocation">OfficeLocation</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesImmutableId">OnpremisesImmutableId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.otherMails">OtherMails</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.postalCode">PostalCode</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguage">PreferredLanguage</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">ShowInAddressList</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.state">State</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.surname">Surname</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocation">UsageLocation</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalName">UserPrincipalName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.aboutMe">AboutMe</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.creationType">CreationType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.externalUserState">ExternalUserState</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.imAddresses">ImAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.objectId">ObjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesDistinguishedName">OnpremisesDistinguishedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesDomainName">OnpremisesDomainName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSamAccountName">OnpremisesSamAccountName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSecurityIdentifier">OnpremisesSecurityIdentifier</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSyncEnabled">OnpremisesSyncEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesUserPrincipalName">OnpremisesUserPrincipalName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.proxyAddresses">ProxyAddresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userType">UserType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.accountEnabledInput">AccountEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.ageGroupInput">AgeGroupInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.businessPhonesInput">BusinessPhonesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.cityInput">CityInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.companyNameInput">CompanyNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.consentProvidedForMinorInput">ConsentProvidedForMinorInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.countryInput">CountryInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.departmentInput">DepartmentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disablePasswordExpirationInput">DisablePasswordExpirationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disableStrongPasswordInput">DisableStrongPasswordInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.divisionInput">DivisionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeHireDateInput">EmployeeHireDateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeIdInput">EmployeeIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeTypeInput">EmployeeTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.faxNumberInput">FaxNumberInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forcePasswordChangeInput">ForcePasswordChangeInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.givenNameInput">GivenNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.jobTitleInput">JobTitleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailInput">MailInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailNicknameInput">MailNicknameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.managerIdInput">ManagerIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mobilePhoneInput">MobilePhoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.officeLocationInput">OfficeLocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesImmutableIdInput">OnpremisesImmutableIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.otherMailsInput">OtherMailsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.postalCodeInput">PostalCodeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.preferredLanguageInput">PreferredLanguageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.showInAddressListInput">ShowInAddressListInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.streetAddressInput">StreetAddressInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.surnameInput">SurnameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.usageLocationInput">UsageLocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userPrincipalNameInput">UserPrincipalNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.accountEnabled">AccountEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.ageGroup">AgeGroup</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.businessPhones">BusinessPhones</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.city">City</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.companyName">CompanyName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.consentProvidedForMinor">ConsentProvidedForMinor</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.costCenter">CostCenter</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.country">Country</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.department">Department</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.division">Division</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeHireDate">EmployeeHireDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeId">EmployeeId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeType">EmployeeType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.faxNumber">FaxNumber</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.givenName">GivenName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.jobTitle">JobTitle</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mail">Mail</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailNickname">MailNickname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.managerId">ManagerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mobilePhone">MobilePhone</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.officeLocation">OfficeLocation</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesImmutableId">OnpremisesImmutableId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.otherMails">OtherMails</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.postalCode">PostalCode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.preferredLanguage">PreferredLanguage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.showInAddressList">ShowInAddressList</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.surname">Surname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.usageLocation">UsageLocation</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userPrincipalName">UserPrincipalName</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-azuread.user.User.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azuread.user.User.property.node"></a>
 
 ```go
 func Node() Node
@@ -866,17 +866,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-azuread.user.User.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azuread.user.User.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.user.User.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.user.User.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -886,7 +886,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-azuread.user.User.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azuread.user.User.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -896,7 +896,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-azuread.user.User.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azuread.user.User.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -906,7 +906,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-azuread.user.User.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azuread.user.User.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -916,17 +916,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azuread.user.User.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.user.User.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.user.User.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -936,7 +936,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.user.User.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.user.User.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -946,7 +946,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.user.User.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.user.User.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -956,37 +956,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.user.User.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.user.User.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.user.User.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.user.User.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.user.User.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.user.User.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.user.User.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.user.User.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -996,7 +996,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `AboutMe`<sup>Required</sup> <a name="AboutMe" id="@cdktf/provider-azuread.user.User.property.aboutMe"></a>
+##### `AboutMe`<sup>Required</sup> <a name="AboutMe" id="@cdktn/provider-azuread.user.User.property.aboutMe"></a>
 
 ```go
 func AboutMe() *string
@@ -1006,7 +1006,7 @@ func AboutMe() *string
 
 ---
 
-##### `CreationType`<sup>Required</sup> <a name="CreationType" id="@cdktf/provider-azuread.user.User.property.creationType"></a>
+##### `CreationType`<sup>Required</sup> <a name="CreationType" id="@cdktn/provider-azuread.user.User.property.creationType"></a>
 
 ```go
 func CreationType() *string
@@ -1016,7 +1016,7 @@ func CreationType() *string
 
 ---
 
-##### `ExternalUserState`<sup>Required</sup> <a name="ExternalUserState" id="@cdktf/provider-azuread.user.User.property.externalUserState"></a>
+##### `ExternalUserState`<sup>Required</sup> <a name="ExternalUserState" id="@cdktn/provider-azuread.user.User.property.externalUserState"></a>
 
 ```go
 func ExternalUserState() *string
@@ -1026,7 +1026,7 @@ func ExternalUserState() *string
 
 ---
 
-##### `ImAddresses`<sup>Required</sup> <a name="ImAddresses" id="@cdktf/provider-azuread.user.User.property.imAddresses"></a>
+##### `ImAddresses`<sup>Required</sup> <a name="ImAddresses" id="@cdktn/provider-azuread.user.User.property.imAddresses"></a>
 
 ```go
 func ImAddresses() *[]*string
@@ -1036,7 +1036,7 @@ func ImAddresses() *[]*string
 
 ---
 
-##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktf/provider-azuread.user.User.property.objectId"></a>
+##### `ObjectId`<sup>Required</sup> <a name="ObjectId" id="@cdktn/provider-azuread.user.User.property.objectId"></a>
 
 ```go
 func ObjectId() *string
@@ -1046,7 +1046,7 @@ func ObjectId() *string
 
 ---
 
-##### `OnpremisesDistinguishedName`<sup>Required</sup> <a name="OnpremisesDistinguishedName" id="@cdktf/provider-azuread.user.User.property.onpremisesDistinguishedName"></a>
+##### `OnpremisesDistinguishedName`<sup>Required</sup> <a name="OnpremisesDistinguishedName" id="@cdktn/provider-azuread.user.User.property.onpremisesDistinguishedName"></a>
 
 ```go
 func OnpremisesDistinguishedName() *string
@@ -1056,7 +1056,7 @@ func OnpremisesDistinguishedName() *string
 
 ---
 
-##### `OnpremisesDomainName`<sup>Required</sup> <a name="OnpremisesDomainName" id="@cdktf/provider-azuread.user.User.property.onpremisesDomainName"></a>
+##### `OnpremisesDomainName`<sup>Required</sup> <a name="OnpremisesDomainName" id="@cdktn/provider-azuread.user.User.property.onpremisesDomainName"></a>
 
 ```go
 func OnpremisesDomainName() *string
@@ -1066,7 +1066,7 @@ func OnpremisesDomainName() *string
 
 ---
 
-##### `OnpremisesSamAccountName`<sup>Required</sup> <a name="OnpremisesSamAccountName" id="@cdktf/provider-azuread.user.User.property.onpremisesSamAccountName"></a>
+##### `OnpremisesSamAccountName`<sup>Required</sup> <a name="OnpremisesSamAccountName" id="@cdktn/provider-azuread.user.User.property.onpremisesSamAccountName"></a>
 
 ```go
 func OnpremisesSamAccountName() *string
@@ -1076,7 +1076,7 @@ func OnpremisesSamAccountName() *string
 
 ---
 
-##### `OnpremisesSecurityIdentifier`<sup>Required</sup> <a name="OnpremisesSecurityIdentifier" id="@cdktf/provider-azuread.user.User.property.onpremisesSecurityIdentifier"></a>
+##### `OnpremisesSecurityIdentifier`<sup>Required</sup> <a name="OnpremisesSecurityIdentifier" id="@cdktn/provider-azuread.user.User.property.onpremisesSecurityIdentifier"></a>
 
 ```go
 func OnpremisesSecurityIdentifier() *string
@@ -1086,17 +1086,17 @@ func OnpremisesSecurityIdentifier() *string
 
 ---
 
-##### `OnpremisesSyncEnabled`<sup>Required</sup> <a name="OnpremisesSyncEnabled" id="@cdktf/provider-azuread.user.User.property.onpremisesSyncEnabled"></a>
+##### `OnpremisesSyncEnabled`<sup>Required</sup> <a name="OnpremisesSyncEnabled" id="@cdktn/provider-azuread.user.User.property.onpremisesSyncEnabled"></a>
 
 ```go
 func OnpremisesSyncEnabled() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
-##### `OnpremisesUserPrincipalName`<sup>Required</sup> <a name="OnpremisesUserPrincipalName" id="@cdktf/provider-azuread.user.User.property.onpremisesUserPrincipalName"></a>
+##### `OnpremisesUserPrincipalName`<sup>Required</sup> <a name="OnpremisesUserPrincipalName" id="@cdktn/provider-azuread.user.User.property.onpremisesUserPrincipalName"></a>
 
 ```go
 func OnpremisesUserPrincipalName() *string
@@ -1106,7 +1106,7 @@ func OnpremisesUserPrincipalName() *string
 
 ---
 
-##### `ProxyAddresses`<sup>Required</sup> <a name="ProxyAddresses" id="@cdktf/provider-azuread.user.User.property.proxyAddresses"></a>
+##### `ProxyAddresses`<sup>Required</sup> <a name="ProxyAddresses" id="@cdktn/provider-azuread.user.User.property.proxyAddresses"></a>
 
 ```go
 func ProxyAddresses() *[]*string
@@ -1116,17 +1116,17 @@ func ProxyAddresses() *[]*string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-azuread.user.User.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azuread.user.User.property.timeouts"></a>
 
 ```go
 func Timeouts() UserTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a>
 
 ---
 
-##### `UserType`<sup>Required</sup> <a name="UserType" id="@cdktf/provider-azuread.user.User.property.userType"></a>
+##### `UserType`<sup>Required</sup> <a name="UserType" id="@cdktn/provider-azuread.user.User.property.userType"></a>
 
 ```go
 func UserType() *string
@@ -1136,7 +1136,7 @@ func UserType() *string
 
 ---
 
-##### `AccountEnabledInput`<sup>Optional</sup> <a name="AccountEnabledInput" id="@cdktf/provider-azuread.user.User.property.accountEnabledInput"></a>
+##### `AccountEnabledInput`<sup>Optional</sup> <a name="AccountEnabledInput" id="@cdktn/provider-azuread.user.User.property.accountEnabledInput"></a>
 
 ```go
 func AccountEnabledInput() interface{}
@@ -1146,7 +1146,7 @@ func AccountEnabledInput() interface{}
 
 ---
 
-##### `AgeGroupInput`<sup>Optional</sup> <a name="AgeGroupInput" id="@cdktf/provider-azuread.user.User.property.ageGroupInput"></a>
+##### `AgeGroupInput`<sup>Optional</sup> <a name="AgeGroupInput" id="@cdktn/provider-azuread.user.User.property.ageGroupInput"></a>
 
 ```go
 func AgeGroupInput() *string
@@ -1156,7 +1156,7 @@ func AgeGroupInput() *string
 
 ---
 
-##### `BusinessPhonesInput`<sup>Optional</sup> <a name="BusinessPhonesInput" id="@cdktf/provider-azuread.user.User.property.businessPhonesInput"></a>
+##### `BusinessPhonesInput`<sup>Optional</sup> <a name="BusinessPhonesInput" id="@cdktn/provider-azuread.user.User.property.businessPhonesInput"></a>
 
 ```go
 func BusinessPhonesInput() *[]*string
@@ -1166,7 +1166,7 @@ func BusinessPhonesInput() *[]*string
 
 ---
 
-##### `CityInput`<sup>Optional</sup> <a name="CityInput" id="@cdktf/provider-azuread.user.User.property.cityInput"></a>
+##### `CityInput`<sup>Optional</sup> <a name="CityInput" id="@cdktn/provider-azuread.user.User.property.cityInput"></a>
 
 ```go
 func CityInput() *string
@@ -1176,7 +1176,7 @@ func CityInput() *string
 
 ---
 
-##### `CompanyNameInput`<sup>Optional</sup> <a name="CompanyNameInput" id="@cdktf/provider-azuread.user.User.property.companyNameInput"></a>
+##### `CompanyNameInput`<sup>Optional</sup> <a name="CompanyNameInput" id="@cdktn/provider-azuread.user.User.property.companyNameInput"></a>
 
 ```go
 func CompanyNameInput() *string
@@ -1186,7 +1186,7 @@ func CompanyNameInput() *string
 
 ---
 
-##### `ConsentProvidedForMinorInput`<sup>Optional</sup> <a name="ConsentProvidedForMinorInput" id="@cdktf/provider-azuread.user.User.property.consentProvidedForMinorInput"></a>
+##### `ConsentProvidedForMinorInput`<sup>Optional</sup> <a name="ConsentProvidedForMinorInput" id="@cdktn/provider-azuread.user.User.property.consentProvidedForMinorInput"></a>
 
 ```go
 func ConsentProvidedForMinorInput() *string
@@ -1196,7 +1196,7 @@ func ConsentProvidedForMinorInput() *string
 
 ---
 
-##### `CostCenterInput`<sup>Optional</sup> <a name="CostCenterInput" id="@cdktf/provider-azuread.user.User.property.costCenterInput"></a>
+##### `CostCenterInput`<sup>Optional</sup> <a name="CostCenterInput" id="@cdktn/provider-azuread.user.User.property.costCenterInput"></a>
 
 ```go
 func CostCenterInput() *string
@@ -1206,7 +1206,7 @@ func CostCenterInput() *string
 
 ---
 
-##### `CountryInput`<sup>Optional</sup> <a name="CountryInput" id="@cdktf/provider-azuread.user.User.property.countryInput"></a>
+##### `CountryInput`<sup>Optional</sup> <a name="CountryInput" id="@cdktn/provider-azuread.user.User.property.countryInput"></a>
 
 ```go
 func CountryInput() *string
@@ -1216,7 +1216,7 @@ func CountryInput() *string
 
 ---
 
-##### `DepartmentInput`<sup>Optional</sup> <a name="DepartmentInput" id="@cdktf/provider-azuread.user.User.property.departmentInput"></a>
+##### `DepartmentInput`<sup>Optional</sup> <a name="DepartmentInput" id="@cdktn/provider-azuread.user.User.property.departmentInput"></a>
 
 ```go
 func DepartmentInput() *string
@@ -1226,7 +1226,7 @@ func DepartmentInput() *string
 
 ---
 
-##### `DisablePasswordExpirationInput`<sup>Optional</sup> <a name="DisablePasswordExpirationInput" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
+##### `DisablePasswordExpirationInput`<sup>Optional</sup> <a name="DisablePasswordExpirationInput" id="@cdktn/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
 
 ```go
 func DisablePasswordExpirationInput() interface{}
@@ -1236,7 +1236,7 @@ func DisablePasswordExpirationInput() interface{}
 
 ---
 
-##### `DisableStrongPasswordInput`<sup>Optional</sup> <a name="DisableStrongPasswordInput" id="@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
+##### `DisableStrongPasswordInput`<sup>Optional</sup> <a name="DisableStrongPasswordInput" id="@cdktn/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
 
 ```go
 func DisableStrongPasswordInput() interface{}
@@ -1246,7 +1246,7 @@ func DisableStrongPasswordInput() interface{}
 
 ---
 
-##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktf/provider-azuread.user.User.property.displayNameInput"></a>
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-azuread.user.User.property.displayNameInput"></a>
 
 ```go
 func DisplayNameInput() *string
@@ -1256,7 +1256,7 @@ func DisplayNameInput() *string
 
 ---
 
-##### `DivisionInput`<sup>Optional</sup> <a name="DivisionInput" id="@cdktf/provider-azuread.user.User.property.divisionInput"></a>
+##### `DivisionInput`<sup>Optional</sup> <a name="DivisionInput" id="@cdktn/provider-azuread.user.User.property.divisionInput"></a>
 
 ```go
 func DivisionInput() *string
@@ -1266,7 +1266,7 @@ func DivisionInput() *string
 
 ---
 
-##### `EmployeeHireDateInput`<sup>Optional</sup> <a name="EmployeeHireDateInput" id="@cdktf/provider-azuread.user.User.property.employeeHireDateInput"></a>
+##### `EmployeeHireDateInput`<sup>Optional</sup> <a name="EmployeeHireDateInput" id="@cdktn/provider-azuread.user.User.property.employeeHireDateInput"></a>
 
 ```go
 func EmployeeHireDateInput() *string
@@ -1276,7 +1276,7 @@ func EmployeeHireDateInput() *string
 
 ---
 
-##### `EmployeeIdInput`<sup>Optional</sup> <a name="EmployeeIdInput" id="@cdktf/provider-azuread.user.User.property.employeeIdInput"></a>
+##### `EmployeeIdInput`<sup>Optional</sup> <a name="EmployeeIdInput" id="@cdktn/provider-azuread.user.User.property.employeeIdInput"></a>
 
 ```go
 func EmployeeIdInput() *string
@@ -1286,7 +1286,7 @@ func EmployeeIdInput() *string
 
 ---
 
-##### `EmployeeTypeInput`<sup>Optional</sup> <a name="EmployeeTypeInput" id="@cdktf/provider-azuread.user.User.property.employeeTypeInput"></a>
+##### `EmployeeTypeInput`<sup>Optional</sup> <a name="EmployeeTypeInput" id="@cdktn/provider-azuread.user.User.property.employeeTypeInput"></a>
 
 ```go
 func EmployeeTypeInput() *string
@@ -1296,7 +1296,7 @@ func EmployeeTypeInput() *string
 
 ---
 
-##### `FaxNumberInput`<sup>Optional</sup> <a name="FaxNumberInput" id="@cdktf/provider-azuread.user.User.property.faxNumberInput"></a>
+##### `FaxNumberInput`<sup>Optional</sup> <a name="FaxNumberInput" id="@cdktn/provider-azuread.user.User.property.faxNumberInput"></a>
 
 ```go
 func FaxNumberInput() *string
@@ -1306,7 +1306,7 @@ func FaxNumberInput() *string
 
 ---
 
-##### `ForcePasswordChangeInput`<sup>Optional</sup> <a name="ForcePasswordChangeInput" id="@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
+##### `ForcePasswordChangeInput`<sup>Optional</sup> <a name="ForcePasswordChangeInput" id="@cdktn/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
 
 ```go
 func ForcePasswordChangeInput() interface{}
@@ -1316,7 +1316,7 @@ func ForcePasswordChangeInput() interface{}
 
 ---
 
-##### `GivenNameInput`<sup>Optional</sup> <a name="GivenNameInput" id="@cdktf/provider-azuread.user.User.property.givenNameInput"></a>
+##### `GivenNameInput`<sup>Optional</sup> <a name="GivenNameInput" id="@cdktn/provider-azuread.user.User.property.givenNameInput"></a>
 
 ```go
 func GivenNameInput() *string
@@ -1326,7 +1326,7 @@ func GivenNameInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-azuread.user.User.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azuread.user.User.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1336,7 +1336,7 @@ func IdInput() *string
 
 ---
 
-##### `JobTitleInput`<sup>Optional</sup> <a name="JobTitleInput" id="@cdktf/provider-azuread.user.User.property.jobTitleInput"></a>
+##### `JobTitleInput`<sup>Optional</sup> <a name="JobTitleInput" id="@cdktn/provider-azuread.user.User.property.jobTitleInput"></a>
 
 ```go
 func JobTitleInput() *string
@@ -1346,7 +1346,7 @@ func JobTitleInput() *string
 
 ---
 
-##### `MailInput`<sup>Optional</sup> <a name="MailInput" id="@cdktf/provider-azuread.user.User.property.mailInput"></a>
+##### `MailInput`<sup>Optional</sup> <a name="MailInput" id="@cdktn/provider-azuread.user.User.property.mailInput"></a>
 
 ```go
 func MailInput() *string
@@ -1356,7 +1356,7 @@ func MailInput() *string
 
 ---
 
-##### `MailNicknameInput`<sup>Optional</sup> <a name="MailNicknameInput" id="@cdktf/provider-azuread.user.User.property.mailNicknameInput"></a>
+##### `MailNicknameInput`<sup>Optional</sup> <a name="MailNicknameInput" id="@cdktn/provider-azuread.user.User.property.mailNicknameInput"></a>
 
 ```go
 func MailNicknameInput() *string
@@ -1366,7 +1366,7 @@ func MailNicknameInput() *string
 
 ---
 
-##### `ManagerIdInput`<sup>Optional</sup> <a name="ManagerIdInput" id="@cdktf/provider-azuread.user.User.property.managerIdInput"></a>
+##### `ManagerIdInput`<sup>Optional</sup> <a name="ManagerIdInput" id="@cdktn/provider-azuread.user.User.property.managerIdInput"></a>
 
 ```go
 func ManagerIdInput() *string
@@ -1376,7 +1376,7 @@ func ManagerIdInput() *string
 
 ---
 
-##### `MobilePhoneInput`<sup>Optional</sup> <a name="MobilePhoneInput" id="@cdktf/provider-azuread.user.User.property.mobilePhoneInput"></a>
+##### `MobilePhoneInput`<sup>Optional</sup> <a name="MobilePhoneInput" id="@cdktn/provider-azuread.user.User.property.mobilePhoneInput"></a>
 
 ```go
 func MobilePhoneInput() *string
@@ -1386,7 +1386,7 @@ func MobilePhoneInput() *string
 
 ---
 
-##### `OfficeLocationInput`<sup>Optional</sup> <a name="OfficeLocationInput" id="@cdktf/provider-azuread.user.User.property.officeLocationInput"></a>
+##### `OfficeLocationInput`<sup>Optional</sup> <a name="OfficeLocationInput" id="@cdktn/provider-azuread.user.User.property.officeLocationInput"></a>
 
 ```go
 func OfficeLocationInput() *string
@@ -1396,7 +1396,7 @@ func OfficeLocationInput() *string
 
 ---
 
-##### `OnpremisesImmutableIdInput`<sup>Optional</sup> <a name="OnpremisesImmutableIdInput" id="@cdktf/provider-azuread.user.User.property.onpremisesImmutableIdInput"></a>
+##### `OnpremisesImmutableIdInput`<sup>Optional</sup> <a name="OnpremisesImmutableIdInput" id="@cdktn/provider-azuread.user.User.property.onpremisesImmutableIdInput"></a>
 
 ```go
 func OnpremisesImmutableIdInput() *string
@@ -1406,7 +1406,7 @@ func OnpremisesImmutableIdInput() *string
 
 ---
 
-##### `OtherMailsInput`<sup>Optional</sup> <a name="OtherMailsInput" id="@cdktf/provider-azuread.user.User.property.otherMailsInput"></a>
+##### `OtherMailsInput`<sup>Optional</sup> <a name="OtherMailsInput" id="@cdktn/provider-azuread.user.User.property.otherMailsInput"></a>
 
 ```go
 func OtherMailsInput() *[]*string
@@ -1416,7 +1416,7 @@ func OtherMailsInput() *[]*string
 
 ---
 
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-azuread.user.User.property.passwordInput"></a>
+##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktn/provider-azuread.user.User.property.passwordInput"></a>
 
 ```go
 func PasswordInput() *string
@@ -1426,7 +1426,7 @@ func PasswordInput() *string
 
 ---
 
-##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktf/provider-azuread.user.User.property.postalCodeInput"></a>
+##### `PostalCodeInput`<sup>Optional</sup> <a name="PostalCodeInput" id="@cdktn/provider-azuread.user.User.property.postalCodeInput"></a>
 
 ```go
 func PostalCodeInput() *string
@@ -1436,7 +1436,7 @@ func PostalCodeInput() *string
 
 ---
 
-##### `PreferredLanguageInput`<sup>Optional</sup> <a name="PreferredLanguageInput" id="@cdktf/provider-azuread.user.User.property.preferredLanguageInput"></a>
+##### `PreferredLanguageInput`<sup>Optional</sup> <a name="PreferredLanguageInput" id="@cdktn/provider-azuread.user.User.property.preferredLanguageInput"></a>
 
 ```go
 func PreferredLanguageInput() *string
@@ -1446,7 +1446,7 @@ func PreferredLanguageInput() *string
 
 ---
 
-##### `ShowInAddressListInput`<sup>Optional</sup> <a name="ShowInAddressListInput" id="@cdktf/provider-azuread.user.User.property.showInAddressListInput"></a>
+##### `ShowInAddressListInput`<sup>Optional</sup> <a name="ShowInAddressListInput" id="@cdktn/provider-azuread.user.User.property.showInAddressListInput"></a>
 
 ```go
 func ShowInAddressListInput() interface{}
@@ -1456,7 +1456,7 @@ func ShowInAddressListInput() interface{}
 
 ---
 
-##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktf/provider-azuread.user.User.property.stateInput"></a>
+##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktn/provider-azuread.user.User.property.stateInput"></a>
 
 ```go
 func StateInput() *string
@@ -1466,7 +1466,7 @@ func StateInput() *string
 
 ---
 
-##### `StreetAddressInput`<sup>Optional</sup> <a name="StreetAddressInput" id="@cdktf/provider-azuread.user.User.property.streetAddressInput"></a>
+##### `StreetAddressInput`<sup>Optional</sup> <a name="StreetAddressInput" id="@cdktn/provider-azuread.user.User.property.streetAddressInput"></a>
 
 ```go
 func StreetAddressInput() *string
@@ -1476,7 +1476,7 @@ func StreetAddressInput() *string
 
 ---
 
-##### `SurnameInput`<sup>Optional</sup> <a name="SurnameInput" id="@cdktf/provider-azuread.user.User.property.surnameInput"></a>
+##### `SurnameInput`<sup>Optional</sup> <a name="SurnameInput" id="@cdktn/provider-azuread.user.User.property.surnameInput"></a>
 
 ```go
 func SurnameInput() *string
@@ -1486,7 +1486,7 @@ func SurnameInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -1496,7 +1496,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `UsageLocationInput`<sup>Optional</sup> <a name="UsageLocationInput" id="@cdktf/provider-azuread.user.User.property.usageLocationInput"></a>
+##### `UsageLocationInput`<sup>Optional</sup> <a name="UsageLocationInput" id="@cdktn/provider-azuread.user.User.property.usageLocationInput"></a>
 
 ```go
 func UsageLocationInput() *string
@@ -1506,7 +1506,7 @@ func UsageLocationInput() *string
 
 ---
 
-##### `UserPrincipalNameInput`<sup>Optional</sup> <a name="UserPrincipalNameInput" id="@cdktf/provider-azuread.user.User.property.userPrincipalNameInput"></a>
+##### `UserPrincipalNameInput`<sup>Optional</sup> <a name="UserPrincipalNameInput" id="@cdktn/provider-azuread.user.User.property.userPrincipalNameInput"></a>
 
 ```go
 func UserPrincipalNameInput() *string
@@ -1516,7 +1516,7 @@ func UserPrincipalNameInput() *string
 
 ---
 
-##### `AccountEnabled`<sup>Required</sup> <a name="AccountEnabled" id="@cdktf/provider-azuread.user.User.property.accountEnabled"></a>
+##### `AccountEnabled`<sup>Required</sup> <a name="AccountEnabled" id="@cdktn/provider-azuread.user.User.property.accountEnabled"></a>
 
 ```go
 func AccountEnabled() interface{}
@@ -1526,7 +1526,7 @@ func AccountEnabled() interface{}
 
 ---
 
-##### `AgeGroup`<sup>Required</sup> <a name="AgeGroup" id="@cdktf/provider-azuread.user.User.property.ageGroup"></a>
+##### `AgeGroup`<sup>Required</sup> <a name="AgeGroup" id="@cdktn/provider-azuread.user.User.property.ageGroup"></a>
 
 ```go
 func AgeGroup() *string
@@ -1536,7 +1536,7 @@ func AgeGroup() *string
 
 ---
 
-##### `BusinessPhones`<sup>Required</sup> <a name="BusinessPhones" id="@cdktf/provider-azuread.user.User.property.businessPhones"></a>
+##### `BusinessPhones`<sup>Required</sup> <a name="BusinessPhones" id="@cdktn/provider-azuread.user.User.property.businessPhones"></a>
 
 ```go
 func BusinessPhones() *[]*string
@@ -1546,7 +1546,7 @@ func BusinessPhones() *[]*string
 
 ---
 
-##### `City`<sup>Required</sup> <a name="City" id="@cdktf/provider-azuread.user.User.property.city"></a>
+##### `City`<sup>Required</sup> <a name="City" id="@cdktn/provider-azuread.user.User.property.city"></a>
 
 ```go
 func City() *string
@@ -1556,7 +1556,7 @@ func City() *string
 
 ---
 
-##### `CompanyName`<sup>Required</sup> <a name="CompanyName" id="@cdktf/provider-azuread.user.User.property.companyName"></a>
+##### `CompanyName`<sup>Required</sup> <a name="CompanyName" id="@cdktn/provider-azuread.user.User.property.companyName"></a>
 
 ```go
 func CompanyName() *string
@@ -1566,7 +1566,7 @@ func CompanyName() *string
 
 ---
 
-##### `ConsentProvidedForMinor`<sup>Required</sup> <a name="ConsentProvidedForMinor" id="@cdktf/provider-azuread.user.User.property.consentProvidedForMinor"></a>
+##### `ConsentProvidedForMinor`<sup>Required</sup> <a name="ConsentProvidedForMinor" id="@cdktn/provider-azuread.user.User.property.consentProvidedForMinor"></a>
 
 ```go
 func ConsentProvidedForMinor() *string
@@ -1576,7 +1576,7 @@ func ConsentProvidedForMinor() *string
 
 ---
 
-##### `CostCenter`<sup>Required</sup> <a name="CostCenter" id="@cdktf/provider-azuread.user.User.property.costCenter"></a>
+##### `CostCenter`<sup>Required</sup> <a name="CostCenter" id="@cdktn/provider-azuread.user.User.property.costCenter"></a>
 
 ```go
 func CostCenter() *string
@@ -1586,7 +1586,7 @@ func CostCenter() *string
 
 ---
 
-##### `Country`<sup>Required</sup> <a name="Country" id="@cdktf/provider-azuread.user.User.property.country"></a>
+##### `Country`<sup>Required</sup> <a name="Country" id="@cdktn/provider-azuread.user.User.property.country"></a>
 
 ```go
 func Country() *string
@@ -1596,7 +1596,7 @@ func Country() *string
 
 ---
 
-##### `Department`<sup>Required</sup> <a name="Department" id="@cdktf/provider-azuread.user.User.property.department"></a>
+##### `Department`<sup>Required</sup> <a name="Department" id="@cdktn/provider-azuread.user.User.property.department"></a>
 
 ```go
 func Department() *string
@@ -1606,7 +1606,7 @@ func Department() *string
 
 ---
 
-##### `DisablePasswordExpiration`<sup>Required</sup> <a name="DisablePasswordExpiration" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpiration"></a>
+##### `DisablePasswordExpiration`<sup>Required</sup> <a name="DisablePasswordExpiration" id="@cdktn/provider-azuread.user.User.property.disablePasswordExpiration"></a>
 
 ```go
 func DisablePasswordExpiration() interface{}
@@ -1616,7 +1616,7 @@ func DisablePasswordExpiration() interface{}
 
 ---
 
-##### `DisableStrongPassword`<sup>Required</sup> <a name="DisableStrongPassword" id="@cdktf/provider-azuread.user.User.property.disableStrongPassword"></a>
+##### `DisableStrongPassword`<sup>Required</sup> <a name="DisableStrongPassword" id="@cdktn/provider-azuread.user.User.property.disableStrongPassword"></a>
 
 ```go
 func DisableStrongPassword() interface{}
@@ -1626,7 +1626,7 @@ func DisableStrongPassword() interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.user.User.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.user.User.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -1636,7 +1636,7 @@ func DisplayName() *string
 
 ---
 
-##### `Division`<sup>Required</sup> <a name="Division" id="@cdktf/provider-azuread.user.User.property.division"></a>
+##### `Division`<sup>Required</sup> <a name="Division" id="@cdktn/provider-azuread.user.User.property.division"></a>
 
 ```go
 func Division() *string
@@ -1646,7 +1646,7 @@ func Division() *string
 
 ---
 
-##### `EmployeeHireDate`<sup>Required</sup> <a name="EmployeeHireDate" id="@cdktf/provider-azuread.user.User.property.employeeHireDate"></a>
+##### `EmployeeHireDate`<sup>Required</sup> <a name="EmployeeHireDate" id="@cdktn/provider-azuread.user.User.property.employeeHireDate"></a>
 
 ```go
 func EmployeeHireDate() *string
@@ -1656,7 +1656,7 @@ func EmployeeHireDate() *string
 
 ---
 
-##### `EmployeeId`<sup>Required</sup> <a name="EmployeeId" id="@cdktf/provider-azuread.user.User.property.employeeId"></a>
+##### `EmployeeId`<sup>Required</sup> <a name="EmployeeId" id="@cdktn/provider-azuread.user.User.property.employeeId"></a>
 
 ```go
 func EmployeeId() *string
@@ -1666,7 +1666,7 @@ func EmployeeId() *string
 
 ---
 
-##### `EmployeeType`<sup>Required</sup> <a name="EmployeeType" id="@cdktf/provider-azuread.user.User.property.employeeType"></a>
+##### `EmployeeType`<sup>Required</sup> <a name="EmployeeType" id="@cdktn/provider-azuread.user.User.property.employeeType"></a>
 
 ```go
 func EmployeeType() *string
@@ -1676,7 +1676,7 @@ func EmployeeType() *string
 
 ---
 
-##### `FaxNumber`<sup>Required</sup> <a name="FaxNumber" id="@cdktf/provider-azuread.user.User.property.faxNumber"></a>
+##### `FaxNumber`<sup>Required</sup> <a name="FaxNumber" id="@cdktn/provider-azuread.user.User.property.faxNumber"></a>
 
 ```go
 func FaxNumber() *string
@@ -1686,7 +1686,7 @@ func FaxNumber() *string
 
 ---
 
-##### `ForcePasswordChange`<sup>Required</sup> <a name="ForcePasswordChange" id="@cdktf/provider-azuread.user.User.property.forcePasswordChange"></a>
+##### `ForcePasswordChange`<sup>Required</sup> <a name="ForcePasswordChange" id="@cdktn/provider-azuread.user.User.property.forcePasswordChange"></a>
 
 ```go
 func ForcePasswordChange() interface{}
@@ -1696,7 +1696,7 @@ func ForcePasswordChange() interface{}
 
 ---
 
-##### `GivenName`<sup>Required</sup> <a name="GivenName" id="@cdktf/provider-azuread.user.User.property.givenName"></a>
+##### `GivenName`<sup>Required</sup> <a name="GivenName" id="@cdktn/provider-azuread.user.User.property.givenName"></a>
 
 ```go
 func GivenName() *string
@@ -1706,7 +1706,7 @@ func GivenName() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-azuread.user.User.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azuread.user.User.property.id"></a>
 
 ```go
 func Id() *string
@@ -1716,7 +1716,7 @@ func Id() *string
 
 ---
 
-##### `JobTitle`<sup>Required</sup> <a name="JobTitle" id="@cdktf/provider-azuread.user.User.property.jobTitle"></a>
+##### `JobTitle`<sup>Required</sup> <a name="JobTitle" id="@cdktn/provider-azuread.user.User.property.jobTitle"></a>
 
 ```go
 func JobTitle() *string
@@ -1726,7 +1726,7 @@ func JobTitle() *string
 
 ---
 
-##### `Mail`<sup>Required</sup> <a name="Mail" id="@cdktf/provider-azuread.user.User.property.mail"></a>
+##### `Mail`<sup>Required</sup> <a name="Mail" id="@cdktn/provider-azuread.user.User.property.mail"></a>
 
 ```go
 func Mail() *string
@@ -1736,7 +1736,7 @@ func Mail() *string
 
 ---
 
-##### `MailNickname`<sup>Required</sup> <a name="MailNickname" id="@cdktf/provider-azuread.user.User.property.mailNickname"></a>
+##### `MailNickname`<sup>Required</sup> <a name="MailNickname" id="@cdktn/provider-azuread.user.User.property.mailNickname"></a>
 
 ```go
 func MailNickname() *string
@@ -1746,7 +1746,7 @@ func MailNickname() *string
 
 ---
 
-##### `ManagerId`<sup>Required</sup> <a name="ManagerId" id="@cdktf/provider-azuread.user.User.property.managerId"></a>
+##### `ManagerId`<sup>Required</sup> <a name="ManagerId" id="@cdktn/provider-azuread.user.User.property.managerId"></a>
 
 ```go
 func ManagerId() *string
@@ -1756,7 +1756,7 @@ func ManagerId() *string
 
 ---
 
-##### `MobilePhone`<sup>Required</sup> <a name="MobilePhone" id="@cdktf/provider-azuread.user.User.property.mobilePhone"></a>
+##### `MobilePhone`<sup>Required</sup> <a name="MobilePhone" id="@cdktn/provider-azuread.user.User.property.mobilePhone"></a>
 
 ```go
 func MobilePhone() *string
@@ -1766,7 +1766,7 @@ func MobilePhone() *string
 
 ---
 
-##### `OfficeLocation`<sup>Required</sup> <a name="OfficeLocation" id="@cdktf/provider-azuread.user.User.property.officeLocation"></a>
+##### `OfficeLocation`<sup>Required</sup> <a name="OfficeLocation" id="@cdktn/provider-azuread.user.User.property.officeLocation"></a>
 
 ```go
 func OfficeLocation() *string
@@ -1776,7 +1776,7 @@ func OfficeLocation() *string
 
 ---
 
-##### `OnpremisesImmutableId`<sup>Required</sup> <a name="OnpremisesImmutableId" id="@cdktf/provider-azuread.user.User.property.onpremisesImmutableId"></a>
+##### `OnpremisesImmutableId`<sup>Required</sup> <a name="OnpremisesImmutableId" id="@cdktn/provider-azuread.user.User.property.onpremisesImmutableId"></a>
 
 ```go
 func OnpremisesImmutableId() *string
@@ -1786,7 +1786,7 @@ func OnpremisesImmutableId() *string
 
 ---
 
-##### `OtherMails`<sup>Required</sup> <a name="OtherMails" id="@cdktf/provider-azuread.user.User.property.otherMails"></a>
+##### `OtherMails`<sup>Required</sup> <a name="OtherMails" id="@cdktn/provider-azuread.user.User.property.otherMails"></a>
 
 ```go
 func OtherMails() *[]*string
@@ -1796,7 +1796,7 @@ func OtherMails() *[]*string
 
 ---
 
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-azuread.user.User.property.password"></a>
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktn/provider-azuread.user.User.property.password"></a>
 
 ```go
 func Password() *string
@@ -1806,7 +1806,7 @@ func Password() *string
 
 ---
 
-##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktf/provider-azuread.user.User.property.postalCode"></a>
+##### `PostalCode`<sup>Required</sup> <a name="PostalCode" id="@cdktn/provider-azuread.user.User.property.postalCode"></a>
 
 ```go
 func PostalCode() *string
@@ -1816,7 +1816,7 @@ func PostalCode() *string
 
 ---
 
-##### `PreferredLanguage`<sup>Required</sup> <a name="PreferredLanguage" id="@cdktf/provider-azuread.user.User.property.preferredLanguage"></a>
+##### `PreferredLanguage`<sup>Required</sup> <a name="PreferredLanguage" id="@cdktn/provider-azuread.user.User.property.preferredLanguage"></a>
 
 ```go
 func PreferredLanguage() *string
@@ -1826,7 +1826,7 @@ func PreferredLanguage() *string
 
 ---
 
-##### `ShowInAddressList`<sup>Required</sup> <a name="ShowInAddressList" id="@cdktf/provider-azuread.user.User.property.showInAddressList"></a>
+##### `ShowInAddressList`<sup>Required</sup> <a name="ShowInAddressList" id="@cdktn/provider-azuread.user.User.property.showInAddressList"></a>
 
 ```go
 func ShowInAddressList() interface{}
@@ -1836,7 +1836,7 @@ func ShowInAddressList() interface{}
 
 ---
 
-##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-azuread.user.User.property.state"></a>
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-azuread.user.User.property.state"></a>
 
 ```go
 func State() *string
@@ -1846,7 +1846,7 @@ func State() *string
 
 ---
 
-##### `StreetAddress`<sup>Required</sup> <a name="StreetAddress" id="@cdktf/provider-azuread.user.User.property.streetAddress"></a>
+##### `StreetAddress`<sup>Required</sup> <a name="StreetAddress" id="@cdktn/provider-azuread.user.User.property.streetAddress"></a>
 
 ```go
 func StreetAddress() *string
@@ -1856,7 +1856,7 @@ func StreetAddress() *string
 
 ---
 
-##### `Surname`<sup>Required</sup> <a name="Surname" id="@cdktf/provider-azuread.user.User.property.surname"></a>
+##### `Surname`<sup>Required</sup> <a name="Surname" id="@cdktn/provider-azuread.user.User.property.surname"></a>
 
 ```go
 func Surname() *string
@@ -1866,7 +1866,7 @@ func Surname() *string
 
 ---
 
-##### `UsageLocation`<sup>Required</sup> <a name="UsageLocation" id="@cdktf/provider-azuread.user.User.property.usageLocation"></a>
+##### `UsageLocation`<sup>Required</sup> <a name="UsageLocation" id="@cdktn/provider-azuread.user.User.property.usageLocation"></a>
 
 ```go
 func UsageLocation() *string
@@ -1876,7 +1876,7 @@ func UsageLocation() *string
 
 ---
 
-##### `UserPrincipalName`<sup>Required</sup> <a name="UserPrincipalName" id="@cdktf/provider-azuread.user.User.property.userPrincipalName"></a>
+##### `UserPrincipalName`<sup>Required</sup> <a name="UserPrincipalName" id="@cdktn/provider-azuread.user.User.property.userPrincipalName"></a>
 
 ```go
 func UserPrincipalName() *string
@@ -1890,11 +1890,11 @@ func UserPrincipalName() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-azuread.user.User.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azuread.user.User.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1906,20 +1906,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### UserConfig <a name="UserConfig" id="@cdktf/provider-azuread.user.UserConfig"></a>
+### UserConfig <a name="UserConfig" id="@cdktn/provider-azuread.user.UserConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.user.UserConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 &user.UserConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
 	UserPrincipalName: *string,
@@ -1957,7 +1957,7 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
 	State: *string,
 	StreetAddress: *string,
 	Surname: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-azuread-go/azuread/v14.user.UserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.user.UserTimeouts,
 	UsageLocation: *string,
 }
 ```
@@ -1966,55 +1966,55 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The name to display in the address book for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName">UserPrincipalName</a></code> | <code>*string</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">AccountEnabled</a></code> | <code>interface{}</code> | Whether or not the account should be enabled. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.ageGroup">AgeGroup</a></code> | <code>*string</code> | The age group of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.businessPhones">BusinessPhones</a></code> | <code>*[]*string</code> | The telephone numbers for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.city">City</a></code> | <code>*string</code> | The city in which the user is located. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.companyName">CompanyName</a></code> | <code>*string</code> | The company name which the user is associated. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.consentProvidedForMinor">ConsentProvidedForMinor</a></code> | <code>*string</code> | Whether consent has been obtained for minors. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>*string</code> | The cost center associated with the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.country">Country</a></code> | <code>*string</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.department">Department</a></code> | <code>*string</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>interface{}</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>interface{}</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.division">Division</a></code> | <code>*string</code> | The name of the division in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate">EmployeeHireDate</a></code> | <code>*string</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeId">EmployeeId</a></code> | <code>*string</code> | The employee identifier assigned to the user by the organisation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeType">EmployeeType</a></code> | <code>*string</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.faxNumber">FaxNumber</a></code> | <code>*string</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>interface{}</code> | Whether the user is forced to change the password during the next sign-in. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.givenName">GivenName</a></code> | <code>*string</code> | The given name (first name) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.jobTitle">JobTitle</a></code> | <code>*string</code> | The user’s job title. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mail">Mail</a></code> | <code>*string</code> | The SMTP address for the user. Cannot be unset. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.managerId">ManagerId</a></code> | <code>*string</code> | The object ID of the user's manager. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mobilePhone">MobilePhone</a></code> | <code>*string</code> | The primary cellular telephone number for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.officeLocation">OfficeLocation</a></code> | <code>*string</code> | The office location in the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.onpremisesImmutableId">OnpremisesImmutableId</a></code> | <code>*string</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.otherMails">OtherMails</a></code> | <code>*[]*string</code> | Additional email addresses for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.password">Password</a></code> | <code>*string</code> | The password for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.postalCode">PostalCode</a></code> | <code>*string</code> | The postal code for the user's postal address. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage">PreferredLanguage</a></code> | <code>*string</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">ShowInAddressList</a></code> | <code>interface{}</code> | Whether or not the Outlook global address list should include this user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.state">State</a></code> | <code>*string</code> | The state or province in the user's address. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | The street address of the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.surname">Surname</a></code> | <code>*string</code> | The user's surname (family name or last name). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.usageLocation">UsageLocation</a></code> | <code>*string</code> | The usage location of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The name to display in the address book for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.userPrincipalName">UserPrincipalName</a></code> | <code>*string</code> | The user principal name (UPN) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.accountEnabled">AccountEnabled</a></code> | <code>interface{}</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.ageGroup">AgeGroup</a></code> | <code>*string</code> | The age group of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.businessPhones">BusinessPhones</a></code> | <code>*[]*string</code> | The telephone numbers for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.city">City</a></code> | <code>*string</code> | The city in which the user is located. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.companyName">CompanyName</a></code> | <code>*string</code> | The company name which the user is associated. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.consentProvidedForMinor">ConsentProvidedForMinor</a></code> | <code>*string</code> | Whether consent has been obtained for minors. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>*string</code> | The cost center associated with the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.country">Country</a></code> | <code>*string</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.department">Department</a></code> | <code>*string</code> | The name for the department in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.disablePasswordExpiration">DisablePasswordExpiration</a></code> | <code>interface{}</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.disableStrongPassword">DisableStrongPassword</a></code> | <code>interface{}</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.division">Division</a></code> | <code>*string</code> | The name of the division in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeHireDate">EmployeeHireDate</a></code> | <code>*string</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeId">EmployeeId</a></code> | <code>*string</code> | The employee identifier assigned to the user by the organisation. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeType">EmployeeType</a></code> | <code>*string</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.faxNumber">FaxNumber</a></code> | <code>*string</code> | The fax number of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.forcePasswordChange">ForcePasswordChange</a></code> | <code>interface{}</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.givenName">GivenName</a></code> | <code>*string</code> | The given name (first name) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.jobTitle">JobTitle</a></code> | <code>*string</code> | The user’s job title. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mail">Mail</a></code> | <code>*string</code> | The SMTP address for the user. Cannot be unset. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.managerId">ManagerId</a></code> | <code>*string</code> | The object ID of the user's manager. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mobilePhone">MobilePhone</a></code> | <code>*string</code> | The primary cellular telephone number for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.officeLocation">OfficeLocation</a></code> | <code>*string</code> | The office location in the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.onpremisesImmutableId">OnpremisesImmutableId</a></code> | <code>*string</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.otherMails">OtherMails</a></code> | <code>*[]*string</code> | Additional email addresses for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.password">Password</a></code> | <code>*string</code> | The password for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.postalCode">PostalCode</a></code> | <code>*string</code> | The postal code for the user's postal address. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.preferredLanguage">PreferredLanguage</a></code> | <code>*string</code> | The user's preferred language, in ISO 639-1 notation. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.showInAddressList">ShowInAddressList</a></code> | <code>interface{}</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.state">State</a></code> | <code>*string</code> | The state or province in the user's address. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | The street address of the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.surname">Surname</a></code> | <code>*string</code> | The user's surname (family name or last name). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.usageLocation">UsageLocation</a></code> | <code>*string</code> | The usage location of the user. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-azuread.user.UserConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azuread.user.UserConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -2024,7 +2024,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-azuread.user.UserConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azuread.user.UserConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -2034,47 +2034,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-azuread.user.UserConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azuread.user.UserConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-azuread.user.UserConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azuread.user.UserConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-azuread.user.UserConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azuread.user.UserConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-azuread.user.UserConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azuread.user.UserConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-azuread.user.UserConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azuread.user.UserConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -2084,7 +2084,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-azuread.user.UserConfig.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-azuread.user.UserConfig.property.displayName"></a>
 
 ```go
 DisplayName *string
@@ -2098,7 +2098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UserPrincipalName`<sup>Required</sup> <a name="UserPrincipalName" id="@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName"></a>
+##### `UserPrincipalName`<sup>Required</sup> <a name="UserPrincipalName" id="@cdktn/provider-azuread.user.UserConfig.property.userPrincipalName"></a>
 
 ```go
 UserPrincipalName *string
@@ -2112,7 +2112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `AccountEnabled`<sup>Optional</sup> <a name="AccountEnabled" id="@cdktf/provider-azuread.user.UserConfig.property.accountEnabled"></a>
+##### `AccountEnabled`<sup>Optional</sup> <a name="AccountEnabled" id="@cdktn/provider-azuread.user.UserConfig.property.accountEnabled"></a>
 
 ```go
 AccountEnabled interface{}
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `AgeGroup`<sup>Optional</sup> <a name="AgeGroup" id="@cdktf/provider-azuread.user.UserConfig.property.ageGroup"></a>
+##### `AgeGroup`<sup>Optional</sup> <a name="AgeGroup" id="@cdktn/provider-azuread.user.UserConfig.property.ageGroup"></a>
 
 ```go
 AgeGroup *string
@@ -2140,7 +2140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `BusinessPhones`<sup>Optional</sup> <a name="BusinessPhones" id="@cdktf/provider-azuread.user.UserConfig.property.businessPhones"></a>
+##### `BusinessPhones`<sup>Optional</sup> <a name="BusinessPhones" id="@cdktn/provider-azuread.user.UserConfig.property.businessPhones"></a>
 
 ```go
 BusinessPhones *[]*string
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `City`<sup>Optional</sup> <a name="City" id="@cdktf/provider-azuread.user.UserConfig.property.city"></a>
+##### `City`<sup>Optional</sup> <a name="City" id="@cdktn/provider-azuread.user.UserConfig.property.city"></a>
 
 ```go
 City *string
@@ -2170,7 +2170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `CompanyName`<sup>Optional</sup> <a name="CompanyName" id="@cdktf/provider-azuread.user.UserConfig.property.companyName"></a>
+##### `CompanyName`<sup>Optional</sup> <a name="CompanyName" id="@cdktn/provider-azuread.user.UserConfig.property.companyName"></a>
 
 ```go
 CompanyName *string
@@ -2186,7 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ConsentProvidedForMinor`<sup>Optional</sup> <a name="ConsentProvidedForMinor" id="@cdktf/provider-azuread.user.UserConfig.property.consentProvidedForMinor"></a>
+##### `ConsentProvidedForMinor`<sup>Optional</sup> <a name="ConsentProvidedForMinor" id="@cdktn/provider-azuread.user.UserConfig.property.consentProvidedForMinor"></a>
 
 ```go
 ConsentProvidedForMinor *string
@@ -2200,7 +2200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `CostCenter`<sup>Optional</sup> <a name="CostCenter" id="@cdktf/provider-azuread.user.UserConfig.property.costCenter"></a>
+##### `CostCenter`<sup>Optional</sup> <a name="CostCenter" id="@cdktn/provider-azuread.user.UserConfig.property.costCenter"></a>
 
 ```go
 CostCenter *string
@@ -2214,7 +2214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Country`<sup>Optional</sup> <a name="Country" id="@cdktf/provider-azuread.user.UserConfig.property.country"></a>
+##### `Country`<sup>Optional</sup> <a name="Country" id="@cdktn/provider-azuread.user.UserConfig.property.country"></a>
 
 ```go
 Country *string
@@ -2228,7 +2228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Department`<sup>Optional</sup> <a name="Department" id="@cdktf/provider-azuread.user.UserConfig.property.department"></a>
+##### `Department`<sup>Optional</sup> <a name="Department" id="@cdktn/provider-azuread.user.UserConfig.property.department"></a>
 
 ```go
 Department *string
@@ -2242,7 +2242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisablePasswordExpiration`<sup>Optional</sup> <a name="DisablePasswordExpiration" id="@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
+##### `DisablePasswordExpiration`<sup>Optional</sup> <a name="DisablePasswordExpiration" id="@cdktn/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
 
 ```go
 DisablePasswordExpiration interface{}
@@ -2256,7 +2256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `DisableStrongPassword`<sup>Optional</sup> <a name="DisableStrongPassword" id="@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
+##### `DisableStrongPassword`<sup>Optional</sup> <a name="DisableStrongPassword" id="@cdktn/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
 
 ```go
 DisableStrongPassword interface{}
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Division`<sup>Optional</sup> <a name="Division" id="@cdktf/provider-azuread.user.UserConfig.property.division"></a>
+##### `Division`<sup>Optional</sup> <a name="Division" id="@cdktn/provider-azuread.user.UserConfig.property.division"></a>
 
 ```go
 Division *string
@@ -2284,7 +2284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `EmployeeHireDate`<sup>Optional</sup> <a name="EmployeeHireDate" id="@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate"></a>
+##### `EmployeeHireDate`<sup>Optional</sup> <a name="EmployeeHireDate" id="@cdktn/provider-azuread.user.UserConfig.property.employeeHireDate"></a>
 
 ```go
 EmployeeHireDate *string
@@ -2298,7 +2298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `EmployeeId`<sup>Optional</sup> <a name="EmployeeId" id="@cdktf/provider-azuread.user.UserConfig.property.employeeId"></a>
+##### `EmployeeId`<sup>Optional</sup> <a name="EmployeeId" id="@cdktn/provider-azuread.user.UserConfig.property.employeeId"></a>
 
 ```go
 EmployeeId *string
@@ -2312,7 +2312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `EmployeeType`<sup>Optional</sup> <a name="EmployeeType" id="@cdktf/provider-azuread.user.UserConfig.property.employeeType"></a>
+##### `EmployeeType`<sup>Optional</sup> <a name="EmployeeType" id="@cdktn/provider-azuread.user.UserConfig.property.employeeType"></a>
 
 ```go
 EmployeeType *string
@@ -2326,7 +2326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `FaxNumber`<sup>Optional</sup> <a name="FaxNumber" id="@cdktf/provider-azuread.user.UserConfig.property.faxNumber"></a>
+##### `FaxNumber`<sup>Optional</sup> <a name="FaxNumber" id="@cdktn/provider-azuread.user.UserConfig.property.faxNumber"></a>
 
 ```go
 FaxNumber *string
@@ -2340,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ForcePasswordChange`<sup>Optional</sup> <a name="ForcePasswordChange" id="@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
+##### `ForcePasswordChange`<sup>Optional</sup> <a name="ForcePasswordChange" id="@cdktn/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
 
 ```go
 ForcePasswordChange interface{}
@@ -2356,7 +2356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `GivenName`<sup>Optional</sup> <a name="GivenName" id="@cdktf/provider-azuread.user.UserConfig.property.givenName"></a>
+##### `GivenName`<sup>Optional</sup> <a name="GivenName" id="@cdktn/provider-azuread.user.UserConfig.property.givenName"></a>
 
 ```go
 GivenName *string
@@ -2370,7 +2370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-azuread.user.UserConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azuread.user.UserConfig.property.id"></a>
 
 ```go
 Id *string
@@ -2385,7 +2385,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `JobTitle`<sup>Optional</sup> <a name="JobTitle" id="@cdktf/provider-azuread.user.UserConfig.property.jobTitle"></a>
+##### `JobTitle`<sup>Optional</sup> <a name="JobTitle" id="@cdktn/provider-azuread.user.UserConfig.property.jobTitle"></a>
 
 ```go
 JobTitle *string
@@ -2399,7 +2399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Mail`<sup>Optional</sup> <a name="Mail" id="@cdktf/provider-azuread.user.UserConfig.property.mail"></a>
+##### `Mail`<sup>Optional</sup> <a name="Mail" id="@cdktn/provider-azuread.user.UserConfig.property.mail"></a>
 
 ```go
 Mail *string
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `MailNickname`<sup>Optional</sup> <a name="MailNickname" id="@cdktf/provider-azuread.user.UserConfig.property.mailNickname"></a>
+##### `MailNickname`<sup>Optional</sup> <a name="MailNickname" id="@cdktn/provider-azuread.user.UserConfig.property.mailNickname"></a>
 
 ```go
 MailNickname *string
@@ -2427,7 +2427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ManagerId`<sup>Optional</sup> <a name="ManagerId" id="@cdktf/provider-azuread.user.UserConfig.property.managerId"></a>
+##### `ManagerId`<sup>Optional</sup> <a name="ManagerId" id="@cdktn/provider-azuread.user.UserConfig.property.managerId"></a>
 
 ```go
 ManagerId *string
@@ -2441,7 +2441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `MobilePhone`<sup>Optional</sup> <a name="MobilePhone" id="@cdktf/provider-azuread.user.UserConfig.property.mobilePhone"></a>
+##### `MobilePhone`<sup>Optional</sup> <a name="MobilePhone" id="@cdktn/provider-azuread.user.UserConfig.property.mobilePhone"></a>
 
 ```go
 MobilePhone *string
@@ -2455,7 +2455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OfficeLocation`<sup>Optional</sup> <a name="OfficeLocation" id="@cdktf/provider-azuread.user.UserConfig.property.officeLocation"></a>
+##### `OfficeLocation`<sup>Optional</sup> <a name="OfficeLocation" id="@cdktn/provider-azuread.user.UserConfig.property.officeLocation"></a>
 
 ```go
 OfficeLocation *string
@@ -2469,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OnpremisesImmutableId`<sup>Optional</sup> <a name="OnpremisesImmutableId" id="@cdktf/provider-azuread.user.UserConfig.property.onpremisesImmutableId"></a>
+##### `OnpremisesImmutableId`<sup>Optional</sup> <a name="OnpremisesImmutableId" id="@cdktn/provider-azuread.user.UserConfig.property.onpremisesImmutableId"></a>
 
 ```go
 OnpremisesImmutableId *string
@@ -2485,7 +2485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `OtherMails`<sup>Optional</sup> <a name="OtherMails" id="@cdktf/provider-azuread.user.UserConfig.property.otherMails"></a>
+##### `OtherMails`<sup>Optional</sup> <a name="OtherMails" id="@cdktn/provider-azuread.user.UserConfig.property.otherMails"></a>
 
 ```go
 OtherMails *[]*string
@@ -2499,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-azuread.user.UserConfig.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-azuread.user.UserConfig.property.password"></a>
 
 ```go
 Password *string
@@ -2515,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PostalCode`<sup>Optional</sup> <a name="PostalCode" id="@cdktf/provider-azuread.user.UserConfig.property.postalCode"></a>
+##### `PostalCode`<sup>Optional</sup> <a name="PostalCode" id="@cdktn/provider-azuread.user.UserConfig.property.postalCode"></a>
 
 ```go
 PostalCode *string
@@ -2531,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `PreferredLanguage`<sup>Optional</sup> <a name="PreferredLanguage" id="@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage"></a>
+##### `PreferredLanguage`<sup>Optional</sup> <a name="PreferredLanguage" id="@cdktn/provider-azuread.user.UserConfig.property.preferredLanguage"></a>
 
 ```go
 PreferredLanguage *string
@@ -2545,7 +2545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ShowInAddressList`<sup>Optional</sup> <a name="ShowInAddressList" id="@cdktf/provider-azuread.user.UserConfig.property.showInAddressList"></a>
+##### `ShowInAddressList`<sup>Optional</sup> <a name="ShowInAddressList" id="@cdktn/provider-azuread.user.UserConfig.property.showInAddressList"></a>
 
 ```go
 ShowInAddressList interface{}
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `State`<sup>Optional</sup> <a name="State" id="@cdktf/provider-azuread.user.UserConfig.property.state"></a>
+##### `State`<sup>Optional</sup> <a name="State" id="@cdktn/provider-azuread.user.UserConfig.property.state"></a>
 
 ```go
 State *string
@@ -2573,7 +2573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `StreetAddress`<sup>Optional</sup> <a name="StreetAddress" id="@cdktf/provider-azuread.user.UserConfig.property.streetAddress"></a>
+##### `StreetAddress`<sup>Optional</sup> <a name="StreetAddress" id="@cdktn/provider-azuread.user.UserConfig.property.streetAddress"></a>
 
 ```go
 StreetAddress *string
@@ -2587,7 +2587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Surname`<sup>Optional</sup> <a name="Surname" id="@cdktf/provider-azuread.user.UserConfig.property.surname"></a>
+##### `Surname`<sup>Optional</sup> <a name="Surname" id="@cdktn/provider-azuread.user.UserConfig.property.surname"></a>
 
 ```go
 Surname *string
@@ -2601,13 +2601,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-azuread.user.UserConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azuread.user.UserConfig.property.timeouts"></a>
 
 ```go
 Timeouts UserTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 timeouts block.
 
@@ -2615,7 +2615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `UsageLocation`<sup>Optional</sup> <a name="UsageLocation" id="@cdktf/provider-azuread.user.UserConfig.property.usageLocation"></a>
+##### `UsageLocation`<sup>Optional</sup> <a name="UsageLocation" id="@cdktn/provider-azuread.user.UserConfig.property.usageLocation"></a>
 
 ```go
 UsageLocation *string
@@ -2631,12 +2631,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### UserTimeouts <a name="UserTimeouts" id="@cdktf/provider-azuread.user.UserTimeouts"></a>
+### UserTimeouts <a name="UserTimeouts" id="@cdktn/provider-azuread.user.UserTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.user.UserTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.user.UserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 &user.UserTimeouts {
 	Create: *string,
@@ -2650,14 +2650,14 @@ import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#create User#create}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#delete User#delete}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#read User#read}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#update User#update}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#delete User#delete}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#read User#read}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#update User#update}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-azuread.user.UserTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-azuread.user.UserTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -2669,7 +2669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-azuread.user.UserTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-azuread.user.UserTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -2681,7 +2681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktf/provider-azuread.user.UserTimeouts.property.read"></a>
+##### `Read`<sup>Optional</sup> <a name="Read" id="@cdktn/provider-azuread.user.UserTimeouts.property.read"></a>
 
 ```go
 Read *string
@@ -2693,7 +2693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-azuread.user.UserTimeouts.property.update"></a>
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktn/provider-azuread.user.UserTimeouts.property.update"></a>
 
 ```go
 Update *string
@@ -2707,32 +2707,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### UserTimeoutsOutputReference <a name="UserTimeoutsOutputReference" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference"></a>
+### UserTimeoutsOutputReference <a name="UserTimeoutsOutputReference" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-azuread-go/azuread/v14/user"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/user"
 
 user.NewUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2744,153 +2744,153 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetRead">ResetRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2898,13 +2898,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2914,25 +2914,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
 ```
 
-##### `ResetRead` <a name="ResetRead" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetRead"></a>
+##### `ResetRead` <a name="ResetRead" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetRead"></a>
 
 ```go
 func ResetRead()
 ```
 
-##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate"></a>
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate"></a>
 
 ```go
 func ResetUpdate()
@@ -2943,21 +2943,21 @@ func ResetUpdate()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.readInput">ReadInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.read">Read</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2971,7 +2971,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2981,7 +2981,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -2991,7 +2991,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -3001,7 +3001,7 @@ func DeleteInput() *string
 
 ---
 
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.readInput"></a>
+##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.readInput"></a>
 
 ```go
 func ReadInput() *string
@@ -3011,7 +3011,7 @@ func ReadInput() *string
 
 ---
 
-##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput"></a>
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput"></a>
 
 ```go
 func UpdateInput() *string
@@ -3021,7 +3021,7 @@ func UpdateInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -3031,7 +3031,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -3041,7 +3041,7 @@ func Delete() *string
 
 ---
 
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read"></a>
+##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.read"></a>
 
 ```go
 func Read() *string
@@ -3051,7 +3051,7 @@ func Read() *string
 
 ---
 
-##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update"></a>
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.update"></a>
 
 ```go
 func Update() *string
@@ -3061,7 +3061,7 @@ func Update() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

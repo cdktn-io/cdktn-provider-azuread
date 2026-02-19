@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicePrincipalPasswordConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalPasswordConfig extends cdktn.TerraformMetaArguments {
   /**
   * A display name for the password
   *
@@ -77,39 +77,39 @@ export interface ServicePrincipalPasswordTimeouts {
   readonly read?: string;
 }
 
-export function servicePrincipalPasswordTimeoutsToTerraform(struct?: ServicePrincipalPasswordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalPasswordTimeoutsToTerraform(struct?: ServicePrincipalPasswordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function servicePrincipalPasswordTimeoutsToHclTerraform(struct?: ServicePrincipalPasswordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalPasswordTimeoutsToHclTerraform(struct?: ServicePrincipalPasswordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function servicePrincipalPasswordTimeoutsToHclTerraform(struct?: ServiceP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicePrincipalPasswordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalPasswordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalPasswordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalPasswordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -226,7 +226,7 @@ export class ServicePrincipalPasswordTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_password azuread_service_principal_password}
 */
-export class ServicePrincipalPassword extends cdktf.TerraformResource {
+export class ServicePrincipalPassword extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -237,14 +237,14 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicePrincipalPassword resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicePrincipalPassword resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalPassword to import
   * @param importFromId The id of the existing ServicePrincipalPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalPassword to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_password", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_password", importId: importFromId, provider });
       }
 
   // ===========
@@ -429,13 +429,13 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      end_date_relative: cdktf.stringToTerraform(this._endDateRelative),
-      id: cdktf.stringToTerraform(this._id),
-      rotate_when_changed: cdktf.hashMapper(cdktf.stringToTerraform)(this._rotateWhenChanged),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      start_date: cdktf.stringToTerraform(this._startDate),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      end_date_relative: cdktn.stringToTerraform(this._endDateRelative),
+      id: cdktn.stringToTerraform(this._id),
+      rotate_when_changed: cdktn.hashMapper(cdktn.stringToTerraform)(this._rotateWhenChanged),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      start_date: cdktn.stringToTerraform(this._startDate),
       timeouts: servicePrincipalPasswordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -443,43 +443,43 @@ export class ServicePrincipalPassword extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_date_relative: {
-        value: cdktf.stringToHclTerraform(this._endDateRelative),
+        value: cdktn.stringToHclTerraform(this._endDateRelative),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotate_when_changed: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._rotateWhenChanged),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._rotateWhenChanged),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

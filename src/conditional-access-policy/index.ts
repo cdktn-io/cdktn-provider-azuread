@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConditionalAccessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ConditionalAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}
   */
@@ -68,38 +68,38 @@ export interface ConditionalAccessPolicyConditionsApplications {
 }
 
 export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedApplications),
-    included_applications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedApplications),
-    included_user_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedUserActions),
+    excluded_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedApplications),
+    included_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedApplications),
+    included_user_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedUserActions),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsApplicationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_applications: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedApplications),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedApplications),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_applications: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedApplications),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedApplications),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_user_actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedUserActions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedUserActions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -110,14 +110,14 @@ export function conditionalAccessPolicyConditionsApplicationsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsApplicationsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsApplicationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -214,31 +214,31 @@ export interface ConditionalAccessPolicyConditionsClientApplicationsFilter {
 }
 
 export function conditionalAccessPolicyConditionsClientApplicationsFilterToTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsClientApplicationsFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    rule: cdktf.stringToTerraform(struct!.rule),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    rule: cdktn.stringToTerraform(struct!.rule),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsClientApplicationsFilterToHclTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsClientApplicationsFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.stringToHclTerraform(struct!.rule),
+      value: cdktn.stringToHclTerraform(struct!.rule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,14 +249,14 @@ export function conditionalAccessPolicyConditionsClientApplicationsFilterToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -331,32 +331,32 @@ export interface ConditionalAccessPolicyConditionsClientApplications {
 }
 
 export function conditionalAccessPolicyConditionsClientApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsOutputReference | ConditionalAccessPolicyConditionsClientApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_service_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedServicePrincipals),
-    included_service_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedServicePrincipals),
+    excluded_service_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedServicePrincipals),
+    included_service_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedServicePrincipals),
     filter: conditionalAccessPolicyConditionsClientApplicationsFilterToTerraform(struct!.filter),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsClientApplicationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsOutputReference | ConditionalAccessPolicyConditionsClientApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_service_principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedServicePrincipals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedServicePrincipals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_service_principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedServicePrincipals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedServicePrincipals),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -373,14 +373,14 @@ export function conditionalAccessPolicyConditionsClientApplicationsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsClientApplicationsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsClientApplicationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -477,31 +477,31 @@ export interface ConditionalAccessPolicyConditionsDevicesFilter {
 }
 
 export function conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesFilterOutputReference | ConditionalAccessPolicyConditionsDevicesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    rule: cdktf.stringToTerraform(struct!.rule),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    rule: cdktn.stringToTerraform(struct!.rule),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsDevicesFilterToHclTerraform(struct?: ConditionalAccessPolicyConditionsDevicesFilterOutputReference | ConditionalAccessPolicyConditionsDevicesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule: {
-      value: cdktf.stringToHclTerraform(struct!.rule),
+      value: cdktn.stringToHclTerraform(struct!.rule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -512,14 +512,14 @@ export function conditionalAccessPolicyConditionsDevicesFilterToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsDevicesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -586,8 +586,8 @@ export interface ConditionalAccessPolicyConditionsDevices {
 }
 
 export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesOutputReference | ConditionalAccessPolicyConditionsDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -597,8 +597,8 @@ export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: Con
 
 
 export function conditionalAccessPolicyConditionsDevicesToHclTerraform(struct?: ConditionalAccessPolicyConditionsDevicesOutputReference | ConditionalAccessPolicyConditionsDevices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -614,14 +614,14 @@ export function conditionalAccessPolicyConditionsDevicesToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -674,31 +674,31 @@ export interface ConditionalAccessPolicyConditionsLocations {
 }
 
 export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedLocations),
-    included_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedLocations),
+    excluded_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedLocations),
+    included_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedLocations),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsLocationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedLocations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedLocations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -709,14 +709,14 @@ export function conditionalAccessPolicyConditionsLocationsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsLocationsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -788,31 +788,31 @@ export interface ConditionalAccessPolicyConditionsPlatforms {
 }
 
 export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedPlatforms),
-    included_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedPlatforms),
+    excluded_platforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedPlatforms),
+    included_platforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedPlatforms),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsPlatformsToHclTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_platforms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedPlatforms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedPlatforms),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_platforms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedPlatforms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedPlatforms),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -823,14 +823,14 @@ export function conditionalAccessPolicyConditionsPlatformsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -901,32 +901,32 @@ export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalU
   readonly membershipKind: string;
 }
 
-export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.members),
-    membership_kind: cdktf.stringToTerraform(struct!.membershipKind),
+    members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
+    membership_kind: cdktn.stringToTerraform(struct!.membershipKind),
   }
 }
 
 
-export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     members: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.members),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.members),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     membership_kind: {
-      value: cdktf.stringToHclTerraform(struct!.membershipKind),
+      value: cdktn.stringToHclTerraform(struct!.membershipKind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -937,9 +937,9 @@ export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -947,11 +947,11 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable | undefined {
+  public get internalValue(): ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -968,14 +968,14 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._members = undefined;
       this._membershipKind = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1017,15 +1017,15 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
   }
 }
 
-export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsList extends cdktf.ComplexList {
-  public internalValue? : ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable
+export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsList extends cdktn.ComplexList {
+  public internalValue? : ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1046,35 +1046,35 @@ export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalU
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
   */
-  readonly externalTenants?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable;
+  readonly externalTenants?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable;
 }
 
-export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    guest_or_external_user_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
-    external_tenants: cdktf.listMapper(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToTerraform, true)(struct!.externalTenants),
+    guest_or_external_user_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
+    external_tenants: cdktn.listMapper(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToTerraform, true)(struct!.externalTenants),
   }
 }
 
 
-export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     guest_or_external_user_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.guestOrExternalUserTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.guestOrExternalUserTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_tenants: {
-      value: cdktf.listMapperHcl(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToHclTerraform, true)(struct!.externalTenants),
+      value: cdktn.listMapperHcl(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToHclTerraform, true)(struct!.externalTenants),
       isBlock: true,
       type: "list",
       storageClassType: "ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsList",
@@ -1085,9 +1085,9 @@ export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1095,11 +1095,11 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktf.IResolvable | undefined {
+  public get internalValue(): ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1116,14 +1116,14 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._guestOrExternalUserTypes = undefined;
       this._externalTenants.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1153,7 +1153,7 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
   public get externalTenants() {
     return this._externalTenants;
   }
-  public putExternalTenants(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable) {
+  public putExternalTenants(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable) {
     this._externalTenants.internalValue = value;
   }
   public resetExternalTenants() {
@@ -1165,15 +1165,15 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
   }
 }
 
-export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList extends cdktf.ComplexList {
-  public internalValue? : ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktf.IResolvable
+export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList extends cdktn.ComplexList {
+  public internalValue? : ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1195,32 +1195,32 @@ export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalU
   readonly membershipKind: string;
 }
 
-export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.members),
-    membership_kind: cdktf.stringToTerraform(struct!.membershipKind),
+    members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
+    membership_kind: cdktn.stringToTerraform(struct!.membershipKind),
   }
 }
 
 
-export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     members: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.members),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.members),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     membership_kind: {
-      value: cdktf.stringToHclTerraform(struct!.membershipKind),
+      value: cdktn.stringToHclTerraform(struct!.membershipKind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1231,9 +1231,9 @@ export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1241,11 +1241,11 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable | undefined {
+  public get internalValue(): ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1262,14 +1262,14 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._members = undefined;
       this._membershipKind = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1311,15 +1311,15 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
   }
 }
 
-export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsList extends cdktf.ComplexList {
-  public internalValue? : ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable
+export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsList extends cdktn.ComplexList {
+  public internalValue? : ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1340,35 +1340,35 @@ export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalU
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
   */
-  readonly externalTenants?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable;
+  readonly externalTenants?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable;
 }
 
-export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    guest_or_external_user_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
-    external_tenants: cdktf.listMapper(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToTerraform, true)(struct!.externalTenants),
+    guest_or_external_user_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
+    external_tenants: cdktn.listMapper(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToTerraform, true)(struct!.externalTenants),
   }
 }
 
 
-export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     guest_or_external_user_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.guestOrExternalUserTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.guestOrExternalUserTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     external_tenants: {
-      value: cdktf.listMapperHcl(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToHclTerraform, true)(struct!.externalTenants),
+      value: cdktn.listMapperHcl(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToHclTerraform, true)(struct!.externalTenants),
       isBlock: true,
       type: "list",
       storageClassType: "ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsList",
@@ -1379,9 +1379,9 @@ export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1389,11 +1389,11 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktf.IResolvable | undefined {
+  public get internalValue(): ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1410,14 +1410,14 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._guestOrExternalUserTypes = undefined;
       this._externalTenants.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1447,7 +1447,7 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
   public get externalTenants() {
     return this._externalTenants;
   }
-  public putExternalTenants(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktf.IResolvable) {
+  public putExternalTenants(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable) {
     this._externalTenants.internalValue = value;
   }
   public resetExternalTenants() {
@@ -1459,15 +1459,15 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
   }
 }
 
-export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList extends cdktf.ComplexList {
-  public internalValue? : ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktf.IResolvable
+export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList extends cdktn.ComplexList {
+  public internalValue? : ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1508,83 +1508,83 @@ export interface ConditionalAccessPolicyConditionsUsers {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#excluded_guests_or_external_users ConditionalAccessPolicy#excluded_guests_or_external_users}
   */
-  readonly excludedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktf.IResolvable;
+  readonly excludedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktn.IResolvable;
   /**
   * included_guests_or_external_users block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#included_guests_or_external_users ConditionalAccessPolicy#included_guests_or_external_users}
   */
-  readonly includedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktf.IResolvable;
+  readonly includedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktn.IResolvable;
 }
 
 export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedGroups),
-    excluded_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedRoles),
-    excluded_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedUsers),
-    included_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedGroups),
-    included_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedRoles),
-    included_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedUsers),
-    excluded_guests_or_external_users: cdktf.listMapper(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToTerraform, true)(struct!.excludedGuestsOrExternalUsers),
-    included_guests_or_external_users: cdktf.listMapper(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToTerraform, true)(struct!.includedGuestsOrExternalUsers),
+    excluded_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedGroups),
+    excluded_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedRoles),
+    excluded_users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedUsers),
+    included_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedGroups),
+    included_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedRoles),
+    included_users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedUsers),
+    excluded_guests_or_external_users: cdktn.listMapper(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToTerraform, true)(struct!.excludedGuestsOrExternalUsers),
+    included_guests_or_external_users: cdktn.listMapper(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToTerraform, true)(struct!.includedGuestsOrExternalUsers),
   }
 }
 
 
 export function conditionalAccessPolicyConditionsUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_users: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedUsers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedUsers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     included_users: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedUsers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedUsers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_guests_or_external_users: {
-      value: cdktf.listMapperHcl(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToHclTerraform, true)(struct!.excludedGuestsOrExternalUsers),
+      value: cdktn.listMapperHcl(conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToHclTerraform, true)(struct!.excludedGuestsOrExternalUsers),
       isBlock: true,
       type: "list",
       storageClassType: "ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersList",
     },
     included_guests_or_external_users: {
-      value: cdktf.listMapperHcl(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToHclTerraform, true)(struct!.includedGuestsOrExternalUsers),
+      value: cdktn.listMapperHcl(conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToHclTerraform, true)(struct!.includedGuestsOrExternalUsers),
       isBlock: true,
       type: "list",
       storageClassType: "ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersList",
@@ -1595,14 +1595,14 @@ export function conditionalAccessPolicyConditionsUsersToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1770,7 +1770,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   public get excludedGuestsOrExternalUsers() {
     return this._excludedGuestsOrExternalUsers;
   }
-  public putExcludedGuestsOrExternalUsers(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktf.IResolvable) {
+  public putExcludedGuestsOrExternalUsers(value: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktn.IResolvable) {
     this._excludedGuestsOrExternalUsers.internalValue = value;
   }
   public resetExcludedGuestsOrExternalUsers() {
@@ -1786,7 +1786,7 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktf
   public get includedGuestsOrExternalUsers() {
     return this._includedGuestsOrExternalUsers;
   }
-  public putIncludedGuestsOrExternalUsers(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktf.IResolvable) {
+  public putIncludedGuestsOrExternalUsers(value: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktn.IResolvable) {
     this._includedGuestsOrExternalUsers.internalValue = value;
   }
   public resetIncludedGuestsOrExternalUsers() {
@@ -1861,17 +1861,17 @@ export interface ConditionalAccessPolicyConditions {
 }
 
 export function conditionalAccessPolicyConditionsToTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_flow_transfer_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.authenticationFlowTransferMethods),
-    client_app_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientAppTypes),
-    insider_risk_levels: cdktf.stringToTerraform(struct!.insiderRiskLevels),
-    service_principal_risk_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.servicePrincipalRiskLevels),
-    sign_in_risk_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.signInRiskLevels),
-    user_risk_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.userRiskLevels),
+    authentication_flow_transfer_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.authenticationFlowTransferMethods),
+    client_app_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clientAppTypes),
+    insider_risk_levels: cdktn.stringToTerraform(struct!.insiderRiskLevels),
+    service_principal_risk_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.servicePrincipalRiskLevels),
+    sign_in_risk_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.signInRiskLevels),
+    user_risk_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.userRiskLevels),
     applications: conditionalAccessPolicyConditionsApplicationsToTerraform(struct!.applications),
     client_applications: conditionalAccessPolicyConditionsClientApplicationsToTerraform(struct!.clientApplications),
     devices: conditionalAccessPolicyConditionsDevicesToTerraform(struct!.devices),
@@ -1883,43 +1883,43 @@ export function conditionalAccessPolicyConditionsToTerraform(struct?: Conditiona
 
 
 export function conditionalAccessPolicyConditionsToHclTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_flow_transfer_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.authenticationFlowTransferMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.authenticationFlowTransferMethods),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     client_app_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clientAppTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clientAppTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     insider_risk_levels: {
-      value: cdktf.stringToHclTerraform(struct!.insiderRiskLevels),
+      value: cdktn.stringToHclTerraform(struct!.insiderRiskLevels),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_principal_risk_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.servicePrincipalRiskLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.servicePrincipalRiskLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     sign_in_risk_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.signInRiskLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.signInRiskLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_risk_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.userRiskLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.userRiskLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1966,14 +1966,14 @@ export function conditionalAccessPolicyConditionsToHclTerraform(struct?: Conditi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2067,7 +2067,7 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktf.Comp
   // authentication_flow_transfer_methods - computed: false, optional: true, required: false
   private _authenticationFlowTransferMethods?: string[]; 
   public get authenticationFlowTransferMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('authentication_flow_transfer_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('authentication_flow_transfer_methods'));
   }
   public set authenticationFlowTransferMethods(value: string[]) {
     this._authenticationFlowTransferMethods = value;
@@ -2271,52 +2271,52 @@ export interface ConditionalAccessPolicyGrantControls {
 }
 
 export function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_strength_policy_id: cdktf.stringToTerraform(struct!.authenticationStrengthPolicyId),
-    built_in_controls: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.builtInControls),
-    custom_authentication_factors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.customAuthenticationFactors),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    terms_of_use: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.termsOfUse),
+    authentication_strength_policy_id: cdktn.stringToTerraform(struct!.authenticationStrengthPolicyId),
+    built_in_controls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.builtInControls),
+    custom_authentication_factors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.customAuthenticationFactors),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    terms_of_use: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.termsOfUse),
   }
 }
 
 
 export function conditionalAccessPolicyGrantControlsToHclTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_strength_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationStrengthPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.authenticationStrengthPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     built_in_controls: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.builtInControls),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.builtInControls),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     custom_authentication_factors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.customAuthenticationFactors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.customAuthenticationFactors),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     terms_of_use: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.termsOfUse),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.termsOfUse),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2327,14 +2327,14 @@ export function conditionalAccessPolicyGrantControlsToHclTerraform(struct?: Cond
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2464,7 +2464,7 @@ export interface ConditionalAccessPolicySessionControls {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}
   */
-  readonly applicationEnforcedRestrictionsEnabled?: boolean | cdktf.IResolvable;
+  readonly applicationEnforcedRestrictionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#cloud_app_security_policy ConditionalAccessPolicy#cloud_app_security_policy}
   */
@@ -2472,7 +2472,7 @@ export interface ConditionalAccessPolicySessionControls {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#disable_resilience_defaults ConditionalAccessPolicy#disable_resilience_defaults}
   */
-  readonly disableResilienceDefaults?: boolean | cdktf.IResolvable;
+  readonly disableResilienceDefaults?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}
   */
@@ -2496,73 +2496,73 @@ export interface ConditionalAccessPolicySessionControls {
 }
 
 export function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_enforced_restrictions_enabled: cdktf.booleanToTerraform(struct!.applicationEnforcedRestrictionsEnabled),
-    cloud_app_security_policy: cdktf.stringToTerraform(struct!.cloudAppSecurityPolicy),
-    disable_resilience_defaults: cdktf.booleanToTerraform(struct!.disableResilienceDefaults),
-    persistent_browser_mode: cdktf.stringToTerraform(struct!.persistentBrowserMode),
-    sign_in_frequency: cdktf.numberToTerraform(struct!.signInFrequency),
-    sign_in_frequency_authentication_type: cdktf.stringToTerraform(struct!.signInFrequencyAuthenticationType),
-    sign_in_frequency_interval: cdktf.stringToTerraform(struct!.signInFrequencyInterval),
-    sign_in_frequency_period: cdktf.stringToTerraform(struct!.signInFrequencyPeriod),
+    application_enforced_restrictions_enabled: cdktn.booleanToTerraform(struct!.applicationEnforcedRestrictionsEnabled),
+    cloud_app_security_policy: cdktn.stringToTerraform(struct!.cloudAppSecurityPolicy),
+    disable_resilience_defaults: cdktn.booleanToTerraform(struct!.disableResilienceDefaults),
+    persistent_browser_mode: cdktn.stringToTerraform(struct!.persistentBrowserMode),
+    sign_in_frequency: cdktn.numberToTerraform(struct!.signInFrequency),
+    sign_in_frequency_authentication_type: cdktn.stringToTerraform(struct!.signInFrequencyAuthenticationType),
+    sign_in_frequency_interval: cdktn.stringToTerraform(struct!.signInFrequencyInterval),
+    sign_in_frequency_period: cdktn.stringToTerraform(struct!.signInFrequencyPeriod),
   }
 }
 
 
 export function conditionalAccessPolicySessionControlsToHclTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_enforced_restrictions_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.applicationEnforcedRestrictionsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.applicationEnforcedRestrictionsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cloud_app_security_policy: {
-      value: cdktf.stringToHclTerraform(struct!.cloudAppSecurityPolicy),
+      value: cdktn.stringToHclTerraform(struct!.cloudAppSecurityPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_resilience_defaults: {
-      value: cdktf.booleanToHclTerraform(struct!.disableResilienceDefaults),
+      value: cdktn.booleanToHclTerraform(struct!.disableResilienceDefaults),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     persistent_browser_mode: {
-      value: cdktf.stringToHclTerraform(struct!.persistentBrowserMode),
+      value: cdktn.stringToHclTerraform(struct!.persistentBrowserMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sign_in_frequency: {
-      value: cdktf.numberToHclTerraform(struct!.signInFrequency),
+      value: cdktn.numberToHclTerraform(struct!.signInFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sign_in_frequency_authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.signInFrequencyAuthenticationType),
+      value: cdktn.stringToHclTerraform(struct!.signInFrequencyAuthenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sign_in_frequency_interval: {
-      value: cdktf.stringToHclTerraform(struct!.signInFrequencyInterval),
+      value: cdktn.stringToHclTerraform(struct!.signInFrequencyInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sign_in_frequency_period: {
-      value: cdktf.stringToHclTerraform(struct!.signInFrequencyPeriod),
+      value: cdktn.stringToHclTerraform(struct!.signInFrequencyPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2573,14 +2573,14 @@ export function conditionalAccessPolicySessionControlsToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicySessionControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2648,11 +2648,11 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   }
 
   // application_enforced_restrictions_enabled - computed: false, optional: true, required: false
-  private _applicationEnforcedRestrictionsEnabled?: boolean | cdktf.IResolvable; 
+  private _applicationEnforcedRestrictionsEnabled?: boolean | cdktn.IResolvable; 
   public get applicationEnforcedRestrictionsEnabled() {
     return this.getBooleanAttribute('application_enforced_restrictions_enabled');
   }
-  public set applicationEnforcedRestrictionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set applicationEnforcedRestrictionsEnabled(value: boolean | cdktn.IResolvable) {
     this._applicationEnforcedRestrictionsEnabled = value;
   }
   public resetApplicationEnforcedRestrictionsEnabled() {
@@ -2680,11 +2680,11 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktf
   }
 
   // disable_resilience_defaults - computed: false, optional: true, required: false
-  private _disableResilienceDefaults?: boolean | cdktf.IResolvable; 
+  private _disableResilienceDefaults?: boolean | cdktn.IResolvable; 
   public get disableResilienceDefaults() {
     return this.getBooleanAttribute('disable_resilience_defaults');
   }
-  public set disableResilienceDefaults(value: boolean | cdktf.IResolvable) {
+  public set disableResilienceDefaults(value: boolean | cdktn.IResolvable) {
     this._disableResilienceDefaults = value;
   }
   public resetDisableResilienceDefaults() {
@@ -2794,46 +2794,46 @@ export interface ConditionalAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function conditionalAccessPolicyTimeoutsToHclTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function conditionalAccessPolicyTimeoutsToHclTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2844,19 +2844,19 @@ export function conditionalAccessPolicyTimeoutsToHclTerraform(struct?: Condition
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConditionalAccessPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConditionalAccessPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2881,7 +2881,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConditionalAccessPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConditionalAccessPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2890,7 +2890,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2972,7 +2972,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy azuread_conditional_access_policy}
 */
-export class ConditionalAccessPolicy extends cdktf.TerraformResource {
+export class ConditionalAccessPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2983,14 +2983,14 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConditionalAccessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConditionalAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConditionalAccessPolicy to import
   * @param importFromId The id of the existing ConditionalAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/conditional_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConditionalAccessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_conditional_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_conditional_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -3147,9 +3147,9 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      state: cdktf.stringToTerraform(this._state),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      state: cdktn.stringToTerraform(this._state),
       conditions: conditionalAccessPolicyConditionsToTerraform(this._conditions.internalValue),
       grant_controls: conditionalAccessPolicyGrantControlsToTerraform(this._grantControls.internalValue),
       session_controls: conditionalAccessPolicySessionControlsToTerraform(this._sessionControls.internalValue),
@@ -3160,19 +3160,19 @@ export class ConditionalAccessPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

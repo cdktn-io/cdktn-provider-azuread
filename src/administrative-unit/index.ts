@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
+export interface AdministrativeUnitConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description for the administrative unit
   *
@@ -29,7 +29,7 @@ export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/administrative_unit#hidden_membership_enabled AdministrativeUnit#hidden_membership_enabled}
   */
-  readonly hiddenMembershipEnabled?: boolean | cdktf.IResolvable;
+  readonly hiddenMembershipEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/administrative_unit#id AdministrativeUnit#id}
   *
@@ -48,7 +48,7 @@ export interface AdministrativeUnitConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/administrative_unit#prevent_duplicate_names AdministrativeUnit#prevent_duplicate_names}
   */
-  readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
+  readonly preventDuplicateNames?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -75,46 +75,46 @@ export interface AdministrativeUnitTimeouts {
   readonly update?: string;
 }
 
-export function administrativeUnitTimeoutsToTerraform(struct?: AdministrativeUnitTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function administrativeUnitTimeoutsToTerraform(struct?: AdministrativeUnitTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function administrativeUnitTimeoutsToHclTerraform(struct?: AdministrativeUnitTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function administrativeUnitTimeoutsToHclTerraform(struct?: AdministrativeUnitTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,19 +125,19 @@ export function administrativeUnitTimeoutsToHclTerraform(struct?: Administrative
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AdministrativeUnitTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AdministrativeUnitTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AdministrativeUnitTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AdministrativeUnitTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AdministrativeUnitTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -253,7 +253,7 @@ export class AdministrativeUnitTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/administrative_unit azuread_administrative_unit}
 */
-export class AdministrativeUnit extends cdktf.TerraformResource {
+export class AdministrativeUnit extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -264,14 +264,14 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AdministrativeUnit resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AdministrativeUnit resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AdministrativeUnit to import
   * @param importFromId The id of the existing AdministrativeUnit that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/administrative_unit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AdministrativeUnit to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_administrative_unit", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_administrative_unit", importId: importFromId, provider });
       }
 
   // ===========
@@ -344,11 +344,11 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   }
 
   // hidden_membership_enabled - computed: false, optional: true, required: false
-  private _hiddenMembershipEnabled?: boolean | cdktf.IResolvable; 
+  private _hiddenMembershipEnabled?: boolean | cdktn.IResolvable; 
   public get hiddenMembershipEnabled() {
     return this.getBooleanAttribute('hidden_membership_enabled');
   }
-  public set hiddenMembershipEnabled(value: boolean | cdktf.IResolvable) {
+  public set hiddenMembershipEnabled(value: boolean | cdktn.IResolvable) {
     this._hiddenMembershipEnabled = value;
   }
   public resetHiddenMembershipEnabled() {
@@ -378,7 +378,7 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   // members - computed: true, optional: true, required: false
   private _members?: string[]; 
   public get members() {
-    return cdktf.Fn.tolist(this.getListAttribute('members'));
+    return cdktn.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -397,11 +397,11 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   }
 
   // prevent_duplicate_names - computed: false, optional: true, required: false
-  private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
+  private _preventDuplicateNames?: boolean | cdktn.IResolvable; 
   public get preventDuplicateNames() {
     return this.getBooleanAttribute('prevent_duplicate_names');
   }
-  public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
+  public set preventDuplicateNames(value: boolean | cdktn.IResolvable) {
     this._preventDuplicateNames = value;
   }
   public resetPreventDuplicateNames() {
@@ -434,12 +434,12 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      hidden_membership_enabled: cdktf.booleanToTerraform(this._hiddenMembershipEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
-      prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      hidden_membership_enabled: cdktn.booleanToTerraform(this._hiddenMembershipEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      members: cdktn.listMapper(cdktn.stringToTerraform, false)(this._members),
+      prevent_duplicate_names: cdktn.booleanToTerraform(this._preventDuplicateNames),
       timeouts: administrativeUnitTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -447,37 +447,37 @@ export class AdministrativeUnit extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hidden_membership_enabled: {
-        value: cdktf.booleanToHclTerraform(this._hiddenMembershipEnabled),
+        value: cdktn.booleanToHclTerraform(this._hiddenMembershipEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       members: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._members),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       prevent_duplicate_names: {
-        value: cdktf.booleanToHclTerraform(this._preventDuplicateNames),
+        value: cdktn.booleanToHclTerraform(this._preventDuplicateNames),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

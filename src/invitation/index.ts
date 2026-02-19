@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface InvitationConfig extends cdktf.TerraformMetaArguments {
+export interface InvitationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/invitation#id Invitation#id}
   *
@@ -78,38 +78,38 @@ export interface InvitationMessage {
 }
 
 export function invitationMessageToTerraform(struct?: InvitationMessageOutputReference | InvitationMessage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalRecipients),
-    body: cdktf.stringToTerraform(struct!.body),
-    language: cdktf.stringToTerraform(struct!.language),
+    additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
+    body: cdktn.stringToTerraform(struct!.body),
+    language: cdktn.stringToTerraform(struct!.language),
   }
 }
 
 
 export function invitationMessageToHclTerraform(struct?: InvitationMessageOutputReference | InvitationMessage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_recipients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalRecipients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalRecipients),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     body: {
-      value: cdktf.stringToHclTerraform(struct!.body),
+      value: cdktn.stringToHclTerraform(struct!.body),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     language: {
-      value: cdktf.stringToHclTerraform(struct!.language),
+      value: cdktn.stringToHclTerraform(struct!.language),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,14 +120,14 @@ export function invitationMessageToHclTerraform(struct?: InvitationMessageOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InvitationMessageOutputReference extends cdktf.ComplexObject {
+export class InvitationMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -227,39 +227,39 @@ export interface InvitationTimeouts {
   readonly read?: string;
 }
 
-export function invitationTimeoutsToTerraform(struct?: InvitationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invitationTimeoutsToTerraform(struct?: InvitationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function invitationTimeoutsToHclTerraform(struct?: InvitationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function invitationTimeoutsToHclTerraform(struct?: InvitationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -270,19 +270,19 @@ export function invitationTimeoutsToHclTerraform(struct?: InvitationTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class InvitationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): InvitationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): InvitationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -303,7 +303,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InvitationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InvitationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -311,7 +311,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -376,7 +376,7 @@ export class InvitationTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/invitation azuread_invitation}
 */
-export class Invitation extends cdktf.TerraformResource {
+export class Invitation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -387,14 +387,14 @@ export class Invitation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Invitation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Invitation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Invitation to import
   * @param importFromId The id of the existing Invitation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/invitation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Invitation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_invitation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_invitation", importId: importFromId, provider });
       }
 
   // ===========
@@ -559,11 +559,11 @@ export class Invitation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      redirect_url: cdktf.stringToTerraform(this._redirectUrl),
-      user_display_name: cdktf.stringToTerraform(this._userDisplayName),
-      user_email_address: cdktf.stringToTerraform(this._userEmailAddress),
-      user_type: cdktf.stringToTerraform(this._userType),
+      id: cdktn.stringToTerraform(this._id),
+      redirect_url: cdktn.stringToTerraform(this._redirectUrl),
+      user_display_name: cdktn.stringToTerraform(this._userDisplayName),
+      user_email_address: cdktn.stringToTerraform(this._userEmailAddress),
+      user_type: cdktn.stringToTerraform(this._userType),
       message: invitationMessageToTerraform(this._message.internalValue),
       timeouts: invitationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -572,31 +572,31 @@ export class Invitation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redirect_url: {
-        value: cdktf.stringToHclTerraform(this._redirectUrl),
+        value: cdktn.stringToHclTerraform(this._redirectUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_display_name: {
-        value: cdktf.stringToHclTerraform(this._userDisplayName),
+        value: cdktn.stringToHclTerraform(this._userDisplayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_email_address: {
-        value: cdktf.stringToHclTerraform(this._userEmailAddress),
+        value: cdktn.stringToHclTerraform(this._userEmailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_type: {
-        value: cdktf.stringToHclTerraform(this._userType),
+        value: cdktn.stringToHclTerraform(this._userType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

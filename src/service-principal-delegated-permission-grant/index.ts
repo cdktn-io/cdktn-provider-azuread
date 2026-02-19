@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicePrincipalDelegatedPermissionGrantConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalDelegatedPermissionGrantConfig extends cdktn.TerraformMetaArguments {
   /**
   * A set of claim values for delegated permission scopes which should be included in access tokens for the resource
   *
@@ -69,46 +69,46 @@ export interface ServicePrincipalDelegatedPermissionGrantTimeouts {
   readonly update?: string;
 }
 
-export function servicePrincipalDelegatedPermissionGrantTimeoutsToTerraform(struct?: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalDelegatedPermissionGrantTimeoutsToTerraform(struct?: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicePrincipalDelegatedPermissionGrantTimeoutsToHclTerraform(struct?: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalDelegatedPermissionGrantTimeoutsToHclTerraform(struct?: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function servicePrincipalDelegatedPermissionGrantTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicePrincipalDelegatedPermissionGrantTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalDelegatedPermissionGrantTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalDelegatedPermissionGrantTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class ServicePrincipalDelegatedPermissionGrantTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_delegated_permission_grant azuread_service_principal_delegated_permission_grant}
 */
-export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformResource {
+export class ServicePrincipalDelegatedPermissionGrant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicePrincipalDelegatedPermissionGrant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicePrincipalDelegatedPermissionGrant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalDelegatedPermissionGrant to import
   * @param importFromId The id of the existing ServicePrincipalDelegatedPermissionGrant that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal_delegated_permission_grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalDelegatedPermissionGrant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_delegated_permission_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal_delegated_permission_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,7 +310,7 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
   // claim_values - computed: false, optional: false, required: true
   private _claimValues?: string[]; 
   public get claimValues() {
-    return cdktf.Fn.tolist(this.getListAttribute('claim_values'));
+    return cdktn.Fn.tolist(this.getListAttribute('claim_values'));
   }
   public set claimValues(value: string[]) {
     this._claimValues = value;
@@ -400,11 +400,11 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      claim_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._claimValues),
-      id: cdktf.stringToTerraform(this._id),
-      resource_service_principal_object_id: cdktf.stringToTerraform(this._resourceServicePrincipalObjectId),
-      service_principal_object_id: cdktf.stringToTerraform(this._servicePrincipalObjectId),
-      user_object_id: cdktf.stringToTerraform(this._userObjectId),
+      claim_values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._claimValues),
+      id: cdktn.stringToTerraform(this._id),
+      resource_service_principal_object_id: cdktn.stringToTerraform(this._resourceServicePrincipalObjectId),
+      service_principal_object_id: cdktn.stringToTerraform(this._servicePrincipalObjectId),
+      user_object_id: cdktn.stringToTerraform(this._userObjectId),
       timeouts: servicePrincipalDelegatedPermissionGrantTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -412,31 +412,31 @@ export class ServicePrincipalDelegatedPermissionGrant extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       claim_values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._claimValues),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._claimValues),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_service_principal_object_id: {
-        value: cdktf.stringToHclTerraform(this._resourceServicePrincipalObjectId),
+        value: cdktn.stringToHclTerraform(this._resourceServicePrincipalObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_object_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalObjectId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_object_id: {
-        value: cdktf.stringToHclTerraform(this._userObjectId),
+        value: cdktn.stringToHclTerraform(this._userObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,15 +1,15 @@
-# `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-azuread.user"></a>
+# `user` Submodule <a name="`user` Submodule" id="@cdktn/provider-azuread.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### User <a name="User" id="@cdktf/provider-azuread.user.User"></a>
+### User <a name="User" id="@cdktn/provider-azuread.user.User"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user azuread_user}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.user.User.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.user.User.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.User(
   scope: Construct,
@@ -64,57 +64,57 @@ user.User(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the account should be enabled. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.city">city</a></code> | <code>str</code> | The city in which the user is located. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.companyName">company_name</a></code> | <code>str</code> | The company name which the user is associated. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | Whether consent has been obtained for minors. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.mail">mail</a></code> | <code>str</code> | The SMTP address for the user. Cannot be unset. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.managerId">manager_id</a></code> | <code>str</code> | The object ID of the user's manager. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.mobilePhone">mobile_phone</a></code> | <code>str</code> | The primary cellular telephone number for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.officeLocation">office_location</a></code> | <code>str</code> | The office location in the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | Additional email addresses for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.password">password</a></code> | <code>str</code> | The password for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.user.User.Initializer.parameter.usageLocation">usage_location</a></code> | <code>str</code> | The usage location of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.city">city</a></code> | <code>str</code> | The city in which the user is located. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.companyName">company_name</a></code> | <code>str</code> | The company name which the user is associated. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | Whether consent has been obtained for minors. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.mail">mail</a></code> | <code>str</code> | The SMTP address for the user. Cannot be unset. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.managerId">manager_id</a></code> | <code>str</code> | The object ID of the user's manager. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.mobilePhone">mobile_phone</a></code> | <code>str</code> | The primary cellular telephone number for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.officeLocation">office_location</a></code> | <code>str</code> | The office location in the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | Additional email addresses for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.password">password</a></code> | <code>str</code> | The password for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.user.User.Initializer.parameter.usageLocation">usage_location</a></code> | <code>str</code> | The usage location of the user. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.user.User.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.user.User.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -122,7 +122,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -132,49 +132,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.User.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.user.User.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.User.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.user.User.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.user.User.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.user.User.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.user.User.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.user.User.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.User.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.user.User.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.user.User.Initializer.parameter.displayName"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.user.User.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.user.User.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.user.User.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktf/provider-azuread.user.User.Initializer.parameter.userPrincipalName"></a>
+##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktn/provider-azuread.user.User.Initializer.parameter.userPrincipalName"></a>
 
 - *Type:* str
 
@@ -194,9 +194,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.User.Initializer.parameter.accountEnabled"></a>
+##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktn/provider-azuread.user.User.Initializer.parameter.accountEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the account should be enabled.
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `age_group`<sup>Optional</sup> <a name="age_group" id="@cdktf/provider-azuread.user.User.Initializer.parameter.ageGroup"></a>
+##### `age_group`<sup>Optional</sup> <a name="age_group" id="@cdktn/provider-azuread.user.User.Initializer.parameter.ageGroup"></a>
 
 - *Type:* str
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `business_phones`<sup>Optional</sup> <a name="business_phones" id="@cdktf/provider-azuread.user.User.Initializer.parameter.businessPhones"></a>
+##### `business_phones`<sup>Optional</sup> <a name="business_phones" id="@cdktn/provider-azuread.user.User.Initializer.parameter.businessPhones"></a>
 
 - *Type:* typing.List[str]
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `city`<sup>Optional</sup> <a name="city" id="@cdktf/provider-azuread.user.User.Initializer.parameter.city"></a>
+##### `city`<sup>Optional</sup> <a name="city" id="@cdktn/provider-azuread.user.User.Initializer.parameter.city"></a>
 
 - *Type:* str
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-azuread.user.User.Initializer.parameter.companyName"></a>
+##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktn/provider-azuread.user.User.Initializer.parameter.companyName"></a>
 
 - *Type:* str
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `consent_provided_for_minor`<sup>Optional</sup> <a name="consent_provided_for_minor" id="@cdktf/provider-azuread.user.User.Initializer.parameter.consentProvidedForMinor"></a>
+##### `consent_provided_for_minor`<sup>Optional</sup> <a name="consent_provided_for_minor" id="@cdktn/provider-azuread.user.User.Initializer.parameter.consentProvidedForMinor"></a>
 
 - *Type:* str
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cost_center`<sup>Optional</sup> <a name="cost_center" id="@cdktf/provider-azuread.user.User.Initializer.parameter.costCenter"></a>
+##### `cost_center`<sup>Optional</sup> <a name="cost_center" id="@cdktn/provider-azuread.user.User.Initializer.parameter.costCenter"></a>
 
 - *Type:* str
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `country`<sup>Optional</sup> <a name="country" id="@cdktf/provider-azuread.user.User.Initializer.parameter.country"></a>
+##### `country`<sup>Optional</sup> <a name="country" id="@cdktn/provider-azuread.user.User.Initializer.parameter.country"></a>
 
 - *Type:* str
 
@@ -278,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `department`<sup>Optional</sup> <a name="department" id="@cdktf/provider-azuread.user.User.Initializer.parameter.department"></a>
+##### `department`<sup>Optional</sup> <a name="department" id="@cdktn/provider-azuread.user.User.Initializer.parameter.department"></a>
 
 - *Type:* str
 
@@ -288,9 +288,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration"></a>
+##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktn/provider-azuread.user.User.Initializer.parameter.disablePasswordExpiration"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the users password is exempt from expiring.
 
@@ -298,9 +298,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.User.Initializer.parameter.disableStrongPassword"></a>
+##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktn/provider-azuread.user.User.Initializer.parameter.disableStrongPassword"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
@@ -308,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `division`<sup>Optional</sup> <a name="division" id="@cdktf/provider-azuread.user.User.Initializer.parameter.division"></a>
+##### `division`<sup>Optional</sup> <a name="division" id="@cdktn/provider-azuread.user.User.Initializer.parameter.division"></a>
 
 - *Type:* str
 
@@ -318,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_hire_date`<sup>Optional</sup> <a name="employee_hire_date" id="@cdktf/provider-azuread.user.User.Initializer.parameter.employeeHireDate"></a>
+##### `employee_hire_date`<sup>Optional</sup> <a name="employee_hire_date" id="@cdktn/provider-azuread.user.User.Initializer.parameter.employeeHireDate"></a>
 
 - *Type:* str
 
@@ -328,7 +328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_id`<sup>Optional</sup> <a name="employee_id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.employeeId"></a>
+##### `employee_id`<sup>Optional</sup> <a name="employee_id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.employeeId"></a>
 
 - *Type:* str
 
@@ -338,7 +338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_type`<sup>Optional</sup> <a name="employee_type" id="@cdktf/provider-azuread.user.User.Initializer.parameter.employeeType"></a>
+##### `employee_type`<sup>Optional</sup> <a name="employee_type" id="@cdktn/provider-azuread.user.User.Initializer.parameter.employeeType"></a>
 
 - *Type:* str
 
@@ -348,7 +348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `fax_number`<sup>Optional</sup> <a name="fax_number" id="@cdktf/provider-azuread.user.User.Initializer.parameter.faxNumber"></a>
+##### `fax_number`<sup>Optional</sup> <a name="fax_number" id="@cdktn/provider-azuread.user.User.Initializer.parameter.faxNumber"></a>
 
 - *Type:* str
 
@@ -358,9 +358,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.User.Initializer.parameter.forcePasswordChange"></a>
+##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktn/provider-azuread.user.User.Initializer.parameter.forcePasswordChange"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the user is forced to change the password during the next sign-in.
 
@@ -370,7 +370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `given_name`<sup>Optional</sup> <a name="given_name" id="@cdktf/provider-azuread.user.User.Initializer.parameter.givenName"></a>
+##### `given_name`<sup>Optional</sup> <a name="given_name" id="@cdktn/provider-azuread.user.User.Initializer.parameter.givenName"></a>
 
 - *Type:* str
 
@@ -380,7 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -391,7 +391,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `job_title`<sup>Optional</sup> <a name="job_title" id="@cdktf/provider-azuread.user.User.Initializer.parameter.jobTitle"></a>
+##### `job_title`<sup>Optional</sup> <a name="job_title" id="@cdktn/provider-azuread.user.User.Initializer.parameter.jobTitle"></a>
 
 - *Type:* str
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail`<sup>Optional</sup> <a name="mail" id="@cdktf/provider-azuread.user.User.Initializer.parameter.mail"></a>
+##### `mail`<sup>Optional</sup> <a name="mail" id="@cdktn/provider-azuread.user.User.Initializer.parameter.mail"></a>
 
 - *Type:* str
 
@@ -411,7 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.user.User.Initializer.parameter.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.user.User.Initializer.parameter.mailNickname"></a>
 
 - *Type:* str
 
@@ -421,7 +421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `manager_id`<sup>Optional</sup> <a name="manager_id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.managerId"></a>
+##### `manager_id`<sup>Optional</sup> <a name="manager_id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.managerId"></a>
 
 - *Type:* str
 
@@ -431,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mobile_phone`<sup>Optional</sup> <a name="mobile_phone" id="@cdktf/provider-azuread.user.User.Initializer.parameter.mobilePhone"></a>
+##### `mobile_phone`<sup>Optional</sup> <a name="mobile_phone" id="@cdktn/provider-azuread.user.User.Initializer.parameter.mobilePhone"></a>
 
 - *Type:* str
 
@@ -441,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `office_location`<sup>Optional</sup> <a name="office_location" id="@cdktf/provider-azuread.user.User.Initializer.parameter.officeLocation"></a>
+##### `office_location`<sup>Optional</sup> <a name="office_location" id="@cdktn/provider-azuread.user.User.Initializer.parameter.officeLocation"></a>
 
 - *Type:* str
 
@@ -451,7 +451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `onpremises_immutable_id`<sup>Optional</sup> <a name="onpremises_immutable_id" id="@cdktf/provider-azuread.user.User.Initializer.parameter.onpremisesImmutableId"></a>
+##### `onpremises_immutable_id`<sup>Optional</sup> <a name="onpremises_immutable_id" id="@cdktn/provider-azuread.user.User.Initializer.parameter.onpremisesImmutableId"></a>
 
 - *Type:* str
 
@@ -463,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `other_mails`<sup>Optional</sup> <a name="other_mails" id="@cdktf/provider-azuread.user.User.Initializer.parameter.otherMails"></a>
+##### `other_mails`<sup>Optional</sup> <a name="other_mails" id="@cdktn/provider-azuread.user.User.Initializer.parameter.otherMails"></a>
 
 - *Type:* typing.List[str]
 
@@ -473,7 +473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-azuread.user.User.Initializer.parameter.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-azuread.user.User.Initializer.parameter.password"></a>
 
 - *Type:* str
 
@@ -485,7 +485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `postal_code`<sup>Optional</sup> <a name="postal_code" id="@cdktf/provider-azuread.user.User.Initializer.parameter.postalCode"></a>
+##### `postal_code`<sup>Optional</sup> <a name="postal_code" id="@cdktn/provider-azuread.user.User.Initializer.parameter.postalCode"></a>
 
 - *Type:* str
 
@@ -497,7 +497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `preferred_language`<sup>Optional</sup> <a name="preferred_language" id="@cdktf/provider-azuread.user.User.Initializer.parameter.preferredLanguage"></a>
+##### `preferred_language`<sup>Optional</sup> <a name="preferred_language" id="@cdktn/provider-azuread.user.User.Initializer.parameter.preferredLanguage"></a>
 
 - *Type:* str
 
@@ -507,9 +507,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.User.Initializer.parameter.showInAddressList"></a>
+##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktn/provider-azuread.user.User.Initializer.parameter.showInAddressList"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the Outlook global address list should include this user.
 
@@ -517,7 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-azuread.user.User.Initializer.parameter.state"></a>
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktn/provider-azuread.user.User.Initializer.parameter.state"></a>
 
 - *Type:* str
 
@@ -527,7 +527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `street_address`<sup>Optional</sup> <a name="street_address" id="@cdktf/provider-azuread.user.User.Initializer.parameter.streetAddress"></a>
+##### `street_address`<sup>Optional</sup> <a name="street_address" id="@cdktn/provider-azuread.user.User.Initializer.parameter.streetAddress"></a>
 
 - *Type:* str
 
@@ -537,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `surname`<sup>Optional</sup> <a name="surname" id="@cdktf/provider-azuread.user.User.Initializer.parameter.surname"></a>
+##### `surname`<sup>Optional</sup> <a name="surname" id="@cdktn/provider-azuread.user.User.Initializer.parameter.surname"></a>
 
 - *Type:* str
 
@@ -547,9 +547,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.user.User.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.user.User.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 timeouts block.
 
@@ -557,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `usage_location`<sup>Optional</sup> <a name="usage_location" id="@cdktf/provider-azuread.user.User.Initializer.parameter.usageLocation"></a>
+##### `usage_location`<sup>Optional</sup> <a name="usage_location" id="@cdktn/provider-azuread.user.User.Initializer.parameter.usageLocation"></a>
 
 - *Type:* str
 
@@ -573,70 +573,70 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-azuread.user.User.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-azuread.user.User.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-azuread.user.User.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-azuread.user.User.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-azuread.user.User.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetAccountEnabled">reset_account_enabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetAgeGroup">reset_age_group</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetBusinessPhones">reset_business_phones</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCity">reset_city</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCompanyName">reset_company_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetConsentProvidedForMinor">reset_consent_provided_for_minor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCostCenter">reset_cost_center</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetCountry">reset_country</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDepartment">reset_department</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDisablePasswordExpiration">reset_disable_password_expiration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDisableStrongPassword">reset_disable_strong_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetDivision">reset_division</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeHireDate">reset_employee_hire_date</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeId">reset_employee_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetEmployeeType">reset_employee_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetFaxNumber">reset_fax_number</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetForcePasswordChange">reset_force_password_change</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetGivenName">reset_given_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetJobTitle">reset_job_title</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMail">reset_mail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetManagerId">reset_manager_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetMobilePhone">reset_mobile_phone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOfficeLocation">reset_office_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOnpremisesImmutableId">reset_onpremises_immutable_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetOtherMails">reset_other_mails</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPostalCode">reset_postal_code</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetPreferredLanguage">reset_preferred_language</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetShowInAddressList">reset_show_in_address_list</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetState">reset_state</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetStreetAddress">reset_street_address</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetSurname">reset_surname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.resetUsageLocation">reset_usage_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azuread.user.User.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azuread.user.User.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azuread.user.User.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azuread.user.User.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azuread.user.User.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetAccountEnabled">reset_account_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetAgeGroup">reset_age_group</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetBusinessPhones">reset_business_phones</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCity">reset_city</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCompanyName">reset_company_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetConsentProvidedForMinor">reset_consent_provided_for_minor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCostCenter">reset_cost_center</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetCountry">reset_country</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDepartment">reset_department</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDisablePasswordExpiration">reset_disable_password_expiration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDisableStrongPassword">reset_disable_strong_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetDivision">reset_division</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeHireDate">reset_employee_hire_date</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeId">reset_employee_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetEmployeeType">reset_employee_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetFaxNumber">reset_fax_number</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetForcePasswordChange">reset_force_password_change</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetGivenName">reset_given_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetJobTitle">reset_job_title</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMail">reset_mail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMailNickname">reset_mail_nickname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetManagerId">reset_manager_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetMobilePhone">reset_mobile_phone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOfficeLocation">reset_office_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOnpremisesImmutableId">reset_onpremises_immutable_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetOtherMails">reset_other_mails</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPassword">reset_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPostalCode">reset_postal_code</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetPreferredLanguage">reset_preferred_language</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetShowInAddressList">reset_show_in_address_list</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetState">reset_state</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetStreetAddress">reset_street_address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetSurname">reset_surname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.resetUsageLocation">reset_usage_location</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.user.User.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.user.User.toString"></a>
 
 ```python
 def to_string() -> str
@@ -644,7 +644,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-azuread.user.User.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-azuread.user.User.addOverride"></a>
 
 ```python
 def add_override(
@@ -653,19 +653,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-azuread.user.User.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-azuread.user.User.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-azuread.user.User.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azuread.user.User.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-azuread.user.User.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-azuread.user.User.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -675,7 +675,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-azuread.user.User.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-azuread.user.User.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -683,7 +683,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-azuread.user.User.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-azuread.user.User.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -691,19 +691,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-azuread.user.User.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-azuread.user.User.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-azuread.user.User.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-azuread.user.User.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-azuread.user.User.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-azuread.user.User.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -711,7 +711,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-azuread.user.User.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-azuread.user.User.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -721,7 +721,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.user.User.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.user.User.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -729,7 +729,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.user.User.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.user.User.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -737,13 +737,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.user.User.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.user.User.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -751,13 +751,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.user.User.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.user.User.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -765,13 +765,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.user.User.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.user.User.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -779,13 +779,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.user.User.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.user.User.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -793,13 +793,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.user.User.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.user.User.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -807,13 +807,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.user.User.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.user.User.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -821,13 +821,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.user.User.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.user.User.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -835,13 +835,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.user.User.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.user.User.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -849,19 +849,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-azuread.user.User.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-azuread.user.User.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-azuread.user.User.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-azuread.user.User.importFrom"></a>
 
 ```python
 def import_from(
@@ -870,19 +870,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.user.User.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.user.User.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -890,13 +890,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.User.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.User.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-azuread.user.User.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-azuread.user.User.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -908,7 +908,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -916,7 +916,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-azuread.user.User.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-azuread.user.User.moveTo"></a>
 
 ```python
 def move_to(
@@ -927,7 +927,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-azuread.user.User.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-azuread.user.User.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -935,7 +935,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-azuread.user.User.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-azuread.user.User.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -943,7 +943,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-azuread.user.User.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-azuread.user.User.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -953,7 +953,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -961,7 +961,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-azuread.user.User.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-azuread.user.User.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -972,7 +972,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.user.User.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.user.User.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.user.User.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.user.User.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.user.User.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.user.User.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.user.User.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.user.User.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -1004,217 +1004,217 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_account_enabled` <a name="reset_account_enabled" id="@cdktf/provider-azuread.user.User.resetAccountEnabled"></a>
+##### `reset_account_enabled` <a name="reset_account_enabled" id="@cdktn/provider-azuread.user.User.resetAccountEnabled"></a>
 
 ```python
 def reset_account_enabled() -> None
 ```
 
-##### `reset_age_group` <a name="reset_age_group" id="@cdktf/provider-azuread.user.User.resetAgeGroup"></a>
+##### `reset_age_group` <a name="reset_age_group" id="@cdktn/provider-azuread.user.User.resetAgeGroup"></a>
 
 ```python
 def reset_age_group() -> None
 ```
 
-##### `reset_business_phones` <a name="reset_business_phones" id="@cdktf/provider-azuread.user.User.resetBusinessPhones"></a>
+##### `reset_business_phones` <a name="reset_business_phones" id="@cdktn/provider-azuread.user.User.resetBusinessPhones"></a>
 
 ```python
 def reset_business_phones() -> None
 ```
 
-##### `reset_city` <a name="reset_city" id="@cdktf/provider-azuread.user.User.resetCity"></a>
+##### `reset_city` <a name="reset_city" id="@cdktn/provider-azuread.user.User.resetCity"></a>
 
 ```python
 def reset_city() -> None
 ```
 
-##### `reset_company_name` <a name="reset_company_name" id="@cdktf/provider-azuread.user.User.resetCompanyName"></a>
+##### `reset_company_name` <a name="reset_company_name" id="@cdktn/provider-azuread.user.User.resetCompanyName"></a>
 
 ```python
 def reset_company_name() -> None
 ```
 
-##### `reset_consent_provided_for_minor` <a name="reset_consent_provided_for_minor" id="@cdktf/provider-azuread.user.User.resetConsentProvidedForMinor"></a>
+##### `reset_consent_provided_for_minor` <a name="reset_consent_provided_for_minor" id="@cdktn/provider-azuread.user.User.resetConsentProvidedForMinor"></a>
 
 ```python
 def reset_consent_provided_for_minor() -> None
 ```
 
-##### `reset_cost_center` <a name="reset_cost_center" id="@cdktf/provider-azuread.user.User.resetCostCenter"></a>
+##### `reset_cost_center` <a name="reset_cost_center" id="@cdktn/provider-azuread.user.User.resetCostCenter"></a>
 
 ```python
 def reset_cost_center() -> None
 ```
 
-##### `reset_country` <a name="reset_country" id="@cdktf/provider-azuread.user.User.resetCountry"></a>
+##### `reset_country` <a name="reset_country" id="@cdktn/provider-azuread.user.User.resetCountry"></a>
 
 ```python
 def reset_country() -> None
 ```
 
-##### `reset_department` <a name="reset_department" id="@cdktf/provider-azuread.user.User.resetDepartment"></a>
+##### `reset_department` <a name="reset_department" id="@cdktn/provider-azuread.user.User.resetDepartment"></a>
 
 ```python
 def reset_department() -> None
 ```
 
-##### `reset_disable_password_expiration` <a name="reset_disable_password_expiration" id="@cdktf/provider-azuread.user.User.resetDisablePasswordExpiration"></a>
+##### `reset_disable_password_expiration` <a name="reset_disable_password_expiration" id="@cdktn/provider-azuread.user.User.resetDisablePasswordExpiration"></a>
 
 ```python
 def reset_disable_password_expiration() -> None
 ```
 
-##### `reset_disable_strong_password` <a name="reset_disable_strong_password" id="@cdktf/provider-azuread.user.User.resetDisableStrongPassword"></a>
+##### `reset_disable_strong_password` <a name="reset_disable_strong_password" id="@cdktn/provider-azuread.user.User.resetDisableStrongPassword"></a>
 
 ```python
 def reset_disable_strong_password() -> None
 ```
 
-##### `reset_division` <a name="reset_division" id="@cdktf/provider-azuread.user.User.resetDivision"></a>
+##### `reset_division` <a name="reset_division" id="@cdktn/provider-azuread.user.User.resetDivision"></a>
 
 ```python
 def reset_division() -> None
 ```
 
-##### `reset_employee_hire_date` <a name="reset_employee_hire_date" id="@cdktf/provider-azuread.user.User.resetEmployeeHireDate"></a>
+##### `reset_employee_hire_date` <a name="reset_employee_hire_date" id="@cdktn/provider-azuread.user.User.resetEmployeeHireDate"></a>
 
 ```python
 def reset_employee_hire_date() -> None
 ```
 
-##### `reset_employee_id` <a name="reset_employee_id" id="@cdktf/provider-azuread.user.User.resetEmployeeId"></a>
+##### `reset_employee_id` <a name="reset_employee_id" id="@cdktn/provider-azuread.user.User.resetEmployeeId"></a>
 
 ```python
 def reset_employee_id() -> None
 ```
 
-##### `reset_employee_type` <a name="reset_employee_type" id="@cdktf/provider-azuread.user.User.resetEmployeeType"></a>
+##### `reset_employee_type` <a name="reset_employee_type" id="@cdktn/provider-azuread.user.User.resetEmployeeType"></a>
 
 ```python
 def reset_employee_type() -> None
 ```
 
-##### `reset_fax_number` <a name="reset_fax_number" id="@cdktf/provider-azuread.user.User.resetFaxNumber"></a>
+##### `reset_fax_number` <a name="reset_fax_number" id="@cdktn/provider-azuread.user.User.resetFaxNumber"></a>
 
 ```python
 def reset_fax_number() -> None
 ```
 
-##### `reset_force_password_change` <a name="reset_force_password_change" id="@cdktf/provider-azuread.user.User.resetForcePasswordChange"></a>
+##### `reset_force_password_change` <a name="reset_force_password_change" id="@cdktn/provider-azuread.user.User.resetForcePasswordChange"></a>
 
 ```python
 def reset_force_password_change() -> None
 ```
 
-##### `reset_given_name` <a name="reset_given_name" id="@cdktf/provider-azuread.user.User.resetGivenName"></a>
+##### `reset_given_name` <a name="reset_given_name" id="@cdktn/provider-azuread.user.User.resetGivenName"></a>
 
 ```python
 def reset_given_name() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-azuread.user.User.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-azuread.user.User.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_job_title` <a name="reset_job_title" id="@cdktf/provider-azuread.user.User.resetJobTitle"></a>
+##### `reset_job_title` <a name="reset_job_title" id="@cdktn/provider-azuread.user.User.resetJobTitle"></a>
 
 ```python
 def reset_job_title() -> None
 ```
 
-##### `reset_mail` <a name="reset_mail" id="@cdktf/provider-azuread.user.User.resetMail"></a>
+##### `reset_mail` <a name="reset_mail" id="@cdktn/provider-azuread.user.User.resetMail"></a>
 
 ```python
 def reset_mail() -> None
 ```
 
-##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktf/provider-azuread.user.User.resetMailNickname"></a>
+##### `reset_mail_nickname` <a name="reset_mail_nickname" id="@cdktn/provider-azuread.user.User.resetMailNickname"></a>
 
 ```python
 def reset_mail_nickname() -> None
 ```
 
-##### `reset_manager_id` <a name="reset_manager_id" id="@cdktf/provider-azuread.user.User.resetManagerId"></a>
+##### `reset_manager_id` <a name="reset_manager_id" id="@cdktn/provider-azuread.user.User.resetManagerId"></a>
 
 ```python
 def reset_manager_id() -> None
 ```
 
-##### `reset_mobile_phone` <a name="reset_mobile_phone" id="@cdktf/provider-azuread.user.User.resetMobilePhone"></a>
+##### `reset_mobile_phone` <a name="reset_mobile_phone" id="@cdktn/provider-azuread.user.User.resetMobilePhone"></a>
 
 ```python
 def reset_mobile_phone() -> None
 ```
 
-##### `reset_office_location` <a name="reset_office_location" id="@cdktf/provider-azuread.user.User.resetOfficeLocation"></a>
+##### `reset_office_location` <a name="reset_office_location" id="@cdktn/provider-azuread.user.User.resetOfficeLocation"></a>
 
 ```python
 def reset_office_location() -> None
 ```
 
-##### `reset_onpremises_immutable_id` <a name="reset_onpremises_immutable_id" id="@cdktf/provider-azuread.user.User.resetOnpremisesImmutableId"></a>
+##### `reset_onpremises_immutable_id` <a name="reset_onpremises_immutable_id" id="@cdktn/provider-azuread.user.User.resetOnpremisesImmutableId"></a>
 
 ```python
 def reset_onpremises_immutable_id() -> None
 ```
 
-##### `reset_other_mails` <a name="reset_other_mails" id="@cdktf/provider-azuread.user.User.resetOtherMails"></a>
+##### `reset_other_mails` <a name="reset_other_mails" id="@cdktn/provider-azuread.user.User.resetOtherMails"></a>
 
 ```python
 def reset_other_mails() -> None
 ```
 
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-azuread.user.User.resetPassword"></a>
+##### `reset_password` <a name="reset_password" id="@cdktn/provider-azuread.user.User.resetPassword"></a>
 
 ```python
 def reset_password() -> None
 ```
 
-##### `reset_postal_code` <a name="reset_postal_code" id="@cdktf/provider-azuread.user.User.resetPostalCode"></a>
+##### `reset_postal_code` <a name="reset_postal_code" id="@cdktn/provider-azuread.user.User.resetPostalCode"></a>
 
 ```python
 def reset_postal_code() -> None
 ```
 
-##### `reset_preferred_language` <a name="reset_preferred_language" id="@cdktf/provider-azuread.user.User.resetPreferredLanguage"></a>
+##### `reset_preferred_language` <a name="reset_preferred_language" id="@cdktn/provider-azuread.user.User.resetPreferredLanguage"></a>
 
 ```python
 def reset_preferred_language() -> None
 ```
 
-##### `reset_show_in_address_list` <a name="reset_show_in_address_list" id="@cdktf/provider-azuread.user.User.resetShowInAddressList"></a>
+##### `reset_show_in_address_list` <a name="reset_show_in_address_list" id="@cdktn/provider-azuread.user.User.resetShowInAddressList"></a>
 
 ```python
 def reset_show_in_address_list() -> None
 ```
 
-##### `reset_state` <a name="reset_state" id="@cdktf/provider-azuread.user.User.resetState"></a>
+##### `reset_state` <a name="reset_state" id="@cdktn/provider-azuread.user.User.resetState"></a>
 
 ```python
 def reset_state() -> None
 ```
 
-##### `reset_street_address` <a name="reset_street_address" id="@cdktf/provider-azuread.user.User.resetStreetAddress"></a>
+##### `reset_street_address` <a name="reset_street_address" id="@cdktn/provider-azuread.user.User.resetStreetAddress"></a>
 
 ```python
 def reset_street_address() -> None
 ```
 
-##### `reset_surname` <a name="reset_surname" id="@cdktf/provider-azuread.user.User.resetSurname"></a>
+##### `reset_surname` <a name="reset_surname" id="@cdktn/provider-azuread.user.User.resetSurname"></a>
 
 ```python
 def reset_surname() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-azuread.user.User.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azuread.user.User.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_usage_location` <a name="reset_usage_location" id="@cdktf/provider-azuread.user.User.resetUsageLocation"></a>
+##### `reset_usage_location` <a name="reset_usage_location" id="@cdktn/provider-azuread.user.User.resetUsageLocation"></a>
 
 ```python
 def reset_usage_location() -> None
@@ -1224,17 +1224,17 @@ def reset_usage_location() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-azuread.user.User.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azuread.user.User.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azuread.user.User.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-azuread.user.User.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-azuread.user.User.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.User.is_construct(
   x: typing.Any
@@ -1257,7 +1257,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1265,42 +1265,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-azuread.user.User.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-azuread.user.User.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.User.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-azuread.user.User.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-azuread.user.User.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.User.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-azuread.user.User.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-azuread.user.User.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-azuread.user.User.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-azuread.user.User.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.User.generate_config_for_import(
   scope: Construct,
@@ -1310,9 +1310,9 @@ user.User.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1320,7 +1320,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1328,7 +1328,7 @@ The construct id used in the generated config for the User to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1338,9 +1338,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the User to import is found.
 
@@ -1350,113 +1350,113 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.aboutMe">about_me</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.creationType">creation_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.externalUserState">external_user_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.imAddresses">im_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesDistinguishedName">onpremises_distinguished_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesUserPrincipalName">onpremises_user_principal_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userType">user_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabledInput">account_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroupInput">age_group_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhonesInput">business_phones_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.companyNameInput">company_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.consentProvidedForMinorInput">consent_provided_for_minor_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.costCenterInput">cost_center_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.countryInput">country_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.departmentInput">department_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput">disable_password_expiration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput">disable_strong_password_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.divisionInput">division_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDateInput">employee_hire_date_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeIdInput">employee_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeTypeInput">employee_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumberInput">fax_number_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput">force_password_change_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.givenNameInput">given_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitleInput">job_title_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailInput">mail_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.managerIdInput">manager_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mobilePhoneInput">mobile_phone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.officeLocationInput">office_location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesImmutableIdInput">onpremises_immutable_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.otherMailsInput">other_mails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.postalCodeInput">postal_code_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguageInput">preferred_language_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressListInput">show_in_address_list_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddressInput">street_address_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.surnameInput">surname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocationInput">usage_location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalNameInput">user_principal_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.ageGroup">age_group</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.city">city</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.companyName">company_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.costCenter">cost_center</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.country">country</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.department">department</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.division">division</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeId">employee_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.employeeType">employee_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.faxNumber">fax_number</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.givenName">given_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mail">mail</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.managerId">manager_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.mobilePhone">mobile_phone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.officeLocation">office_location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.postalCode">postal_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.streetAddress">street_address</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.surname">surname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.usageLocation">usage_location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.userPrincipalName">user_principal_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.aboutMe">about_me</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.creationType">creation_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.externalUserState">external_user_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.imAddresses">im_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesDistinguishedName">onpremises_distinguished_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesDomainName">onpremises_domain_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSamAccountName">onpremises_sam_account_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSecurityIdentifier">onpremises_security_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesSyncEnabled">onpremises_sync_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesUserPrincipalName">onpremises_user_principal_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.proxyAddresses">proxy_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userType">user_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.accountEnabledInput">account_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.ageGroupInput">age_group_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.businessPhonesInput">business_phones_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.companyNameInput">company_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.consentProvidedForMinorInput">consent_provided_for_minor_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.costCenterInput">cost_center_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.countryInput">country_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.departmentInput">department_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disablePasswordExpirationInput">disable_password_expiration_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disableStrongPasswordInput">disable_strong_password_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.divisionInput">division_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeHireDateInput">employee_hire_date_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeIdInput">employee_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeTypeInput">employee_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.faxNumberInput">fax_number_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forcePasswordChangeInput">force_password_change_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.givenNameInput">given_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.jobTitleInput">job_title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailInput">mail_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailNicknameInput">mail_nickname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.managerIdInput">manager_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mobilePhoneInput">mobile_phone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.officeLocationInput">office_location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesImmutableIdInput">onpremises_immutable_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.otherMailsInput">other_mails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.postalCodeInput">postal_code_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.preferredLanguageInput">preferred_language_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.showInAddressListInput">show_in_address_list_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.streetAddressInput">street_address_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.surnameInput">surname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.usageLocationInput">usage_location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userPrincipalNameInput">user_principal_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.ageGroup">age_group</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.city">city</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.companyName">company_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.costCenter">cost_center</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.country">country</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.department">department</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.division">division</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeId">employee_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.employeeType">employee_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.faxNumber">fax_number</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.givenName">given_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.jobTitle">job_title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mail">mail</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mailNickname">mail_nickname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.managerId">manager_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.mobilePhone">mobile_phone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.officeLocation">office_location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.postalCode">postal_code</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.streetAddress">street_address</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.surname">surname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.usageLocation">usage_location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.userPrincipalName">user_principal_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-azuread.user.User.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-azuread.user.User.property.node"></a>
 
 ```python
 node: Node
@@ -1468,17 +1468,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-azuread.user.User.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-azuread.user.User.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.user.User.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.user.User.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1488,7 +1488,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-azuread.user.User.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-azuread.user.User.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1498,7 +1498,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-azuread.user.User.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-azuread.user.User.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1508,7 +1508,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-azuread.user.User.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-azuread.user.User.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1518,37 +1518,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-azuread.user.User.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-azuread.user.User.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.User.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.user.User.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.User.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.user.User.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.user.User.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.user.User.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1558,47 +1558,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.user.User.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.user.User.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.user.User.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.user.User.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.User.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.User.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.User.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.user.User.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `about_me`<sup>Required</sup> <a name="about_me" id="@cdktf/provider-azuread.user.User.property.aboutMe"></a>
+##### `about_me`<sup>Required</sup> <a name="about_me" id="@cdktn/provider-azuread.user.User.property.aboutMe"></a>
 
 ```python
 about_me: str
@@ -1608,7 +1608,7 @@ about_me: str
 
 ---
 
-##### `creation_type`<sup>Required</sup> <a name="creation_type" id="@cdktf/provider-azuread.user.User.property.creationType"></a>
+##### `creation_type`<sup>Required</sup> <a name="creation_type" id="@cdktn/provider-azuread.user.User.property.creationType"></a>
 
 ```python
 creation_type: str
@@ -1618,7 +1618,7 @@ creation_type: str
 
 ---
 
-##### `external_user_state`<sup>Required</sup> <a name="external_user_state" id="@cdktf/provider-azuread.user.User.property.externalUserState"></a>
+##### `external_user_state`<sup>Required</sup> <a name="external_user_state" id="@cdktn/provider-azuread.user.User.property.externalUserState"></a>
 
 ```python
 external_user_state: str
@@ -1628,7 +1628,7 @@ external_user_state: str
 
 ---
 
-##### `im_addresses`<sup>Required</sup> <a name="im_addresses" id="@cdktf/provider-azuread.user.User.property.imAddresses"></a>
+##### `im_addresses`<sup>Required</sup> <a name="im_addresses" id="@cdktn/provider-azuread.user.User.property.imAddresses"></a>
 
 ```python
 im_addresses: typing.List[str]
@@ -1638,7 +1638,7 @@ im_addresses: typing.List[str]
 
 ---
 
-##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktf/provider-azuread.user.User.property.objectId"></a>
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.user.User.property.objectId"></a>
 
 ```python
 object_id: str
@@ -1648,7 +1648,7 @@ object_id: str
 
 ---
 
-##### `onpremises_distinguished_name`<sup>Required</sup> <a name="onpremises_distinguished_name" id="@cdktf/provider-azuread.user.User.property.onpremisesDistinguishedName"></a>
+##### `onpremises_distinguished_name`<sup>Required</sup> <a name="onpremises_distinguished_name" id="@cdktn/provider-azuread.user.User.property.onpremisesDistinguishedName"></a>
 
 ```python
 onpremises_distinguished_name: str
@@ -1658,7 +1658,7 @@ onpremises_distinguished_name: str
 
 ---
 
-##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktf/provider-azuread.user.User.property.onpremisesDomainName"></a>
+##### `onpremises_domain_name`<sup>Required</sup> <a name="onpremises_domain_name" id="@cdktn/provider-azuread.user.User.property.onpremisesDomainName"></a>
 
 ```python
 onpremises_domain_name: str
@@ -1668,7 +1668,7 @@ onpremises_domain_name: str
 
 ---
 
-##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktf/provider-azuread.user.User.property.onpremisesSamAccountName"></a>
+##### `onpremises_sam_account_name`<sup>Required</sup> <a name="onpremises_sam_account_name" id="@cdktn/provider-azuread.user.User.property.onpremisesSamAccountName"></a>
 
 ```python
 onpremises_sam_account_name: str
@@ -1678,7 +1678,7 @@ onpremises_sam_account_name: str
 
 ---
 
-##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktf/provider-azuread.user.User.property.onpremisesSecurityIdentifier"></a>
+##### `onpremises_security_identifier`<sup>Required</sup> <a name="onpremises_security_identifier" id="@cdktn/provider-azuread.user.User.property.onpremisesSecurityIdentifier"></a>
 
 ```python
 onpremises_security_identifier: str
@@ -1688,17 +1688,17 @@ onpremises_security_identifier: str
 
 ---
 
-##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktf/provider-azuread.user.User.property.onpremisesSyncEnabled"></a>
+##### `onpremises_sync_enabled`<sup>Required</sup> <a name="onpremises_sync_enabled" id="@cdktn/provider-azuread.user.User.property.onpremisesSyncEnabled"></a>
 
 ```python
 onpremises_sync_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `onpremises_user_principal_name`<sup>Required</sup> <a name="onpremises_user_principal_name" id="@cdktf/provider-azuread.user.User.property.onpremisesUserPrincipalName"></a>
+##### `onpremises_user_principal_name`<sup>Required</sup> <a name="onpremises_user_principal_name" id="@cdktn/provider-azuread.user.User.property.onpremisesUserPrincipalName"></a>
 
 ```python
 onpremises_user_principal_name: str
@@ -1708,7 +1708,7 @@ onpremises_user_principal_name: str
 
 ---
 
-##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktf/provider-azuread.user.User.property.proxyAddresses"></a>
+##### `proxy_addresses`<sup>Required</sup> <a name="proxy_addresses" id="@cdktn/provider-azuread.user.User.property.proxyAddresses"></a>
 
 ```python
 proxy_addresses: typing.List[str]
@@ -1718,17 +1718,17 @@ proxy_addresses: typing.List[str]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-azuread.user.User.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azuread.user.User.property.timeouts"></a>
 
 ```python
 timeouts: UserTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference">UserTimeoutsOutputReference</a>
 
 ---
 
-##### `user_type`<sup>Required</sup> <a name="user_type" id="@cdktf/provider-azuread.user.User.property.userType"></a>
+##### `user_type`<sup>Required</sup> <a name="user_type" id="@cdktn/provider-azuread.user.User.property.userType"></a>
 
 ```python
 user_type: str
@@ -1738,17 +1738,17 @@ user_type: str
 
 ---
 
-##### `account_enabled_input`<sup>Optional</sup> <a name="account_enabled_input" id="@cdktf/provider-azuread.user.User.property.accountEnabledInput"></a>
+##### `account_enabled_input`<sup>Optional</sup> <a name="account_enabled_input" id="@cdktn/provider-azuread.user.User.property.accountEnabledInput"></a>
 
 ```python
 account_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `age_group_input`<sup>Optional</sup> <a name="age_group_input" id="@cdktf/provider-azuread.user.User.property.ageGroupInput"></a>
+##### `age_group_input`<sup>Optional</sup> <a name="age_group_input" id="@cdktn/provider-azuread.user.User.property.ageGroupInput"></a>
 
 ```python
 age_group_input: str
@@ -1758,7 +1758,7 @@ age_group_input: str
 
 ---
 
-##### `business_phones_input`<sup>Optional</sup> <a name="business_phones_input" id="@cdktf/provider-azuread.user.User.property.businessPhonesInput"></a>
+##### `business_phones_input`<sup>Optional</sup> <a name="business_phones_input" id="@cdktn/provider-azuread.user.User.property.businessPhonesInput"></a>
 
 ```python
 business_phones_input: typing.List[str]
@@ -1768,7 +1768,7 @@ business_phones_input: typing.List[str]
 
 ---
 
-##### `city_input`<sup>Optional</sup> <a name="city_input" id="@cdktf/provider-azuread.user.User.property.cityInput"></a>
+##### `city_input`<sup>Optional</sup> <a name="city_input" id="@cdktn/provider-azuread.user.User.property.cityInput"></a>
 
 ```python
 city_input: str
@@ -1778,7 +1778,7 @@ city_input: str
 
 ---
 
-##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktf/provider-azuread.user.User.property.companyNameInput"></a>
+##### `company_name_input`<sup>Optional</sup> <a name="company_name_input" id="@cdktn/provider-azuread.user.User.property.companyNameInput"></a>
 
 ```python
 company_name_input: str
@@ -1788,7 +1788,7 @@ company_name_input: str
 
 ---
 
-##### `consent_provided_for_minor_input`<sup>Optional</sup> <a name="consent_provided_for_minor_input" id="@cdktf/provider-azuread.user.User.property.consentProvidedForMinorInput"></a>
+##### `consent_provided_for_minor_input`<sup>Optional</sup> <a name="consent_provided_for_minor_input" id="@cdktn/provider-azuread.user.User.property.consentProvidedForMinorInput"></a>
 
 ```python
 consent_provided_for_minor_input: str
@@ -1798,7 +1798,7 @@ consent_provided_for_minor_input: str
 
 ---
 
-##### `cost_center_input`<sup>Optional</sup> <a name="cost_center_input" id="@cdktf/provider-azuread.user.User.property.costCenterInput"></a>
+##### `cost_center_input`<sup>Optional</sup> <a name="cost_center_input" id="@cdktn/provider-azuread.user.User.property.costCenterInput"></a>
 
 ```python
 cost_center_input: str
@@ -1808,7 +1808,7 @@ cost_center_input: str
 
 ---
 
-##### `country_input`<sup>Optional</sup> <a name="country_input" id="@cdktf/provider-azuread.user.User.property.countryInput"></a>
+##### `country_input`<sup>Optional</sup> <a name="country_input" id="@cdktn/provider-azuread.user.User.property.countryInput"></a>
 
 ```python
 country_input: str
@@ -1818,7 +1818,7 @@ country_input: str
 
 ---
 
-##### `department_input`<sup>Optional</sup> <a name="department_input" id="@cdktf/provider-azuread.user.User.property.departmentInput"></a>
+##### `department_input`<sup>Optional</sup> <a name="department_input" id="@cdktn/provider-azuread.user.User.property.departmentInput"></a>
 
 ```python
 department_input: str
@@ -1828,27 +1828,27 @@ department_input: str
 
 ---
 
-##### `disable_password_expiration_input`<sup>Optional</sup> <a name="disable_password_expiration_input" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
+##### `disable_password_expiration_input`<sup>Optional</sup> <a name="disable_password_expiration_input" id="@cdktn/provider-azuread.user.User.property.disablePasswordExpirationInput"></a>
 
 ```python
 disable_password_expiration_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `disable_strong_password_input`<sup>Optional</sup> <a name="disable_strong_password_input" id="@cdktf/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
+##### `disable_strong_password_input`<sup>Optional</sup> <a name="disable_strong_password_input" id="@cdktn/provider-azuread.user.User.property.disableStrongPasswordInput"></a>
 
 ```python
 disable_strong_password_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-azuread.user.User.property.displayNameInput"></a>
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-azuread.user.User.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1858,7 +1858,7 @@ display_name_input: str
 
 ---
 
-##### `division_input`<sup>Optional</sup> <a name="division_input" id="@cdktf/provider-azuread.user.User.property.divisionInput"></a>
+##### `division_input`<sup>Optional</sup> <a name="division_input" id="@cdktn/provider-azuread.user.User.property.divisionInput"></a>
 
 ```python
 division_input: str
@@ -1868,7 +1868,7 @@ division_input: str
 
 ---
 
-##### `employee_hire_date_input`<sup>Optional</sup> <a name="employee_hire_date_input" id="@cdktf/provider-azuread.user.User.property.employeeHireDateInput"></a>
+##### `employee_hire_date_input`<sup>Optional</sup> <a name="employee_hire_date_input" id="@cdktn/provider-azuread.user.User.property.employeeHireDateInput"></a>
 
 ```python
 employee_hire_date_input: str
@@ -1878,7 +1878,7 @@ employee_hire_date_input: str
 
 ---
 
-##### `employee_id_input`<sup>Optional</sup> <a name="employee_id_input" id="@cdktf/provider-azuread.user.User.property.employeeIdInput"></a>
+##### `employee_id_input`<sup>Optional</sup> <a name="employee_id_input" id="@cdktn/provider-azuread.user.User.property.employeeIdInput"></a>
 
 ```python
 employee_id_input: str
@@ -1888,7 +1888,7 @@ employee_id_input: str
 
 ---
 
-##### `employee_type_input`<sup>Optional</sup> <a name="employee_type_input" id="@cdktf/provider-azuread.user.User.property.employeeTypeInput"></a>
+##### `employee_type_input`<sup>Optional</sup> <a name="employee_type_input" id="@cdktn/provider-azuread.user.User.property.employeeTypeInput"></a>
 
 ```python
 employee_type_input: str
@@ -1898,7 +1898,7 @@ employee_type_input: str
 
 ---
 
-##### `fax_number_input`<sup>Optional</sup> <a name="fax_number_input" id="@cdktf/provider-azuread.user.User.property.faxNumberInput"></a>
+##### `fax_number_input`<sup>Optional</sup> <a name="fax_number_input" id="@cdktn/provider-azuread.user.User.property.faxNumberInput"></a>
 
 ```python
 fax_number_input: str
@@ -1908,17 +1908,17 @@ fax_number_input: str
 
 ---
 
-##### `force_password_change_input`<sup>Optional</sup> <a name="force_password_change_input" id="@cdktf/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
+##### `force_password_change_input`<sup>Optional</sup> <a name="force_password_change_input" id="@cdktn/provider-azuread.user.User.property.forcePasswordChangeInput"></a>
 
 ```python
 force_password_change_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `given_name_input`<sup>Optional</sup> <a name="given_name_input" id="@cdktf/provider-azuread.user.User.property.givenNameInput"></a>
+##### `given_name_input`<sup>Optional</sup> <a name="given_name_input" id="@cdktn/provider-azuread.user.User.property.givenNameInput"></a>
 
 ```python
 given_name_input: str
@@ -1928,7 +1928,7 @@ given_name_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-azuread.user.User.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azuread.user.User.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1938,7 +1938,7 @@ id_input: str
 
 ---
 
-##### `job_title_input`<sup>Optional</sup> <a name="job_title_input" id="@cdktf/provider-azuread.user.User.property.jobTitleInput"></a>
+##### `job_title_input`<sup>Optional</sup> <a name="job_title_input" id="@cdktn/provider-azuread.user.User.property.jobTitleInput"></a>
 
 ```python
 job_title_input: str
@@ -1948,7 +1948,7 @@ job_title_input: str
 
 ---
 
-##### `mail_input`<sup>Optional</sup> <a name="mail_input" id="@cdktf/provider-azuread.user.User.property.mailInput"></a>
+##### `mail_input`<sup>Optional</sup> <a name="mail_input" id="@cdktn/provider-azuread.user.User.property.mailInput"></a>
 
 ```python
 mail_input: str
@@ -1958,7 +1958,7 @@ mail_input: str
 
 ---
 
-##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktf/provider-azuread.user.User.property.mailNicknameInput"></a>
+##### `mail_nickname_input`<sup>Optional</sup> <a name="mail_nickname_input" id="@cdktn/provider-azuread.user.User.property.mailNicknameInput"></a>
 
 ```python
 mail_nickname_input: str
@@ -1968,7 +1968,7 @@ mail_nickname_input: str
 
 ---
 
-##### `manager_id_input`<sup>Optional</sup> <a name="manager_id_input" id="@cdktf/provider-azuread.user.User.property.managerIdInput"></a>
+##### `manager_id_input`<sup>Optional</sup> <a name="manager_id_input" id="@cdktn/provider-azuread.user.User.property.managerIdInput"></a>
 
 ```python
 manager_id_input: str
@@ -1978,7 +1978,7 @@ manager_id_input: str
 
 ---
 
-##### `mobile_phone_input`<sup>Optional</sup> <a name="mobile_phone_input" id="@cdktf/provider-azuread.user.User.property.mobilePhoneInput"></a>
+##### `mobile_phone_input`<sup>Optional</sup> <a name="mobile_phone_input" id="@cdktn/provider-azuread.user.User.property.mobilePhoneInput"></a>
 
 ```python
 mobile_phone_input: str
@@ -1988,7 +1988,7 @@ mobile_phone_input: str
 
 ---
 
-##### `office_location_input`<sup>Optional</sup> <a name="office_location_input" id="@cdktf/provider-azuread.user.User.property.officeLocationInput"></a>
+##### `office_location_input`<sup>Optional</sup> <a name="office_location_input" id="@cdktn/provider-azuread.user.User.property.officeLocationInput"></a>
 
 ```python
 office_location_input: str
@@ -1998,7 +1998,7 @@ office_location_input: str
 
 ---
 
-##### `onpremises_immutable_id_input`<sup>Optional</sup> <a name="onpremises_immutable_id_input" id="@cdktf/provider-azuread.user.User.property.onpremisesImmutableIdInput"></a>
+##### `onpremises_immutable_id_input`<sup>Optional</sup> <a name="onpremises_immutable_id_input" id="@cdktn/provider-azuread.user.User.property.onpremisesImmutableIdInput"></a>
 
 ```python
 onpremises_immutable_id_input: str
@@ -2008,7 +2008,7 @@ onpremises_immutable_id_input: str
 
 ---
 
-##### `other_mails_input`<sup>Optional</sup> <a name="other_mails_input" id="@cdktf/provider-azuread.user.User.property.otherMailsInput"></a>
+##### `other_mails_input`<sup>Optional</sup> <a name="other_mails_input" id="@cdktn/provider-azuread.user.User.property.otherMailsInput"></a>
 
 ```python
 other_mails_input: typing.List[str]
@@ -2018,7 +2018,7 @@ other_mails_input: typing.List[str]
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-azuread.user.User.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-azuread.user.User.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -2028,7 +2028,7 @@ password_input: str
 
 ---
 
-##### `postal_code_input`<sup>Optional</sup> <a name="postal_code_input" id="@cdktf/provider-azuread.user.User.property.postalCodeInput"></a>
+##### `postal_code_input`<sup>Optional</sup> <a name="postal_code_input" id="@cdktn/provider-azuread.user.User.property.postalCodeInput"></a>
 
 ```python
 postal_code_input: str
@@ -2038,7 +2038,7 @@ postal_code_input: str
 
 ---
 
-##### `preferred_language_input`<sup>Optional</sup> <a name="preferred_language_input" id="@cdktf/provider-azuread.user.User.property.preferredLanguageInput"></a>
+##### `preferred_language_input`<sup>Optional</sup> <a name="preferred_language_input" id="@cdktn/provider-azuread.user.User.property.preferredLanguageInput"></a>
 
 ```python
 preferred_language_input: str
@@ -2048,17 +2048,17 @@ preferred_language_input: str
 
 ---
 
-##### `show_in_address_list_input`<sup>Optional</sup> <a name="show_in_address_list_input" id="@cdktf/provider-azuread.user.User.property.showInAddressListInput"></a>
+##### `show_in_address_list_input`<sup>Optional</sup> <a name="show_in_address_list_input" id="@cdktn/provider-azuread.user.User.property.showInAddressListInput"></a>
 
 ```python
 show_in_address_list_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktf/provider-azuread.user.User.property.stateInput"></a>
+##### `state_input`<sup>Optional</sup> <a name="state_input" id="@cdktn/provider-azuread.user.User.property.stateInput"></a>
 
 ```python
 state_input: str
@@ -2068,7 +2068,7 @@ state_input: str
 
 ---
 
-##### `street_address_input`<sup>Optional</sup> <a name="street_address_input" id="@cdktf/provider-azuread.user.User.property.streetAddressInput"></a>
+##### `street_address_input`<sup>Optional</sup> <a name="street_address_input" id="@cdktn/provider-azuread.user.User.property.streetAddressInput"></a>
 
 ```python
 street_address_input: str
@@ -2078,7 +2078,7 @@ street_address_input: str
 
 ---
 
-##### `surname_input`<sup>Optional</sup> <a name="surname_input" id="@cdktf/provider-azuread.user.User.property.surnameInput"></a>
+##### `surname_input`<sup>Optional</sup> <a name="surname_input" id="@cdktn/provider-azuread.user.User.property.surnameInput"></a>
 
 ```python
 surname_input: str
@@ -2088,17 +2088,17 @@ surname_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-azuread.user.User.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azuread.user.User.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | UserTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
-##### `usage_location_input`<sup>Optional</sup> <a name="usage_location_input" id="@cdktf/provider-azuread.user.User.property.usageLocationInput"></a>
+##### `usage_location_input`<sup>Optional</sup> <a name="usage_location_input" id="@cdktn/provider-azuread.user.User.property.usageLocationInput"></a>
 
 ```python
 usage_location_input: str
@@ -2108,7 +2108,7 @@ usage_location_input: str
 
 ---
 
-##### `user_principal_name_input`<sup>Optional</sup> <a name="user_principal_name_input" id="@cdktf/provider-azuread.user.User.property.userPrincipalNameInput"></a>
+##### `user_principal_name_input`<sup>Optional</sup> <a name="user_principal_name_input" id="@cdktn/provider-azuread.user.User.property.userPrincipalNameInput"></a>
 
 ```python
 user_principal_name_input: str
@@ -2118,17 +2118,17 @@ user_principal_name_input: str
 
 ---
 
-##### `account_enabled`<sup>Required</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.User.property.accountEnabled"></a>
+##### `account_enabled`<sup>Required</sup> <a name="account_enabled" id="@cdktn/provider-azuread.user.User.property.accountEnabled"></a>
 
 ```python
 account_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `age_group`<sup>Required</sup> <a name="age_group" id="@cdktf/provider-azuread.user.User.property.ageGroup"></a>
+##### `age_group`<sup>Required</sup> <a name="age_group" id="@cdktn/provider-azuread.user.User.property.ageGroup"></a>
 
 ```python
 age_group: str
@@ -2138,7 +2138,7 @@ age_group: str
 
 ---
 
-##### `business_phones`<sup>Required</sup> <a name="business_phones" id="@cdktf/provider-azuread.user.User.property.businessPhones"></a>
+##### `business_phones`<sup>Required</sup> <a name="business_phones" id="@cdktn/provider-azuread.user.User.property.businessPhones"></a>
 
 ```python
 business_phones: typing.List[str]
@@ -2148,7 +2148,7 @@ business_phones: typing.List[str]
 
 ---
 
-##### `city`<sup>Required</sup> <a name="city" id="@cdktf/provider-azuread.user.User.property.city"></a>
+##### `city`<sup>Required</sup> <a name="city" id="@cdktn/provider-azuread.user.User.property.city"></a>
 
 ```python
 city: str
@@ -2158,7 +2158,7 @@ city: str
 
 ---
 
-##### `company_name`<sup>Required</sup> <a name="company_name" id="@cdktf/provider-azuread.user.User.property.companyName"></a>
+##### `company_name`<sup>Required</sup> <a name="company_name" id="@cdktn/provider-azuread.user.User.property.companyName"></a>
 
 ```python
 company_name: str
@@ -2168,7 +2168,7 @@ company_name: str
 
 ---
 
-##### `consent_provided_for_minor`<sup>Required</sup> <a name="consent_provided_for_minor" id="@cdktf/provider-azuread.user.User.property.consentProvidedForMinor"></a>
+##### `consent_provided_for_minor`<sup>Required</sup> <a name="consent_provided_for_minor" id="@cdktn/provider-azuread.user.User.property.consentProvidedForMinor"></a>
 
 ```python
 consent_provided_for_minor: str
@@ -2178,7 +2178,7 @@ consent_provided_for_minor: str
 
 ---
 
-##### `cost_center`<sup>Required</sup> <a name="cost_center" id="@cdktf/provider-azuread.user.User.property.costCenter"></a>
+##### `cost_center`<sup>Required</sup> <a name="cost_center" id="@cdktn/provider-azuread.user.User.property.costCenter"></a>
 
 ```python
 cost_center: str
@@ -2188,7 +2188,7 @@ cost_center: str
 
 ---
 
-##### `country`<sup>Required</sup> <a name="country" id="@cdktf/provider-azuread.user.User.property.country"></a>
+##### `country`<sup>Required</sup> <a name="country" id="@cdktn/provider-azuread.user.User.property.country"></a>
 
 ```python
 country: str
@@ -2198,7 +2198,7 @@ country: str
 
 ---
 
-##### `department`<sup>Required</sup> <a name="department" id="@cdktf/provider-azuread.user.User.property.department"></a>
+##### `department`<sup>Required</sup> <a name="department" id="@cdktn/provider-azuread.user.User.property.department"></a>
 
 ```python
 department: str
@@ -2208,27 +2208,27 @@ department: str
 
 ---
 
-##### `disable_password_expiration`<sup>Required</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.User.property.disablePasswordExpiration"></a>
+##### `disable_password_expiration`<sup>Required</sup> <a name="disable_password_expiration" id="@cdktn/provider-azuread.user.User.property.disablePasswordExpiration"></a>
 
 ```python
 disable_password_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `disable_strong_password`<sup>Required</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.User.property.disableStrongPassword"></a>
+##### `disable_strong_password`<sup>Required</sup> <a name="disable_strong_password" id="@cdktn/provider-azuread.user.User.property.disableStrongPassword"></a>
 
 ```python
 disable_strong_password: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.user.User.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.user.User.property.displayName"></a>
 
 ```python
 display_name: str
@@ -2238,7 +2238,7 @@ display_name: str
 
 ---
 
-##### `division`<sup>Required</sup> <a name="division" id="@cdktf/provider-azuread.user.User.property.division"></a>
+##### `division`<sup>Required</sup> <a name="division" id="@cdktn/provider-azuread.user.User.property.division"></a>
 
 ```python
 division: str
@@ -2248,7 +2248,7 @@ division: str
 
 ---
 
-##### `employee_hire_date`<sup>Required</sup> <a name="employee_hire_date" id="@cdktf/provider-azuread.user.User.property.employeeHireDate"></a>
+##### `employee_hire_date`<sup>Required</sup> <a name="employee_hire_date" id="@cdktn/provider-azuread.user.User.property.employeeHireDate"></a>
 
 ```python
 employee_hire_date: str
@@ -2258,7 +2258,7 @@ employee_hire_date: str
 
 ---
 
-##### `employee_id`<sup>Required</sup> <a name="employee_id" id="@cdktf/provider-azuread.user.User.property.employeeId"></a>
+##### `employee_id`<sup>Required</sup> <a name="employee_id" id="@cdktn/provider-azuread.user.User.property.employeeId"></a>
 
 ```python
 employee_id: str
@@ -2268,7 +2268,7 @@ employee_id: str
 
 ---
 
-##### `employee_type`<sup>Required</sup> <a name="employee_type" id="@cdktf/provider-azuread.user.User.property.employeeType"></a>
+##### `employee_type`<sup>Required</sup> <a name="employee_type" id="@cdktn/provider-azuread.user.User.property.employeeType"></a>
 
 ```python
 employee_type: str
@@ -2278,7 +2278,7 @@ employee_type: str
 
 ---
 
-##### `fax_number`<sup>Required</sup> <a name="fax_number" id="@cdktf/provider-azuread.user.User.property.faxNumber"></a>
+##### `fax_number`<sup>Required</sup> <a name="fax_number" id="@cdktn/provider-azuread.user.User.property.faxNumber"></a>
 
 ```python
 fax_number: str
@@ -2288,17 +2288,17 @@ fax_number: str
 
 ---
 
-##### `force_password_change`<sup>Required</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.User.property.forcePasswordChange"></a>
+##### `force_password_change`<sup>Required</sup> <a name="force_password_change" id="@cdktn/provider-azuread.user.User.property.forcePasswordChange"></a>
 
 ```python
 force_password_change: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `given_name`<sup>Required</sup> <a name="given_name" id="@cdktf/provider-azuread.user.User.property.givenName"></a>
+##### `given_name`<sup>Required</sup> <a name="given_name" id="@cdktn/provider-azuread.user.User.property.givenName"></a>
 
 ```python
 given_name: str
@@ -2308,7 +2308,7 @@ given_name: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-azuread.user.User.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azuread.user.User.property.id"></a>
 
 ```python
 id: str
@@ -2318,7 +2318,7 @@ id: str
 
 ---
 
-##### `job_title`<sup>Required</sup> <a name="job_title" id="@cdktf/provider-azuread.user.User.property.jobTitle"></a>
+##### `job_title`<sup>Required</sup> <a name="job_title" id="@cdktn/provider-azuread.user.User.property.jobTitle"></a>
 
 ```python
 job_title: str
@@ -2328,7 +2328,7 @@ job_title: str
 
 ---
 
-##### `mail`<sup>Required</sup> <a name="mail" id="@cdktf/provider-azuread.user.User.property.mail"></a>
+##### `mail`<sup>Required</sup> <a name="mail" id="@cdktn/provider-azuread.user.User.property.mail"></a>
 
 ```python
 mail: str
@@ -2338,7 +2338,7 @@ mail: str
 
 ---
 
-##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.user.User.property.mailNickname"></a>
+##### `mail_nickname`<sup>Required</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.user.User.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -2348,7 +2348,7 @@ mail_nickname: str
 
 ---
 
-##### `manager_id`<sup>Required</sup> <a name="manager_id" id="@cdktf/provider-azuread.user.User.property.managerId"></a>
+##### `manager_id`<sup>Required</sup> <a name="manager_id" id="@cdktn/provider-azuread.user.User.property.managerId"></a>
 
 ```python
 manager_id: str
@@ -2358,7 +2358,7 @@ manager_id: str
 
 ---
 
-##### `mobile_phone`<sup>Required</sup> <a name="mobile_phone" id="@cdktf/provider-azuread.user.User.property.mobilePhone"></a>
+##### `mobile_phone`<sup>Required</sup> <a name="mobile_phone" id="@cdktn/provider-azuread.user.User.property.mobilePhone"></a>
 
 ```python
 mobile_phone: str
@@ -2368,7 +2368,7 @@ mobile_phone: str
 
 ---
 
-##### `office_location`<sup>Required</sup> <a name="office_location" id="@cdktf/provider-azuread.user.User.property.officeLocation"></a>
+##### `office_location`<sup>Required</sup> <a name="office_location" id="@cdktn/provider-azuread.user.User.property.officeLocation"></a>
 
 ```python
 office_location: str
@@ -2378,7 +2378,7 @@ office_location: str
 
 ---
 
-##### `onpremises_immutable_id`<sup>Required</sup> <a name="onpremises_immutable_id" id="@cdktf/provider-azuread.user.User.property.onpremisesImmutableId"></a>
+##### `onpremises_immutable_id`<sup>Required</sup> <a name="onpremises_immutable_id" id="@cdktn/provider-azuread.user.User.property.onpremisesImmutableId"></a>
 
 ```python
 onpremises_immutable_id: str
@@ -2388,7 +2388,7 @@ onpremises_immutable_id: str
 
 ---
 
-##### `other_mails`<sup>Required</sup> <a name="other_mails" id="@cdktf/provider-azuread.user.User.property.otherMails"></a>
+##### `other_mails`<sup>Required</sup> <a name="other_mails" id="@cdktn/provider-azuread.user.User.property.otherMails"></a>
 
 ```python
 other_mails: typing.List[str]
@@ -2398,7 +2398,7 @@ other_mails: typing.List[str]
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-azuread.user.User.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-azuread.user.User.property.password"></a>
 
 ```python
 password: str
@@ -2408,7 +2408,7 @@ password: str
 
 ---
 
-##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktf/provider-azuread.user.User.property.postalCode"></a>
+##### `postal_code`<sup>Required</sup> <a name="postal_code" id="@cdktn/provider-azuread.user.User.property.postalCode"></a>
 
 ```python
 postal_code: str
@@ -2418,7 +2418,7 @@ postal_code: str
 
 ---
 
-##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktf/provider-azuread.user.User.property.preferredLanguage"></a>
+##### `preferred_language`<sup>Required</sup> <a name="preferred_language" id="@cdktn/provider-azuread.user.User.property.preferredLanguage"></a>
 
 ```python
 preferred_language: str
@@ -2428,17 +2428,17 @@ preferred_language: str
 
 ---
 
-##### `show_in_address_list`<sup>Required</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.User.property.showInAddressList"></a>
+##### `show_in_address_list`<sup>Required</sup> <a name="show_in_address_list" id="@cdktn/provider-azuread.user.User.property.showInAddressList"></a>
 
 ```python
 show_in_address_list: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-azuread.user.User.property.state"></a>
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-azuread.user.User.property.state"></a>
 
 ```python
 state: str
@@ -2448,7 +2448,7 @@ state: str
 
 ---
 
-##### `street_address`<sup>Required</sup> <a name="street_address" id="@cdktf/provider-azuread.user.User.property.streetAddress"></a>
+##### `street_address`<sup>Required</sup> <a name="street_address" id="@cdktn/provider-azuread.user.User.property.streetAddress"></a>
 
 ```python
 street_address: str
@@ -2458,7 +2458,7 @@ street_address: str
 
 ---
 
-##### `surname`<sup>Required</sup> <a name="surname" id="@cdktf/provider-azuread.user.User.property.surname"></a>
+##### `surname`<sup>Required</sup> <a name="surname" id="@cdktn/provider-azuread.user.User.property.surname"></a>
 
 ```python
 surname: str
@@ -2468,7 +2468,7 @@ surname: str
 
 ---
 
-##### `usage_location`<sup>Required</sup> <a name="usage_location" id="@cdktf/provider-azuread.user.User.property.usageLocation"></a>
+##### `usage_location`<sup>Required</sup> <a name="usage_location" id="@cdktn/provider-azuread.user.User.property.usageLocation"></a>
 
 ```python
 usage_location: str
@@ -2478,7 +2478,7 @@ usage_location: str
 
 ---
 
-##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktf/provider-azuread.user.User.property.userPrincipalName"></a>
+##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktn/provider-azuread.user.User.property.userPrincipalName"></a>
 
 ```python
 user_principal_name: str
@@ -2492,11 +2492,11 @@ user_principal_name: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.User.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.User.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-azuread.user.User.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-azuread.user.User.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -2508,12 +2508,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### UserConfig <a name="UserConfig" id="@cdktf/provider-azuread.user.UserConfig"></a>
+### UserConfig <a name="UserConfig" id="@cdktn/provider-azuread.user.UserConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.user.UserConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.user.UserConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.UserConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2568,125 +2568,125 @@ user.UserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the account should be enabled. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.city">city</a></code> | <code>str</code> | The city in which the user is located. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.companyName">company_name</a></code> | <code>str</code> | The company name which the user is associated. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | Whether consent has been obtained for minors. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the users password is exempt from expiring. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mail">mail</a></code> | <code>str</code> | The SMTP address for the user. Cannot be unset. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.managerId">manager_id</a></code> | <code>str</code> | The object ID of the user's manager. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.mobilePhone">mobile_phone</a></code> | <code>str</code> | The primary cellular telephone number for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.officeLocation">office_location</a></code> | <code>str</code> | The office location in the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | Additional email addresses for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.password">password</a></code> | <code>str</code> | The password for the user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-azuread.user.UserConfig.property.usageLocation">usage_location</a></code> | <code>str</code> | The usage location of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | The name to display in the address book for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.userPrincipalName">user_principal_name</a></code> | <code>str</code> | The user principal name (UPN) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.accountEnabled">account_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the account should be enabled. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.ageGroup">age_group</a></code> | <code>str</code> | The age group of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.businessPhones">business_phones</a></code> | <code>typing.List[str]</code> | The telephone numbers for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.city">city</a></code> | <code>str</code> | The city in which the user is located. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.companyName">company_name</a></code> | <code>str</code> | The company name which the user is associated. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.consentProvidedForMinor">consent_provided_for_minor</a></code> | <code>str</code> | Whether consent has been obtained for minors. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.costCenter">cost_center</a></code> | <code>str</code> | The cost center associated with the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.country">country</a></code> | <code>str</code> | The country/region in which the user is located, e.g. `US` or `UK`. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.department">department</a></code> | <code>str</code> | The name for the department in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.disablePasswordExpiration">disable_password_expiration</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the users password is exempt from expiring. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.disableStrongPassword">disable_strong_password</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the user is allowed weaker passwords than the default policy to be specified. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.division">division</a></code> | <code>str</code> | The name of the division in which the user works. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeHireDate">employee_hire_date</a></code> | <code>str</code> | The hire date of the user, formatted as an RFC3339 date string (e.g. `2018-01-01T01:02:03Z`). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeId">employee_id</a></code> | <code>str</code> | The employee identifier assigned to the user by the organisation. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.employeeType">employee_type</a></code> | <code>str</code> | Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.faxNumber">fax_number</a></code> | <code>str</code> | The fax number of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.forcePasswordChange">force_password_change</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the user is forced to change the password during the next sign-in. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.givenName">given_name</a></code> | <code>str</code> | The given name (first name) of the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.jobTitle">job_title</a></code> | <code>str</code> | The user’s job title. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mail">mail</a></code> | <code>str</code> | The SMTP address for the user. Cannot be unset. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mailNickname">mail_nickname</a></code> | <code>str</code> | The mail alias for the user. Defaults to the user name part of the user principal name (UPN). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.managerId">manager_id</a></code> | <code>str</code> | The object ID of the user's manager. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.mobilePhone">mobile_phone</a></code> | <code>str</code> | The primary cellular telephone number for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.officeLocation">office_location</a></code> | <code>str</code> | The office location in the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.onpremisesImmutableId">onpremises_immutable_id</a></code> | <code>str</code> | The value used to associate an on-premise Active Directory user account with their Azure AD user object. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.otherMails">other_mails</a></code> | <code>typing.List[str]</code> | Additional email addresses for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.password">password</a></code> | <code>str</code> | The password for the user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.postalCode">postal_code</a></code> | <code>str</code> | The postal code for the user's postal address. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.preferredLanguage">preferred_language</a></code> | <code>str</code> | The user's preferred language, in ISO 639-1 notation. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.showInAddressList">show_in_address_list</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the Outlook global address list should include this user. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.state">state</a></code> | <code>str</code> | The state or province in the user's address. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.streetAddress">street_address</a></code> | <code>str</code> | The street address of the user's place of business. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.surname">surname</a></code> | <code>str</code> | The user's surname (family name or last name). |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azuread.user.UserConfig.property.usageLocation">usage_location</a></code> | <code>str</code> | The usage location of the user. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-azuread.user.UserConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azuread.user.UserConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-azuread.user.UserConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azuread.user.UserConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-azuread.user.UserConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azuread.user.UserConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-azuread.user.UserConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azuread.user.UserConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-azuread.user.UserConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azuread.user.UserConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-azuread.user.UserConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azuread.user.UserConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-azuread.user.UserConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azuread.user.UserConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-azuread.user.UserConfig.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.user.UserConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -2700,7 +2700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktf/provider-azuread.user.UserConfig.property.userPrincipalName"></a>
+##### `user_principal_name`<sup>Required</sup> <a name="user_principal_name" id="@cdktn/provider-azuread.user.UserConfig.property.userPrincipalName"></a>
 
 ```python
 user_principal_name: str
@@ -2714,13 +2714,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktf/provider-azuread.user.UserConfig.property.accountEnabled"></a>
+##### `account_enabled`<sup>Optional</sup> <a name="account_enabled" id="@cdktn/provider-azuread.user.UserConfig.property.accountEnabled"></a>
 
 ```python
 account_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the account should be enabled.
 
@@ -2728,7 +2728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `age_group`<sup>Optional</sup> <a name="age_group" id="@cdktf/provider-azuread.user.UserConfig.property.ageGroup"></a>
+##### `age_group`<sup>Optional</sup> <a name="age_group" id="@cdktn/provider-azuread.user.UserConfig.property.ageGroup"></a>
 
 ```python
 age_group: str
@@ -2742,7 +2742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `business_phones`<sup>Optional</sup> <a name="business_phones" id="@cdktf/provider-azuread.user.UserConfig.property.businessPhones"></a>
+##### `business_phones`<sup>Optional</sup> <a name="business_phones" id="@cdktn/provider-azuread.user.UserConfig.property.businessPhones"></a>
 
 ```python
 business_phones: typing.List[str]
@@ -2758,7 +2758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `city`<sup>Optional</sup> <a name="city" id="@cdktf/provider-azuread.user.UserConfig.property.city"></a>
+##### `city`<sup>Optional</sup> <a name="city" id="@cdktn/provider-azuread.user.UserConfig.property.city"></a>
 
 ```python
 city: str
@@ -2772,7 +2772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktf/provider-azuread.user.UserConfig.property.companyName"></a>
+##### `company_name`<sup>Optional</sup> <a name="company_name" id="@cdktn/provider-azuread.user.UserConfig.property.companyName"></a>
 
 ```python
 company_name: str
@@ -2788,7 +2788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `consent_provided_for_minor`<sup>Optional</sup> <a name="consent_provided_for_minor" id="@cdktf/provider-azuread.user.UserConfig.property.consentProvidedForMinor"></a>
+##### `consent_provided_for_minor`<sup>Optional</sup> <a name="consent_provided_for_minor" id="@cdktn/provider-azuread.user.UserConfig.property.consentProvidedForMinor"></a>
 
 ```python
 consent_provided_for_minor: str
@@ -2802,7 +2802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cost_center`<sup>Optional</sup> <a name="cost_center" id="@cdktf/provider-azuread.user.UserConfig.property.costCenter"></a>
+##### `cost_center`<sup>Optional</sup> <a name="cost_center" id="@cdktn/provider-azuread.user.UserConfig.property.costCenter"></a>
 
 ```python
 cost_center: str
@@ -2816,7 +2816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `country`<sup>Optional</sup> <a name="country" id="@cdktf/provider-azuread.user.UserConfig.property.country"></a>
+##### `country`<sup>Optional</sup> <a name="country" id="@cdktn/provider-azuread.user.UserConfig.property.country"></a>
 
 ```python
 country: str
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `department`<sup>Optional</sup> <a name="department" id="@cdktf/provider-azuread.user.UserConfig.property.department"></a>
+##### `department`<sup>Optional</sup> <a name="department" id="@cdktn/provider-azuread.user.UserConfig.property.department"></a>
 
 ```python
 department: str
@@ -2844,13 +2844,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktf/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
+##### `disable_password_expiration`<sup>Optional</sup> <a name="disable_password_expiration" id="@cdktn/provider-azuread.user.UserConfig.property.disablePasswordExpiration"></a>
 
 ```python
 disable_password_expiration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the users password is exempt from expiring.
 
@@ -2858,13 +2858,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktf/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
+##### `disable_strong_password`<sup>Optional</sup> <a name="disable_strong_password" id="@cdktn/provider-azuread.user.UserConfig.property.disableStrongPassword"></a>
 
 ```python
 disable_strong_password: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the user is allowed weaker passwords than the default policy to be specified.
 
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `division`<sup>Optional</sup> <a name="division" id="@cdktf/provider-azuread.user.UserConfig.property.division"></a>
+##### `division`<sup>Optional</sup> <a name="division" id="@cdktn/provider-azuread.user.UserConfig.property.division"></a>
 
 ```python
 division: str
@@ -2886,7 +2886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_hire_date`<sup>Optional</sup> <a name="employee_hire_date" id="@cdktf/provider-azuread.user.UserConfig.property.employeeHireDate"></a>
+##### `employee_hire_date`<sup>Optional</sup> <a name="employee_hire_date" id="@cdktn/provider-azuread.user.UserConfig.property.employeeHireDate"></a>
 
 ```python
 employee_hire_date: str
@@ -2900,7 +2900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_id`<sup>Optional</sup> <a name="employee_id" id="@cdktf/provider-azuread.user.UserConfig.property.employeeId"></a>
+##### `employee_id`<sup>Optional</sup> <a name="employee_id" id="@cdktn/provider-azuread.user.UserConfig.property.employeeId"></a>
 
 ```python
 employee_id: str
@@ -2914,7 +2914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `employee_type`<sup>Optional</sup> <a name="employee_type" id="@cdktf/provider-azuread.user.UserConfig.property.employeeType"></a>
+##### `employee_type`<sup>Optional</sup> <a name="employee_type" id="@cdktn/provider-azuread.user.UserConfig.property.employeeType"></a>
 
 ```python
 employee_type: str
@@ -2928,7 +2928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `fax_number`<sup>Optional</sup> <a name="fax_number" id="@cdktf/provider-azuread.user.UserConfig.property.faxNumber"></a>
+##### `fax_number`<sup>Optional</sup> <a name="fax_number" id="@cdktn/provider-azuread.user.UserConfig.property.faxNumber"></a>
 
 ```python
 fax_number: str
@@ -2942,13 +2942,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktf/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
+##### `force_password_change`<sup>Optional</sup> <a name="force_password_change" id="@cdktn/provider-azuread.user.UserConfig.property.forcePasswordChange"></a>
 
 ```python
 force_password_change: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the user is forced to change the password during the next sign-in.
 
@@ -2958,7 +2958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `given_name`<sup>Optional</sup> <a name="given_name" id="@cdktf/provider-azuread.user.UserConfig.property.givenName"></a>
+##### `given_name`<sup>Optional</sup> <a name="given_name" id="@cdktn/provider-azuread.user.UserConfig.property.givenName"></a>
 
 ```python
 given_name: str
@@ -2972,7 +2972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-azuread.user.UserConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-azuread.user.UserConfig.property.id"></a>
 
 ```python
 id: str
@@ -2987,7 +2987,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `job_title`<sup>Optional</sup> <a name="job_title" id="@cdktf/provider-azuread.user.UserConfig.property.jobTitle"></a>
+##### `job_title`<sup>Optional</sup> <a name="job_title" id="@cdktn/provider-azuread.user.UserConfig.property.jobTitle"></a>
 
 ```python
 job_title: str
@@ -3001,7 +3001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail`<sup>Optional</sup> <a name="mail" id="@cdktf/provider-azuread.user.UserConfig.property.mail"></a>
+##### `mail`<sup>Optional</sup> <a name="mail" id="@cdktn/provider-azuread.user.UserConfig.property.mail"></a>
 
 ```python
 mail: str
@@ -3015,7 +3015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktf/provider-azuread.user.UserConfig.property.mailNickname"></a>
+##### `mail_nickname`<sup>Optional</sup> <a name="mail_nickname" id="@cdktn/provider-azuread.user.UserConfig.property.mailNickname"></a>
 
 ```python
 mail_nickname: str
@@ -3029,7 +3029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `manager_id`<sup>Optional</sup> <a name="manager_id" id="@cdktf/provider-azuread.user.UserConfig.property.managerId"></a>
+##### `manager_id`<sup>Optional</sup> <a name="manager_id" id="@cdktn/provider-azuread.user.UserConfig.property.managerId"></a>
 
 ```python
 manager_id: str
@@ -3043,7 +3043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mobile_phone`<sup>Optional</sup> <a name="mobile_phone" id="@cdktf/provider-azuread.user.UserConfig.property.mobilePhone"></a>
+##### `mobile_phone`<sup>Optional</sup> <a name="mobile_phone" id="@cdktn/provider-azuread.user.UserConfig.property.mobilePhone"></a>
 
 ```python
 mobile_phone: str
@@ -3057,7 +3057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `office_location`<sup>Optional</sup> <a name="office_location" id="@cdktf/provider-azuread.user.UserConfig.property.officeLocation"></a>
+##### `office_location`<sup>Optional</sup> <a name="office_location" id="@cdktn/provider-azuread.user.UserConfig.property.officeLocation"></a>
 
 ```python
 office_location: str
@@ -3071,7 +3071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `onpremises_immutable_id`<sup>Optional</sup> <a name="onpremises_immutable_id" id="@cdktf/provider-azuread.user.UserConfig.property.onpremisesImmutableId"></a>
+##### `onpremises_immutable_id`<sup>Optional</sup> <a name="onpremises_immutable_id" id="@cdktn/provider-azuread.user.UserConfig.property.onpremisesImmutableId"></a>
 
 ```python
 onpremises_immutable_id: str
@@ -3087,7 +3087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `other_mails`<sup>Optional</sup> <a name="other_mails" id="@cdktf/provider-azuread.user.UserConfig.property.otherMails"></a>
+##### `other_mails`<sup>Optional</sup> <a name="other_mails" id="@cdktn/provider-azuread.user.UserConfig.property.otherMails"></a>
 
 ```python
 other_mails: typing.List[str]
@@ -3101,7 +3101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-azuread.user.UserConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-azuread.user.UserConfig.property.password"></a>
 
 ```python
 password: str
@@ -3117,7 +3117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `postal_code`<sup>Optional</sup> <a name="postal_code" id="@cdktf/provider-azuread.user.UserConfig.property.postalCode"></a>
+##### `postal_code`<sup>Optional</sup> <a name="postal_code" id="@cdktn/provider-azuread.user.UserConfig.property.postalCode"></a>
 
 ```python
 postal_code: str
@@ -3133,7 +3133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `preferred_language`<sup>Optional</sup> <a name="preferred_language" id="@cdktf/provider-azuread.user.UserConfig.property.preferredLanguage"></a>
+##### `preferred_language`<sup>Optional</sup> <a name="preferred_language" id="@cdktn/provider-azuread.user.UserConfig.property.preferredLanguage"></a>
 
 ```python
 preferred_language: str
@@ -3147,13 +3147,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktf/provider-azuread.user.UserConfig.property.showInAddressList"></a>
+##### `show_in_address_list`<sup>Optional</sup> <a name="show_in_address_list" id="@cdktn/provider-azuread.user.UserConfig.property.showInAddressList"></a>
 
 ```python
 show_in_address_list: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not the Outlook global address list should include this user.
 
@@ -3161,7 +3161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `state`<sup>Optional</sup> <a name="state" id="@cdktf/provider-azuread.user.UserConfig.property.state"></a>
+##### `state`<sup>Optional</sup> <a name="state" id="@cdktn/provider-azuread.user.UserConfig.property.state"></a>
 
 ```python
 state: str
@@ -3175,7 +3175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `street_address`<sup>Optional</sup> <a name="street_address" id="@cdktf/provider-azuread.user.UserConfig.property.streetAddress"></a>
+##### `street_address`<sup>Optional</sup> <a name="street_address" id="@cdktn/provider-azuread.user.UserConfig.property.streetAddress"></a>
 
 ```python
 street_address: str
@@ -3189,7 +3189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `surname`<sup>Optional</sup> <a name="surname" id="@cdktf/provider-azuread.user.UserConfig.property.surname"></a>
+##### `surname`<sup>Optional</sup> <a name="surname" id="@cdktn/provider-azuread.user.UserConfig.property.surname"></a>
 
 ```python
 surname: str
@@ -3203,13 +3203,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-azuread.user.UserConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-azuread.user.UserConfig.property.timeouts"></a>
 
 ```python
 timeouts: UserTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 timeouts block.
 
@@ -3217,7 +3217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `usage_location`<sup>Optional</sup> <a name="usage_location" id="@cdktf/provider-azuread.user.UserConfig.property.usageLocation"></a>
+##### `usage_location`<sup>Optional</sup> <a name="usage_location" id="@cdktn/provider-azuread.user.UserConfig.property.usageLocation"></a>
 
 ```python
 usage_location: str
@@ -3233,12 +3233,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### UserTimeouts <a name="UserTimeouts" id="@cdktf/provider-azuread.user.UserTimeouts"></a>
+### UserTimeouts <a name="UserTimeouts" id="@cdktn/provider-azuread.user.UserTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-azuread.user.UserTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.user.UserTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.UserTimeouts(
   create: str = None,
@@ -3252,14 +3252,14 @@ user.UserTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#create User#create}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#delete User#delete}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#read User#read}. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#update User#update}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#delete User#delete}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#read User#read}. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/user#update User#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-azuread.user.UserTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-azuread.user.UserTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -3271,7 +3271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-azuread.user.UserTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-azuread.user.UserTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -3283,7 +3283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-azuread.user.UserTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-azuread.user.UserTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -3295,7 +3295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-azuread.user.UserTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-azuread.user.UserTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -3309,12 +3309,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### UserTimeoutsOutputReference <a name="UserTimeoutsOutputReference" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference"></a>
+### UserTimeoutsOutputReference <a name="UserTimeoutsOutputReference" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_azuread import user
+from cdktn_provider_azuread import user
 
 user.UserTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3324,20 +3324,20 @@ user.UserTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3349,33 +3349,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3383,13 +3383,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3397,13 +3397,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3411,13 +3411,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3425,13 +3425,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3439,13 +3439,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3453,13 +3453,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3467,13 +3467,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3481,13 +3481,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3495,13 +3495,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3509,13 +3509,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3525,13 +3525,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3541,25 +3541,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -3570,21 +3570,21 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3598,7 +3598,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3608,7 +3608,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -3618,7 +3618,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -3628,7 +3628,7 @@ delete_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -3638,7 +3638,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -3648,7 +3648,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -3658,7 +3658,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -3668,7 +3668,7 @@ delete: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -3678,7 +3678,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -3688,13 +3688,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | UserTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-azuread.user.UserTimeouts">UserTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azuread.user.UserTimeouts">UserTimeouts</a>
 
 ---
 

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NamedLocationConfig extends cdktf.TerraformMetaArguments {
+export interface NamedLocationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/named_location#display_name NamedLocation#display_name}
   */
@@ -54,42 +54,42 @@ export interface NamedLocationCountry {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/named_location#include_unknown_countries_and_regions NamedLocation#include_unknown_countries_and_regions}
   */
-  readonly includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable;
+  readonly includeUnknownCountriesAndRegions?: boolean | cdktn.IResolvable;
 }
 
 export function namedLocationCountryToTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    countries_and_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.countriesAndRegions),
-    country_lookup_method: cdktf.stringToTerraform(struct!.countryLookupMethod),
-    include_unknown_countries_and_regions: cdktf.booleanToTerraform(struct!.includeUnknownCountriesAndRegions),
+    countries_and_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.countriesAndRegions),
+    country_lookup_method: cdktn.stringToTerraform(struct!.countryLookupMethod),
+    include_unknown_countries_and_regions: cdktn.booleanToTerraform(struct!.includeUnknownCountriesAndRegions),
   }
 }
 
 
 export function namedLocationCountryToHclTerraform(struct?: NamedLocationCountryOutputReference | NamedLocationCountry): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     countries_and_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.countriesAndRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.countriesAndRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     country_lookup_method: {
-      value: cdktf.stringToHclTerraform(struct!.countryLookupMethod),
+      value: cdktn.stringToHclTerraform(struct!.countryLookupMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_unknown_countries_and_regions: {
-      value: cdktf.booleanToHclTerraform(struct!.includeUnknownCountriesAndRegions),
+      value: cdktn.booleanToHclTerraform(struct!.includeUnknownCountriesAndRegions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -100,14 +100,14 @@ export function namedLocationCountryToHclTerraform(struct?: NamedLocationCountry
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
+export class NamedLocationCountryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,11 +174,11 @@ export class NamedLocationCountryOutputReference extends cdktf.ComplexObject {
   }
 
   // include_unknown_countries_and_regions - computed: false, optional: true, required: false
-  private _includeUnknownCountriesAndRegions?: boolean | cdktf.IResolvable; 
+  private _includeUnknownCountriesAndRegions?: boolean | cdktn.IResolvable; 
   public get includeUnknownCountriesAndRegions() {
     return this.getBooleanAttribute('include_unknown_countries_and_regions');
   }
-  public set includeUnknownCountriesAndRegions(value: boolean | cdktf.IResolvable) {
+  public set includeUnknownCountriesAndRegions(value: boolean | cdktn.IResolvable) {
     this._includeUnknownCountriesAndRegions = value;
   }
   public resetIncludeUnknownCountriesAndRegions() {
@@ -197,35 +197,35 @@ export interface NamedLocationIp {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/named_location#trusted NamedLocation#trusted}
   */
-  readonly trusted?: boolean | cdktf.IResolvable;
+  readonly trusted?: boolean | cdktn.IResolvable;
 }
 
 export function namedLocationIpToTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipRanges),
-    trusted: cdktf.booleanToTerraform(struct!.trusted),
+    ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
+    trusted: cdktn.booleanToTerraform(struct!.trusted),
   }
 }
 
 
 export function namedLocationIpToHclTerraform(struct?: NamedLocationIpOutputReference | NamedLocationIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     trusted: {
-      value: cdktf.booleanToHclTerraform(struct!.trusted),
+      value: cdktn.booleanToHclTerraform(struct!.trusted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -236,14 +236,14 @@ export function namedLocationIpToHclTerraform(struct?: NamedLocationIpOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
+export class NamedLocationIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,11 +288,11 @@ export class NamedLocationIpOutputReference extends cdktf.ComplexObject {
   }
 
   // trusted - computed: false, optional: true, required: false
-  private _trusted?: boolean | cdktf.IResolvable; 
+  private _trusted?: boolean | cdktn.IResolvable; 
   public get trusted() {
     return this.getBooleanAttribute('trusted');
   }
-  public set trusted(value: boolean | cdktf.IResolvable) {
+  public set trusted(value: boolean | cdktn.IResolvable) {
     this._trusted = value;
   }
   public resetTrusted() {
@@ -322,46 +322,46 @@ export interface NamedLocationTimeouts {
   readonly update?: string;
 }
 
-export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function namedLocationTimeoutsToTerraform(struct?: NamedLocationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function namedLocationTimeoutsToHclTerraform(struct?: NamedLocationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function namedLocationTimeoutsToHclTerraform(struct?: NamedLocationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -372,19 +372,19 @@ export function namedLocationTimeoutsToHclTerraform(struct?: NamedLocationTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NamedLocationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NamedLocationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NamedLocationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -409,7 +409,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NamedLocationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NamedLocationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -418,7 +418,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -500,7 +500,7 @@ export class NamedLocationTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/named_location azuread_named_location}
 */
-export class NamedLocation extends cdktf.TerraformResource {
+export class NamedLocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -511,14 +511,14 @@ export class NamedLocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NamedLocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NamedLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NamedLocation to import
   * @param importFromId The id of the existing NamedLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/named_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NamedLocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_named_location", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_named_location", importId: importFromId, provider });
       }
 
   // ===========
@@ -647,8 +647,8 @@ export class NamedLocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
       country: namedLocationCountryToTerraform(this._country.internalValue),
       ip: namedLocationIpToTerraform(this._ip.internalValue),
       timeouts: namedLocationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -658,13 +658,13 @@ export class NamedLocation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

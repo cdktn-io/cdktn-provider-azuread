@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments {
+export interface GroupWithoutMembersConfig extends cdktn.TerraformMetaArguments {
   /**
   * The administrative unit IDs in which the group should be. If empty, the group will be created at the tenant level.
   *
@@ -23,13 +23,13 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#assignable_to_role GroupWithoutMembers#assignable_to_role}
   */
-  readonly assignableToRole?: boolean | cdktf.IResolvable;
+  readonly assignableToRole?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#auto_subscribe_new_members GroupWithoutMembers#auto_subscribe_new_members}
   */
-  readonly autoSubscribeNewMembers?: boolean | cdktf.IResolvable;
+  readonly autoSubscribeNewMembers?: boolean | cdktn.IResolvable;
   /**
   * The group behaviours for a Microsoft 365 group
   *
@@ -53,19 +53,19 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#external_senders_allowed GroupWithoutMembers#external_senders_allowed}
   */
-  readonly externalSendersAllowed?: boolean | cdktf.IResolvable;
+  readonly externalSendersAllowed?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#hide_from_address_lists GroupWithoutMembers#hide_from_address_lists}
   */
-  readonly hideFromAddressLists?: boolean | cdktf.IResolvable;
+  readonly hideFromAddressLists?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#hide_from_outlook_clients GroupWithoutMembers#hide_from_outlook_clients}
   */
-  readonly hideFromOutlookClients?: boolean | cdktf.IResolvable;
+  readonly hideFromOutlookClients?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#id GroupWithoutMembers#id}
   *
@@ -78,7 +78,7 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#mail_enabled GroupWithoutMembers#mail_enabled}
   */
-  readonly mailEnabled?: boolean | cdktf.IResolvable;
+  readonly mailEnabled?: boolean | cdktn.IResolvable;
   /**
   * The mail alias for the group, unique in the organisation
   *
@@ -102,7 +102,7 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#prevent_duplicate_names GroupWithoutMembers#prevent_duplicate_names}
   */
-  readonly preventDuplicateNames?: boolean | cdktf.IResolvable;
+  readonly preventDuplicateNames?: boolean | cdktn.IResolvable;
   /**
   * The group provisioning options for a Microsoft 365 group
   *
@@ -114,7 +114,7 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#security_enabled GroupWithoutMembers#security_enabled}
   */
-  readonly securityEnabled?: boolean | cdktf.IResolvable;
+  readonly securityEnabled?: boolean | cdktn.IResolvable;
   /**
   * The colour theme for a Microsoft 365 group
   *
@@ -138,7 +138,7 @@ export interface GroupWithoutMembersConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#writeback_enabled GroupWithoutMembers#writeback_enabled}
   */
-  readonly writebackEnabled?: boolean | cdktf.IResolvable;
+  readonly writebackEnabled?: boolean | cdktn.IResolvable;
   /**
   * dynamic_membership block
   *
@@ -156,7 +156,7 @@ export interface GroupWithoutMembersDynamicMembership {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'
   *
@@ -166,31 +166,31 @@ export interface GroupWithoutMembersDynamicMembership {
 }
 
 export function groupWithoutMembersDynamicMembershipToTerraform(struct?: GroupWithoutMembersDynamicMembershipOutputReference | GroupWithoutMembersDynamicMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    rule: cdktf.stringToTerraform(struct!.rule),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    rule: cdktn.stringToTerraform(struct!.rule),
   }
 }
 
 
 export function groupWithoutMembersDynamicMembershipToHclTerraform(struct?: GroupWithoutMembersDynamicMembershipOutputReference | GroupWithoutMembersDynamicMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule: {
-      value: cdktf.stringToHclTerraform(struct!.rule),
+      value: cdktn.stringToHclTerraform(struct!.rule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -201,14 +201,14 @@ export function groupWithoutMembersDynamicMembershipToHclTerraform(struct?: Grou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupWithoutMembersDynamicMembershipOutputReference extends cdktf.ComplexObject {
+export class GroupWithoutMembersDynamicMembershipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -240,11 +240,11 @@ export class GroupWithoutMembersDynamicMembershipOutputReference extends cdktf.C
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -284,46 +284,46 @@ export interface GroupWithoutMembersTimeouts {
   readonly update?: string;
 }
 
-export function groupWithoutMembersTimeoutsToTerraform(struct?: GroupWithoutMembersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupWithoutMembersTimeoutsToTerraform(struct?: GroupWithoutMembersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function groupWithoutMembersTimeoutsToHclTerraform(struct?: GroupWithoutMembersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function groupWithoutMembersTimeoutsToHclTerraform(struct?: GroupWithoutMembersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,19 +334,19 @@ export function groupWithoutMembersTimeoutsToHclTerraform(struct?: GroupWithoutM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GroupWithoutMembersTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GroupWithoutMembersTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GroupWithoutMembersTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GroupWithoutMembersTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -371,7 +371,7 @@ export class GroupWithoutMembersTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupWithoutMembersTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GroupWithoutMembersTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -380,7 +380,7 @@ export class GroupWithoutMembersTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -462,7 +462,7 @@ export class GroupWithoutMembersTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members azuread_group_without_members}
 */
-export class GroupWithoutMembers extends cdktf.TerraformResource {
+export class GroupWithoutMembers extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -473,14 +473,14 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GroupWithoutMembers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GroupWithoutMembers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupWithoutMembers to import
   * @param importFromId The id of the existing GroupWithoutMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/group_without_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupWithoutMembers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group_without_members", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_group_without_members", importId: importFromId, provider });
       }
 
   // ===========
@@ -542,7 +542,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // administrative_unit_ids - computed: false, optional: true, required: false
   private _administrativeUnitIds?: string[]; 
   public get administrativeUnitIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('administrative_unit_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('administrative_unit_ids'));
   }
   public set administrativeUnitIds(value: string[]) {
     this._administrativeUnitIds = value;
@@ -556,11 +556,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // assignable_to_role - computed: false, optional: true, required: false
-  private _assignableToRole?: boolean | cdktf.IResolvable; 
+  private _assignableToRole?: boolean | cdktn.IResolvable; 
   public get assignableToRole() {
     return this.getBooleanAttribute('assignable_to_role');
   }
-  public set assignableToRole(value: boolean | cdktf.IResolvable) {
+  public set assignableToRole(value: boolean | cdktn.IResolvable) {
     this._assignableToRole = value;
   }
   public resetAssignableToRole() {
@@ -572,11 +572,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // auto_subscribe_new_members - computed: true, optional: true, required: false
-  private _autoSubscribeNewMembers?: boolean | cdktf.IResolvable; 
+  private _autoSubscribeNewMembers?: boolean | cdktn.IResolvable; 
   public get autoSubscribeNewMembers() {
     return this.getBooleanAttribute('auto_subscribe_new_members');
   }
-  public set autoSubscribeNewMembers(value: boolean | cdktf.IResolvable) {
+  public set autoSubscribeNewMembers(value: boolean | cdktn.IResolvable) {
     this._autoSubscribeNewMembers = value;
   }
   public resetAutoSubscribeNewMembers() {
@@ -590,7 +590,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // behaviors - computed: false, optional: true, required: false
   private _behaviors?: string[]; 
   public get behaviors() {
-    return cdktf.Fn.tolist(this.getListAttribute('behaviors'));
+    return cdktn.Fn.tolist(this.getListAttribute('behaviors'));
   }
   public set behaviors(value: string[]) {
     this._behaviors = value;
@@ -633,11 +633,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // external_senders_allowed - computed: true, optional: true, required: false
-  private _externalSendersAllowed?: boolean | cdktf.IResolvable; 
+  private _externalSendersAllowed?: boolean | cdktn.IResolvable; 
   public get externalSendersAllowed() {
     return this.getBooleanAttribute('external_senders_allowed');
   }
-  public set externalSendersAllowed(value: boolean | cdktf.IResolvable) {
+  public set externalSendersAllowed(value: boolean | cdktn.IResolvable) {
     this._externalSendersAllowed = value;
   }
   public resetExternalSendersAllowed() {
@@ -649,11 +649,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // hide_from_address_lists - computed: true, optional: true, required: false
-  private _hideFromAddressLists?: boolean | cdktf.IResolvable; 
+  private _hideFromAddressLists?: boolean | cdktn.IResolvable; 
   public get hideFromAddressLists() {
     return this.getBooleanAttribute('hide_from_address_lists');
   }
-  public set hideFromAddressLists(value: boolean | cdktf.IResolvable) {
+  public set hideFromAddressLists(value: boolean | cdktn.IResolvable) {
     this._hideFromAddressLists = value;
   }
   public resetHideFromAddressLists() {
@@ -665,11 +665,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // hide_from_outlook_clients - computed: true, optional: true, required: false
-  private _hideFromOutlookClients?: boolean | cdktf.IResolvable; 
+  private _hideFromOutlookClients?: boolean | cdktn.IResolvable; 
   public get hideFromOutlookClients() {
     return this.getBooleanAttribute('hide_from_outlook_clients');
   }
-  public set hideFromOutlookClients(value: boolean | cdktf.IResolvable) {
+  public set hideFromOutlookClients(value: boolean | cdktn.IResolvable) {
     this._hideFromOutlookClients = value;
   }
   public resetHideFromOutlookClients() {
@@ -702,11 +702,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // mail_enabled - computed: false, optional: true, required: false
-  private _mailEnabled?: boolean | cdktf.IResolvable; 
+  private _mailEnabled?: boolean | cdktn.IResolvable; 
   public get mailEnabled() {
     return this.getBooleanAttribute('mail_enabled');
   }
-  public set mailEnabled(value: boolean | cdktf.IResolvable) {
+  public set mailEnabled(value: boolean | cdktn.IResolvable) {
     this._mailEnabled = value;
   }
   public resetMailEnabled() {
@@ -782,7 +782,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // owners - computed: true, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
-    return cdktf.Fn.tolist(this.getListAttribute('owners'));
+    return cdktn.Fn.tolist(this.getListAttribute('owners'));
   }
   public set owners(value: string[]) {
     this._owners = value;
@@ -801,11 +801,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // prevent_duplicate_names - computed: false, optional: true, required: false
-  private _preventDuplicateNames?: boolean | cdktf.IResolvable; 
+  private _preventDuplicateNames?: boolean | cdktn.IResolvable; 
   public get preventDuplicateNames() {
     return this.getBooleanAttribute('prevent_duplicate_names');
   }
-  public set preventDuplicateNames(value: boolean | cdktf.IResolvable) {
+  public set preventDuplicateNames(value: boolean | cdktn.IResolvable) {
     this._preventDuplicateNames = value;
   }
   public resetPreventDuplicateNames() {
@@ -819,7 +819,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // provisioning_options - computed: false, optional: true, required: false
   private _provisioningOptions?: string[]; 
   public get provisioningOptions() {
-    return cdktf.Fn.tolist(this.getListAttribute('provisioning_options'));
+    return cdktn.Fn.tolist(this.getListAttribute('provisioning_options'));
   }
   public set provisioningOptions(value: string[]) {
     this._provisioningOptions = value;
@@ -838,11 +838,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // security_enabled - computed: false, optional: true, required: false
-  private _securityEnabled?: boolean | cdktf.IResolvable; 
+  private _securityEnabled?: boolean | cdktn.IResolvable; 
   public get securityEnabled() {
     return this.getBooleanAttribute('security_enabled');
   }
-  public set securityEnabled(value: boolean | cdktf.IResolvable) {
+  public set securityEnabled(value: boolean | cdktn.IResolvable) {
     this._securityEnabled = value;
   }
   public resetSecurityEnabled() {
@@ -872,7 +872,7 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   // types - computed: false, optional: true, required: false
   private _types?: string[]; 
   public get types() {
-    return cdktf.Fn.tolist(this.getListAttribute('types'));
+    return cdktn.Fn.tolist(this.getListAttribute('types'));
   }
   public set types(value: string[]) {
     this._types = value;
@@ -902,11 +902,11 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   }
 
   // writeback_enabled - computed: false, optional: true, required: false
-  private _writebackEnabled?: boolean | cdktf.IResolvable; 
+  private _writebackEnabled?: boolean | cdktn.IResolvable; 
   public get writebackEnabled() {
     return this.getBooleanAttribute('writeback_enabled');
   }
-  public set writebackEnabled(value: boolean | cdktf.IResolvable) {
+  public set writebackEnabled(value: boolean | cdktn.IResolvable) {
     this._writebackEnabled = value;
   }
   public resetWritebackEnabled() {
@@ -955,27 +955,27 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrative_unit_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._administrativeUnitIds),
-      assignable_to_role: cdktf.booleanToTerraform(this._assignableToRole),
-      auto_subscribe_new_members: cdktf.booleanToTerraform(this._autoSubscribeNewMembers),
-      behaviors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._behaviors),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      external_senders_allowed: cdktf.booleanToTerraform(this._externalSendersAllowed),
-      hide_from_address_lists: cdktf.booleanToTerraform(this._hideFromAddressLists),
-      hide_from_outlook_clients: cdktf.booleanToTerraform(this._hideFromOutlookClients),
-      id: cdktf.stringToTerraform(this._id),
-      mail_enabled: cdktf.booleanToTerraform(this._mailEnabled),
-      mail_nickname: cdktf.stringToTerraform(this._mailNickname),
-      onpremises_group_type: cdktf.stringToTerraform(this._onpremisesGroupType),
-      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
-      prevent_duplicate_names: cdktf.booleanToTerraform(this._preventDuplicateNames),
-      provisioning_options: cdktf.listMapper(cdktf.stringToTerraform, false)(this._provisioningOptions),
-      security_enabled: cdktf.booleanToTerraform(this._securityEnabled),
-      theme: cdktf.stringToTerraform(this._theme),
-      types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._types),
-      visibility: cdktf.stringToTerraform(this._visibility),
-      writeback_enabled: cdktf.booleanToTerraform(this._writebackEnabled),
+      administrative_unit_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._administrativeUnitIds),
+      assignable_to_role: cdktn.booleanToTerraform(this._assignableToRole),
+      auto_subscribe_new_members: cdktn.booleanToTerraform(this._autoSubscribeNewMembers),
+      behaviors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._behaviors),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      external_senders_allowed: cdktn.booleanToTerraform(this._externalSendersAllowed),
+      hide_from_address_lists: cdktn.booleanToTerraform(this._hideFromAddressLists),
+      hide_from_outlook_clients: cdktn.booleanToTerraform(this._hideFromOutlookClients),
+      id: cdktn.stringToTerraform(this._id),
+      mail_enabled: cdktn.booleanToTerraform(this._mailEnabled),
+      mail_nickname: cdktn.stringToTerraform(this._mailNickname),
+      onpremises_group_type: cdktn.stringToTerraform(this._onpremisesGroupType),
+      owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._owners),
+      prevent_duplicate_names: cdktn.booleanToTerraform(this._preventDuplicateNames),
+      provisioning_options: cdktn.listMapper(cdktn.stringToTerraform, false)(this._provisioningOptions),
+      security_enabled: cdktn.booleanToTerraform(this._securityEnabled),
+      theme: cdktn.stringToTerraform(this._theme),
+      types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._types),
+      visibility: cdktn.stringToTerraform(this._visibility),
+      writeback_enabled: cdktn.booleanToTerraform(this._writebackEnabled),
       dynamic_membership: groupWithoutMembersDynamicMembershipToTerraform(this._dynamicMembership.internalValue),
       timeouts: groupWithoutMembersTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -984,127 +984,127 @@ export class GroupWithoutMembers extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrative_unit_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._administrativeUnitIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._administrativeUnitIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       assignable_to_role: {
-        value: cdktf.booleanToHclTerraform(this._assignableToRole),
+        value: cdktn.booleanToHclTerraform(this._assignableToRole),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_subscribe_new_members: {
-        value: cdktf.booleanToHclTerraform(this._autoSubscribeNewMembers),
+        value: cdktn.booleanToHclTerraform(this._autoSubscribeNewMembers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       behaviors: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._behaviors),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._behaviors),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_senders_allowed: {
-        value: cdktf.booleanToHclTerraform(this._externalSendersAllowed),
+        value: cdktn.booleanToHclTerraform(this._externalSendersAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hide_from_address_lists: {
-        value: cdktf.booleanToHclTerraform(this._hideFromAddressLists),
+        value: cdktn.booleanToHclTerraform(this._hideFromAddressLists),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hide_from_outlook_clients: {
-        value: cdktf.booleanToHclTerraform(this._hideFromOutlookClients),
+        value: cdktn.booleanToHclTerraform(this._hideFromOutlookClients),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mail_enabled: {
-        value: cdktf.booleanToHclTerraform(this._mailEnabled),
+        value: cdktn.booleanToHclTerraform(this._mailEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mail_nickname: {
-        value: cdktf.stringToHclTerraform(this._mailNickname),
+        value: cdktn.stringToHclTerraform(this._mailNickname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       onpremises_group_type: {
-        value: cdktf.stringToHclTerraform(this._onpremisesGroupType),
+        value: cdktn.stringToHclTerraform(this._onpremisesGroupType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._owners),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       prevent_duplicate_names: {
-        value: cdktf.booleanToHclTerraform(this._preventDuplicateNames),
+        value: cdktn.booleanToHclTerraform(this._preventDuplicateNames),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       provisioning_options: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._provisioningOptions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._provisioningOptions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       security_enabled: {
-        value: cdktf.booleanToHclTerraform(this._securityEnabled),
+        value: cdktn.booleanToHclTerraform(this._securityEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       theme: {
-        value: cdktf.stringToHclTerraform(this._theme),
+        value: cdktn.stringToHclTerraform(this._theme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._types),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._types),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       visibility: {
-        value: cdktf.stringToHclTerraform(this._visibility),
+        value: cdktn.stringToHclTerraform(this._visibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       writeback_enabled: {
-        value: cdktf.booleanToHclTerraform(this._writebackEnabled),
+        value: cdktn.booleanToHclTerraform(this._writebackEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

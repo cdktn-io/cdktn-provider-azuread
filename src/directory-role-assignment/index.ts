@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DirectoryRoleAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface DirectoryRoleAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier of the app-specific scope when the assignment scope is app-specific
   *
@@ -65,39 +65,39 @@ export interface DirectoryRoleAssignmentTimeouts {
   readonly read?: string;
 }
 
-export function directoryRoleAssignmentTimeoutsToTerraform(struct?: DirectoryRoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryRoleAssignmentTimeoutsToTerraform(struct?: DirectoryRoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function directoryRoleAssignmentTimeoutsToHclTerraform(struct?: DirectoryRoleAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function directoryRoleAssignmentTimeoutsToHclTerraform(struct?: DirectoryRoleAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function directoryRoleAssignmentTimeoutsToHclTerraform(struct?: Directory
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DirectoryRoleAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DirectoryRoleAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DirectoryRoleAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DirectoryRoleAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,7 +214,7 @@ export class DirectoryRoleAssignmentTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_assignment azuread_directory_role_assignment}
 */
-export class DirectoryRoleAssignment extends cdktf.TerraformResource {
+export class DirectoryRoleAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DirectoryRoleAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DirectoryRoleAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DirectoryRoleAssignment to import
   * @param importFromId The id of the existing DirectoryRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/directory_role_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DirectoryRoleAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_directory_role_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_directory_role_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -370,11 +370,11 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_scope_id: cdktf.stringToTerraform(this._appScopeId),
-      directory_scope_id: cdktf.stringToTerraform(this._directoryScopeId),
-      id: cdktf.stringToTerraform(this._id),
-      principal_object_id: cdktf.stringToTerraform(this._principalObjectId),
-      role_id: cdktf.stringToTerraform(this._roleId),
+      app_scope_id: cdktn.stringToTerraform(this._appScopeId),
+      directory_scope_id: cdktn.stringToTerraform(this._directoryScopeId),
+      id: cdktn.stringToTerraform(this._id),
+      principal_object_id: cdktn.stringToTerraform(this._principalObjectId),
+      role_id: cdktn.stringToTerraform(this._roleId),
       timeouts: directoryRoleAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -382,31 +382,31 @@ export class DirectoryRoleAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_scope_id: {
-        value: cdktf.stringToHclTerraform(this._appScopeId),
+        value: cdktn.stringToHclTerraform(this._appScopeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_scope_id: {
-        value: cdktf.stringToHclTerraform(this._directoryScopeId),
+        value: cdktn.stringToHclTerraform(this._directoryScopeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal_object_id: {
-        value: cdktf.stringToHclTerraform(this._principalObjectId),
+        value: cdktn.stringToHclTerraform(this._principalObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

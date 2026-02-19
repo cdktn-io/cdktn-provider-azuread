@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArguments {
+export interface SynchronizationSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_secret#id SynchronizationSecret#id}
   *
@@ -30,7 +30,7 @@ export interface SynchronizationSecretConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_secret#credential SynchronizationSecret#credential}
   */
-  readonly credential?: SynchronizationSecretCredential[] | cdktf.IResolvable;
+  readonly credential?: SynchronizationSecretCredential[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -53,32 +53,32 @@ export interface SynchronizationSecretCredential {
   readonly value: string;
 }
 
-export function synchronizationSecretCredentialToTerraform(struct?: SynchronizationSecretCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationSecretCredentialToTerraform(struct?: SynchronizationSecretCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function synchronizationSecretCredentialToHclTerraform(struct?: SynchronizationSecretCredential | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationSecretCredentialToHclTerraform(struct?: SynchronizationSecretCredential | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +89,9 @@ export function synchronizationSecretCredentialToHclTerraform(struct?: Synchroni
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynchronizationSecretCredentialOutputReference extends cdktf.ComplexObject {
+export class SynchronizationSecretCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +99,11 @@ export class SynchronizationSecretCredentialOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SynchronizationSecretCredential | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationSecretCredential | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class SynchronizationSecretCredentialOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynchronizationSecretCredential | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationSecretCredential | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,15 +166,15 @@ export class SynchronizationSecretCredentialOutputReference extends cdktf.Comple
   }
 }
 
-export class SynchronizationSecretCredentialList extends cdktf.ComplexList {
-  public internalValue? : SynchronizationSecretCredential[] | cdktf.IResolvable
+export class SynchronizationSecretCredentialList extends cdktn.ComplexList {
+  public internalValue? : SynchronizationSecretCredential[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,46 +204,46 @@ export interface SynchronizationSecretTimeouts {
   readonly update?: string;
 }
 
-export function synchronizationSecretTimeoutsToTerraform(struct?: SynchronizationSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationSecretTimeoutsToTerraform(struct?: SynchronizationSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function synchronizationSecretTimeoutsToHclTerraform(struct?: SynchronizationSecretTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synchronizationSecretTimeoutsToHclTerraform(struct?: SynchronizationSecretTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -254,19 +254,19 @@ export function synchronizationSecretTimeoutsToHclTerraform(struct?: Synchroniza
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynchronizationSecretTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynchronizationSecretTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SynchronizationSecretTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynchronizationSecretTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -291,7 +291,7 @@ export class SynchronizationSecretTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynchronizationSecretTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynchronizationSecretTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -300,7 +300,7 @@ export class SynchronizationSecretTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -382,7 +382,7 @@ export class SynchronizationSecretTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_secret azuread_synchronization_secret}
 */
-export class SynchronizationSecret extends cdktf.TerraformResource {
+export class SynchronizationSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -393,14 +393,14 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SynchronizationSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SynchronizationSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynchronizationSecret to import
   * @param importFromId The id of the existing SynchronizationSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/synchronization_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynchronizationSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_synchronization_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_synchronization_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -474,7 +474,7 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
   public get credential() {
     return this._credential;
   }
-  public putCredential(value: SynchronizationSecretCredential[] | cdktf.IResolvable) {
+  public putCredential(value: SynchronizationSecretCredential[] | cdktn.IResolvable) {
     this._credential.internalValue = value;
   }
   public resetCredential() {
@@ -507,9 +507,9 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      credential: cdktf.listMapper(synchronizationSecretCredentialToTerraform, true)(this._credential.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      credential: cdktn.listMapper(synchronizationSecretCredentialToTerraform, true)(this._credential.internalValue),
       timeouts: synchronizationSecretTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -517,19 +517,19 @@ export class SynchronizationSecret extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential: {
-        value: cdktf.listMapperHcl(synchronizationSecretCredentialToHclTerraform, true)(this._credential.internalValue),
+        value: cdktn.listMapperHcl(synchronizationSecretCredentialToHclTerraform, true)(this._credential.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SynchronizationSecretCredentialList",

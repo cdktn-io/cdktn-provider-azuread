@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether or not the service principal account is enabled
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#account_enabled ServicePrincipal#account_enabled}
   */
-  readonly accountEnabled?: boolean | cdktf.IResolvable;
+  readonly accountEnabled?: boolean | cdktn.IResolvable;
   /**
   * A list of alternative names, used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities
   *
@@ -29,7 +29,7 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#app_role_assignment_required ServicePrincipal#app_role_assignment_required}
   */
-  readonly appRoleAssignmentRequired?: boolean | cdktf.IResolvable;
+  readonly appRoleAssignmentRequired?: boolean | cdktn.IResolvable;
   /**
   * The client ID of the application for which to create a service principal
   *
@@ -90,19 +90,19 @@ export interface ServicePrincipalConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#use_existing ServicePrincipal#use_existing}
   */
-  readonly useExisting?: boolean | cdktf.IResolvable;
+  readonly useExisting?: boolean | cdktn.IResolvable;
   /**
   * feature_tags block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#feature_tags ServicePrincipal#feature_tags}
   */
-  readonly featureTags?: ServicePrincipalFeatureTags[] | cdktf.IResolvable;
+  readonly featureTags?: ServicePrincipalFeatureTags[] | cdktn.IResolvable;
   /**
   * features block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#features ServicePrincipal#features}
   */
-  readonly features?: ServicePrincipalFeatures[] | cdktf.IResolvable;
+  readonly features?: ServicePrincipalFeatures[] | cdktn.IResolvable;
   /**
   * saml_single_sign_on block
   *
@@ -120,8 +120,8 @@ export interface ServicePrincipalAppRoles {
 }
 
 export function servicePrincipalAppRolesToTerraform(struct?: ServicePrincipalAppRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function servicePrincipalAppRolesToTerraform(struct?: ServicePrincipalApp
 
 
 export function servicePrincipalAppRolesToHclTerraform(struct?: ServicePrincipalAppRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function servicePrincipalAppRolesToHclTerraform(struct?: ServicePrincipal
   return attrs;
 }
 
-export class ServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalAppRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class ServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -198,14 +198,14 @@ export class ServicePrincipalAppRolesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ServicePrincipalAppRolesList extends cdktf.ComplexList {
+export class ServicePrincipalAppRolesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -220,8 +220,8 @@ export interface ServicePrincipalOauth2PermissionScopes {
 }
 
 export function servicePrincipalOauth2PermissionScopesToTerraform(struct?: ServicePrincipalOauth2PermissionScopes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -230,8 +230,8 @@ export function servicePrincipalOauth2PermissionScopesToTerraform(struct?: Servi
 
 
 export function servicePrincipalOauth2PermissionScopesToHclTerraform(struct?: ServicePrincipalOauth2PermissionScopes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -239,7 +239,7 @@ export function servicePrincipalOauth2PermissionScopesToHclTerraform(struct?: Se
   return attrs;
 }
 
-export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -248,7 +248,7 @@ export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -308,14 +308,14 @@ export class ServicePrincipalOauth2PermissionScopesOutputReference extends cdktf
   }
 }
 
-export class ServicePrincipalOauth2PermissionScopesList extends cdktf.ComplexList {
+export class ServicePrincipalOauth2PermissionScopesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -332,67 +332,67 @@ export interface ServicePrincipalFeatureTags {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#custom_single_sign_on ServicePrincipal#custom_single_sign_on}
   */
-  readonly customSingleSignOn?: boolean | cdktf.IResolvable;
+  readonly customSingleSignOn?: boolean | cdktn.IResolvable;
   /**
   * Whether this service principal represents an Enterprise Application
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#enterprise ServicePrincipal#enterprise}
   */
-  readonly enterprise?: boolean | cdktf.IResolvable;
+  readonly enterprise?: boolean | cdktn.IResolvable;
   /**
   * Whether this service principal represents a gallery application
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#gallery ServicePrincipal#gallery}
   */
-  readonly gallery?: boolean | cdktf.IResolvable;
+  readonly gallery?: boolean | cdktn.IResolvable;
   /**
   * Whether this app is invisible to users in My Apps and Office 365 Launcher
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#hide ServicePrincipal#hide}
   */
-  readonly hide?: boolean | cdktf.IResolvable;
+  readonly hide?: boolean | cdktn.IResolvable;
 }
 
-export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalFeatureTagsToTerraform(struct?: ServicePrincipalFeatureTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_single_sign_on: cdktf.booleanToTerraform(struct!.customSingleSignOn),
-    enterprise: cdktf.booleanToTerraform(struct!.enterprise),
-    gallery: cdktf.booleanToTerraform(struct!.gallery),
-    hide: cdktf.booleanToTerraform(struct!.hide),
+    custom_single_sign_on: cdktn.booleanToTerraform(struct!.customSingleSignOn),
+    enterprise: cdktn.booleanToTerraform(struct!.enterprise),
+    gallery: cdktn.booleanToTerraform(struct!.gallery),
+    hide: cdktn.booleanToTerraform(struct!.hide),
   }
 }
 
 
-export function servicePrincipalFeatureTagsToHclTerraform(struct?: ServicePrincipalFeatureTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalFeatureTagsToHclTerraform(struct?: ServicePrincipalFeatureTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_single_sign_on: {
-      value: cdktf.booleanToHclTerraform(struct!.customSingleSignOn),
+      value: cdktn.booleanToHclTerraform(struct!.customSingleSignOn),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enterprise: {
-      value: cdktf.booleanToHclTerraform(struct!.enterprise),
+      value: cdktn.booleanToHclTerraform(struct!.enterprise),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     gallery: {
-      value: cdktf.booleanToHclTerraform(struct!.gallery),
+      value: cdktn.booleanToHclTerraform(struct!.gallery),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hide: {
-      value: cdktf.booleanToHclTerraform(struct!.hide),
+      value: cdktn.booleanToHclTerraform(struct!.hide),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -403,9 +403,9 @@ export function servicePrincipalFeatureTagsToHclTerraform(struct?: ServicePrinci
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalFeatureTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -413,11 +413,11 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServicePrincipalFeatureTags | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalFeatureTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -442,7 +442,7 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalFeatureTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalFeatureTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -451,7 +451,7 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
       this._gallery = undefined;
       this._hide = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -466,11 +466,11 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   }
 
   // custom_single_sign_on - computed: false, optional: true, required: false
-  private _customSingleSignOn?: boolean | cdktf.IResolvable; 
+  private _customSingleSignOn?: boolean | cdktn.IResolvable; 
   public get customSingleSignOn() {
     return this.getBooleanAttribute('custom_single_sign_on');
   }
-  public set customSingleSignOn(value: boolean | cdktf.IResolvable) {
+  public set customSingleSignOn(value: boolean | cdktn.IResolvable) {
     this._customSingleSignOn = value;
   }
   public resetCustomSingleSignOn() {
@@ -482,11 +482,11 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   }
 
   // enterprise - computed: false, optional: true, required: false
-  private _enterprise?: boolean | cdktf.IResolvable; 
+  private _enterprise?: boolean | cdktn.IResolvable; 
   public get enterprise() {
     return this.getBooleanAttribute('enterprise');
   }
-  public set enterprise(value: boolean | cdktf.IResolvable) {
+  public set enterprise(value: boolean | cdktn.IResolvable) {
     this._enterprise = value;
   }
   public resetEnterprise() {
@@ -498,11 +498,11 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   }
 
   // gallery - computed: false, optional: true, required: false
-  private _gallery?: boolean | cdktf.IResolvable; 
+  private _gallery?: boolean | cdktn.IResolvable; 
   public get gallery() {
     return this.getBooleanAttribute('gallery');
   }
-  public set gallery(value: boolean | cdktf.IResolvable) {
+  public set gallery(value: boolean | cdktn.IResolvable) {
     this._gallery = value;
   }
   public resetGallery() {
@@ -514,11 +514,11 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   }
 
   // hide - computed: false, optional: true, required: false
-  private _hide?: boolean | cdktf.IResolvable; 
+  private _hide?: boolean | cdktn.IResolvable; 
   public get hide() {
     return this.getBooleanAttribute('hide');
   }
-  public set hide(value: boolean | cdktf.IResolvable) {
+  public set hide(value: boolean | cdktn.IResolvable) {
     this._hide = value;
   }
   public resetHide() {
@@ -530,15 +530,15 @@ export class ServicePrincipalFeatureTagsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ServicePrincipalFeatureTagsList extends cdktf.ComplexList {
-  public internalValue? : ServicePrincipalFeatureTags[] | cdktf.IResolvable
+export class ServicePrincipalFeatureTagsList extends cdktn.ComplexList {
+  public internalValue? : ServicePrincipalFeatureTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -555,67 +555,67 @@ export interface ServicePrincipalFeatures {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#custom_single_sign_on_app ServicePrincipal#custom_single_sign_on_app}
   */
-  readonly customSingleSignOnApp?: boolean | cdktf.IResolvable;
+  readonly customSingleSignOnApp?: boolean | cdktn.IResolvable;
   /**
   * Whether this service principal represents an Enterprise Application
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#enterprise_application ServicePrincipal#enterprise_application}
   */
-  readonly enterpriseApplication?: boolean | cdktf.IResolvable;
+  readonly enterpriseApplication?: boolean | cdktn.IResolvable;
   /**
   * Whether this service principal represents a gallery application
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#gallery_application ServicePrincipal#gallery_application}
   */
-  readonly galleryApplication?: boolean | cdktf.IResolvable;
+  readonly galleryApplication?: boolean | cdktn.IResolvable;
   /**
   * Whether this app is visible to users in My Apps and Office 365 Launcher
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#visible_to_users ServicePrincipal#visible_to_users}
   */
-  readonly visibleToUsers?: boolean | cdktf.IResolvable;
+  readonly visibleToUsers?: boolean | cdktn.IResolvable;
 }
 
-export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalFeaturesToTerraform(struct?: ServicePrincipalFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_single_sign_on_app: cdktf.booleanToTerraform(struct!.customSingleSignOnApp),
-    enterprise_application: cdktf.booleanToTerraform(struct!.enterpriseApplication),
-    gallery_application: cdktf.booleanToTerraform(struct!.galleryApplication),
-    visible_to_users: cdktf.booleanToTerraform(struct!.visibleToUsers),
+    custom_single_sign_on_app: cdktn.booleanToTerraform(struct!.customSingleSignOnApp),
+    enterprise_application: cdktn.booleanToTerraform(struct!.enterpriseApplication),
+    gallery_application: cdktn.booleanToTerraform(struct!.galleryApplication),
+    visible_to_users: cdktn.booleanToTerraform(struct!.visibleToUsers),
   }
 }
 
 
-export function servicePrincipalFeaturesToHclTerraform(struct?: ServicePrincipalFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalFeaturesToHclTerraform(struct?: ServicePrincipalFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_single_sign_on_app: {
-      value: cdktf.booleanToHclTerraform(struct!.customSingleSignOnApp),
+      value: cdktn.booleanToHclTerraform(struct!.customSingleSignOnApp),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enterprise_application: {
-      value: cdktf.booleanToHclTerraform(struct!.enterpriseApplication),
+      value: cdktn.booleanToHclTerraform(struct!.enterpriseApplication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     gallery_application: {
-      value: cdktf.booleanToHclTerraform(struct!.galleryApplication),
+      value: cdktn.booleanToHclTerraform(struct!.galleryApplication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     visible_to_users: {
-      value: cdktf.booleanToHclTerraform(struct!.visibleToUsers),
+      value: cdktn.booleanToHclTerraform(struct!.visibleToUsers),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -626,9 +626,9 @@ export function servicePrincipalFeaturesToHclTerraform(struct?: ServicePrincipal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalFeaturesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -636,11 +636,11 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServicePrincipalFeatures | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalFeatures | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -665,7 +665,7 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalFeatures | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalFeatures | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -674,7 +674,7 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
       this._galleryApplication = undefined;
       this._visibleToUsers = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -689,11 +689,11 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   }
 
   // custom_single_sign_on_app - computed: false, optional: true, required: false
-  private _customSingleSignOnApp?: boolean | cdktf.IResolvable; 
+  private _customSingleSignOnApp?: boolean | cdktn.IResolvable; 
   public get customSingleSignOnApp() {
     return this.getBooleanAttribute('custom_single_sign_on_app');
   }
-  public set customSingleSignOnApp(value: boolean | cdktf.IResolvable) {
+  public set customSingleSignOnApp(value: boolean | cdktn.IResolvable) {
     this._customSingleSignOnApp = value;
   }
   public resetCustomSingleSignOnApp() {
@@ -705,11 +705,11 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   }
 
   // enterprise_application - computed: false, optional: true, required: false
-  private _enterpriseApplication?: boolean | cdktf.IResolvable; 
+  private _enterpriseApplication?: boolean | cdktn.IResolvable; 
   public get enterpriseApplication() {
     return this.getBooleanAttribute('enterprise_application');
   }
-  public set enterpriseApplication(value: boolean | cdktf.IResolvable) {
+  public set enterpriseApplication(value: boolean | cdktn.IResolvable) {
     this._enterpriseApplication = value;
   }
   public resetEnterpriseApplication() {
@@ -721,11 +721,11 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   }
 
   // gallery_application - computed: false, optional: true, required: false
-  private _galleryApplication?: boolean | cdktf.IResolvable; 
+  private _galleryApplication?: boolean | cdktn.IResolvable; 
   public get galleryApplication() {
     return this.getBooleanAttribute('gallery_application');
   }
-  public set galleryApplication(value: boolean | cdktf.IResolvable) {
+  public set galleryApplication(value: boolean | cdktn.IResolvable) {
     this._galleryApplication = value;
   }
   public resetGalleryApplication() {
@@ -737,11 +737,11 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   }
 
   // visible_to_users - computed: false, optional: true, required: false
-  private _visibleToUsers?: boolean | cdktf.IResolvable; 
+  private _visibleToUsers?: boolean | cdktn.IResolvable; 
   public get visibleToUsers() {
     return this.getBooleanAttribute('visible_to_users');
   }
-  public set visibleToUsers(value: boolean | cdktf.IResolvable) {
+  public set visibleToUsers(value: boolean | cdktn.IResolvable) {
     this._visibleToUsers = value;
   }
   public resetVisibleToUsers() {
@@ -753,15 +753,15 @@ export class ServicePrincipalFeaturesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ServicePrincipalFeaturesList extends cdktf.ComplexList {
-  public internalValue? : ServicePrincipalFeatures[] | cdktf.IResolvable
+export class ServicePrincipalFeaturesList extends cdktn.ComplexList {
+  public internalValue? : ServicePrincipalFeatures[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -782,24 +782,24 @@ export interface ServicePrincipalSamlSingleSignOn {
 }
 
 export function servicePrincipalSamlSingleSignOnToTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    relay_state: cdktf.stringToTerraform(struct!.relayState),
+    relay_state: cdktn.stringToTerraform(struct!.relayState),
   }
 }
 
 
 export function servicePrincipalSamlSingleSignOnToHclTerraform(struct?: ServicePrincipalSamlSingleSignOnOutputReference | ServicePrincipalSamlSingleSignOn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     relay_state: {
-      value: cdktf.stringToHclTerraform(struct!.relayState),
+      value: cdktn.stringToHclTerraform(struct!.relayState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -810,14 +810,14 @@ export function servicePrincipalSamlSingleSignOnToHclTerraform(struct?: ServiceP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalSamlSingleSignOnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -877,46 +877,46 @@ export interface ServicePrincipalTimeouts {
   readonly update?: string;
 }
 
-export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalTimeoutsToTerraform(struct?: ServicePrincipalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicePrincipalTimeoutsToHclTerraform(struct?: ServicePrincipalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicePrincipalTimeoutsToHclTerraform(struct?: ServicePrincipalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -927,19 +927,19 @@ export function servicePrincipalTimeoutsToHclTerraform(struct?: ServicePrincipal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicePrincipalTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicePrincipalTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicePrincipalTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -964,7 +964,7 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicePrincipalTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicePrincipalTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -973,7 +973,7 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1055,7 +1055,7 @@ export class ServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal azuread_service_principal}
 */
-export class ServicePrincipal extends cdktf.TerraformResource {
+export class ServicePrincipal extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1066,14 +1066,14 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicePrincipal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipal to import
   * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_service_principal", importId: importFromId, provider });
       }
 
   // ===========
@@ -1127,11 +1127,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // ==========
 
   // account_enabled - computed: false, optional: true, required: false
-  private _accountEnabled?: boolean | cdktf.IResolvable; 
+  private _accountEnabled?: boolean | cdktn.IResolvable; 
   public get accountEnabled() {
     return this.getBooleanAttribute('account_enabled');
   }
-  public set accountEnabled(value: boolean | cdktf.IResolvable) {
+  public set accountEnabled(value: boolean | cdktn.IResolvable) {
     this._accountEnabled = value;
   }
   public resetAccountEnabled() {
@@ -1145,7 +1145,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // alternative_names - computed: false, optional: true, required: false
   private _alternativeNames?: string[]; 
   public get alternativeNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('alternative_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('alternative_names'));
   }
   public set alternativeNames(value: string[]) {
     this._alternativeNames = value;
@@ -1159,11 +1159,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // app_role_assignment_required - computed: false, optional: true, required: false
-  private _appRoleAssignmentRequired?: boolean | cdktf.IResolvable; 
+  private _appRoleAssignmentRequired?: boolean | cdktn.IResolvable; 
   public get appRoleAssignmentRequired() {
     return this.getBooleanAttribute('app_role_assignment_required');
   }
-  public set appRoleAssignmentRequired(value: boolean | cdktf.IResolvable) {
+  public set appRoleAssignmentRequired(value: boolean | cdktn.IResolvable) {
     this._appRoleAssignmentRequired = value;
   }
   public resetAppRoleAssignmentRequired() {
@@ -1175,7 +1175,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // app_role_ids - computed: true, optional: false, required: false
-  private _appRoleIds = new cdktf.StringMap(this, "app_role_ids");
+  private _appRoleIds = new cdktn.StringMap(this, "app_role_ids");
   public get appRoleIds() {
     return this._appRoleIds;
   }
@@ -1286,7 +1286,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // notification_email_addresses - computed: false, optional: true, required: false
   private _notificationEmailAddresses?: string[]; 
   public get notificationEmailAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('notification_email_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('notification_email_addresses'));
   }
   public set notificationEmailAddresses(value: string[]) {
     this._notificationEmailAddresses = value;
@@ -1300,7 +1300,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // oauth2_permission_scope_ids - computed: true, optional: false, required: false
-  private _oauth2PermissionScopeIds = new cdktf.StringMap(this, "oauth2_permission_scope_ids");
+  private _oauth2PermissionScopeIds = new cdktn.StringMap(this, "oauth2_permission_scope_ids");
   public get oauth2PermissionScopeIds() {
     return this._oauth2PermissionScopeIds;
   }
@@ -1319,7 +1319,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // owners - computed: false, optional: true, required: false
   private _owners?: string[]; 
   public get owners() {
-    return cdktf.Fn.tolist(this.getListAttribute('owners'));
+    return cdktn.Fn.tolist(this.getListAttribute('owners'));
   }
   public set owners(value: string[]) {
     this._owners = value;
@@ -1371,7 +1371,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -1390,11 +1390,11 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   }
 
   // use_existing - computed: false, optional: true, required: false
-  private _useExisting?: boolean | cdktf.IResolvable; 
+  private _useExisting?: boolean | cdktn.IResolvable; 
   public get useExisting() {
     return this.getBooleanAttribute('use_existing');
   }
-  public set useExisting(value: boolean | cdktf.IResolvable) {
+  public set useExisting(value: boolean | cdktn.IResolvable) {
     this._useExisting = value;
   }
   public resetUseExisting() {
@@ -1410,7 +1410,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   public get featureTags() {
     return this._featureTags;
   }
-  public putFeatureTags(value: ServicePrincipalFeatureTags[] | cdktf.IResolvable) {
+  public putFeatureTags(value: ServicePrincipalFeatureTags[] | cdktn.IResolvable) {
     this._featureTags.internalValue = value;
   }
   public resetFeatureTags() {
@@ -1426,7 +1426,7 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   public get features() {
     return this._features;
   }
-  public putFeatures(value: ServicePrincipalFeatures[] | cdktf.IResolvable) {
+  public putFeatures(value: ServicePrincipalFeatures[] | cdktn.IResolvable) {
     this._features.internalValue = value;
   }
   public resetFeatures() {
@@ -1475,21 +1475,21 @@ export class ServicePrincipal extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_enabled: cdktf.booleanToTerraform(this._accountEnabled),
-      alternative_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._alternativeNames),
-      app_role_assignment_required: cdktf.booleanToTerraform(this._appRoleAssignmentRequired),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      login_url: cdktf.stringToTerraform(this._loginUrl),
-      notes: cdktf.stringToTerraform(this._notes),
-      notification_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmailAddresses),
-      owners: cdktf.listMapper(cdktf.stringToTerraform, false)(this._owners),
-      preferred_single_sign_on_mode: cdktf.stringToTerraform(this._preferredSingleSignOnMode),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      use_existing: cdktf.booleanToTerraform(this._useExisting),
-      feature_tags: cdktf.listMapper(servicePrincipalFeatureTagsToTerraform, true)(this._featureTags.internalValue),
-      features: cdktf.listMapper(servicePrincipalFeaturesToTerraform, true)(this._features.internalValue),
+      account_enabled: cdktn.booleanToTerraform(this._accountEnabled),
+      alternative_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._alternativeNames),
+      app_role_assignment_required: cdktn.booleanToTerraform(this._appRoleAssignmentRequired),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      login_url: cdktn.stringToTerraform(this._loginUrl),
+      notes: cdktn.stringToTerraform(this._notes),
+      notification_email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notificationEmailAddresses),
+      owners: cdktn.listMapper(cdktn.stringToTerraform, false)(this._owners),
+      preferred_single_sign_on_mode: cdktn.stringToTerraform(this._preferredSingleSignOnMode),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      use_existing: cdktn.booleanToTerraform(this._useExisting),
+      feature_tags: cdktn.listMapper(servicePrincipalFeatureTagsToTerraform, true)(this._featureTags.internalValue),
+      features: cdktn.listMapper(servicePrincipalFeaturesToTerraform, true)(this._features.internalValue),
       saml_single_sign_on: servicePrincipalSamlSingleSignOnToTerraform(this._samlSingleSignOn.internalValue),
       timeouts: servicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1498,91 +1498,91 @@ export class ServicePrincipal extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_enabled: {
-        value: cdktf.booleanToHclTerraform(this._accountEnabled),
+        value: cdktn.booleanToHclTerraform(this._accountEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alternative_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._alternativeNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._alternativeNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       app_role_assignment_required: {
-        value: cdktf.booleanToHclTerraform(this._appRoleAssignmentRequired),
+        value: cdktn.booleanToHclTerraform(this._appRoleAssignmentRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       login_url: {
-        value: cdktf.stringToHclTerraform(this._loginUrl),
+        value: cdktn.stringToHclTerraform(this._loginUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_email_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationEmailAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notificationEmailAddresses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       owners: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._owners),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._owners),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       preferred_single_sign_on_mode: {
-        value: cdktf.stringToHclTerraform(this._preferredSingleSignOnMode),
+        value: cdktn.stringToHclTerraform(this._preferredSingleSignOnMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       use_existing: {
-        value: cdktf.booleanToHclTerraform(this._useExisting),
+        value: cdktn.booleanToHclTerraform(this._useExisting),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       feature_tags: {
-        value: cdktf.listMapperHcl(servicePrincipalFeatureTagsToHclTerraform, true)(this._featureTags.internalValue),
+        value: cdktn.listMapperHcl(servicePrincipalFeatureTagsToHclTerraform, true)(this._featureTags.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServicePrincipalFeatureTagsList",
       },
       features: {
-        value: cdktf.listMapperHcl(servicePrincipalFeaturesToHclTerraform, true)(this._features.internalValue),
+        value: cdktn.listMapperHcl(servicePrincipalFeaturesToHclTerraform, true)(this._features.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ServicePrincipalFeaturesList",

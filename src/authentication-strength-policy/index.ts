@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuthenticationStrengthPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface AuthenticationStrengthPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The allowed MFA methods for this policy
   *
@@ -63,46 +63,46 @@ export interface AuthenticationStrengthPolicyTimeouts {
   readonly update?: string;
 }
 
-export function authenticationStrengthPolicyTimeoutsToTerraform(struct?: AuthenticationStrengthPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authenticationStrengthPolicyTimeoutsToTerraform(struct?: AuthenticationStrengthPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function authenticationStrengthPolicyTimeoutsToHclTerraform(struct?: AuthenticationStrengthPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authenticationStrengthPolicyTimeoutsToHclTerraform(struct?: AuthenticationStrengthPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function authenticationStrengthPolicyTimeoutsToHclTerraform(struct?: Auth
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuthenticationStrengthPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AuthenticationStrengthPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AuthenticationStrengthPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AuthenticationStrengthPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class AuthenticationStrengthPolicyTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuthenticationStrengthPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuthenticationStrengthPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class AuthenticationStrengthPolicyTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -241,7 +241,7 @@ export class AuthenticationStrengthPolicyTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/authentication_strength_policy azuread_authentication_strength_policy}
 */
-export class AuthenticationStrengthPolicy extends cdktf.TerraformResource {
+export class AuthenticationStrengthPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -252,14 +252,14 @@ export class AuthenticationStrengthPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuthenticationStrengthPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuthenticationStrengthPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthenticationStrengthPolicy to import
   * @param importFromId The id of the existing AuthenticationStrengthPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/authentication_strength_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthenticationStrengthPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_authentication_strength_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_authentication_strength_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -303,7 +303,7 @@ export class AuthenticationStrengthPolicy extends cdktf.TerraformResource {
   // allowed_combinations - computed: false, optional: false, required: true
   private _allowedCombinations?: string[]; 
   public get allowedCombinations() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_combinations'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_combinations'));
   }
   public set allowedCombinations(value: string[]) {
     this._allowedCombinations = value;
@@ -380,10 +380,10 @@ export class AuthenticationStrengthPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_combinations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedCombinations),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
+      allowed_combinations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedCombinations),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: authenticationStrengthPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -391,25 +391,25 @@ export class AuthenticationStrengthPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_combinations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedCombinations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedCombinations),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

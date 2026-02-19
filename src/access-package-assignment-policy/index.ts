@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface AccessPackageAssignmentPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the access package that will contain the policy
   *
@@ -47,7 +47,7 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
   */
-  readonly extensionEnabled?: boolean | cdktf.IResolvable;
+  readonly extensionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}
   *
@@ -72,7 +72,7 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
   */
-  readonly question?: AccessPackageAssignmentPolicyQuestion[] | cdktf.IResolvable;
+  readonly question?: AccessPackageAssignmentPolicyQuestion[] | cdktn.IResolvable;
   /**
   * requestor_settings block
   *
@@ -92,7 +92,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlter
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
-  readonly backup?: boolean | cdktf.IResolvable;
+  readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
@@ -107,39 +107,39 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlter
   readonly subjectType: string;
 }
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.booleanToTerraform(struct!.backup),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    subject_type: cdktf.stringToTerraform(struct!.subjectType),
+    backup: cdktn.booleanToTerraform(struct!.backup),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    subject_type: cdktn.stringToTerraform(struct!.subjectType),
   }
 }
 
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.booleanToHclTerraform(struct!.backup),
+      value: cdktn.booleanToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_type: {
-      value: cdktf.stringToHclTerraform(struct!.subjectType),
+      value: cdktn.stringToHclTerraform(struct!.subjectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,9 +150,9 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAltern
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -160,11 +160,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -185,7 +185,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
       this._objectId = undefined;
       this._subjectType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -207,11 +207,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
   }
 
   // backup - computed: false, optional: true, required: false
-  private _backup?: boolean | cdktf.IResolvable; 
+  private _backup?: boolean | cdktn.IResolvable; 
   public get backup() {
     return this.getBooleanAttribute('backup');
   }
-  public set backup(value: boolean | cdktf.IResolvable) {
+  public set backup(value: boolean | cdktn.IResolvable) {
     this._backup = value;
   }
   public resetBackup() {
@@ -252,15 +252,15 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternati
   }
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -277,7 +277,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrima
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
-  readonly backup?: boolean | cdktf.IResolvable;
+  readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
@@ -292,39 +292,39 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrima
   readonly subjectType: string;
 }
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.booleanToTerraform(struct!.backup),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    subject_type: cdktf.stringToTerraform(struct!.subjectType),
+    backup: cdktn.booleanToTerraform(struct!.backup),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    subject_type: cdktn.stringToTerraform(struct!.subjectType),
   }
 }
 
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.booleanToHclTerraform(struct!.backup),
+      value: cdktn.booleanToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_type: {
-      value: cdktf.stringToHclTerraform(struct!.subjectType),
+      value: cdktn.stringToHclTerraform(struct!.subjectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -335,9 +335,9 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -345,11 +345,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -370,7 +370,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -378,7 +378,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
       this._objectId = undefined;
       this._subjectType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -392,11 +392,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
   }
 
   // backup - computed: false, optional: true, required: false
-  private _backup?: boolean | cdktf.IResolvable; 
+  private _backup?: boolean | cdktn.IResolvable; 
   public get backup() {
     return this.getBooleanAttribute('backup');
   }
-  public set backup(value: boolean | cdktf.IResolvable) {
+  public set backup(value: boolean | cdktn.IResolvable) {
     this._backup = value;
   }
   public resetBackup() {
@@ -437,15 +437,15 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryAp
   }
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,7 +462,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
   */
-  readonly alternativeApprovalEnabled?: boolean | cdktf.IResolvable;
+  readonly alternativeApprovalEnabled?: boolean | cdktn.IResolvable;
   /**
   * Decision must be made in how many days? If a request is not approved within this time period after it is made, it will be automatically rejected
   *
@@ -474,7 +474,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
-  readonly approverJustificationRequired?: boolean | cdktf.IResolvable;
+  readonly approverJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * Forward to alternate approver(s) after how many days?
   *
@@ -486,69 +486,69 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
   */
-  readonly alternativeApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktf.IResolvable;
+  readonly alternativeApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktn.IResolvable;
   /**
   * primary_approver block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
   */
-  readonly primaryApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktf.IResolvable;
+  readonly primaryApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktn.IResolvable;
 }
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alternative_approval_enabled: cdktf.booleanToTerraform(struct!.alternativeApprovalEnabled),
-    approval_timeout_in_days: cdktf.numberToTerraform(struct!.approvalTimeoutInDays),
-    approver_justification_required: cdktf.booleanToTerraform(struct!.approverJustificationRequired),
-    enable_alternative_approval_in_days: cdktf.numberToTerraform(struct!.enableAlternativeApprovalInDays),
-    alternative_approver: cdktf.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToTerraform, true)(struct!.alternativeApprover),
-    primary_approver: cdktf.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToTerraform, true)(struct!.primaryApprover),
+    alternative_approval_enabled: cdktn.booleanToTerraform(struct!.alternativeApprovalEnabled),
+    approval_timeout_in_days: cdktn.numberToTerraform(struct!.approvalTimeoutInDays),
+    approver_justification_required: cdktn.booleanToTerraform(struct!.approverJustificationRequired),
+    enable_alternative_approval_in_days: cdktn.numberToTerraform(struct!.enableAlternativeApprovalInDays),
+    alternative_approver: cdktn.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToTerraform, true)(struct!.alternativeApprover),
+    primary_approver: cdktn.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToTerraform, true)(struct!.primaryApprover),
   }
 }
 
 
-export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alternative_approval_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.alternativeApprovalEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.alternativeApprovalEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     approval_timeout_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.approvalTimeoutInDays),
+      value: cdktn.numberToHclTerraform(struct!.approvalTimeoutInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     approver_justification_required: {
-      value: cdktf.booleanToHclTerraform(struct!.approverJustificationRequired),
+      value: cdktn.booleanToHclTerraform(struct!.approverJustificationRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_alternative_approval_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.enableAlternativeApprovalInDays),
+      value: cdktn.numberToHclTerraform(struct!.enableAlternativeApprovalInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     alternative_approver: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToHclTerraform, true)(struct!.alternativeApprover),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToHclTerraform, true)(struct!.alternativeApprover),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverList",
     },
     primary_approver: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToHclTerraform, true)(struct!.primaryApprover),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToHclTerraform, true)(struct!.primaryApprover),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverList",
@@ -559,9 +559,9 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -569,11 +569,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -606,7 +606,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -617,7 +617,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
       this._alternativeApprover.internalValue = undefined;
       this._primaryApprover.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -634,11 +634,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   }
 
   // alternative_approval_enabled - computed: false, optional: true, required: false
-  private _alternativeApprovalEnabled?: boolean | cdktf.IResolvable; 
+  private _alternativeApprovalEnabled?: boolean | cdktn.IResolvable; 
   public get alternativeApprovalEnabled() {
     return this.getBooleanAttribute('alternative_approval_enabled');
   }
-  public set alternativeApprovalEnabled(value: boolean | cdktf.IResolvable) {
+  public set alternativeApprovalEnabled(value: boolean | cdktn.IResolvable) {
     this._alternativeApprovalEnabled = value;
   }
   public resetAlternativeApprovalEnabled() {
@@ -663,11 +663,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   }
 
   // approver_justification_required - computed: false, optional: true, required: false
-  private _approverJustificationRequired?: boolean | cdktf.IResolvable; 
+  private _approverJustificationRequired?: boolean | cdktn.IResolvable; 
   public get approverJustificationRequired() {
     return this.getBooleanAttribute('approver_justification_required');
   }
-  public set approverJustificationRequired(value: boolean | cdktf.IResolvable) {
+  public set approverJustificationRequired(value: boolean | cdktn.IResolvable) {
     this._approverJustificationRequired = value;
   }
   public resetApproverJustificationRequired() {
@@ -699,7 +699,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   public get alternativeApprover() {
     return this._alternativeApprover;
   }
-  public putAlternativeApprover(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktf.IResolvable) {
+  public putAlternativeApprover(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktn.IResolvable) {
     this._alternativeApprover.internalValue = value;
   }
   public resetAlternativeApprover() {
@@ -715,7 +715,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   public get primaryApprover() {
     return this._primaryApprover;
   }
-  public putPrimaryApprover(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktf.IResolvable) {
+  public putPrimaryApprover(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktn.IResolvable) {
     this._primaryApprover.internalValue = value;
   }
   public resetPrimaryApprover() {
@@ -727,15 +727,15 @@ export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageOutputRef
   }
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -752,67 +752,67 @@ export interface AccessPackageAssignmentPolicyApprovalSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
   */
-  readonly approvalRequired?: boolean | cdktf.IResolvable;
+  readonly approvalRequired?: boolean | cdktn.IResolvable;
   /**
   * Whether an approval is required to grant extension. Same approval settings used to approve initial access will apply
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
   */
-  readonly approvalRequiredForExtension?: boolean | cdktf.IResolvable;
+  readonly approvalRequiredForExtension?: boolean | cdktn.IResolvable;
   /**
   * Whether requestor are required to provide a justification to request an access package. Justification is visible to other approvers and the requestor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
   */
-  readonly requestorJustificationRequired?: boolean | cdktf.IResolvable;
+  readonly requestorJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * approval_stage block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
   */
-  readonly approvalStage?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktf.IResolvable;
+  readonly approvalStage?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktn.IResolvable;
 }
 
 export function accessPackageAssignmentPolicyApprovalSettingsToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsOutputReference | AccessPackageAssignmentPolicyApprovalSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approval_required: cdktf.booleanToTerraform(struct!.approvalRequired),
-    approval_required_for_extension: cdktf.booleanToTerraform(struct!.approvalRequiredForExtension),
-    requestor_justification_required: cdktf.booleanToTerraform(struct!.requestorJustificationRequired),
-    approval_stage: cdktf.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerraform, true)(struct!.approvalStage),
+    approval_required: cdktn.booleanToTerraform(struct!.approvalRequired),
+    approval_required_for_extension: cdktn.booleanToTerraform(struct!.approvalRequiredForExtension),
+    requestor_justification_required: cdktn.booleanToTerraform(struct!.requestorJustificationRequired),
+    approval_stage: cdktn.listMapper(accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerraform, true)(struct!.approvalStage),
   }
 }
 
 
 export function accessPackageAssignmentPolicyApprovalSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsOutputReference | AccessPackageAssignmentPolicyApprovalSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approval_required: {
-      value: cdktf.booleanToHclTerraform(struct!.approvalRequired),
+      value: cdktn.booleanToHclTerraform(struct!.approvalRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     approval_required_for_extension: {
-      value: cdktf.booleanToHclTerraform(struct!.approvalRequiredForExtension),
+      value: cdktn.booleanToHclTerraform(struct!.approvalRequiredForExtension),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     requestor_justification_required: {
-      value: cdktf.booleanToHclTerraform(struct!.requestorJustificationRequired),
+      value: cdktn.booleanToHclTerraform(struct!.requestorJustificationRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     approval_stage: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclTerraform, true)(struct!.approvalStage),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclTerraform, true)(struct!.approvalStage),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyApprovalSettingsApprovalStageList",
@@ -823,14 +823,14 @@ export function accessPackageAssignmentPolicyApprovalSettingsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -874,11 +874,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extend
   }
 
   // approval_required - computed: false, optional: true, required: false
-  private _approvalRequired?: boolean | cdktf.IResolvable; 
+  private _approvalRequired?: boolean | cdktn.IResolvable; 
   public get approvalRequired() {
     return this.getBooleanAttribute('approval_required');
   }
-  public set approvalRequired(value: boolean | cdktf.IResolvable) {
+  public set approvalRequired(value: boolean | cdktn.IResolvable) {
     this._approvalRequired = value;
   }
   public resetApprovalRequired() {
@@ -890,11 +890,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extend
   }
 
   // approval_required_for_extension - computed: false, optional: true, required: false
-  private _approvalRequiredForExtension?: boolean | cdktf.IResolvable; 
+  private _approvalRequiredForExtension?: boolean | cdktn.IResolvable; 
   public get approvalRequiredForExtension() {
     return this.getBooleanAttribute('approval_required_for_extension');
   }
-  public set approvalRequiredForExtension(value: boolean | cdktf.IResolvable) {
+  public set approvalRequiredForExtension(value: boolean | cdktn.IResolvable) {
     this._approvalRequiredForExtension = value;
   }
   public resetApprovalRequiredForExtension() {
@@ -906,11 +906,11 @@ export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extend
   }
 
   // requestor_justification_required - computed: false, optional: true, required: false
-  private _requestorJustificationRequired?: boolean | cdktf.IResolvable; 
+  private _requestorJustificationRequired?: boolean | cdktn.IResolvable; 
   public get requestorJustificationRequired() {
     return this.getBooleanAttribute('requestor_justification_required');
   }
-  public set requestorJustificationRequired(value: boolean | cdktf.IResolvable) {
+  public set requestorJustificationRequired(value: boolean | cdktn.IResolvable) {
     this._requestorJustificationRequired = value;
   }
   public resetRequestorJustificationRequired() {
@@ -926,7 +926,7 @@ export class AccessPackageAssignmentPolicyApprovalSettingsOutputReference extend
   public get approvalStage() {
     return this._approvalStage;
   }
-  public putApprovalStage(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktf.IResolvable) {
+  public putApprovalStage(value: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktn.IResolvable) {
     this._approvalStage.internalValue = value;
   }
   public resetApprovalStage() {
@@ -943,7 +943,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
-  readonly backup?: boolean | cdktf.IResolvable;
+  readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
@@ -958,39 +958,39 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
   readonly subjectType: string;
 }
 
-export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.booleanToTerraform(struct!.backup),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    subject_type: cdktf.stringToTerraform(struct!.subjectType),
+    backup: cdktn.booleanToTerraform(struct!.backup),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    subject_type: cdktn.stringToTerraform(struct!.subjectType),
   }
 }
 
 
-export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToHclTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToHclTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.booleanToHclTerraform(struct!.backup),
+      value: cdktn.booleanToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_type: {
-      value: cdktf.stringToHclTerraform(struct!.subjectType),
+      value: cdktn.stringToHclTerraform(struct!.subjectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1001,9 +1001,9 @@ export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1011,11 +1011,11 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1036,7 +1036,7 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1044,7 +1044,7 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutput
       this._objectId = undefined;
       this._subjectType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1058,11 +1058,11 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutput
   }
 
   // backup - computed: false, optional: true, required: false
-  private _backup?: boolean | cdktf.IResolvable; 
+  private _backup?: boolean | cdktn.IResolvable; 
   public get backup() {
     return this.getBooleanAttribute('backup');
   }
-  public set backup(value: boolean | cdktf.IResolvable) {
+  public set backup(value: boolean | cdktn.IResolvable) {
     this._backup = value;
   }
   public resetBackup() {
@@ -1103,15 +1103,15 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerOutput
   }
 }
 
-export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1128,7 +1128,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
   */
-  readonly accessRecommendationEnabled?: boolean | cdktf.IResolvable;
+  readonly accessRecommendationEnabled?: boolean | cdktn.IResolvable;
   /**
   * What actions the system takes if reviewers don't respond in time
   *
@@ -1140,7 +1140,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
-  readonly approverJustificationRequired?: boolean | cdktf.IResolvable;
+  readonly approverJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * How many days each occurrence of the access review series will run
   *
@@ -1152,7 +1152,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * This will determine how often the access review campaign runs
   *
@@ -1176,84 +1176,84 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
   */
-  readonly reviewer?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktf.IResolvable;
+  readonly reviewer?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktn.IResolvable;
 }
 
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsToTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference | AccessPackageAssignmentPolicyAssignmentReviewSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_recommendation_enabled: cdktf.booleanToTerraform(struct!.accessRecommendationEnabled),
-    access_review_timeout_behavior: cdktf.stringToTerraform(struct!.accessReviewTimeoutBehavior),
-    approver_justification_required: cdktf.booleanToTerraform(struct!.approverJustificationRequired),
-    duration_in_days: cdktf.numberToTerraform(struct!.durationInDays),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    review_frequency: cdktf.stringToTerraform(struct!.reviewFrequency),
-    review_type: cdktf.stringToTerraform(struct!.reviewType),
-    starting_on: cdktf.stringToTerraform(struct!.startingOn),
-    reviewer: cdktf.listMapper(accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToTerraform, true)(struct!.reviewer),
+    access_recommendation_enabled: cdktn.booleanToTerraform(struct!.accessRecommendationEnabled),
+    access_review_timeout_behavior: cdktn.stringToTerraform(struct!.accessReviewTimeoutBehavior),
+    approver_justification_required: cdktn.booleanToTerraform(struct!.approverJustificationRequired),
+    duration_in_days: cdktn.numberToTerraform(struct!.durationInDays),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    review_frequency: cdktn.stringToTerraform(struct!.reviewFrequency),
+    review_type: cdktn.stringToTerraform(struct!.reviewType),
+    starting_on: cdktn.stringToTerraform(struct!.startingOn),
+    reviewer: cdktn.listMapper(accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToTerraform, true)(struct!.reviewer),
   }
 }
 
 
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference | AccessPackageAssignmentPolicyAssignmentReviewSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_recommendation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.accessRecommendationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.accessRecommendationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     access_review_timeout_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.accessReviewTimeoutBehavior),
+      value: cdktn.stringToHclTerraform(struct!.accessReviewTimeoutBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     approver_justification_required: {
-      value: cdktf.booleanToHclTerraform(struct!.approverJustificationRequired),
+      value: cdktn.booleanToHclTerraform(struct!.approverJustificationRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     duration_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.durationInDays),
+      value: cdktn.numberToHclTerraform(struct!.durationInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     review_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.reviewFrequency),
+      value: cdktn.stringToHclTerraform(struct!.reviewFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     review_type: {
-      value: cdktf.stringToHclTerraform(struct!.reviewType),
+      value: cdktn.stringToHclTerraform(struct!.reviewType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     starting_on: {
-      value: cdktf.stringToHclTerraform(struct!.startingOn),
+      value: cdktn.stringToHclTerraform(struct!.startingOn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reviewer: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToHclTerraform, true)(struct!.reviewer),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToHclTerraform, true)(struct!.reviewer),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewerList",
@@ -1264,14 +1264,14 @@ export function accessPackageAssignmentPolicyAssignmentReviewSettingsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1345,11 +1345,11 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReferenc
   }
 
   // access_recommendation_enabled - computed: false, optional: true, required: false
-  private _accessRecommendationEnabled?: boolean | cdktf.IResolvable; 
+  private _accessRecommendationEnabled?: boolean | cdktn.IResolvable; 
   public get accessRecommendationEnabled() {
     return this.getBooleanAttribute('access_recommendation_enabled');
   }
-  public set accessRecommendationEnabled(value: boolean | cdktf.IResolvable) {
+  public set accessRecommendationEnabled(value: boolean | cdktn.IResolvable) {
     this._accessRecommendationEnabled = value;
   }
   public resetAccessRecommendationEnabled() {
@@ -1377,11 +1377,11 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReferenc
   }
 
   // approver_justification_required - computed: false, optional: true, required: false
-  private _approverJustificationRequired?: boolean | cdktf.IResolvable; 
+  private _approverJustificationRequired?: boolean | cdktn.IResolvable; 
   public get approverJustificationRequired() {
     return this.getBooleanAttribute('approver_justification_required');
   }
-  public set approverJustificationRequired(value: boolean | cdktf.IResolvable) {
+  public set approverJustificationRequired(value: boolean | cdktn.IResolvable) {
     this._approverJustificationRequired = value;
   }
   public resetApproverJustificationRequired() {
@@ -1409,11 +1409,11 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReferenc
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1477,7 +1477,7 @@ export class AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReferenc
   public get reviewer() {
     return this._reviewer;
   }
-  public putReviewer(value: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktf.IResolvable) {
+  public putReviewer(value: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktn.IResolvable) {
     this._reviewer.internalValue = value;
   }
   public resetReviewer() {
@@ -1503,32 +1503,32 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalize
   readonly languageCode: string;
 }
 
-export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
+    content: cdktn.stringToTerraform(struct!.content),
+    language_code: cdktn.stringToTerraform(struct!.languageCode),
   }
 }
 
 
-export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     language_code: {
-      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      value: cdktn.stringToHclTerraform(struct!.languageCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1539,9 +1539,9 @@ export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalized
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1549,11 +1549,11 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1570,14 +1570,14 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._languageCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1616,15 +1616,15 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTex
   }
 }
 
-export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1647,35 +1647,35 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValue {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
-  readonly localizedText?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktf.IResolvable;
+  readonly localizedText?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktn.IResolvable;
 }
 
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference | AccessPackageAssignmentPolicyQuestionChoiceDisplayValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_text: cdktf.stringToTerraform(struct!.defaultText),
-    localized_text: cdktf.listMapper(accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToTerraform, true)(struct!.localizedText),
+    default_text: cdktn.stringToTerraform(struct!.defaultText),
+    localized_text: cdktn.listMapper(accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToTerraform, true)(struct!.localizedText),
   }
 }
 
 
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference | AccessPackageAssignmentPolicyQuestionChoiceDisplayValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_text: {
-      value: cdktf.stringToHclTerraform(struct!.defaultText),
+      value: cdktn.stringToHclTerraform(struct!.defaultText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     localized_text: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToHclTerraform, true)(struct!.localizedText),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToHclTerraform, true)(struct!.localizedText),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextList",
@@ -1686,14 +1686,14 @@ export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1742,7 +1742,7 @@ export class AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputRefere
   public get localizedText() {
     return this._localizedText;
   }
-  public putLocalizedText(value: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktf.IResolvable) {
+  public putLocalizedText(value: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktn.IResolvable) {
     this._localizedText.internalValue = value;
   }
   public resetLocalizedText() {
@@ -1768,26 +1768,26 @@ export interface AccessPackageAssignmentPolicyQuestionChoice {
   readonly displayValue: AccessPackageAssignmentPolicyQuestionChoiceDisplayValue;
 }
 
-export function accessPackageAssignmentPolicyQuestionChoiceToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionChoiceToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actual_value: cdktf.stringToTerraform(struct!.actualValue),
+    actual_value: cdktn.stringToTerraform(struct!.actualValue),
     display_value: accessPackageAssignmentPolicyQuestionChoiceDisplayValueToTerraform(struct!.displayValue),
   }
 }
 
 
-export function accessPackageAssignmentPolicyQuestionChoiceToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionChoiceToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actual_value: {
-      value: cdktf.stringToHclTerraform(struct!.actualValue),
+      value: cdktn.stringToHclTerraform(struct!.actualValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1804,9 +1804,9 @@ export function accessPackageAssignmentPolicyQuestionChoiceToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionChoiceOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionChoiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1814,11 +1814,11 @@ export class AccessPackageAssignmentPolicyQuestionChoiceOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyQuestionChoice | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1835,14 +1835,14 @@ export class AccessPackageAssignmentPolicyQuestionChoiceOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyQuestionChoice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actualValue = undefined;
       this._displayValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1881,15 +1881,15 @@ export class AccessPackageAssignmentPolicyQuestionChoiceOutputReference extends 
   }
 }
 
-export class AccessPackageAssignmentPolicyQuestionChoiceList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyQuestionChoice[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyQuestionChoiceList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyQuestionChoice[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1915,32 +1915,32 @@ export interface AccessPackageAssignmentPolicyQuestionTextLocalizedText {
   readonly languageCode: string;
 }
 
-export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    language_code: cdktf.stringToTerraform(struct!.languageCode),
+    content: cdktn.stringToTerraform(struct!.content),
+    language_code: cdktn.stringToTerraform(struct!.languageCode),
   }
 }
 
 
-export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     language_code: {
-      value: cdktf.stringToHclTerraform(struct!.languageCode),
+      value: cdktn.stringToHclTerraform(struct!.languageCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1951,9 +1951,9 @@ export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1961,11 +1961,11 @@ export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1982,14 +1982,14 @@ export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._languageCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2028,15 +2028,15 @@ export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextOutputReferen
   }
 }
 
-export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyQuestionTextLocalizedTextList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2059,35 +2059,35 @@ export interface AccessPackageAssignmentPolicyQuestionText {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
-  readonly localizedText?: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktf.IResolvable;
+  readonly localizedText?: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktn.IResolvable;
 }
 
 export function accessPackageAssignmentPolicyQuestionTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextOutputReference | AccessPackageAssignmentPolicyQuestionText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_text: cdktf.stringToTerraform(struct!.defaultText),
-    localized_text: cdktf.listMapper(accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerraform, true)(struct!.localizedText),
+    default_text: cdktn.stringToTerraform(struct!.defaultText),
+    localized_text: cdktn.listMapper(accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerraform, true)(struct!.localizedText),
   }
 }
 
 
 export function accessPackageAssignmentPolicyQuestionTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextOutputReference | AccessPackageAssignmentPolicyQuestionText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_text: {
-      value: cdktf.stringToHclTerraform(struct!.defaultText),
+      value: cdktn.stringToHclTerraform(struct!.defaultText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     localized_text: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerraform, true)(struct!.localizedText),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerraform, true)(struct!.localizedText),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyQuestionTextLocalizedTextList",
@@ -2098,14 +2098,14 @@ export function accessPackageAssignmentPolicyQuestionTextToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionTextOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2154,7 +2154,7 @@ export class AccessPackageAssignmentPolicyQuestionTextOutputReference extends cd
   public get localizedText() {
     return this._localizedText;
   }
-  public putLocalizedText(value: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktf.IResolvable) {
+  public putLocalizedText(value: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktn.IResolvable) {
     this._localizedText.internalValue = value;
   }
   public resetLocalizedText() {
@@ -2171,7 +2171,7 @@ export interface AccessPackageAssignmentPolicyQuestion {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
   * The sequence number of this question
   *
@@ -2183,7 +2183,7 @@ export interface AccessPackageAssignmentPolicyQuestion {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
   */
-  readonly choice?: AccessPackageAssignmentPolicyQuestionChoice[] | cdktf.IResolvable;
+  readonly choice?: AccessPackageAssignmentPolicyQuestionChoice[] | cdktn.IResolvable;
   /**
   * text block
   *
@@ -2192,40 +2192,40 @@ export interface AccessPackageAssignmentPolicyQuestion {
   readonly text: AccessPackageAssignmentPolicyQuestionText;
 }
 
-export function accessPackageAssignmentPolicyQuestionToTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionToTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    required: cdktf.booleanToTerraform(struct!.required),
-    sequence: cdktf.numberToTerraform(struct!.sequence),
-    choice: cdktf.listMapper(accessPackageAssignmentPolicyQuestionChoiceToTerraform, true)(struct!.choice),
+    required: cdktn.booleanToTerraform(struct!.required),
+    sequence: cdktn.numberToTerraform(struct!.sequence),
+    choice: cdktn.listMapper(accessPackageAssignmentPolicyQuestionChoiceToTerraform, true)(struct!.choice),
     text: accessPackageAssignmentPolicyQuestionTextToTerraform(struct!.text),
   }
 }
 
 
-export function accessPackageAssignmentPolicyQuestionToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyQuestionToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sequence: {
-      value: cdktf.numberToHclTerraform(struct!.sequence),
+      value: cdktn.numberToHclTerraform(struct!.sequence),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     choice: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyQuestionChoiceToHclTerraform, true)(struct!.choice),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyQuestionChoiceToHclTerraform, true)(struct!.choice),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyQuestionChoiceList",
@@ -2242,9 +2242,9 @@ export function accessPackageAssignmentPolicyQuestionToHclTerraform(struct?: Acc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2252,11 +2252,11 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyQuestion | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2281,7 +2281,7 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyQuestion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2290,7 +2290,7 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
       this._choice.internalValue = undefined;
       this._text.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2305,11 +2305,11 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
   }
 
   // required - computed: false, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -2341,7 +2341,7 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
   public get choice() {
     return this._choice;
   }
-  public putChoice(value: AccessPackageAssignmentPolicyQuestionChoice[] | cdktf.IResolvable) {
+  public putChoice(value: AccessPackageAssignmentPolicyQuestionChoice[] | cdktn.IResolvable) {
     this._choice.internalValue = value;
   }
   public resetChoice() {
@@ -2366,15 +2366,15 @@ export class AccessPackageAssignmentPolicyQuestionOutputReference extends cdktf.
   }
 }
 
-export class AccessPackageAssignmentPolicyQuestionList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyQuestion[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyQuestionList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyQuestion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2391,7 +2391,7 @@ export interface AccessPackageAssignmentPolicyRequestorSettingsRequestor {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
-  readonly backup?: boolean | cdktf.IResolvable;
+  readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
@@ -2406,39 +2406,39 @@ export interface AccessPackageAssignmentPolicyRequestorSettingsRequestor {
   readonly subjectType: string;
 }
 
-export function accessPackageAssignmentPolicyRequestorSettingsRequestorToTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyRequestorSettingsRequestorToTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.booleanToTerraform(struct!.backup),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    subject_type: cdktf.stringToTerraform(struct!.subjectType),
+    backup: cdktn.booleanToTerraform(struct!.backup),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    subject_type: cdktn.stringToTerraform(struct!.subjectType),
   }
 }
 
 
-export function accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.booleanToHclTerraform(struct!.backup),
+      value: cdktn.booleanToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_type: {
-      value: cdktf.stringToHclTerraform(struct!.subjectType),
+      value: cdktn.stringToHclTerraform(struct!.subjectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2449,9 +2449,9 @@ export function accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2459,11 +2459,11 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2484,7 +2484,7 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2492,7 +2492,7 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputRefere
       this._objectId = undefined;
       this._subjectType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2506,11 +2506,11 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputRefere
   }
 
   // backup - computed: false, optional: true, required: false
-  private _backup?: boolean | cdktf.IResolvable; 
+  private _backup?: boolean | cdktn.IResolvable; 
   public get backup() {
     return this.getBooleanAttribute('backup');
   }
-  public set backup(value: boolean | cdktf.IResolvable) {
+  public set backup(value: boolean | cdktn.IResolvable) {
     this._backup = value;
   }
   public resetBackup() {
@@ -2551,15 +2551,15 @@ export class AccessPackageAssignmentPolicyRequestorSettingsRequestorOutputRefere
   }
 }
 
-export class AccessPackageAssignmentPolicyRequestorSettingsRequestorList extends cdktf.ComplexList {
-  public internalValue? : AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktf.IResolvable
+export class AccessPackageAssignmentPolicyRequestorSettingsRequestorList extends cdktn.ComplexList {
+  public internalValue? : AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2576,7 +2576,7 @@ export interface AccessPackageAssignmentPolicyRequestorSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
   */
-  readonly requestsAccepted?: boolean | cdktf.IResolvable;
+  readonly requestsAccepted?: boolean | cdktn.IResolvable;
   /**
   * Specify the scopes of the requestors
   *
@@ -2588,42 +2588,42 @@ export interface AccessPackageAssignmentPolicyRequestorSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
   */
-  readonly requestor?: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktf.IResolvable;
+  readonly requestor?: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktn.IResolvable;
 }
 
 export function accessPackageAssignmentPolicyRequestorSettingsToTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsOutputReference | AccessPackageAssignmentPolicyRequestorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    requests_accepted: cdktf.booleanToTerraform(struct!.requestsAccepted),
-    scope_type: cdktf.stringToTerraform(struct!.scopeType),
-    requestor: cdktf.listMapper(accessPackageAssignmentPolicyRequestorSettingsRequestorToTerraform, true)(struct!.requestor),
+    requests_accepted: cdktn.booleanToTerraform(struct!.requestsAccepted),
+    scope_type: cdktn.stringToTerraform(struct!.scopeType),
+    requestor: cdktn.listMapper(accessPackageAssignmentPolicyRequestorSettingsRequestorToTerraform, true)(struct!.requestor),
   }
 }
 
 
 export function accessPackageAssignmentPolicyRequestorSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsOutputReference | AccessPackageAssignmentPolicyRequestorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     requests_accepted: {
-      value: cdktf.booleanToHclTerraform(struct!.requestsAccepted),
+      value: cdktn.booleanToHclTerraform(struct!.requestsAccepted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scope_type: {
-      value: cdktf.stringToHclTerraform(struct!.scopeType),
+      value: cdktn.stringToHclTerraform(struct!.scopeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requestor: {
-      value: cdktf.listMapperHcl(accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerraform, true)(struct!.requestor),
+      value: cdktn.listMapperHcl(accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerraform, true)(struct!.requestor),
       isBlock: true,
       type: "list",
       storageClassType: "AccessPackageAssignmentPolicyRequestorSettingsRequestorList",
@@ -2634,14 +2634,14 @@ export function accessPackageAssignmentPolicyRequestorSettingsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyRequestorSettingsOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyRequestorSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2679,11 +2679,11 @@ export class AccessPackageAssignmentPolicyRequestorSettingsOutputReference exten
   }
 
   // requests_accepted - computed: false, optional: true, required: false
-  private _requestsAccepted?: boolean | cdktf.IResolvable; 
+  private _requestsAccepted?: boolean | cdktn.IResolvable; 
   public get requestsAccepted() {
     return this.getBooleanAttribute('requests_accepted');
   }
-  public set requestsAccepted(value: boolean | cdktf.IResolvable) {
+  public set requestsAccepted(value: boolean | cdktn.IResolvable) {
     this._requestsAccepted = value;
   }
   public resetRequestsAccepted() {
@@ -2715,7 +2715,7 @@ export class AccessPackageAssignmentPolicyRequestorSettingsOutputReference exten
   public get requestor() {
     return this._requestor;
   }
-  public putRequestor(value: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktf.IResolvable) {
+  public putRequestor(value: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktn.IResolvable) {
     this._requestor.internalValue = value;
   }
   public resetRequestor() {
@@ -2745,46 +2745,46 @@ export interface AccessPackageAssignmentPolicyTimeouts {
   readonly update?: string;
 }
 
-export function accessPackageAssignmentPolicyTimeoutsToTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyTimeoutsToTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function accessPackageAssignmentPolicyTimeoutsToHclTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessPackageAssignmentPolicyTimeoutsToHclTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2795,19 +2795,19 @@ export function accessPackageAssignmentPolicyTimeoutsToHclTerraform(struct?: Acc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccessPackageAssignmentPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2832,7 +2832,7 @@ export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessPackageAssignmentPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2841,7 +2841,7 @@ export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2923,7 +2923,7 @@ export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}
 */
-export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
+export class AccessPackageAssignmentPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2934,14 +2934,14 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessPackageAssignmentPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessPackageAssignmentPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessPackageAssignmentPolicy to import
   * @param importFromId The id of the existing AccessPackageAssignmentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/access_package_assignment_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessPackageAssignmentPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_assignment_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_assignment_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -3061,11 +3061,11 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
   }
 
   // extension_enabled - computed: false, optional: true, required: false
-  private _extensionEnabled?: boolean | cdktf.IResolvable; 
+  private _extensionEnabled?: boolean | cdktn.IResolvable; 
   public get extensionEnabled() {
     return this.getBooleanAttribute('extension_enabled');
   }
-  public set extensionEnabled(value: boolean | cdktf.IResolvable) {
+  public set extensionEnabled(value: boolean | cdktn.IResolvable) {
     this._extensionEnabled = value;
   }
   public resetExtensionEnabled() {
@@ -3129,7 +3129,7 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
   public get question() {
     return this._question;
   }
-  public putQuestion(value: AccessPackageAssignmentPolicyQuestion[] | cdktf.IResolvable) {
+  public putQuestion(value: AccessPackageAssignmentPolicyQuestion[] | cdktn.IResolvable) {
     this._question.internalValue = value;
   }
   public resetQuestion() {
@@ -3178,16 +3178,16 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_package_id: cdktf.stringToTerraform(this._accessPackageId),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      duration_in_days: cdktf.numberToTerraform(this._durationInDays),
-      expiration_date: cdktf.stringToTerraform(this._expirationDate),
-      extension_enabled: cdktf.booleanToTerraform(this._extensionEnabled),
-      id: cdktf.stringToTerraform(this._id),
+      access_package_id: cdktn.stringToTerraform(this._accessPackageId),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      duration_in_days: cdktn.numberToTerraform(this._durationInDays),
+      expiration_date: cdktn.stringToTerraform(this._expirationDate),
+      extension_enabled: cdktn.booleanToTerraform(this._extensionEnabled),
+      id: cdktn.stringToTerraform(this._id),
       approval_settings: accessPackageAssignmentPolicyApprovalSettingsToTerraform(this._approvalSettings.internalValue),
       assignment_review_settings: accessPackageAssignmentPolicyAssignmentReviewSettingsToTerraform(this._assignmentReviewSettings.internalValue),
-      question: cdktf.listMapper(accessPackageAssignmentPolicyQuestionToTerraform, true)(this._question.internalValue),
+      question: cdktn.listMapper(accessPackageAssignmentPolicyQuestionToTerraform, true)(this._question.internalValue),
       requestor_settings: accessPackageAssignmentPolicyRequestorSettingsToTerraform(this._requestorSettings.internalValue),
       timeouts: accessPackageAssignmentPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -3196,43 +3196,43 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_package_id: {
-        value: cdktf.stringToHclTerraform(this._accessPackageId),
+        value: cdktn.stringToHclTerraform(this._accessPackageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration_in_days: {
-        value: cdktf.numberToHclTerraform(this._durationInDays),
+        value: cdktn.numberToHclTerraform(this._durationInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       expiration_date: {
-        value: cdktf.stringToHclTerraform(this._expirationDate),
+        value: cdktn.stringToHclTerraform(this._expirationDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension_enabled: {
-        value: cdktf.booleanToHclTerraform(this._extensionEnabled),
+        value: cdktn.booleanToHclTerraform(this._extensionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3250,7 +3250,7 @@ export class AccessPackageAssignmentPolicy extends cdktf.TerraformResource {
         storageClassType: "AccessPackageAssignmentPolicyAssignmentReviewSettingsList",
       },
       question: {
-        value: cdktf.listMapperHcl(accessPackageAssignmentPolicyQuestionToHclTerraform, true)(this._question.internalValue),
+        value: cdktn.listMapperHcl(accessPackageAssignmentPolicyQuestionToHclTerraform, true)(this._question.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AccessPackageAssignmentPolicyQuestionList",

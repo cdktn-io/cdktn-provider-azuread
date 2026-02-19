@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadDomainsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set to `true` to only return domains whose DNS is managed by Microsoft 365
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#admin_managed DataAzureadDomains#admin_managed}
   */
-  readonly adminManaged?: boolean | cdktf.IResolvable;
+  readonly adminManaged?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#id DataAzureadDomains#id}
   *
@@ -30,25 +30,25 @@ export interface DataAzureadDomainsConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#include_unverified DataAzureadDomains#include_unverified}
   */
-  readonly includeUnverified?: boolean | cdktf.IResolvable;
+  readonly includeUnverified?: boolean | cdktn.IResolvable;
   /**
   * Set to `true` to only return the default domain
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#only_default DataAzureadDomains#only_default}
   */
-  readonly onlyDefault?: boolean | cdktf.IResolvable;
+  readonly onlyDefault?: boolean | cdktn.IResolvable;
   /**
   * Set to `true` to only return the initial domain, which is your primary Azure Active Directory tenant domain
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#only_initial DataAzureadDomains#only_initial}
   */
-  readonly onlyInitial?: boolean | cdktf.IResolvable;
+  readonly onlyInitial?: boolean | cdktn.IResolvable;
   /**
   * Set to `true` to only return verified root domains. Excludes subdomains and unverified domains
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#only_root DataAzureadDomains#only_root}
   */
-  readonly onlyRoot?: boolean | cdktf.IResolvable;
+  readonly onlyRoot?: boolean | cdktn.IResolvable;
   /**
   * A list of supported services that must be supported by a domain
   *
@@ -66,8 +66,8 @@ export interface DataAzureadDomainsDomains {
 }
 
 export function dataAzureadDomainsDomainsToTerraform(struct?: DataAzureadDomainsDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -76,8 +76,8 @@ export function dataAzureadDomainsDomainsToTerraform(struct?: DataAzureadDomains
 
 
 export function dataAzureadDomainsDomainsToHclTerraform(struct?: DataAzureadDomainsDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -85,7 +85,7 @@ export function dataAzureadDomainsDomainsToHclTerraform(struct?: DataAzureadDoma
   return attrs;
 }
 
-export class DataAzureadDomainsDomainsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadDomainsDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -94,7 +94,7 @@ export class DataAzureadDomainsDomainsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -154,14 +154,14 @@ export class DataAzureadDomainsDomainsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DataAzureadDomainsDomainsList extends cdktf.ComplexList {
+export class DataAzureadDomainsDomainsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,25 +179,25 @@ export interface DataAzureadDomainsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadDomainsTimeoutsToTerraform(struct?: DataAzureadDomainsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzureadDomainsTimeoutsToHclTerraform(struct?: DataAzureadDomainsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadDomainsTimeoutsToHclTerraform(struct?: DataAzureadDomainsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -208,19 +208,19 @@ export function dataAzureadDomainsTimeoutsToHclTerraform(struct?: DataAzureadDom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadDomainsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzureadDomainsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadDomainsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,13 +233,13 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadDomainsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadDomainsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -270,7 +270,7 @@ export class DataAzureadDomainsTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains azuread_domains}
 */
-export class DataAzureadDomains extends cdktf.TerraformDataSource {
+export class DataAzureadDomains extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -281,14 +281,14 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzureadDomains resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzureadDomains resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadDomains to import
   * @param importFromId The id of the existing DataAzureadDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/domains#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadDomains to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_domains", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_domains", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,11 +333,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   // ==========
 
   // admin_managed - computed: false, optional: true, required: false
-  private _adminManaged?: boolean | cdktf.IResolvable; 
+  private _adminManaged?: boolean | cdktn.IResolvable; 
   public get adminManaged() {
     return this.getBooleanAttribute('admin_managed');
   }
-  public set adminManaged(value: boolean | cdktf.IResolvable) {
+  public set adminManaged(value: boolean | cdktn.IResolvable) {
     this._adminManaged = value;
   }
   public resetAdminManaged() {
@@ -371,11 +371,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // include_unverified - computed: false, optional: true, required: false
-  private _includeUnverified?: boolean | cdktf.IResolvable; 
+  private _includeUnverified?: boolean | cdktn.IResolvable; 
   public get includeUnverified() {
     return this.getBooleanAttribute('include_unverified');
   }
-  public set includeUnverified(value: boolean | cdktf.IResolvable) {
+  public set includeUnverified(value: boolean | cdktn.IResolvable) {
     this._includeUnverified = value;
   }
   public resetIncludeUnverified() {
@@ -387,11 +387,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // only_default - computed: false, optional: true, required: false
-  private _onlyDefault?: boolean | cdktf.IResolvable; 
+  private _onlyDefault?: boolean | cdktn.IResolvable; 
   public get onlyDefault() {
     return this.getBooleanAttribute('only_default');
   }
-  public set onlyDefault(value: boolean | cdktf.IResolvable) {
+  public set onlyDefault(value: boolean | cdktn.IResolvable) {
     this._onlyDefault = value;
   }
   public resetOnlyDefault() {
@@ -403,11 +403,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // only_initial - computed: false, optional: true, required: false
-  private _onlyInitial?: boolean | cdktf.IResolvable; 
+  private _onlyInitial?: boolean | cdktn.IResolvable; 
   public get onlyInitial() {
     return this.getBooleanAttribute('only_initial');
   }
-  public set onlyInitial(value: boolean | cdktf.IResolvable) {
+  public set onlyInitial(value: boolean | cdktn.IResolvable) {
     this._onlyInitial = value;
   }
   public resetOnlyInitial() {
@@ -419,11 +419,11 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   }
 
   // only_root - computed: false, optional: true, required: false
-  private _onlyRoot?: boolean | cdktf.IResolvable; 
+  private _onlyRoot?: boolean | cdktn.IResolvable; 
   public get onlyRoot() {
     return this.getBooleanAttribute('only_root');
   }
-  public set onlyRoot(value: boolean | cdktf.IResolvable) {
+  public set onlyRoot(value: boolean | cdktn.IResolvable) {
     this._onlyRoot = value;
   }
   public resetOnlyRoot() {
@@ -472,13 +472,13 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_managed: cdktf.booleanToTerraform(this._adminManaged),
-      id: cdktf.stringToTerraform(this._id),
-      include_unverified: cdktf.booleanToTerraform(this._includeUnverified),
-      only_default: cdktf.booleanToTerraform(this._onlyDefault),
-      only_initial: cdktf.booleanToTerraform(this._onlyInitial),
-      only_root: cdktf.booleanToTerraform(this._onlyRoot),
-      supports_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportsServices),
+      admin_managed: cdktn.booleanToTerraform(this._adminManaged),
+      id: cdktn.stringToTerraform(this._id),
+      include_unverified: cdktn.booleanToTerraform(this._includeUnverified),
+      only_default: cdktn.booleanToTerraform(this._onlyDefault),
+      only_initial: cdktn.booleanToTerraform(this._onlyInitial),
+      only_root: cdktn.booleanToTerraform(this._onlyRoot),
+      supports_services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportsServices),
       timeouts: dataAzureadDomainsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -486,43 +486,43 @@ export class DataAzureadDomains extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_managed: {
-        value: cdktf.booleanToHclTerraform(this._adminManaged),
+        value: cdktn.booleanToHclTerraform(this._adminManaged),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_unverified: {
-        value: cdktf.booleanToHclTerraform(this._includeUnverified),
+        value: cdktn.booleanToHclTerraform(this._includeUnverified),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       only_default: {
-        value: cdktf.booleanToHclTerraform(this._onlyDefault),
+        value: cdktn.booleanToHclTerraform(this._onlyDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       only_initial: {
-        value: cdktf.booleanToHclTerraform(this._onlyInitial),
+        value: cdktn.booleanToHclTerraform(this._onlyInitial),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       only_root: {
-        value: cdktf.booleanToHclTerraform(this._onlyRoot),
+        value: cdktn.booleanToHclTerraform(this._onlyRoot),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       supports_services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportsServices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportsServices),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

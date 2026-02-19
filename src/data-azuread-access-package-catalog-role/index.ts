@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzureadAccessPackageCatalogRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzureadAccessPackageCatalogRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name of the catalog role
   *
@@ -45,25 +45,25 @@ export interface DataAzureadAccessPackageCatalogRoleTimeouts {
   readonly read?: string;
 }
 
-export function dataAzureadAccessPackageCatalogRoleTimeoutsToTerraform(struct?: DataAzureadAccessPackageCatalogRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadAccessPackageCatalogRoleTimeoutsToTerraform(struct?: DataAzureadAccessPackageCatalogRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzureadAccessPackageCatalogRoleTimeoutsToHclTerraform(struct?: DataAzureadAccessPackageCatalogRoleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzureadAccessPackageCatalogRoleTimeoutsToHclTerraform(struct?: DataAzureadAccessPackageCatalogRoleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function dataAzureadAccessPackageCatalogRoleTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzureadAccessPackageCatalogRoleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzureadAccessPackageCatalogRoleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzureadAccessPackageCatalogRoleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzureadAccessPackageCatalogRoleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,7 +136,7 @@ export class DataAzureadAccessPackageCatalogRoleTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/access_package_catalog_role azuread_access_package_catalog_role}
 */
-export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSource {
+export class DataAzureadAccessPackageCatalogRole extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -147,14 +147,14 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzureadAccessPackageCatalogRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzureadAccessPackageCatalogRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadAccessPackageCatalogRole to import
   * @param importFromId The id of the existing DataAzureadAccessPackageCatalogRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/data-sources/access_package_catalog_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadAccessPackageCatalogRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_catalog_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_access_package_catalog_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -274,9 +274,9 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      object_id: cdktf.stringToTerraform(this._objectId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      object_id: cdktn.stringToTerraform(this._objectId),
       timeouts: dataAzureadAccessPackageCatalogRoleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -284,19 +284,19 @@ export class DataAzureadAccessPackageCatalogRole extends cdktf.TerraformDataSour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

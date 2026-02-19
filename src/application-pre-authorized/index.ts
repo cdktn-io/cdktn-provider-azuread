@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationPreAuthorizedConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationPreAuthorizedConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource ID of the application to which this pre-authorized application should be added
   *
@@ -63,46 +63,46 @@ export interface ApplicationPreAuthorizedTimeouts {
   readonly update?: string;
 }
 
-export function applicationPreAuthorizedTimeoutsToTerraform(struct?: ApplicationPreAuthorizedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationPreAuthorizedTimeoutsToTerraform(struct?: ApplicationPreAuthorizedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationPreAuthorizedTimeoutsToHclTerraform(struct?: ApplicationPreAuthorizedTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationPreAuthorizedTimeoutsToHclTerraform(struct?: ApplicationPreAuthorizedTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function applicationPreAuthorizedTimeoutsToHclTerraform(struct?: Applicat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationPreAuthorizedTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationPreAuthorizedTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationPreAuthorizedTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationPreAuthorizedTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -241,7 +241,7 @@ export class ApplicationPreAuthorizedTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_pre_authorized azuread_application_pre_authorized}
 */
-export class ApplicationPreAuthorized extends cdktf.TerraformResource {
+export class ApplicationPreAuthorized extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -252,14 +252,14 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationPreAuthorized resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationPreAuthorized resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationPreAuthorized to import
   * @param importFromId The id of the existing ApplicationPreAuthorized that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.7.0/docs/resources/application_pre_authorized#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationPreAuthorized to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_pre_authorized", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azuread_application_pre_authorized", importId: importFromId, provider });
       }
 
   // ===========
@@ -345,7 +345,7 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   // permission_ids - computed: false, optional: false, required: true
   private _permissionIds?: string[]; 
   public get permissionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('permission_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('permission_ids'));
   }
   public set permissionIds(value: string[]) {
     this._permissionIds = value;
@@ -377,10 +377,10 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      authorized_client_id: cdktf.stringToTerraform(this._authorizedClientId),
-      id: cdktf.stringToTerraform(this._id),
-      permission_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissionIds),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      authorized_client_id: cdktn.stringToTerraform(this._authorizedClientId),
+      id: cdktn.stringToTerraform(this._id),
+      permission_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permissionIds),
       timeouts: applicationPreAuthorizedTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -388,25 +388,25 @@ export class ApplicationPreAuthorized extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorized_client_id: {
-        value: cdktf.stringToHclTerraform(this._authorizedClientId),
+        value: cdktn.stringToHclTerraform(this._authorizedClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permissionIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permissionIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
