@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.NewDataAzureadUser(scope Construct, id *string, config DataAzureadUserConfig) DataAzureadUser
 ```
@@ -360,7 +360,7 @@ func ResetUserPrincipalName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazureaduser.DataAzureadUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataazureaduser.DataAzureadUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.DataAzureadUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1210,7 +1210,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 &dataazureaduser.DataAzureadUserConfig {
 	Connection: interface{},
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduse
 	Mail: *string,
 	MailNickname: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.dataAzureadUser.DataAzureadUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.dataAzureadUser.DataAzureadUserTimeouts,
 	UserPrincipalName: *string,
 }
 ```
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 &dataazureaduser.DataAzureadUserTimeouts {
 	Read: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/dataazureaduser"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduser"
 
 dataazureaduser.NewDataAzureadUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadUserTimeoutsOutputReference
 ```
