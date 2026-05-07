@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.NewPrivilegedAccessGroupAssignmentSchedule(scope Construct, id *string, config PrivilegedAccessGroupAssignmentScheduleConfig) PrivilegedAccessGroupAssignmentSchedule
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 &privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentScheduleConfig {
 	Connection: interface{},
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedacce
 	StartDate: *string,
 	TicketNumber: *string,
 	TicketSystem: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts,
 }
 ```
 
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 &privilegedaccessgroupassignmentschedule.PrivilegedAccessGroupAssignmentScheduleTimeouts {
 	Create: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.privilegedAccessGroupAssignmentSchedule.PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v15/privilegedaccessgroupassignmentschedule"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/privilegedaccessgroupassignmentschedule"
 
 privilegedaccessgroupassignmentschedule.NewPrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivilegedAccessGroupAssignmentScheduleTimeoutsOutputReference
 ```
