@@ -4,7 +4,7 @@
 
 ### DataAzureadUser <a name="DataAzureadUser" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user azuread_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user azuread_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadUser.DataAzureadUser.Initializer"></a>
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataAzureadUser to import.
 
 The id of the existing DataAzureadUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1242,7 +1242,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduse
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.employeeId">EmployeeId</a></code> | <code>*string</code> | The employee identifier assigned to the user by the organisation. |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#id DataAzureadUser#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#id DataAzureadUser#id}. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.mail">Mail</a></code> | <code>*string</code> | The SMTP address for the user. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The email alias of the user. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserConfig.property.objectId">ObjectId</a></code> | <code>*string</code> | The object ID of the user. |
@@ -1331,7 +1331,7 @@ EmployeeId *string
 
 The employee identifier assigned to the user by the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#employee_id DataAzureadUser#employee_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#employee_id DataAzureadUser#employee_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#id DataAzureadUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#id DataAzureadUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1360,7 +1360,7 @@ Mail *string
 
 The SMTP address for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#mail DataAzureadUser#mail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#mail DataAzureadUser#mail}
 
 ---
 
@@ -1374,7 +1374,7 @@ MailNickname *string
 
 The email alias of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#mail_nickname DataAzureadUser#mail_nickname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#mail_nickname DataAzureadUser#mail_nickname}
 
 ---
 
@@ -1388,7 +1388,7 @@ ObjectId *string
 
 The object ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#object_id DataAzureadUser#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#object_id DataAzureadUser#object_id}
 
 ---
 
@@ -1402,7 +1402,7 @@ Timeouts DataAzureadUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#timeouts DataAzureadUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#timeouts DataAzureadUser#timeouts}
 
 ---
 
@@ -1416,7 +1416,7 @@ UserPrincipalName *string
 
 The user principal name (UPN) of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#user_principal_name DataAzureadUser#user_principal_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#user_principal_name DataAzureadUser#user_principal_name}
 
 ---
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaduse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#read DataAzureadUser#read}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadUser.DataAzureadUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#read DataAzureadUser#read}. |
 
 ---
 
@@ -1448,7 +1448,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/user#read DataAzureadUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/user#read DataAzureadUser#read}.
 
 ---
 

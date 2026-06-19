@@ -4,7 +4,7 @@
 
 ### AppRoleAssignment <a name="AppRoleAssignment" id="@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment azuread_app_role_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment azuread_app_role_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer"></a>
 
@@ -43,7 +43,7 @@ appRoleAssignment.AppRoleAssignment(
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.appRoleId">app_role_id</a></code> | <code>str</code> | The ID of the app role to be assigned. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.principalObjectId">principal_object_id</a></code> | <code>str</code> | The object ID of the user, group or service principal to be assigned this app role. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.resourceObjectId">resource_object_id</a></code> | <code>str</code> | The object ID of the service principal representing the resource. |
-| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
+| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts">AppRoleAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the app role to be assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The object ID of the user, group or service principal to be assigned this app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The object ID of the service principal representing the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
 
 ---
 
@@ -555,7 +555,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
 
 ---
 
@@ -563,7 +563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
 
 ---
 
@@ -571,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
 
 ---
 
@@ -701,7 +701,7 @@ The construct id used in the generated config for the AppRoleAssignment to impor
 
 The id of the existing AppRoleAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1076,7 +1076,7 @@ appRoleAssignment.AppRoleAssignmentConfig(
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.appRoleId">app_role_id</a></code> | <code>str</code> | The ID of the app role to be assigned. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.principalObjectId">principal_object_id</a></code> | <code>str</code> | The object ID of the user, group or service principal to be assigned this app role. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.resourceObjectId">resource_object_id</a></code> | <code>str</code> | The object ID of the service principal representing the resource. |
-| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
+| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}. |
 | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts">AppRoleAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1161,7 +1161,7 @@ app_role_id: str
 
 The ID of the app role to be assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#app_role_id AppRoleAssignment#app_role_id}
 
 ---
 
@@ -1175,7 +1175,7 @@ principal_object_id: str
 
 The object ID of the user, group or service principal to be assigned this app role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#principal_object_id AppRoleAssignment#principal_object_id}
 
 ---
 
@@ -1189,7 +1189,7 @@ resource_object_id: str
 
 The object ID of the service principal representing the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#resource_object_id AppRoleAssignment#resource_object_id}
 
 ---
 
@@ -1201,7 +1201,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#id AppRoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,7 +1218,7 @@ timeouts: AppRoleAssignmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#timeouts AppRoleAssignment#timeouts}
 
 ---
 
@@ -1240,9 +1240,9 @@ appRoleAssignment.AppRoleAssignmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}. |
-| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}. |
-| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}. |
+| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}. |
+| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}. |
+| <code><a href="#@cdktn/provider-azuread.appRoleAssignment.AppRoleAssignmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}. |
 
 ---
 
@@ -1254,7 +1254,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#create AppRoleAssignment#create}.
 
 ---
 
@@ -1266,7 +1266,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#delete AppRoleAssignment#delete}.
 
 ---
 
@@ -1278,7 +1278,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/app_role_assignment#read AppRoleAssignment#read}.
 
 ---
 

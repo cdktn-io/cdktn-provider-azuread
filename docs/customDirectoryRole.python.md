@@ -4,7 +4,7 @@
 
 ### CustomDirectoryRole <a name="CustomDirectoryRole" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role azuread_custom_directory_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer"></a>
 
@@ -48,7 +48,7 @@ customDirectoryRole.CustomDirectoryRole(
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.permissions">permissions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions">CustomDirectoryRolePermissions</a>]</code> | permissions block. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.version">version</a></code> | <code>str</code> | The version of the role definition. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the custom directory role. |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.templateId">template_id</a></code> | <code>str</code> | Custom template identifier that is typically used if one needs an identifier to be the same across different directories. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRole.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The display name of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether the role is enabled for assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The version of the role definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
 
 ---
 
@@ -609,7 +609,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
 
 ---
 
@@ -617,7 +617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
 
 ---
 
@@ -625,7 +625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
 
 ---
 
@@ -633,7 +633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
 
 ---
 
@@ -775,7 +775,7 @@ The construct id used in the generated config for the CustomDirectoryRole to imp
 
 The id of the existing CustomDirectoryRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1199,7 +1199,7 @@ customDirectoryRole.CustomDirectoryRoleConfig(
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.permissions">permissions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRolePermissions">CustomDirectoryRolePermissions</a>]</code> | permissions block. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.version">version</a></code> | <code>str</code> | The version of the role definition. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.description">description</a></code> | <code>str</code> | The description of the custom directory role. |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.templateId">template_id</a></code> | <code>str</code> | Custom template identifier that is typically used if one needs an identifier to be the same across different directories. |
 | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts">CustomDirectoryRoleTimeouts</a></code> | timeouts block. |
 
@@ -1285,7 +1285,7 @@ display_name: str
 
 The display name of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#display_name CustomDirectoryRole#display_name}
 
 ---
 
@@ -1299,7 +1299,7 @@ enabled: bool | IResolvable
 
 Indicates whether the role is enabled for assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#enabled CustomDirectoryRole#enabled}
 
 ---
 
@@ -1313,7 +1313,7 @@ permissions: IResolvable | typing.List[CustomDirectoryRolePermissions]
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#permissions CustomDirectoryRole#permissions}
 
 ---
 
@@ -1327,7 +1327,7 @@ version: str
 
 The version of the role definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#version CustomDirectoryRole#version}
 
 ---
 
@@ -1341,7 +1341,7 @@ description: str
 
 The description of the custom directory role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#description CustomDirectoryRole#description}
 
 ---
 
@@ -1353,7 +1353,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#id CustomDirectoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1370,7 +1370,7 @@ template_id: str
 
 Custom template identifier that is typically used if one needs an identifier to be the same across different directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#template_id CustomDirectoryRole#template_id}
 
 ---
 
@@ -1384,7 +1384,7 @@ timeouts: CustomDirectoryRoleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#timeouts CustomDirectoryRole#timeouts}
 
 ---
 
@@ -1418,7 +1418,7 @@ allowed_resource_actions: typing.List[str]
 
 Set of tasks that can be performed on a resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#allowed_resource_actions CustomDirectoryRole#allowed_resource_actions}
 
 ---
 
@@ -1441,10 +1441,10 @@ customDirectoryRole.CustomDirectoryRoleTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
-| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}. |
+| <code><a href="#@cdktn/provider-azuread.customDirectoryRole.CustomDirectoryRoleTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}. |
 
 ---
 
@@ -1456,7 +1456,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#create CustomDirectoryRole#create}.
 
 ---
 
@@ -1468,7 +1468,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#delete CustomDirectoryRole#delete}.
 
 ---
 
@@ -1480,7 +1480,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#read CustomDirectoryRole#read}.
 
 ---
 
@@ -1492,7 +1492,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/custom_directory_role#update CustomDirectoryRole#update}.
 
 ---
 

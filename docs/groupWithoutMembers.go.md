@@ -4,7 +4,7 @@
 
 ### GroupWithoutMembers <a name="GroupWithoutMembers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members azuread_group_without_members}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members azuread_group_without_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembers.Initializer"></a>
 
@@ -669,7 +669,7 @@ The construct id used in the generated config for the GroupWithoutMembers to imp
 
 The id of the existing GroupWithoutMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1531,7 +1531,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupwithoutme
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.externalSendersAllowed">ExternalSendersAllowed</a></code> | <code>interface{}</code> | Indicates whether people external to the organization can send messages to the group. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromAddressLists">HideFromAddressLists</a></code> | <code>interface{}</code> | Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.hideFromOutlookClients">HideFromOutlookClients</a></code> | <code>interface{}</code> | Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web. |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#id GroupWithoutMembers#id}. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailEnabled">MailEnabled</a></code> | <code>interface{}</code> | Whether the group is a mail enabled, with a shared group mailbox. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.mailNickname">MailNickname</a></code> | <code>*string</code> | The mail alias for the group, unique in the organisation. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersConfig.property.onpremisesGroupType">OnpremisesGroupType</a></code> | <code>*string</code> | Indicates the target on-premise group type the group will be written back as. |
@@ -1627,7 +1627,7 @@ DisplayName *string
 
 The display name for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#display_name GroupWithoutMembers#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#display_name GroupWithoutMembers#display_name}
 
 ---
 
@@ -1643,7 +1643,7 @@ The administrative unit IDs in which the group should be.
 
 If empty, the group will be created at the tenant level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#administrative_unit_ids GroupWithoutMembers#administrative_unit_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#administrative_unit_ids GroupWithoutMembers#administrative_unit_ids}
 
 ---
 
@@ -1659,7 +1659,7 @@ Indicates whether this group can be assigned to an Azure Active Directory role.
 
 This property can only be `true` for security-enabled groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#assignable_to_role GroupWithoutMembers#assignable_to_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#assignable_to_role GroupWithoutMembers#assignable_to_role}
 
 ---
 
@@ -1673,7 +1673,7 @@ AutoSubscribeNewMembers interface{}
 
 Indicates whether new members added to the group will be auto-subscribed to receive email notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#auto_subscribe_new_members GroupWithoutMembers#auto_subscribe_new_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#auto_subscribe_new_members GroupWithoutMembers#auto_subscribe_new_members}
 
 ---
 
@@ -1687,7 +1687,7 @@ Behaviors *[]*string
 
 The group behaviours for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#behaviors GroupWithoutMembers#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#behaviors GroupWithoutMembers#behaviors}
 
 ---
 
@@ -1701,7 +1701,7 @@ Description *string
 
 The description for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#description GroupWithoutMembers#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#description GroupWithoutMembers#description}
 
 ---
 
@@ -1715,7 +1715,7 @@ DynamicMembership GroupWithoutMembersDynamicMembership
 
 dynamic_membership block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#dynamic_membership GroupWithoutMembers#dynamic_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#dynamic_membership GroupWithoutMembers#dynamic_membership}
 
 ---
 
@@ -1729,7 +1729,7 @@ ExternalSendersAllowed interface{}
 
 Indicates whether people external to the organization can send messages to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#external_senders_allowed GroupWithoutMembers#external_senders_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#external_senders_allowed GroupWithoutMembers#external_senders_allowed}
 
 ---
 
@@ -1743,7 +1743,7 @@ HideFromAddressLists interface{}
 
 Indicates whether the group is displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#hide_from_address_lists GroupWithoutMembers#hide_from_address_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#hide_from_address_lists GroupWithoutMembers#hide_from_address_lists}
 
 ---
 
@@ -1757,7 +1757,7 @@ HideFromOutlookClients interface{}
 
 Indicates whether the group is displayed in Outlook clients, such as Outlook for Windows and Outlook on the web.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#hide_from_outlook_clients GroupWithoutMembers#hide_from_outlook_clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#hide_from_outlook_clients GroupWithoutMembers#hide_from_outlook_clients}
 
 ---
 
@@ -1769,7 +1769,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#id GroupWithoutMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#id GroupWithoutMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1788,7 +1788,7 @@ Whether the group is a mail enabled, with a shared group mailbox.
 
 At least one of `mail_enabled` or `security_enabled` must be specified. A group can be mail enabled *and* security enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#mail_enabled GroupWithoutMembers#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#mail_enabled GroupWithoutMembers#mail_enabled}
 
 ---
 
@@ -1802,7 +1802,7 @@ MailNickname *string
 
 The mail alias for the group, unique in the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#mail_nickname GroupWithoutMembers#mail_nickname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#mail_nickname GroupWithoutMembers#mail_nickname}
 
 ---
 
@@ -1816,7 +1816,7 @@ OnpremisesGroupType *string
 
 Indicates the target on-premise group type the group will be written back as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#onpremises_group_type GroupWithoutMembers#onpremises_group_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#onpremises_group_type GroupWithoutMembers#onpremises_group_type}
 
 ---
 
@@ -1830,7 +1830,7 @@ Owners *[]*string
 
 A set of owners who own this group. Supported object types are Users or Service Principals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#owners GroupWithoutMembers#owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#owners GroupWithoutMembers#owners}
 
 ---
 
@@ -1844,7 +1844,7 @@ PreventDuplicateNames interface{}
 
 If `true`, will return an error if an existing group is found with the same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#prevent_duplicate_names GroupWithoutMembers#prevent_duplicate_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#prevent_duplicate_names GroupWithoutMembers#prevent_duplicate_names}
 
 ---
 
@@ -1858,7 +1858,7 @@ ProvisioningOptions *[]*string
 
 The group provisioning options for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#provisioning_options GroupWithoutMembers#provisioning_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#provisioning_options GroupWithoutMembers#provisioning_options}
 
 ---
 
@@ -1874,7 +1874,7 @@ Whether the group is a security group for controlling access to in-app resources
 
 At least one of `security_enabled` or `mail_enabled` must be specified. A group can be security enabled *and* mail enabled
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#security_enabled GroupWithoutMembers#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#security_enabled GroupWithoutMembers#security_enabled}
 
 ---
 
@@ -1888,7 +1888,7 @@ Theme *string
 
 The colour theme for a Microsoft 365 group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#theme GroupWithoutMembers#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#theme GroupWithoutMembers#theme}
 
 ---
 
@@ -1902,7 +1902,7 @@ Timeouts GroupWithoutMembersTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#timeouts GroupWithoutMembers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#timeouts GroupWithoutMembers#timeouts}
 
 ---
 
@@ -1918,7 +1918,7 @@ A set of group types to configure for the group.
 
 `Unified` specifies a Microsoft 365 group. Required when `mail_enabled` is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#types GroupWithoutMembers#types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#types GroupWithoutMembers#types}
 
 ---
 
@@ -1932,7 +1932,7 @@ Visibility *string
 
 Specifies the group join policy and group content visibility.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#visibility GroupWithoutMembers#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#visibility GroupWithoutMembers#visibility}
 
 ---
 
@@ -1946,7 +1946,7 @@ WritebackEnabled interface{}
 
 Whether this group should be synced from Azure AD to the on-premises directory when Azure AD Connect is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#writeback_enabled GroupWithoutMembers#writeback_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#writeback_enabled GroupWithoutMembers#writeback_enabled}
 
 ---
 
@@ -1967,7 +1967,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupwithoutme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}. |
 | <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersDynamicMembership.property.rule">Rule</a></code> | <code>*string</code> | Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'. |
 
 ---
@@ -1980,7 +1980,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#enabled GroupWithoutMembers#enabled}.
 
 ---
 
@@ -1994,7 +1994,7 @@ Rule *string
 
 Rule to determine members for a dynamic group. Required when `group_types` contains 'DynamicMembership'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#rule GroupWithoutMembers#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#rule GroupWithoutMembers#rule}
 
 ---
 
@@ -2017,10 +2017,10 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupwithoutme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#create GroupWithoutMembers#create}. |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}. |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#read GroupWithoutMembers#read}. |
-| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#update GroupWithoutMembers#update}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#create GroupWithoutMembers#create}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#read GroupWithoutMembers#read}. |
+| <code><a href="#@cdktn/provider-azuread.groupWithoutMembers.GroupWithoutMembersTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#update GroupWithoutMembers#update}. |
 
 ---
 
@@ -2032,7 +2032,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#create GroupWithoutMembers#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#create GroupWithoutMembers#create}.
 
 ---
 
@@ -2044,7 +2044,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#delete GroupWithoutMembers#delete}.
 
 ---
 
@@ -2056,7 +2056,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#read GroupWithoutMembers#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#read GroupWithoutMembers#read}.
 
 ---
 
@@ -2068,7 +2068,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/group_without_members#update GroupWithoutMembers#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/group_without_members#update GroupWithoutMembers#update}.
 
 ---
 
