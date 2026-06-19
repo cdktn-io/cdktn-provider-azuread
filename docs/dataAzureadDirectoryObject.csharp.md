@@ -4,7 +4,7 @@
 
 ### DataAzureadDirectoryObject <a name="DataAzureadDirectoryObject" id="@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object azuread_directory_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object azuread_directory_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObject.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzureadDirectoryObject
 
 The id of the existing DataAzureadDirectoryObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -697,7 +697,7 @@ new DataAzureadDirectoryObjectConfig {
 | <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.objectId">ObjectId</a></code> | <code>string</code> | The object ID of the Directory Object. |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts">DataAzureadDirectoryObjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -782,7 +782,7 @@ public string ObjectId { get; set; }
 
 The object ID of the Directory Object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#object_id DataAzureadDirectoryObject#object_id}
 
 ---
 
@@ -794,7 +794,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#id DataAzureadDirectoryObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ public DataAzureadDirectoryObjectTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#timeouts DataAzureadDirectoryObject#timeouts}
 
 ---
 
@@ -831,7 +831,7 @@ new DataAzureadDirectoryObjectTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadDirectoryObject.DataAzureadDirectoryObjectTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}. |
 
 ---
 
@@ -843,7 +843,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/directory_object#read DataAzureadDirectoryObject#read}.
 
 ---
 

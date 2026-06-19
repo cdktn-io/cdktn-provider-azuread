@@ -4,7 +4,7 @@
 
 ### ApplicationOptionalClaimsA <a name="ApplicationOptionalClaimsA" id="@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims azuread_application_optional_claims}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims azuread_application_optional_claims}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsA.Initializer"></a>
 
@@ -576,7 +576,7 @@ The construct id used in the generated config for the ApplicationOptionalClaimsA
 
 The id of the existing ApplicationOptionalClaimsA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
 
 ---
 
@@ -950,7 +950,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
 
 ---
 
@@ -980,7 +980,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
 
 ---
 
@@ -1007,7 +1007,7 @@ const applicationOptionalClaimsAConfig: applicationOptionalClaims.ApplicationOpt
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The resource ID of the application to which these optional claims belong. |
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.accessToken">accessToken</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAccessTokenA">ApplicationOptionalClaimsAccessTokenA</a>[]</code> | access_token block. |
-| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#id ApplicationOptionalClaimsA#id}. |
+| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#id ApplicationOptionalClaimsA#id}. |
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.idToken">idToken</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsIdTokenA">ApplicationOptionalClaimsIdTokenA</a>[]</code> | id_token block. |
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.saml2Token">saml2Token</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsSaml2TokenA">ApplicationOptionalClaimsSaml2TokenA</a>[]</code> | saml2_token block. |
 | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts">ApplicationOptionalClaimsTimeouts</a></code> | timeouts block. |
@@ -1094,7 +1094,7 @@ public readonly applicationId: string;
 
 The resource ID of the application to which these optional claims belong.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#application_id ApplicationOptionalClaimsA#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#application_id ApplicationOptionalClaimsA#application_id}
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly accessToken: IResolvable | ApplicationOptionalClaimsAccessTokenA
 
 access_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#access_token ApplicationOptionalClaimsA#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#access_token ApplicationOptionalClaimsA#access_token}
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#id ApplicationOptionalClaimsA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#id ApplicationOptionalClaimsA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1137,7 @@ public readonly idToken: IResolvable | ApplicationOptionalClaimsIdTokenA[];
 
 id_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#id_token ApplicationOptionalClaimsA#id_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#id_token ApplicationOptionalClaimsA#id_token}
 
 ---
 
@@ -1151,7 +1151,7 @@ public readonly saml2Token: IResolvable | ApplicationOptionalClaimsSaml2TokenA[]
 
 saml2_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#saml2_token ApplicationOptionalClaimsA#saml2_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#saml2_token ApplicationOptionalClaimsA#saml2_token}
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly timeouts: ApplicationOptionalClaimsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#timeouts ApplicationOptionalClaimsA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#timeouts ApplicationOptionalClaimsA#timeouts}
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
 
 ---
 
@@ -1216,7 +1216,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
 
 ---
 
@@ -1246,7 +1246,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
 
 ---
 
@@ -1281,7 +1281,7 @@ public readonly name: string;
 
 The name of the optional claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#name ApplicationOptionalClaimsA#name}
 
 ---
 
@@ -1297,7 +1297,7 @@ List of additional properties of the claim.
 
 If a property exists in this list, it modifies the behaviour of the optional claim
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#additional_properties ApplicationOptionalClaimsA#additional_properties}
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly essential: boolean | IResolvable;
 
 Whether the claim specified by the client is necessary to ensure a smooth authorization experience.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#essential ApplicationOptionalClaimsA#essential}
 
 ---
 
@@ -1327,7 +1327,7 @@ The source of the claim.
 
 If `source` is absent, the claim is a predefined optional claim. If `source` is `user`, the value of `name` is the extension property from the user object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#source ApplicationOptionalClaimsA#source}
 
 ---
 
@@ -1345,10 +1345,10 @@ const applicationOptionalClaimsTimeouts: applicationOptionalClaims.ApplicationOp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#create ApplicationOptionalClaimsA#create}. |
-| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#delete ApplicationOptionalClaimsA#delete}. |
-| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#read ApplicationOptionalClaimsA#read}. |
-| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#update ApplicationOptionalClaimsA#update}. |
+| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#create ApplicationOptionalClaimsA#create}. |
+| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#delete ApplicationOptionalClaimsA#delete}. |
+| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#read ApplicationOptionalClaimsA#read}. |
+| <code><a href="#@cdktn/provider-azuread.applicationOptionalClaims.ApplicationOptionalClaimsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#update ApplicationOptionalClaimsA#update}. |
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#create ApplicationOptionalClaimsA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#create ApplicationOptionalClaimsA#create}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#delete ApplicationOptionalClaimsA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#delete ApplicationOptionalClaimsA#delete}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#read ApplicationOptionalClaimsA#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#read ApplicationOptionalClaimsA#read}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/application_optional_claims#update ApplicationOptionalClaimsA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/application_optional_claims#update ApplicationOptionalClaimsA#update}.
 
 ---
 

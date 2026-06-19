@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy
+// https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,69 +13,187 @@ import * as cdktn from 'cdktn';
 
 export interface ConditionalAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#display_name ConditionalAccessPolicy#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#id ConditionalAccessPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#id ConditionalAccessPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#state ConditionalAccessPolicy#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#state ConditionalAccessPolicy#state}
   */
   readonly state: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#conditions ConditionalAccessPolicy#conditions}
   */
   readonly conditions: ConditionalAccessPolicyConditions;
   /**
   * grant_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#grant_controls ConditionalAccessPolicy#grant_controls}
   */
   readonly grantControls?: ConditionalAccessPolicyGrantControls;
   /**
   * session_controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#session_controls ConditionalAccessPolicy#session_controls}
   */
   readonly sessionControls?: ConditionalAccessPolicySessionControls;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#timeouts ConditionalAccessPolicy#timeouts}
   */
   readonly timeouts?: ConditionalAccessPolicyTimeouts;
 }
+export interface ConditionalAccessPolicyConditionsApplicationsFilter {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#mode ConditionalAccessPolicy#mode}
+  */
+  readonly mode: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#rule ConditionalAccessPolicy#rule}
+  */
+  readonly rule: string;
+}
+
+export function conditionalAccessPolicyConditionsApplicationsFilterToTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsApplicationsFilter): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    mode: cdktn.stringToTerraform(struct!.mode),
+    rule: cdktn.stringToTerraform(struct!.rule),
+  }
+}
+
+
+export function conditionalAccessPolicyConditionsApplicationsFilterToHclTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsApplicationsFilter): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    mode: {
+      value: cdktn.stringToHclTerraform(struct!.mode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rule: {
+      value: cdktn.stringToHclTerraform(struct!.rule),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ConditionalAccessPolicyConditionsApplicationsFilterOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ConditionalAccessPolicyConditionsApplicationsFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._mode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mode = this._mode;
+    }
+    if (this._rule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rule = this._rule;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ConditionalAccessPolicyConditionsApplicationsFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._mode = undefined;
+      this._rule = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._mode = value.mode;
+      this._rule = value.rule;
+    }
+  }
+
+  // mode - computed: false, optional: false, required: true
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
+  // rule - computed: false, optional: false, required: true
+  private _rule?: string; 
+  public get rule() {
+    return this.getStringAttribute('rule');
+  }
+  public set rule(value: string) {
+    this._rule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ruleInput() {
+    return this._rule;
+  }
+}
 export interface ConditionalAccessPolicyConditionsApplications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_applications ConditionalAccessPolicy#excluded_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_applications ConditionalAccessPolicy#excluded_applications}
   */
   readonly excludedApplications?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_applications ConditionalAccessPolicy#included_applications}
   */
   readonly includedApplications?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_user_actions ConditionalAccessPolicy#included_user_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_user_actions ConditionalAccessPolicy#included_user_actions}
   */
   readonly includedUserActions?: string[];
+  /**
+  * filter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
+  */
+  readonly filter?: ConditionalAccessPolicyConditionsApplicationsFilter;
 }
 
 export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedApplications),
     included_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedApplications),
     included_user_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedUserActions),
+    filter: conditionalAccessPolicyConditionsApplicationsFilterToTerraform(struct!.filter),
   }
 }
 
@@ -83,7 +201,7 @@ export function conditionalAccessPolicyConditionsApplicationsToTerraform(struct?
 export function conditionalAccessPolicyConditionsApplicationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsApplicationsOutputReference | ConditionalAccessPolicyConditionsApplications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_applications: {
@@ -103,6 +221,12 @@ export function conditionalAccessPolicyConditionsApplicationsToHclTerraform(stru
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    filter: {
+      value: conditionalAccessPolicyConditionsApplicationsFilterToHclTerraform(struct!.filter),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConditionalAccessPolicyConditionsApplicationsFilterList",
     },
   };
 
@@ -136,6 +260,10 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
       hasAnyValues = true;
       internalValueResult.includedUserActions = this._includedUserActions;
     }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -145,12 +273,14 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
       this._excludedApplications = undefined;
       this._includedApplications = undefined;
       this._includedUserActions = undefined;
+      this._filter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._excludedApplications = value.excludedApplications;
       this._includedApplications = value.includedApplications;
       this._includedUserActions = value.includedUserActions;
+      this._filter.internalValue = value.filter;
     }
   }
 
@@ -201,14 +331,30 @@ export class ConditionalAccessPolicyConditionsApplicationsOutputReference extend
   public get includedUserActionsInput() {
     return this._includedUserActions;
   }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new ConditionalAccessPolicyConditionsApplicationsFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: ConditionalAccessPolicyConditionsApplicationsFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
 }
 export interface ConditionalAccessPolicyConditionsClientApplicationsFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#mode ConditionalAccessPolicy#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#mode ConditionalAccessPolicy#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#rule ConditionalAccessPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#rule ConditionalAccessPolicy#rule}
   */
   readonly rule: string;
 }
@@ -216,7 +362,7 @@ export interface ConditionalAccessPolicyConditionsClientApplicationsFilter {
 export function conditionalAccessPolicyConditionsClientApplicationsFilterToTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsClientApplicationsFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -228,7 +374,7 @@ export function conditionalAccessPolicyConditionsClientApplicationsFilterToTerra
 export function conditionalAccessPolicyConditionsClientApplicationsFilterToHclTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsFilterOutputReference | ConditionalAccessPolicyConditionsClientApplicationsFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -315,17 +461,17 @@ export class ConditionalAccessPolicyConditionsClientApplicationsFilterOutputRefe
 }
 export interface ConditionalAccessPolicyConditionsClientApplications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_service_principals ConditionalAccessPolicy#excluded_service_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_service_principals ConditionalAccessPolicy#excluded_service_principals}
   */
   readonly excludedServicePrincipals?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_service_principals ConditionalAccessPolicy#included_service_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_service_principals ConditionalAccessPolicy#included_service_principals}
   */
   readonly includedServicePrincipals?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
   */
   readonly filter?: ConditionalAccessPolicyConditionsClientApplicationsFilter;
 }
@@ -333,7 +479,7 @@ export interface ConditionalAccessPolicyConditionsClientApplications {
 export function conditionalAccessPolicyConditionsClientApplicationsToTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsOutputReference | ConditionalAccessPolicyConditionsClientApplications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_service_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedServicePrincipals),
@@ -346,7 +492,7 @@ export function conditionalAccessPolicyConditionsClientApplicationsToTerraform(s
 export function conditionalAccessPolicyConditionsClientApplicationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsClientApplicationsOutputReference | ConditionalAccessPolicyConditionsClientApplications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_service_principals: {
@@ -467,11 +613,11 @@ export class ConditionalAccessPolicyConditionsClientApplicationsOutputReference 
 }
 export interface ConditionalAccessPolicyConditionsDevicesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#mode ConditionalAccessPolicy#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#mode ConditionalAccessPolicy#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#rule ConditionalAccessPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#rule ConditionalAccessPolicy#rule}
   */
   readonly rule: string;
 }
@@ -479,7 +625,7 @@ export interface ConditionalAccessPolicyConditionsDevicesFilter {
 export function conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesFilterOutputReference | ConditionalAccessPolicyConditionsDevicesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -491,7 +637,7 @@ export function conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct
 export function conditionalAccessPolicyConditionsDevicesFilterToHclTerraform(struct?: ConditionalAccessPolicyConditionsDevicesFilterOutputReference | ConditionalAccessPolicyConditionsDevicesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -580,7 +726,7 @@ export interface ConditionalAccessPolicyConditionsDevices {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#filter ConditionalAccessPolicy#filter}
   */
   readonly filter?: ConditionalAccessPolicyConditionsDevicesFilter;
 }
@@ -588,7 +734,7 @@ export interface ConditionalAccessPolicyConditionsDevices {
 export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: ConditionalAccessPolicyConditionsDevicesOutputReference | ConditionalAccessPolicyConditionsDevices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: conditionalAccessPolicyConditionsDevicesFilterToTerraform(struct!.filter),
@@ -599,7 +745,7 @@ export function conditionalAccessPolicyConditionsDevicesToTerraform(struct?: Con
 export function conditionalAccessPolicyConditionsDevicesToHclTerraform(struct?: ConditionalAccessPolicyConditionsDevicesOutputReference | ConditionalAccessPolicyConditionsDevices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -664,11 +810,11 @@ export class ConditionalAccessPolicyConditionsDevicesOutputReference extends cdk
 }
 export interface ConditionalAccessPolicyConditionsLocations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_locations ConditionalAccessPolicy#excluded_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_locations ConditionalAccessPolicy#excluded_locations}
   */
   readonly excludedLocations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_locations ConditionalAccessPolicy#included_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_locations ConditionalAccessPolicy#included_locations}
   */
   readonly includedLocations: string[];
 }
@@ -676,7 +822,7 @@ export interface ConditionalAccessPolicyConditionsLocations {
 export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedLocations),
@@ -688,7 +834,7 @@ export function conditionalAccessPolicyConditionsLocationsToTerraform(struct?: C
 export function conditionalAccessPolicyConditionsLocationsToHclTerraform(struct?: ConditionalAccessPolicyConditionsLocationsOutputReference | ConditionalAccessPolicyConditionsLocations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_locations: {
@@ -778,11 +924,11 @@ export class ConditionalAccessPolicyConditionsLocationsOutputReference extends c
 }
 export interface ConditionalAccessPolicyConditionsPlatforms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_platforms ConditionalAccessPolicy#excluded_platforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_platforms ConditionalAccessPolicy#excluded_platforms}
   */
   readonly excludedPlatforms?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_platforms ConditionalAccessPolicy#included_platforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_platforms ConditionalAccessPolicy#included_platforms}
   */
   readonly includedPlatforms: string[];
 }
@@ -790,7 +936,7 @@ export interface ConditionalAccessPolicyConditionsPlatforms {
 export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_platforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedPlatforms),
@@ -802,7 +948,7 @@ export function conditionalAccessPolicyConditionsPlatformsToTerraform(struct?: C
 export function conditionalAccessPolicyConditionsPlatformsToHclTerraform(struct?: ConditionalAccessPolicyConditionsPlatformsOutputReference | ConditionalAccessPolicyConditionsPlatforms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_platforms: {
@@ -892,11 +1038,11 @@ export class ConditionalAccessPolicyConditionsPlatformsOutputReference extends c
 }
 export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#members ConditionalAccessPolicy#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#members ConditionalAccessPolicy#members}
   */
   readonly members?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#membership_kind ConditionalAccessPolicy#membership_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#membership_kind ConditionalAccessPolicy#membership_kind}
   */
   readonly membershipKind: string;
 }
@@ -904,7 +1050,7 @@ export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalU
 export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
@@ -916,7 +1062,7 @@ export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUs
 export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     members: {
@@ -1038,13 +1184,13 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
 }
 export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}
   */
   readonly guestOrExternalUserTypes: string[];
   /**
   * external_tenants block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
   */
   readonly externalTenants?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable;
 }
@@ -1052,7 +1198,7 @@ export interface ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalU
 export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     guest_or_external_user_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
@@ -1064,7 +1210,7 @@ export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUs
 export function conditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     guest_or_external_user_types: {
@@ -1186,11 +1332,11 @@ export class ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers
 }
 export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#members ConditionalAccessPolicy#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#members ConditionalAccessPolicy#members}
   */
   readonly members?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#membership_kind ConditionalAccessPolicy#membership_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#membership_kind ConditionalAccessPolicy#membership_kind}
   */
   readonly membershipKind: string;
 }
@@ -1198,7 +1344,7 @@ export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalU
 export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
@@ -1210,7 +1356,7 @@ export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUs
 export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenantsToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     members: {
@@ -1332,13 +1478,13 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
 }
 export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#guest_or_external_user_types ConditionalAccessPolicy#guest_or_external_user_types}
   */
   readonly guestOrExternalUserTypes: string[];
   /**
   * external_tenants block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#external_tenants ConditionalAccessPolicy#external_tenants}
   */
   readonly externalTenants?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersExternalTenants[] | cdktn.IResolvable;
 }
@@ -1346,7 +1492,7 @@ export interface ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalU
 export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     guest_or_external_user_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.guestOrExternalUserTypes),
@@ -1358,7 +1504,7 @@ export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUs
 export function conditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     guest_or_external_user_types: {
@@ -1480,39 +1626,39 @@ export class ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers
 }
 export interface ConditionalAccessPolicyConditionsUsers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_groups ConditionalAccessPolicy#excluded_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_groups ConditionalAccessPolicy#excluded_groups}
   */
   readonly excludedGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_roles ConditionalAccessPolicy#excluded_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_roles ConditionalAccessPolicy#excluded_roles}
   */
   readonly excludedRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_users ConditionalAccessPolicy#excluded_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_users ConditionalAccessPolicy#excluded_users}
   */
   readonly excludedUsers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_groups ConditionalAccessPolicy#included_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_groups ConditionalAccessPolicy#included_groups}
   */
   readonly includedGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_roles ConditionalAccessPolicy#included_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_roles ConditionalAccessPolicy#included_roles}
   */
   readonly includedRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_users ConditionalAccessPolicy#included_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_users ConditionalAccessPolicy#included_users}
   */
   readonly includedUsers?: string[];
   /**
   * excluded_guests_or_external_users block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#excluded_guests_or_external_users ConditionalAccessPolicy#excluded_guests_or_external_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#excluded_guests_or_external_users ConditionalAccessPolicy#excluded_guests_or_external_users}
   */
   readonly excludedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersExcludedGuestsOrExternalUsers[] | cdktn.IResolvable;
   /**
   * included_guests_or_external_users block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#included_guests_or_external_users ConditionalAccessPolicy#included_guests_or_external_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#included_guests_or_external_users ConditionalAccessPolicy#included_guests_or_external_users}
   */
   readonly includedGuestsOrExternalUsers?: ConditionalAccessPolicyConditionsUsersIncludedGuestsOrExternalUsers[] | cdktn.IResolvable;
 }
@@ -1520,7 +1666,7 @@ export interface ConditionalAccessPolicyConditionsUsers {
 export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedGroups),
@@ -1538,7 +1684,7 @@ export function conditionalAccessPolicyConditionsUsersToTerraform(struct?: Condi
 export function conditionalAccessPolicyConditionsUsersToHclTerraform(struct?: ConditionalAccessPolicyConditionsUsersOutputReference | ConditionalAccessPolicyConditionsUsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_groups: {
@@ -1799,63 +1945,63 @@ export class ConditionalAccessPolicyConditionsUsersOutputReference extends cdktn
 }
 export interface ConditionalAccessPolicyConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#authentication_flow_transfer_methods ConditionalAccessPolicy#authentication_flow_transfer_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#authentication_flow_transfer_methods ConditionalAccessPolicy#authentication_flow_transfer_methods}
   */
   readonly authenticationFlowTransferMethods?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#client_app_types ConditionalAccessPolicy#client_app_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#client_app_types ConditionalAccessPolicy#client_app_types}
   */
   readonly clientAppTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#insider_risk_levels ConditionalAccessPolicy#insider_risk_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#insider_risk_levels ConditionalAccessPolicy#insider_risk_levels}
   */
   readonly insiderRiskLevels?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#service_principal_risk_levels ConditionalAccessPolicy#service_principal_risk_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#service_principal_risk_levels ConditionalAccessPolicy#service_principal_risk_levels}
   */
   readonly servicePrincipalRiskLevels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#sign_in_risk_levels ConditionalAccessPolicy#sign_in_risk_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#sign_in_risk_levels ConditionalAccessPolicy#sign_in_risk_levels}
   */
   readonly signInRiskLevels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#user_risk_levels ConditionalAccessPolicy#user_risk_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#user_risk_levels ConditionalAccessPolicy#user_risk_levels}
   */
   readonly userRiskLevels?: string[];
   /**
   * applications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#applications ConditionalAccessPolicy#applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#applications ConditionalAccessPolicy#applications}
   */
   readonly applications: ConditionalAccessPolicyConditionsApplications;
   /**
   * client_applications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#client_applications ConditionalAccessPolicy#client_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#client_applications ConditionalAccessPolicy#client_applications}
   */
   readonly clientApplications?: ConditionalAccessPolicyConditionsClientApplications;
   /**
   * devices block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#devices ConditionalAccessPolicy#devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#devices ConditionalAccessPolicy#devices}
   */
   readonly devices?: ConditionalAccessPolicyConditionsDevices;
   /**
   * locations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#locations ConditionalAccessPolicy#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#locations ConditionalAccessPolicy#locations}
   */
   readonly locations?: ConditionalAccessPolicyConditionsLocations;
   /**
   * platforms block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#platforms ConditionalAccessPolicy#platforms}
   */
   readonly platforms?: ConditionalAccessPolicyConditionsPlatforms;
   /**
   * users block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#users ConditionalAccessPolicy#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#users ConditionalAccessPolicy#users}
   */
   readonly users: ConditionalAccessPolicyConditionsUsers;
 }
@@ -1863,7 +2009,7 @@ export interface ConditionalAccessPolicyConditions {
 export function conditionalAccessPolicyConditionsToTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication_flow_transfer_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.authenticationFlowTransferMethods),
@@ -1885,7 +2031,7 @@ export function conditionalAccessPolicyConditionsToTerraform(struct?: Conditiona
 export function conditionalAccessPolicyConditionsToHclTerraform(struct?: ConditionalAccessPolicyConditionsOutputReference | ConditionalAccessPolicyConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication_flow_transfer_methods: {
@@ -2249,23 +2395,23 @@ export class ConditionalAccessPolicyConditionsOutputReference extends cdktn.Comp
 }
 export interface ConditionalAccessPolicyGrantControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#authentication_strength_policy_id ConditionalAccessPolicy#authentication_strength_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#authentication_strength_policy_id ConditionalAccessPolicy#authentication_strength_policy_id}
   */
   readonly authenticationStrengthPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#built_in_controls ConditionalAccessPolicy#built_in_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#built_in_controls ConditionalAccessPolicy#built_in_controls}
   */
   readonly builtInControls?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#custom_authentication_factors ConditionalAccessPolicy#custom_authentication_factors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#custom_authentication_factors ConditionalAccessPolicy#custom_authentication_factors}
   */
   readonly customAuthenticationFactors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#operator ConditionalAccessPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#operator ConditionalAccessPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#terms_of_use ConditionalAccessPolicy#terms_of_use}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#terms_of_use ConditionalAccessPolicy#terms_of_use}
   */
   readonly termsOfUse?: string[];
 }
@@ -2273,7 +2419,7 @@ export interface ConditionalAccessPolicyGrantControls {
 export function conditionalAccessPolicyGrantControlsToTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     authentication_strength_policy_id: cdktn.stringToTerraform(struct!.authenticationStrengthPolicyId),
@@ -2288,7 +2434,7 @@ export function conditionalAccessPolicyGrantControlsToTerraform(struct?: Conditi
 export function conditionalAccessPolicyGrantControlsToHclTerraform(struct?: ConditionalAccessPolicyGrantControlsOutputReference | ConditionalAccessPolicyGrantControls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     authentication_strength_policy_id: {
@@ -2462,35 +2608,35 @@ export class ConditionalAccessPolicyGrantControlsOutputReference extends cdktn.C
 }
 export interface ConditionalAccessPolicySessionControls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#application_enforced_restrictions_enabled ConditionalAccessPolicy#application_enforced_restrictions_enabled}
   */
   readonly applicationEnforcedRestrictionsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#cloud_app_security_policy ConditionalAccessPolicy#cloud_app_security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#cloud_app_security_policy ConditionalAccessPolicy#cloud_app_security_policy}
   */
   readonly cloudAppSecurityPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#disable_resilience_defaults ConditionalAccessPolicy#disable_resilience_defaults}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#disable_resilience_defaults ConditionalAccessPolicy#disable_resilience_defaults}
   */
   readonly disableResilienceDefaults?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#persistent_browser_mode ConditionalAccessPolicy#persistent_browser_mode}
   */
   readonly persistentBrowserMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#sign_in_frequency ConditionalAccessPolicy#sign_in_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#sign_in_frequency ConditionalAccessPolicy#sign_in_frequency}
   */
   readonly signInFrequency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#sign_in_frequency_authentication_type ConditionalAccessPolicy#sign_in_frequency_authentication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#sign_in_frequency_authentication_type ConditionalAccessPolicy#sign_in_frequency_authentication_type}
   */
   readonly signInFrequencyAuthenticationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#sign_in_frequency_interval ConditionalAccessPolicy#sign_in_frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#sign_in_frequency_interval ConditionalAccessPolicy#sign_in_frequency_interval}
   */
   readonly signInFrequencyInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#sign_in_frequency_period ConditionalAccessPolicy#sign_in_frequency_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#sign_in_frequency_period ConditionalAccessPolicy#sign_in_frequency_period}
   */
   readonly signInFrequencyPeriod?: string;
 }
@@ -2498,7 +2644,7 @@ export interface ConditionalAccessPolicySessionControls {
 export function conditionalAccessPolicySessionControlsToTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     application_enforced_restrictions_enabled: cdktn.booleanToTerraform(struct!.applicationEnforcedRestrictionsEnabled),
@@ -2516,7 +2662,7 @@ export function conditionalAccessPolicySessionControlsToTerraform(struct?: Condi
 export function conditionalAccessPolicySessionControlsToHclTerraform(struct?: ConditionalAccessPolicySessionControlsOutputReference | ConditionalAccessPolicySessionControls): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     application_enforced_restrictions_enabled: {
@@ -2777,19 +2923,19 @@ export class ConditionalAccessPolicySessionControlsOutputReference extends cdktn
 }
 export interface ConditionalAccessPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#create ConditionalAccessPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#create ConditionalAccessPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#delete ConditionalAccessPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#delete ConditionalAccessPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#read ConditionalAccessPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#read ConditionalAccessPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#update ConditionalAccessPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#update ConditionalAccessPolicy#update}
   */
   readonly update?: string;
 }
@@ -2797,7 +2943,7 @@ export interface ConditionalAccessPolicyTimeouts {
 export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2811,7 +2957,7 @@ export function conditionalAccessPolicyTimeoutsToTerraform(struct?: ConditionalA
 export function conditionalAccessPolicyTimeoutsToHclTerraform(struct?: ConditionalAccessPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2970,7 +3116,7 @@ export class ConditionalAccessPolicyTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy azuread_conditional_access_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy azuread_conditional_access_policy}
 */
 export class ConditionalAccessPolicy extends cdktn.TerraformResource {
 
@@ -2986,7 +3132,7 @@ export class ConditionalAccessPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ConditionalAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConditionalAccessPolicy to import
-  * @param importFromId The id of the existing ConditionalAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConditionalAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConditionalAccessPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2998,7 +3144,7 @@ export class ConditionalAccessPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/conditional_access_policy azuread_conditional_access_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3009,7 +3155,7 @@ export class ConditionalAccessPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azuread_conditional_access_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
