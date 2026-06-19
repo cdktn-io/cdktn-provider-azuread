@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal
+// https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataAzureadServicePrincipalConfig extends cdktn.TerraformMetaAr
   /**
   * The client ID of the application associated with this service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#client_id DataAzureadServicePrincipal#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#client_id DataAzureadServicePrincipal#client_id}
   */
   readonly clientId?: string;
   /**
   * The display name of the application associated with this service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#display_name DataAzureadServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#id DataAzureadServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface DataAzureadServicePrincipalConfig extends cdktn.TerraformMetaAr
   /**
   * The object ID of the service principal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#object_id DataAzureadServicePrincipal#object_id}
   */
   readonly objectId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#timeouts DataAzureadServicePrincipal#timeouts}
   */
   readonly timeouts?: DataAzureadServicePrincipalTimeouts;
 }
@@ -50,7 +50,7 @@ export interface DataAzureadServicePrincipalAppRoles {
 export function dataAzureadServicePrincipalAppRolesToTerraform(struct?: DataAzureadServicePrincipalAppRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -60,7 +60,7 @@ export function dataAzureadServicePrincipalAppRolesToTerraform(struct?: DataAzur
 export function dataAzureadServicePrincipalAppRolesToHclTerraform(struct?: DataAzureadServicePrincipalAppRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -150,7 +150,7 @@ export interface DataAzureadServicePrincipalFeatureTags {
 export function dataAzureadServicePrincipalFeatureTagsToTerraform(struct?: DataAzureadServicePrincipalFeatureTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -160,7 +160,7 @@ export function dataAzureadServicePrincipalFeatureTagsToTerraform(struct?: DataA
 export function dataAzureadServicePrincipalFeatureTagsToHclTerraform(struct?: DataAzureadServicePrincipalFeatureTags): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -240,7 +240,7 @@ export interface DataAzureadServicePrincipalFeatures {
 export function dataAzureadServicePrincipalFeaturesToTerraform(struct?: DataAzureadServicePrincipalFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -250,7 +250,7 @@ export function dataAzureadServicePrincipalFeaturesToTerraform(struct?: DataAzur
 export function dataAzureadServicePrincipalFeaturesToHclTerraform(struct?: DataAzureadServicePrincipalFeatures): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -330,7 +330,7 @@ export interface DataAzureadServicePrincipalOauth2PermissionScopes {
 export function dataAzureadServicePrincipalOauth2PermissionScopesToTerraform(struct?: DataAzureadServicePrincipalOauth2PermissionScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -340,7 +340,7 @@ export function dataAzureadServicePrincipalOauth2PermissionScopesToTerraform(str
 export function dataAzureadServicePrincipalOauth2PermissionScopesToHclTerraform(struct?: DataAzureadServicePrincipalOauth2PermissionScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -440,7 +440,7 @@ export interface DataAzureadServicePrincipalSamlSingleSignOn {
 export function dataAzureadServicePrincipalSamlSingleSignOnToTerraform(struct?: DataAzureadServicePrincipalSamlSingleSignOn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -450,7 +450,7 @@ export function dataAzureadServicePrincipalSamlSingleSignOnToTerraform(struct?: 
 export function dataAzureadServicePrincipalSamlSingleSignOnToHclTerraform(struct?: DataAzureadServicePrincipalSamlSingleSignOn): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -511,7 +511,7 @@ export class DataAzureadServicePrincipalSamlSingleSignOnList extends cdktn.Compl
 }
 export interface DataAzureadServicePrincipalTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#read DataAzureadServicePrincipal#read}
   */
   readonly read?: string;
 }
@@ -519,7 +519,7 @@ export interface DataAzureadServicePrincipalTimeouts {
 export function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzureadServicePrincipalTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -530,7 +530,7 @@ export function dataAzureadServicePrincipalTimeoutsToTerraform(struct?: DataAzur
 export function dataAzureadServicePrincipalTimeoutsToHclTerraform(struct?: DataAzureadServicePrincipalTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -605,7 +605,7 @@ export class DataAzureadServicePrincipalTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal azuread_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal azuread_service_principal}
 */
 export class DataAzureadServicePrincipal extends cdktn.TerraformDataSource {
 
@@ -621,7 +621,7 @@ export class DataAzureadServicePrincipal extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzureadServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadServicePrincipal to import
-  * @param importFromId The id of the existing DataAzureadServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadServicePrincipal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -633,7 +633,7 @@ export class DataAzureadServicePrincipal extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/service_principal azuread_service_principal} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/service_principal azuread_service_principal} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -644,7 +644,7 @@ export class DataAzureadServicePrincipal extends cdktn.TerraformDataSource {
       terraformResourceType: 'azuread_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

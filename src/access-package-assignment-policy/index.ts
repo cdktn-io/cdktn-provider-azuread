@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy
+// https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktn.TerraformMeta
   /**
   * The ID of the access package that will contain the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#access_package_id AccessPackageAssignmentPolicy#access_package_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#access_package_id AccessPackageAssignmentPolicy#access_package_id}
   */
   readonly accessPackageId: string;
   /**
   * The description of the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#description AccessPackageAssignmentPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#description AccessPackageAssignmentPolicy#description}
   */
   readonly description: string;
   /**
   * The display name of the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#display_name AccessPackageAssignmentPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#display_name AccessPackageAssignmentPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * How many days this assignment is valid for
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
   */
   readonly durationInDays?: number;
   /**
   * The date that this assignment expires, formatted as an RFC3339 date string in UTC (e.g. 2018-01-01T01:02:03Z)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#expiration_date AccessPackageAssignmentPolicy#expiration_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#expiration_date AccessPackageAssignmentPolicy#expiration_date}
   */
   readonly expirationDate?: string;
   /**
   * When enabled, users will be able to request extension of their access to this package before their access expires
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#extension_enabled AccessPackageAssignmentPolicy#extension_enabled}
   */
   readonly extensionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#id AccessPackageAssignmentPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,31 +58,31 @@ export interface AccessPackageAssignmentPolicyConfig extends cdktn.TerraformMeta
   /**
   * approval_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approval_settings AccessPackageAssignmentPolicy#approval_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approval_settings AccessPackageAssignmentPolicy#approval_settings}
   */
   readonly approvalSettings?: AccessPackageAssignmentPolicyApprovalSettings;
   /**
   * assignment_review_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#assignment_review_settings AccessPackageAssignmentPolicy#assignment_review_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#assignment_review_settings AccessPackageAssignmentPolicy#assignment_review_settings}
   */
   readonly assignmentReviewSettings?: AccessPackageAssignmentPolicyAssignmentReviewSettings;
   /**
   * question block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#question AccessPackageAssignmentPolicy#question}
   */
   readonly question?: AccessPackageAssignmentPolicyQuestion[] | cdktn.IResolvable;
   /**
   * requestor_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#requestor_settings AccessPackageAssignmentPolicy#requestor_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#requestor_settings AccessPackageAssignmentPolicy#requestor_settings}
   */
   readonly requestorSettings?: AccessPackageAssignmentPolicyRequestorSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#timeouts AccessPackageAssignmentPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#timeouts AccessPackageAssignmentPolicy#timeouts}
   */
   readonly timeouts?: AccessPackageAssignmentPolicyTimeouts;
 }
@@ -90,19 +90,19 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlter
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
 }
@@ -110,7 +110,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlter
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup: cdktn.booleanToTerraform(struct!.backup),
@@ -123,7 +123,7 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAltern
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup: {
@@ -275,19 +275,19 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrima
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
 }
@@ -295,7 +295,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrima
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup: cdktn.booleanToTerraform(struct!.backup),
@@ -308,7 +308,7 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimar
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApproverToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup: {
@@ -460,37 +460,37 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
   /**
   * If no action taken, forward to alternate approvers?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#alternative_approval_enabled AccessPackageAssignmentPolicy#alternative_approval_enabled}
   */
   readonly alternativeApprovalEnabled?: boolean | cdktn.IResolvable;
   /**
   * Decision must be made in how many days? If a request is not approved within this time period after it is made, it will be automatically rejected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approval_timeout_in_days AccessPackageAssignmentPolicy#approval_timeout_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approval_timeout_in_days AccessPackageAssignmentPolicy#approval_timeout_in_days}
   */
   readonly approvalTimeoutInDays: number;
   /**
   * Whether an approver must provide a justification for their decision. Justification is visible to other approvers and the requestor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
   readonly approverJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * Forward to alternate approver(s) after how many days?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#enable_alternative_approval_in_days AccessPackageAssignmentPolicy#enable_alternative_approval_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#enable_alternative_approval_in_days AccessPackageAssignmentPolicy#enable_alternative_approval_in_days}
   */
   readonly enableAlternativeApprovalInDays?: number;
   /**
   * alternative_approver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#alternative_approver AccessPackageAssignmentPolicy#alternative_approver}
   */
   readonly alternativeApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStageAlternativeApprover[] | cdktn.IResolvable;
   /**
   * primary_approver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#primary_approver AccessPackageAssignmentPolicy#primary_approver}
   */
   readonly primaryApprover?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStagePrimaryApprover[] | cdktn.IResolvable;
 }
@@ -498,7 +498,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettingsApprovalStage {
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternative_approval_enabled: cdktn.booleanToTerraform(struct!.alternativeApprovalEnabled),
@@ -514,7 +514,7 @@ export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToTerr
 export function accessPackageAssignmentPolicyApprovalSettingsApprovalStageToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternative_approval_enabled: {
@@ -750,25 +750,25 @@ export interface AccessPackageAssignmentPolicyApprovalSettings {
   /**
   * Whether an approval is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approval_required AccessPackageAssignmentPolicy#approval_required}
   */
   readonly approvalRequired?: boolean | cdktn.IResolvable;
   /**
   * Whether an approval is required to grant extension. Same approval settings used to approve initial access will apply
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approval_required_for_extension AccessPackageAssignmentPolicy#approval_required_for_extension}
   */
   readonly approvalRequiredForExtension?: boolean | cdktn.IResolvable;
   /**
   * Whether requestor are required to provide a justification to request an access package. Justification is visible to other approvers and the requestor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#requestor_justification_required AccessPackageAssignmentPolicy#requestor_justification_required}
   */
   readonly requestorJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * approval_stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approval_stage AccessPackageAssignmentPolicy#approval_stage}
   */
   readonly approvalStage?: AccessPackageAssignmentPolicyApprovalSettingsApprovalStage[] | cdktn.IResolvable;
 }
@@ -776,7 +776,7 @@ export interface AccessPackageAssignmentPolicyApprovalSettings {
 export function accessPackageAssignmentPolicyApprovalSettingsToTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsOutputReference | AccessPackageAssignmentPolicyApprovalSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     approval_required: cdktn.booleanToTerraform(struct!.approvalRequired),
@@ -790,7 +790,7 @@ export function accessPackageAssignmentPolicyApprovalSettingsToTerraform(struct?
 export function accessPackageAssignmentPolicyApprovalSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyApprovalSettingsOutputReference | AccessPackageAssignmentPolicyApprovalSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     approval_required: {
@@ -941,19 +941,19 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
 }
@@ -961,7 +961,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer {
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup: cdktn.booleanToTerraform(struct!.backup),
@@ -974,7 +974,7 @@ export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToT
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsReviewerToHclTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup: {
@@ -1126,55 +1126,55 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
   /**
   * Whether to show Show reviewer decision helpers. If enabled, system recommendations based on users' access information will be shown to the reviewers. The reviewer will be recommended to approve the review if the user has signed-in at least once during the last 30 days. The reviewer will be recommended to deny the review if the user has not signed-in during the last 30 days
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#access_recommendation_enabled AccessPackageAssignmentPolicy#access_recommendation_enabled}
   */
   readonly accessRecommendationEnabled?: boolean | cdktn.IResolvable;
   /**
   * What actions the system takes if reviewers don't respond in time
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#access_review_timeout_behavior AccessPackageAssignmentPolicy#access_review_timeout_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#access_review_timeout_behavior AccessPackageAssignmentPolicy#access_review_timeout_behavior}
   */
   readonly accessReviewTimeoutBehavior?: string;
   /**
   * Whether a reviewer need provide a justification for their decision. Justification is visible to other reviewers and the requestor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#approver_justification_required AccessPackageAssignmentPolicy#approver_justification_required}
   */
   readonly approverJustificationRequired?: boolean | cdktn.IResolvable;
   /**
   * How many days each occurrence of the access review series will run
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#duration_in_days AccessPackageAssignmentPolicy#duration_in_days}
   */
   readonly durationInDays?: number;
   /**
   * Whether to enable assignment review
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#enabled AccessPackageAssignmentPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * This will determine how often the access review campaign runs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#review_frequency AccessPackageAssignmentPolicy#review_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#review_frequency AccessPackageAssignmentPolicy#review_frequency}
   */
   readonly reviewFrequency?: string;
   /**
   * Self review or specific reviewers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#review_type AccessPackageAssignmentPolicy#review_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#review_type AccessPackageAssignmentPolicy#review_type}
   */
   readonly reviewType?: string;
   /**
   * This is the date the access review campaign will start on, formatted as an RFC3339 date string in UTC(e.g. 2018-01-01T01:02:03Z), default is now. Once an access review has been created, you cannot update its start date
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#starting_on AccessPackageAssignmentPolicy#starting_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#starting_on AccessPackageAssignmentPolicy#starting_on}
   */
   readonly startingOn?: string;
   /**
   * reviewer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#reviewer AccessPackageAssignmentPolicy#reviewer}
   */
   readonly reviewer?: AccessPackageAssignmentPolicyAssignmentReviewSettingsReviewer[] | cdktn.IResolvable;
 }
@@ -1182,7 +1182,7 @@ export interface AccessPackageAssignmentPolicyAssignmentReviewSettings {
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsToTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference | AccessPackageAssignmentPolicyAssignmentReviewSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_recommendation_enabled: cdktn.booleanToTerraform(struct!.accessRecommendationEnabled),
@@ -1201,7 +1201,7 @@ export function accessPackageAssignmentPolicyAssignmentReviewSettingsToTerraform
 export function accessPackageAssignmentPolicyAssignmentReviewSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyAssignmentReviewSettingsOutputReference | AccessPackageAssignmentPolicyAssignmentReviewSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_recommendation_enabled: {
@@ -1492,13 +1492,13 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalize
   /**
   * The localized content of this question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
   */
   readonly content: string;
   /**
   * The language code of this question content
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
   */
   readonly languageCode: string;
 }
@@ -1506,7 +1506,7 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalize
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -1518,7 +1518,7 @@ export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalized
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -1639,13 +1639,13 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValue {
   /**
   * The default text of this question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
   */
   readonly defaultText: string;
   /**
   * localized_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
   readonly localizedText?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueLocalizedText[] | cdktn.IResolvable;
 }
@@ -1653,7 +1653,7 @@ export interface AccessPackageAssignmentPolicyQuestionChoiceDisplayValue {
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference | AccessPackageAssignmentPolicyQuestionChoiceDisplayValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_text: cdktn.stringToTerraform(struct!.defaultText),
@@ -1665,7 +1665,7 @@ export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToTerrafo
 export function accessPackageAssignmentPolicyQuestionChoiceDisplayValueToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoiceDisplayValueOutputReference | AccessPackageAssignmentPolicyQuestionChoiceDisplayValue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_text: {
@@ -1757,13 +1757,13 @@ export interface AccessPackageAssignmentPolicyQuestionChoice {
   /**
   * The actual value of this choice
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#actual_value AccessPackageAssignmentPolicy#actual_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#actual_value AccessPackageAssignmentPolicy#actual_value}
   */
   readonly actualValue: string;
   /**
   * display_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#display_value AccessPackageAssignmentPolicy#display_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#display_value AccessPackageAssignmentPolicy#display_value}
   */
   readonly displayValue: AccessPackageAssignmentPolicyQuestionChoiceDisplayValue;
 }
@@ -1771,7 +1771,7 @@ export interface AccessPackageAssignmentPolicyQuestionChoice {
 export function accessPackageAssignmentPolicyQuestionChoiceToTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     actual_value: cdktn.stringToTerraform(struct!.actualValue),
@@ -1783,7 +1783,7 @@ export function accessPackageAssignmentPolicyQuestionChoiceToTerraform(struct?: 
 export function accessPackageAssignmentPolicyQuestionChoiceToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionChoice | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     actual_value: {
@@ -1904,13 +1904,13 @@ export interface AccessPackageAssignmentPolicyQuestionTextLocalizedText {
   /**
   * The localized content of this question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#content AccessPackageAssignmentPolicy#content}
   */
   readonly content: string;
   /**
   * The language code of this question content
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#language_code AccessPackageAssignmentPolicy#language_code}
   */
   readonly languageCode: string;
 }
@@ -1918,7 +1918,7 @@ export interface AccessPackageAssignmentPolicyQuestionTextLocalizedText {
 export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -1930,7 +1930,7 @@ export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToTerrafor
 export function accessPackageAssignmentPolicyQuestionTextLocalizedTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextLocalizedText | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -2051,13 +2051,13 @@ export interface AccessPackageAssignmentPolicyQuestionText {
   /**
   * The default text of this question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#default_text AccessPackageAssignmentPolicy#default_text}
   */
   readonly defaultText: string;
   /**
   * localized_text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#localized_text AccessPackageAssignmentPolicy#localized_text}
   */
   readonly localizedText?: AccessPackageAssignmentPolicyQuestionTextLocalizedText[] | cdktn.IResolvable;
 }
@@ -2065,7 +2065,7 @@ export interface AccessPackageAssignmentPolicyQuestionText {
 export function accessPackageAssignmentPolicyQuestionTextToTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextOutputReference | AccessPackageAssignmentPolicyQuestionText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_text: cdktn.stringToTerraform(struct!.defaultText),
@@ -2077,7 +2077,7 @@ export function accessPackageAssignmentPolicyQuestionTextToTerraform(struct?: Ac
 export function accessPackageAssignmentPolicyQuestionTextToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestionTextOutputReference | AccessPackageAssignmentPolicyQuestionText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_text: {
@@ -2169,25 +2169,25 @@ export interface AccessPackageAssignmentPolicyQuestion {
   /**
   * Whether this question is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#required AccessPackageAssignmentPolicy#required}
   */
   readonly required?: boolean | cdktn.IResolvable;
   /**
   * The sequence number of this question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#sequence AccessPackageAssignmentPolicy#sequence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#sequence AccessPackageAssignmentPolicy#sequence}
   */
   readonly sequence?: number;
   /**
   * choice block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#choice AccessPackageAssignmentPolicy#choice}
   */
   readonly choice?: AccessPackageAssignmentPolicyQuestionChoice[] | cdktn.IResolvable;
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#text AccessPackageAssignmentPolicy#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#text AccessPackageAssignmentPolicy#text}
   */
   readonly text: AccessPackageAssignmentPolicyQuestionText;
 }
@@ -2195,7 +2195,7 @@ export interface AccessPackageAssignmentPolicyQuestion {
 export function accessPackageAssignmentPolicyQuestionToTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     required: cdktn.booleanToTerraform(struct!.required),
@@ -2209,7 +2209,7 @@ export function accessPackageAssignmentPolicyQuestionToTerraform(struct?: Access
 export function accessPackageAssignmentPolicyQuestionToHclTerraform(struct?: AccessPackageAssignmentPolicyQuestion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     required: {
@@ -2389,19 +2389,19 @@ export interface AccessPackageAssignmentPolicyRequestorSettingsRequestor {
   /**
   * For a user in an approval stage, this property indicates whether the user is a backup fallback approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#backup AccessPackageAssignmentPolicy#backup}
   */
   readonly backup?: boolean | cdktn.IResolvable;
   /**
   * The object ID of the subject
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#object_id AccessPackageAssignmentPolicy#object_id}
   */
   readonly objectId?: string;
   /**
   * Type of users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#subject_type AccessPackageAssignmentPolicy#subject_type}
   */
   readonly subjectType: string;
 }
@@ -2409,7 +2409,7 @@ export interface AccessPackageAssignmentPolicyRequestorSettingsRequestor {
 export function accessPackageAssignmentPolicyRequestorSettingsRequestorToTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backup: cdktn.booleanToTerraform(struct!.backup),
@@ -2422,7 +2422,7 @@ export function accessPackageAssignmentPolicyRequestorSettingsRequestorToTerrafo
 export function accessPackageAssignmentPolicyRequestorSettingsRequestorToHclTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsRequestor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backup: {
@@ -2574,19 +2574,19 @@ export interface AccessPackageAssignmentPolicyRequestorSettings {
   /**
   * Whether to accept requests now, when disabled, no new requests can be made using this policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#requests_accepted AccessPackageAssignmentPolicy#requests_accepted}
   */
   readonly requestsAccepted?: boolean | cdktn.IResolvable;
   /**
   * Specify the scopes of the requestors
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#scope_type AccessPackageAssignmentPolicy#scope_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#scope_type AccessPackageAssignmentPolicy#scope_type}
   */
   readonly scopeType?: string;
   /**
   * requestor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#requestor AccessPackageAssignmentPolicy#requestor}
   */
   readonly requestor?: AccessPackageAssignmentPolicyRequestorSettingsRequestor[] | cdktn.IResolvable;
 }
@@ -2594,7 +2594,7 @@ export interface AccessPackageAssignmentPolicyRequestorSettings {
 export function accessPackageAssignmentPolicyRequestorSettingsToTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsOutputReference | AccessPackageAssignmentPolicyRequestorSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     requests_accepted: cdktn.booleanToTerraform(struct!.requestsAccepted),
@@ -2607,7 +2607,7 @@ export function accessPackageAssignmentPolicyRequestorSettingsToTerraform(struct
 export function accessPackageAssignmentPolicyRequestorSettingsToHclTerraform(struct?: AccessPackageAssignmentPolicyRequestorSettingsOutputReference | AccessPackageAssignmentPolicyRequestorSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     requests_accepted: {
@@ -2728,19 +2728,19 @@ export class AccessPackageAssignmentPolicyRequestorSettingsOutputReference exten
 }
 export interface AccessPackageAssignmentPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#create AccessPackageAssignmentPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#delete AccessPackageAssignmentPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#read AccessPackageAssignmentPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#update AccessPackageAssignmentPolicy#update}
   */
   readonly update?: string;
 }
@@ -2748,7 +2748,7 @@ export interface AccessPackageAssignmentPolicyTimeouts {
 export function accessPackageAssignmentPolicyTimeoutsToTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2762,7 +2762,7 @@ export function accessPackageAssignmentPolicyTimeoutsToTerraform(struct?: Access
 export function accessPackageAssignmentPolicyTimeoutsToHclTerraform(struct?: AccessPackageAssignmentPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2921,7 +2921,7 @@ export class AccessPackageAssignmentPolicyTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy}
 */
 export class AccessPackageAssignmentPolicy extends cdktn.TerraformResource {
 
@@ -2937,7 +2937,7 @@ export class AccessPackageAssignmentPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccessPackageAssignmentPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessPackageAssignmentPolicy to import
-  * @param importFromId The id of the existing AccessPackageAssignmentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessPackageAssignmentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessPackageAssignmentPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2949,7 +2949,7 @@ export class AccessPackageAssignmentPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/resources/access_package_assignment_policy azuread_access_package_assignment_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2960,7 +2960,7 @@ export class AccessPackageAssignmentPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azuread_access_package_assignment_policy',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

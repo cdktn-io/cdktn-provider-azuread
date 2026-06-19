@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location
+// https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzureadNamedLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location#display_name DataAzureadNamedLocation#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location#id DataAzureadNamedLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataAzureadNamedLocationConfig extends cdktn.TerraformMetaArgum
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location#timeouts DataAzureadNamedLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location#timeouts DataAzureadNamedLocation#timeouts}
   */
   readonly timeouts?: DataAzureadNamedLocationTimeouts;
 }
@@ -36,7 +36,7 @@ export interface DataAzureadNamedLocationCountry {
 export function dataAzureadNamedLocationCountryToTerraform(struct?: DataAzureadNamedLocationCountry): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataAzureadNamedLocationCountryToTerraform(struct?: DataAzureadN
 export function dataAzureadNamedLocationCountryToHclTerraform(struct?: DataAzureadNamedLocationCountry): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -121,7 +121,7 @@ export interface DataAzureadNamedLocationIp {
 export function dataAzureadNamedLocationIpToTerraform(struct?: DataAzureadNamedLocationIp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -131,7 +131,7 @@ export function dataAzureadNamedLocationIpToTerraform(struct?: DataAzureadNamedL
 export function dataAzureadNamedLocationIpToHclTerraform(struct?: DataAzureadNamedLocationIp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -197,7 +197,7 @@ export class DataAzureadNamedLocationIpList extends cdktn.ComplexList {
 }
 export interface DataAzureadNamedLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location#read DataAzureadNamedLocation#read}
   */
   readonly read?: string;
 }
@@ -205,7 +205,7 @@ export interface DataAzureadNamedLocationTimeouts {
 export function dataAzureadNamedLocationTimeoutsToTerraform(struct?: DataAzureadNamedLocationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -216,7 +216,7 @@ export function dataAzureadNamedLocationTimeoutsToTerraform(struct?: DataAzuread
 export function dataAzureadNamedLocationTimeoutsToHclTerraform(struct?: DataAzureadNamedLocationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -291,7 +291,7 @@ export class DataAzureadNamedLocationTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location azuread_named_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location azuread_named_location}
 */
 export class DataAzureadNamedLocation extends cdktn.TerraformDataSource {
 
@@ -307,7 +307,7 @@ export class DataAzureadNamedLocation extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzureadNamedLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzureadNamedLocation to import
-  * @param importFromId The id of the existing DataAzureadNamedLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzureadNamedLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzureadNamedLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -319,7 +319,7 @@ export class DataAzureadNamedLocation extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.8.0/docs/data-sources/named_location azuread_named_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/named_location azuread_named_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -330,7 +330,7 @@ export class DataAzureadNamedLocation extends cdktn.TerraformDataSource {
       terraformResourceType: 'azuread_named_location',
       terraformGeneratorMetadata: {
         providerName: 'azuread',
-        providerVersion: '3.8.0',
+        providerVersion: '3.9.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
