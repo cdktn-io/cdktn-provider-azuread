@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.NewDataAzureadDomains(scope Construct, id *string, config DataAzureadDomainsConfig) DataAzureadDomains
 ```
@@ -367,7 +367,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomains.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.DataAzureadDomains_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomains.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.DataAzureadDomains_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ dataazureaddomains.DataAzureadDomains_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomains.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.DataAzureadDomains_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ dataazureaddomains.DataAzureadDomains_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomains.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.DataAzureadDomains_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 &dataazureaddomains.DataAzureadDomainsConfig {
 	Connection: interface{},
@@ -838,7 +838,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddom
 	OnlyInitial: interface{},
 	OnlyRoot: interface{},
 	SupportsServices: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.dataAzureadDomains.DataAzureadDomainsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadDomains.DataAzureadDomainsTimeouts,
 }
 ```
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 &dataazureaddomains.DataAzureadDomainsDomains {
 
@@ -1065,7 +1065,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddom
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 &dataazureaddomains.DataAzureadDomainsTimeouts {
 	Read: *string,
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.NewDataAzureadDomainsDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadDomainsDomainsList
 ```
@@ -1248,7 +1248,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.NewDataAzureadDomainsDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadDomainsDomainsOutputReference
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() DataAzureadDomainsDomains
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDomains.DataAzureadDomainsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddomains"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddomains"
 
 dataazureaddomains.NewDataAzureadDomainsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadDomainsTimeoutsOutputReference
 ```

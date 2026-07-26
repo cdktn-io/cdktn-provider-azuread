@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.NewApplicationOwner(scope Construct, id *string, config ApplicationOwnerConfig) ApplicationOwner
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwner.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.ApplicationOwner_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.ApplicationOwner_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ applicationowner.ApplicationOwner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.ApplicationOwner_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ applicationowner.ApplicationOwner_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.ApplicationOwner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 &applicationowner.ApplicationOwnerConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationown
 	ApplicationId: *string,
 	OwnerObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.applicationOwner.ApplicationOwnerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.applicationOwner.ApplicationOwnerTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwnerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 &applicationowner.ApplicationOwnerTimeouts {
 	Create: *string,
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationOwner.ApplicationOwnerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationowner"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationowner"
 
 applicationowner.NewApplicationOwnerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationOwnerTimeoutsOutputReference
 ```
