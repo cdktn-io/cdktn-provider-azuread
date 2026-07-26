@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.NewApplicationApiAccess(scope Construct, id *string, config ApplicationApiAccessConfig) ApplicationApiAccess
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ applicationapiaccess.ApplicationApiAccess_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ applicationapiaccess.ApplicationApiAccess_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.ApplicationApiAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 &applicationapiaccess.ApplicationApiAccessConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapi
 	Id: *string,
 	RoleIds: *[]*string,
 	ScopeIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.applicationApiAccess.ApplicationApiAccessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.applicationApiAccess.ApplicationApiAccessTimeouts,
 }
 ```
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 &applicationapiaccess.ApplicationApiAccessTimeouts {
 	Create: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationApiAccess.ApplicationApiAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationapiaccess"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationapiaccess"
 
 applicationapiaccess.NewApplicationApiAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationApiAccessTimeoutsOutputReference
 ```

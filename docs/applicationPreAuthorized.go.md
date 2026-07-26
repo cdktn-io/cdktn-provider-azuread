@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorized(scope Construct, id *string, config ApplicationPreAuthorizedConfig) ApplicationPreAuthorized
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ applicationpreauthorized.ApplicationPreAuthorized_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ applicationpreauthorized.ApplicationPreAuthorized_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorized.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.ApplicationPreAuthorized_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpre
 	AuthorizedClientId: *string,
 	PermissionIds: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts,
 }
 ```
 
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 &applicationpreauthorized.ApplicationPreAuthorizedTimeouts {
 	Create: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationPreAuthorized.ApplicationPreAuthorizedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationpreauthorized"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationpreauthorized"
 
 applicationpreauthorized.NewApplicationPreAuthorizedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationPreAuthorizedTimeoutsOutputReference
 ```
