@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.NewDataAzureadApplicationPublishedAppIds(scope Construct, id *string, config DataAzureadApplicationPublishedAppIdsConfig) DataAzureadApplicationPublishedAppIds
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 &dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIdsConfig {
 	Connection: interface{},
@@ -658,7 +658,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapp
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIdsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIdsTimeouts,
 }
 ```
 
@@ -782,7 +782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIdsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 &dataazureadapplicationpublishedappids.DataAzureadApplicationPublishedAppIdsTimeouts {
 	Read: *string,
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadApplicationPublishedAppIds.DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadapplicationpublishedappids"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadapplicationpublishedappids"
 
 dataazureadapplicationpublishedappids.NewDataAzureadApplicationPublishedAppIdsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadApplicationPublishedAppIdsTimeoutsOutputReference
 ```

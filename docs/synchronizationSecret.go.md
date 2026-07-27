@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecret(scope Construct, id *string, config SynchronizationSecretConfig) SynchronizationSecret
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ synchronizationsecret.SynchronizationSecret_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ synchronizationsecret.SynchronizationSecret_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.SynchronizationSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretConfig {
 	Connection: interface{},
@@ -837,7 +837,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizatio
 	ServicePrincipalId: *string,
 	Credential: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.synchronizationSecret.SynchronizationSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.synchronizationSecret.SynchronizationSecretTimeouts,
 }
 ```
 
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretCredential {
 	Key: *string,
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 &synchronizationsecret.SynchronizationSecretTimeouts {
 	Create: *string,
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SynchronizationSecretCredentialList
 ```
@@ -1277,7 +1277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SynchronizationSecretCredentialOutputReference
 ```
@@ -1588,7 +1588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.synchronizationSecret.SynchronizationSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/synchronizationsecret"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/synchronizationsecret"
 
 synchronizationsecret.NewSynchronizationSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynchronizationSecretTimeoutsOutputReference
 ```

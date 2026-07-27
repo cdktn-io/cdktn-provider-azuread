@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.NewDataAzureadGroupRoleManagementPolicy(scope Construct, id *string, config DataAzureadGroupRoleManagementPolicyConfig) DataAzureadGroupRoleManagementPolicy
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 &dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicyConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgro
 	GroupId: *string,
 	RoleId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicyTimeouts,
 }
 ```
 
@@ -869,7 +869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 &dataazureadgrouprolemanagementpolicy.DataAzureadGroupRoleManagementPolicyTimeouts {
 	Read: *string,
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroupRoleManagementPolicy.DataAzureadGroupRoleManagementPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgrouprolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureadgrouprolemanagementpolicy"
 
 dataazureadgrouprolemanagementpolicy.NewDataAzureadGroupRoleManagementPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadGroupRoleManagementPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.NewApplicationFlexibleFederatedIdentityCredential(scope Construct, id *string, config ApplicationFlexibleFederatedIdentityCredentialConfig) ApplicationFlexibleFederatedIdentityCredential
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredential_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdent
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdent
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 &applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredentialConfig {
 	Connection: interface{},
@@ -927,7 +927,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationfle
 	Issuer: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredentialTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredentialTimeouts,
 }
 ```
 
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 &applicationflexiblefederatedidentitycredential.ApplicationFlexibleFederatedIdentityCredentialTimeouts {
 	Create: *string,
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationFlexibleFederatedIdentityCredential.ApplicationFlexibleFederatedIdentityCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationflexiblefederatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationflexiblefederatedidentitycredential"
 
 applicationflexiblefederatedidentitycredential.NewApplicationFlexibleFederatedIdentityCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationFlexibleFederatedIdentityCredentialTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -587,7 +587,7 @@ func ResetWritebackEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -619,7 +619,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -647,7 +647,7 @@ group.Group_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.group.Group.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.Group_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1503,7 +1503,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -1519,7 +1519,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
 	AutoSubscribeNewMembers: interface{},
 	Behaviors: *[]*string,
 	Description: *string,
-	DynamicMembership: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.group.GroupDynamicMembership,
+	DynamicMembership: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.group.GroupDynamicMembership,
 	ExternalSendersAllowed: interface{},
 	HideFromAddressLists: interface{},
 	HideFromOutlookClients: interface{},
@@ -1533,7 +1533,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
 	ProvisioningOptions: *[]*string,
 	SecurityEnabled: interface{},
 	Theme: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.group.GroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.group.GroupTimeouts,
 	Types: *[]*string,
 	Visibility: *string,
 	WritebackEnabled: interface{},
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.group.GroupDynamicMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 &group.GroupDynamicMembership {
 	Enabled: interface{},
@@ -2050,7 +2050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.group.GroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 &group.GroupTimeouts {
 	Create: *string,
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.group.GroupDynamicMembershipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.NewGroupDynamicMembershipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupDynamicMembershipOutputReference
 ```
@@ -2419,7 +2419,7 @@ func InternalValue() GroupDynamicMembership
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.group.GroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/group"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/group"
 
 group.NewGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupTimeoutsOutputReference
 ```

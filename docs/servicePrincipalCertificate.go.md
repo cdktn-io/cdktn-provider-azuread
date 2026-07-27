@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.NewServicePrincipalCertificate(scope Construct, id *string, config ServicePrincipalCertificateConfig) ServicePrincipalCertificate
 ```
@@ -469,7 +469,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ serviceprincipalcertificate.ServicePrincipalCertificate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.ServicePrincipalCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 &serviceprincipalcertificate.ServicePrincipalCertificateConfig {
 	Connection: interface{},
@@ -996,7 +996,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincip
 	Id: *string,
 	KeyId: *string,
 	StartDate: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 &serviceprincipalcertificate.ServicePrincipalCertificateTimeouts {
 	Create: *string,
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipalCertificate.ServicePrincipalCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalcertificate"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalcertificate"
 
 serviceprincipalcertificate.NewServicePrincipalCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalCertificateTimeoutsOutputReference
 ```
