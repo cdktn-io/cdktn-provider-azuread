@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRole.DirectoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.NewDirectoryRole(scope Construct, id *string, config DirectoryRoleConfig) DirectoryRole
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.directoryRole.DirectoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.DirectoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.directoryRole.DirectoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.DirectoryRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ directoryrole.DirectoryRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.directoryRole.DirectoryRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.DirectoryRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ directoryrole.DirectoryRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.directoryRole.DirectoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.DirectoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRole.DirectoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 &directoryrole.DirectoryRoleConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
 	DisplayName: *string,
 	Id: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.directoryRole.DirectoryRoleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.directoryRole.DirectoryRoleTimeouts,
 }
 ```
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRole.DirectoryRoleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 &directoryrole.DirectoryRoleTimeouts {
 	Create: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRole.DirectoryRoleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrole"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryrole"
 
 directoryrole.NewDirectoryRoleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryRoleTimeoutsOutputReference
 ```

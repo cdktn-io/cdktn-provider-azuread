@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupMember.GroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.NewGroupMember(scope Construct, id *string, config GroupMemberConfig) GroupMember
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.groupMember.GroupMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.GroupMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.groupMember.GroupMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.groupMember.GroupMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.groupMember.GroupMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.GroupMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupMember.GroupMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 &groupmember.GroupMemberConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
 	GroupObjectId: *string,
 	MemberObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.groupMember.GroupMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.groupMember.GroupMemberTimeouts,
 }
 ```
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupMember.GroupMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 &groupmember.GroupMemberTimeouts {
 	Create: *string,
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupMember.GroupMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/groupmember"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/groupmember"
 
 groupmember.NewGroupMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupMemberTimeoutsOutputReference
 ```

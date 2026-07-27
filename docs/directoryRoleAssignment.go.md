@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.NewDirectoryRoleAssignment(scope Construct, id *string, config DirectoryRoleAssignmentConfig) DirectoryRoleAssignment
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.DirectoryRoleAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.DirectoryRoleAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ directoryroleassignment.DirectoryRoleAssignment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.DirectoryRoleAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ directoryroleassignment.DirectoryRoleAssignment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.DirectoryRoleAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 &directoryroleassignment.DirectoryRoleAssignmentConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryrolea
 	AppScopeId: *string,
 	DirectoryScopeId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts,
 }
 ```
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 &directoryroleassignment.DirectoryRoleAssignmentTimeouts {
 	Create: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.directoryRoleAssignment.DirectoryRoleAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/directoryroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/directoryroleassignment"
 
 directoryroleassignment.NewDirectoryRoleAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryRoleAssignmentTimeoutsOutputReference
 ```

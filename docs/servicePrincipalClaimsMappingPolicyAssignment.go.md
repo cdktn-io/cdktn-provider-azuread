@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.NewServicePrincipalClaimsMappingPolicyAssignment(scope Construct, id *string, config ServicePrincipalClaimsMappingPolicyAssignmentConfig) ServicePrincipalClaimsMappingPolicyAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 &serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignmentConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincip
 	ClaimsMappingPolicyId: *string,
 	ServicePrincipalId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 &serviceprincipalclaimsmappingpolicyassignment.ServicePrincipalClaimsMappingPolicyAssignmentTimeouts {
 	Create: *string,
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.servicePrincipalClaimsMappingPolicyAssignment.ServicePrincipalClaimsMappingPolicyAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/serviceprincipalclaimsmappingpolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/serviceprincipalclaimsmappingpolicyassignment"
 
 serviceprincipalclaimsmappingpolicyassignment.NewServicePrincipalClaimsMappingPolicyAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalClaimsMappingPolicyAssignmentTimeoutsOutputReference
 ```

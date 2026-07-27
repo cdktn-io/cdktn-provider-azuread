@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.NewDataAzureadDirectoryRoleTemplates(scope Construct, id *string, config DataAzureadDirectoryRoleTemplatesConfig) DataAzureadDirectoryRoleTemplates
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 &dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplatesConfig {
 	Connection: interface{},
@@ -669,7 +669,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddir
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts,
 }
 ```
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesRoleTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 &dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplatesRoleTemplates {
 
@@ -806,7 +806,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 &dataazureaddirectoryroletemplates.DataAzureadDirectoryRoleTemplatesTimeouts {
 	Read: *string,
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesRoleTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.NewDataAzureadDirectoryRoleTemplatesRoleTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadDirectoryRoleTemplatesRoleTemplatesList
 ```
@@ -989,7 +989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.NewDataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadDirectoryRoleTemplatesRoleTemplatesOutputReference
 ```
@@ -1289,7 +1289,7 @@ func InternalValue() DataAzureadDirectoryRoleTemplatesRoleTemplates
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadDirectoryRoleTemplates.DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureaddirectoryroletemplates"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/dataazureaddirectoryroletemplates"
 
 dataazureaddirectoryroletemplates.NewDataAzureadDirectoryRoleTemplatesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadDirectoryRoleTemplatesTimeoutsOutputReference
 ```
