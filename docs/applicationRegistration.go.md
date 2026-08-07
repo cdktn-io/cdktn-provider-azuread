@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.NewApplicationRegistration(scope Construct, id *string, config ApplicationRegistrationConfig) ApplicationRegistration
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.ApplicationRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.ApplicationRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ applicationregistration.ApplicationRegistration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.ApplicationRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ applicationregistration.ApplicationRegistration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.ApplicationRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1232,7 +1232,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 &applicationregistration.ApplicationRegistrationConfig {
 	Connection: interface{},
@@ -1258,7 +1258,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationreg
 	SignInAudience: *string,
 	SupportUrl: *string,
 	TermsOfServiceUrl: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.applicationRegistration.ApplicationRegistrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.applicationRegistration.ApplicationRegistrationTimeouts,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 &applicationregistration.ApplicationRegistrationTimeouts {
 	Create: *string,
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.applicationRegistration.ApplicationRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/applicationregistration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/applicationregistration"
 
 applicationregistration.NewApplicationRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationRegistrationTimeoutsOutputReference
 ```

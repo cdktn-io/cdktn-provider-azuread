@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.NewAccessPackageResourceCatalogAssociation(scope Construct, id *string, config AccessPackageResourceCatalogAssociationConfig) AccessPackageResourceCatalogAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 &accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociationConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackager
 	ResourceOriginId: *string,
 	ResourceOriginSystem: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts,
 }
 ```
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 &accesspackageresourcecatalogassociation.AccessPackageResourceCatalogAssociationTimeouts {
 	Create: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.accessPackageResourceCatalogAssociation.AccessPackageResourceCatalogAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v16/accesspackageresourcecatalogassociation"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/accesspackageresourcecatalogassociation"
 
 accesspackageresourcecatalogassociation.NewAccessPackageResourceCatalogAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessPackageResourceCatalogAssociationTimeoutsOutputReference
 ```
