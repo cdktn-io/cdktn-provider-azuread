@@ -32,6 +32,8 @@ Object.defineProperty(exports, 'applicationPreAuthorized', { get: function () { 
 Object.defineProperty(exports, 'applicationRedirectUris', { get: function () { return require('./application-redirect-uris'); } });
 Object.defineProperty(exports, 'applicationRegistration', { get: function () { return require('./application-registration'); } });
 Object.defineProperty(exports, 'authenticationStrengthPolicy', { get: function () { return require('./authentication-strength-policy'); } });
+Object.defineProperty(exports, 'authenticationStrengthPolicyFido2CombinationConfiguration', { get: function () { return require('./authentication-strength-policy-fido2-combination-configuration'); } });
+Object.defineProperty(exports, 'authenticationStrengthPolicyX509CombinationConfiguration', { get: function () { return require('./authentication-strength-policy-x509-combination-configuration'); } });
 Object.defineProperty(exports, 'claimsMappingPolicy', { get: function () { return require('./claims-mapping-policy'); } });
 Object.defineProperty(exports, 'conditionalAccessPolicy', { get: function () { return require('./conditional-access-policy'); } });
 Object.defineProperty(exports, 'customDirectoryRole', { get: function () { return require('./custom-directory-role'); } });
@@ -40,6 +42,7 @@ Object.defineProperty(exports, 'directoryRoleAssignment', { get: function () { r
 Object.defineProperty(exports, 'directoryRoleEligibilityScheduleRequest', { get: function () { return require('./directory-role-eligibility-schedule-request'); } });
 Object.defineProperty(exports, 'directoryRoleMember', { get: function () { return require('./directory-role-member'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
+Object.defineProperty(exports, 'groupLicense', { get: function () { return require('./group-license'); } });
 Object.defineProperty(exports, 'groupMember', { get: function () { return require('./group-member'); } });
 Object.defineProperty(exports, 'groupRoleManagementPolicy', { get: function () { return require('./group-role-management-policy'); } });
 Object.defineProperty(exports, 'groupWithoutMembers', { get: function () { return require('./group-without-members'); } });
@@ -58,6 +61,7 @@ Object.defineProperty(exports, 'synchronizationJobProvisionOnDemand', { get: fun
 Object.defineProperty(exports, 'synchronizationSecret', { get: function () { return require('./synchronization-secret'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userFlowAttribute', { get: function () { return require('./user-flow-attribute'); } });
+Object.defineProperty(exports, 'userLicense', { get: function () { return require('./user-license'); } });
 Object.defineProperty(exports, 'dataAzureadAccessPackage', { get: function () { return require('./data-azuread-access-package'); } });
 Object.defineProperty(exports, 'dataAzureadAccessPackageCatalog', { get: function () { return require('./data-azuread-access-package-catalog'); } });
 Object.defineProperty(exports, 'dataAzureadAccessPackageCatalogRole', { get: function () { return require('./data-azuread-access-package-catalog-role'); } });
@@ -65,6 +69,7 @@ Object.defineProperty(exports, 'dataAzureadAdministrativeUnit', { get: function 
 Object.defineProperty(exports, 'dataAzureadApplication', { get: function () { return require('./data-azuread-application'); } });
 Object.defineProperty(exports, 'dataAzureadApplicationPublishedAppIds', { get: function () { return require('./data-azuread-application-published-app-ids'); } });
 Object.defineProperty(exports, 'dataAzureadApplicationTemplate', { get: function () { return require('./data-azuread-application-template'); } });
+Object.defineProperty(exports, 'dataAzureadAuthenticationStrengthPolicy', { get: function () { return require('./data-azuread-authentication-strength-policy'); } });
 Object.defineProperty(exports, 'dataAzureadClientConfig', { get: function () { return require('./data-azuread-client-config'); } });
 Object.defineProperty(exports, 'dataAzureadDirectoryObject', { get: function () { return require('./data-azuread-directory-object'); } });
 Object.defineProperty(exports, 'dataAzureadDirectoryRoleTemplates', { get: function () { return require('./data-azuread-directory-role-templates'); } });
