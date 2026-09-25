@@ -32,6 +32,8 @@ The following submodules are available:
 - [applicationRedirectUris](./applicationRedirectUris.go.md)
 - [applicationRegistration](./applicationRegistration.go.md)
 - [authenticationStrengthPolicy](./authenticationStrengthPolicy.go.md)
+- [authenticationStrengthPolicyFido2CombinationConfiguration](./authenticationStrengthPolicyFido2CombinationConfiguration.go.md)
+- [authenticationStrengthPolicyX509CombinationConfiguration](./authenticationStrengthPolicyX509CombinationConfiguration.go.md)
 - [claimsMappingPolicy](./claimsMappingPolicy.go.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.go.md)
 - [customDirectoryRole](./customDirectoryRole.go.md)
@@ -42,6 +44,7 @@ The following submodules are available:
 - [dataAzureadApplication](./dataAzureadApplication.go.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.go.md)
 - [dataAzureadApplicationTemplate](./dataAzureadApplicationTemplate.go.md)
+- [dataAzureadAuthenticationStrengthPolicy](./dataAzureadAuthenticationStrengthPolicy.go.md)
 - [dataAzureadClientConfig](./dataAzureadClientConfig.go.md)
 - [dataAzureadDirectoryObject](./dataAzureadDirectoryObject.go.md)
 - [dataAzureadDirectoryRoleTemplates](./dataAzureadDirectoryRoleTemplates.go.md)
@@ -60,6 +63,7 @@ The following submodules are available:
 - [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.go.md)
 - [directoryRoleMember](./directoryRoleMember.go.md)
 - [group](./group.go.md)
+- [groupLicense](./groupLicense.go.md)
 - [groupMember](./groupMember.go.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.go.md)
 - [groupWithoutMembers](./groupWithoutMembers.go.md)
@@ -79,6 +83,7 @@ The following submodules are available:
 - [synchronizationSecret](./synchronizationSecret.go.md)
 - [user](./user.go.md)
 - [userFlowAttribute](./userFlowAttribute.go.md)
+- [userLicense](./userLicense.go.md)
 
 
 

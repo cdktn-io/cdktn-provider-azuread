@@ -32,6 +32,8 @@ The following submodules are available:
 - [applicationRedirectUris](./applicationRedirectUris.java.md)
 - [applicationRegistration](./applicationRegistration.java.md)
 - [authenticationStrengthPolicy](./authenticationStrengthPolicy.java.md)
+- [authenticationStrengthPolicyFido2CombinationConfiguration](./authenticationStrengthPolicyFido2CombinationConfiguration.java.md)
+- [authenticationStrengthPolicyX509CombinationConfiguration](./authenticationStrengthPolicyX509CombinationConfiguration.java.md)
 - [claimsMappingPolicy](./claimsMappingPolicy.java.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.java.md)
 - [customDirectoryRole](./customDirectoryRole.java.md)
@@ -42,6 +44,7 @@ The following submodules are available:
 - [dataAzureadApplication](./dataAzureadApplication.java.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.java.md)
 - [dataAzureadApplicationTemplate](./dataAzureadApplicationTemplate.java.md)
+- [dataAzureadAuthenticationStrengthPolicy](./dataAzureadAuthenticationStrengthPolicy.java.md)
 - [dataAzureadClientConfig](./dataAzureadClientConfig.java.md)
 - [dataAzureadDirectoryObject](./dataAzureadDirectoryObject.java.md)
 - [dataAzureadDirectoryRoleTemplates](./dataAzureadDirectoryRoleTemplates.java.md)
@@ -60,6 +63,7 @@ The following submodules are available:
 - [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.java.md)
 - [directoryRoleMember](./directoryRoleMember.java.md)
 - [group](./group.java.md)
+- [groupLicense](./groupLicense.java.md)
 - [groupMember](./groupMember.java.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.java.md)
 - [groupWithoutMembers](./groupWithoutMembers.java.md)
@@ -79,6 +83,7 @@ The following submodules are available:
 - [synchronizationSecret](./synchronizationSecret.java.md)
 - [user](./user.java.md)
 - [userFlowAttribute](./userFlowAttribute.java.md)
+- [userLicense](./userLicense.java.md)
 
 
 

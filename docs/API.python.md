@@ -32,6 +32,8 @@ The following submodules are available:
 - [applicationRedirectUris](./applicationRedirectUris.python.md)
 - [applicationRegistration](./applicationRegistration.python.md)
 - [authenticationStrengthPolicy](./authenticationStrengthPolicy.python.md)
+- [authenticationStrengthPolicyFido2CombinationConfiguration](./authenticationStrengthPolicyFido2CombinationConfiguration.python.md)
+- [authenticationStrengthPolicyX509CombinationConfiguration](./authenticationStrengthPolicyX509CombinationConfiguration.python.md)
 - [claimsMappingPolicy](./claimsMappingPolicy.python.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.python.md)
 - [customDirectoryRole](./customDirectoryRole.python.md)
@@ -42,6 +44,7 @@ The following submodules are available:
 - [dataAzureadApplication](./dataAzureadApplication.python.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.python.md)
 - [dataAzureadApplicationTemplate](./dataAzureadApplicationTemplate.python.md)
+- [dataAzureadAuthenticationStrengthPolicy](./dataAzureadAuthenticationStrengthPolicy.python.md)
 - [dataAzureadClientConfig](./dataAzureadClientConfig.python.md)
 - [dataAzureadDirectoryObject](./dataAzureadDirectoryObject.python.md)
 - [dataAzureadDirectoryRoleTemplates](./dataAzureadDirectoryRoleTemplates.python.md)
@@ -60,6 +63,7 @@ The following submodules are available:
 - [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.python.md)
 - [directoryRoleMember](./directoryRoleMember.python.md)
 - [group](./group.python.md)
+- [groupLicense](./groupLicense.python.md)
 - [groupMember](./groupMember.python.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.python.md)
 - [groupWithoutMembers](./groupWithoutMembers.python.md)
@@ -79,6 +83,7 @@ The following submodules are available:
 - [synchronizationSecret](./synchronizationSecret.python.md)
 - [user](./user.python.md)
 - [userFlowAttribute](./userFlowAttribute.python.md)
+- [userLicense](./userLicense.python.md)
 
 
 

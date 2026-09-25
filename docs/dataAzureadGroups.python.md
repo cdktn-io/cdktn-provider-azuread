@@ -4,7 +4,7 @@
 
 ### DataAzureadGroups <a name="DataAzureadGroups" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups azuread_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups azuread_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer"></a>
 
@@ -46,7 +46,7 @@ dataAzureadGroups.DataAzureadGroups(
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.displayNamePrefix">display_name_prefix</a></code> | <code>str</code> | Common display name prefix of the groups. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.displayNames">display_names</a></code> | <code>typing.List[str]</code> | The display names of the groups. |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.ignoreMissing">ignore_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Ignore missing groups and return groups that were found. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the groups are mail-enabled. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer.parameter.objectIds">object_ids</a></code> | <code>typing.List[str]</code> | The object IDs of the groups. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Common display name prefix of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display names of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#id DataAzureadGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#id DataAzureadGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ Ignore missing groups and return groups that were found.
 
 The data source will still fail if no groups are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the groups are mail-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The object IDs of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Retrieve all groups with no filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the groups are security-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
 
 ---
 
@@ -496,7 +496,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#read DataAzureadGroups#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#read DataAzureadGroups#read}.
 
 ---
 
@@ -668,7 +668,7 @@ The construct id used in the generated config for the DataAzureadGroups to impor
 
 The id of the existing DataAzureadGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,6 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.groups">groups</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList">DataAzureadGroupsGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeoutsOutputReference">DataAzureadGroupsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.displayNamePrefixInput">display_name_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.displayNamesInput">display_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -836,6 +837,16 @@ provider: TerraformProvider
 ```
 
 - *Type:* cdktn.TerraformProvider
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.property.groups"></a>
+
+```python
+groups: DataAzureadGroupsGroupsList
+```
+
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList">DataAzureadGroupsGroupsList</a>
 
 ---
 
@@ -1079,7 +1090,7 @@ dataAzureadGroups.DataAzureadGroupsConfig(
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.displayNamePrefix">display_name_prefix</a></code> | <code>str</code> | Common display name prefix of the groups. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.displayNames">display_names</a></code> | <code>typing.List[str]</code> | The display names of the groups. |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#id DataAzureadGroups#id}. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.ignoreMissing">ignore_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Ignore missing groups and return groups that were found. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.mailEnabled">mail_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the groups are mail-enabled. |
 | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.property.objectIds">object_ids</a></code> | <code>typing.List[str]</code> | The object IDs of the groups. |
@@ -1169,7 +1180,7 @@ display_name_prefix: str
 
 Common display name prefix of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#display_name_prefix DataAzureadGroups#display_name_prefix}
 
 ---
 
@@ -1183,7 +1194,7 @@ display_names: typing.List[str]
 
 The display names of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#display_names DataAzureadGroups#display_names}
 
 ---
 
@@ -1195,7 +1206,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#id DataAzureadGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#id DataAzureadGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1214,7 +1225,7 @@ Ignore missing groups and return groups that were found.
 
 The data source will still fail if no groups are found
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#ignore_missing DataAzureadGroups#ignore_missing}
 
 ---
 
@@ -1228,7 +1239,7 @@ mail_enabled: bool | IResolvable
 
 Whether the groups are mail-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#mail_enabled DataAzureadGroups#mail_enabled}
 
 ---
 
@@ -1242,7 +1253,7 @@ object_ids: typing.List[str]
 
 The object IDs of the groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#object_ids DataAzureadGroups#object_ids}
 
 ---
 
@@ -1256,7 +1267,7 @@ return_all: bool | IResolvable
 
 Retrieve all groups with no filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#return_all DataAzureadGroups#return_all}
 
 ---
 
@@ -1270,7 +1281,7 @@ security_enabled: bool | IResolvable
 
 Whether the groups are security-enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#security_enabled DataAzureadGroups#security_enabled}
 
 ---
 
@@ -1284,9 +1295,20 @@ timeouts: DataAzureadGroupsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#timeouts DataAzureadGroups#timeouts}
 
 ---
+
+### DataAzureadGroupsGroups <a name="DataAzureadGroupsGroups" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroups"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroups.Initializer"></a>
+
+```python
+from cdktn_provider_azuread import data_azuread_groups
+
+dataAzureadGroups.DataAzureadGroupsGroups()
+```
+
 
 ### DataAzureadGroupsTimeouts <a name="DataAzureadGroupsTimeouts" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts"></a>
 
@@ -1304,7 +1326,7 @@ dataAzureadGroups.DataAzureadGroupsTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#read DataAzureadGroups#read}. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#read DataAzureadGroups#read}. |
 
 ---
 
@@ -1316,11 +1338,508 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.9.0/docs/data-sources/groups#read DataAzureadGroups#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azuread/3.10.0/docs/data-sources/groups#read DataAzureadGroups#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAzureadGroupsGroupsList <a name="DataAzureadGroupsGroupsList" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer"></a>
+
+```python
+from cdktn_provider_azuread import data_azuread_groups
+
+dataAzureadGroups.DataAzureadGroupsGroupsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataAzureadGroupsGroupsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataAzureadGroupsGroupsOutputReference <a name="DataAzureadGroupsGroupsOutputReference" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_azuread import data_azuread_groups
+
+dataAzureadGroups.DataAzureadGroupsGroupsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.mailEnabled">mail_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.objectId">object_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.securityEnabled">security_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroups">DataAzureadGroupsGroups</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.displayName"></a>
+
+```python
+display_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `mail_enabled`<sup>Required</sup> <a name="mail_enabled" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.mailEnabled"></a>
+
+```python
+mail_enabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `object_id`<sup>Required</sup> <a name="object_id" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.objectId"></a>
+
+```python
+object_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `security_enabled`<sup>Required</sup> <a name="security_enabled" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.securityEnabled"></a>
+
+```python
+security_enabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataAzureadGroupsGroups
+```
+
+- *Type:* <a href="#@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroups">DataAzureadGroupsGroups</a>
+
+---
+
 
 ### DataAzureadGroupsTimeoutsOutputReference <a name="DataAzureadGroupsTimeoutsOutputReference" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeoutsOutputReference"></a>
 
