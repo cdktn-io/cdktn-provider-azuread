@@ -32,6 +32,8 @@ The following submodules are available:
 - [applicationRedirectUris](./applicationRedirectUris.typescript.md)
 - [applicationRegistration](./applicationRegistration.typescript.md)
 - [authenticationStrengthPolicy](./authenticationStrengthPolicy.typescript.md)
+- [authenticationStrengthPolicyFido2CombinationConfiguration](./authenticationStrengthPolicyFido2CombinationConfiguration.typescript.md)
+- [authenticationStrengthPolicyX509CombinationConfiguration](./authenticationStrengthPolicyX509CombinationConfiguration.typescript.md)
 - [claimsMappingPolicy](./claimsMappingPolicy.typescript.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.typescript.md)
 - [customDirectoryRole](./customDirectoryRole.typescript.md)
@@ -42,6 +44,7 @@ The following submodules are available:
 - [dataAzureadApplication](./dataAzureadApplication.typescript.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.typescript.md)
 - [dataAzureadApplicationTemplate](./dataAzureadApplicationTemplate.typescript.md)
+- [dataAzureadAuthenticationStrengthPolicy](./dataAzureadAuthenticationStrengthPolicy.typescript.md)
 - [dataAzureadClientConfig](./dataAzureadClientConfig.typescript.md)
 - [dataAzureadDirectoryObject](./dataAzureadDirectoryObject.typescript.md)
 - [dataAzureadDirectoryRoleTemplates](./dataAzureadDirectoryRoleTemplates.typescript.md)
@@ -60,6 +63,7 @@ The following submodules are available:
 - [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.typescript.md)
 - [directoryRoleMember](./directoryRoleMember.typescript.md)
 - [group](./group.typescript.md)
+- [groupLicense](./groupLicense.typescript.md)
 - [groupMember](./groupMember.typescript.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.typescript.md)
 - [groupWithoutMembers](./groupWithoutMembers.typescript.md)
@@ -79,6 +83,7 @@ The following submodules are available:
 - [synchronizationSecret](./synchronizationSecret.typescript.md)
 - [user](./user.typescript.md)
 - [userFlowAttribute](./userFlowAttribute.typescript.md)
+- [userLicense](./userLicense.typescript.md)
 
 
 

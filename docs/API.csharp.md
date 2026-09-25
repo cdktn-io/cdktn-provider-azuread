@@ -32,6 +32,8 @@ The following submodules are available:
 - [applicationRedirectUris](./applicationRedirectUris.csharp.md)
 - [applicationRegistration](./applicationRegistration.csharp.md)
 - [authenticationStrengthPolicy](./authenticationStrengthPolicy.csharp.md)
+- [authenticationStrengthPolicyFido2CombinationConfiguration](./authenticationStrengthPolicyFido2CombinationConfiguration.csharp.md)
+- [authenticationStrengthPolicyX509CombinationConfiguration](./authenticationStrengthPolicyX509CombinationConfiguration.csharp.md)
 - [claimsMappingPolicy](./claimsMappingPolicy.csharp.md)
 - [conditionalAccessPolicy](./conditionalAccessPolicy.csharp.md)
 - [customDirectoryRole](./customDirectoryRole.csharp.md)
@@ -42,6 +44,7 @@ The following submodules are available:
 - [dataAzureadApplication](./dataAzureadApplication.csharp.md)
 - [dataAzureadApplicationPublishedAppIds](./dataAzureadApplicationPublishedAppIds.csharp.md)
 - [dataAzureadApplicationTemplate](./dataAzureadApplicationTemplate.csharp.md)
+- [dataAzureadAuthenticationStrengthPolicy](./dataAzureadAuthenticationStrengthPolicy.csharp.md)
 - [dataAzureadClientConfig](./dataAzureadClientConfig.csharp.md)
 - [dataAzureadDirectoryObject](./dataAzureadDirectoryObject.csharp.md)
 - [dataAzureadDirectoryRoleTemplates](./dataAzureadDirectoryRoleTemplates.csharp.md)
@@ -60,6 +63,7 @@ The following submodules are available:
 - [directoryRoleEligibilityScheduleRequest](./directoryRoleEligibilityScheduleRequest.csharp.md)
 - [directoryRoleMember](./directoryRoleMember.csharp.md)
 - [group](./group.csharp.md)
+- [groupLicense](./groupLicense.csharp.md)
 - [groupMember](./groupMember.csharp.md)
 - [groupRoleManagementPolicy](./groupRoleManagementPolicy.csharp.md)
 - [groupWithoutMembers](./groupWithoutMembers.csharp.md)
@@ -79,6 +83,7 @@ The following submodules are available:
 - [synchronizationSecret](./synchronizationSecret.csharp.md)
 - [user](./user.csharp.md)
 - [userFlowAttribute](./userFlowAttribute.csharp.md)
+- [userLicense](./userLicense.csharp.md)
 
 
 
