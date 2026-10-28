@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.NewAuthenticationStrengthPolicyFido2CombinationConfiguration(scope Construct, id *string, config AuthenticationStrengthPolicyFido2CombinationConfigurationConfig) AuthenticationStrengthPolicyFido2CombinationConfiguration
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrength
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrength
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 &authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authentication
 	AllowedAaguids: *[]*string,
 	AuthenticationStrengthPolicyId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationTimeouts,
 }
 ```
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 &authenticationstrengthpolicyfido2combinationconfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationTimeouts {
 	Create: *string,
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.authenticationStrengthPolicyFido2CombinationConfiguration.AuthenticationStrengthPolicyFido2CombinationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyfido2combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyfido2combinationconfiguration"
 
 authenticationstrengthpolicyfido2combinationconfiguration.NewAuthenticationStrengthPolicyFido2CombinationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationStrengthPolicyFido2CombinationConfigurationTimeoutsOutputReference
 ```

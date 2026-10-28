@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.NewDataAzureadAuthenticationStrengthPolicy(scope Construct, id *string, config DataAzureadAuthenticationStrengthPolicyConfig) DataAzureadAuthenticationStrengthPolicy
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyCombinationConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 &dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicyCombinationConfigurations {
 
@@ -740,7 +740,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadaut
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 &dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicyConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadaut
 	DisplayName: *string,
 	Id: *string,
 	ObjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyTimeouts,
 }
 ```
 
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 &dataazureadauthenticationstrengthpolicy.DataAzureadAuthenticationStrengthPolicyTimeouts {
 	Read: *string,
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyCombinationConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.NewDataAzureadAuthenticationStrengthPolicyCombinationConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadAuthenticationStrengthPolicyCombinationConfigurationsList
 ```
@@ -1090,7 +1090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyCombinationConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.NewDataAzureadAuthenticationStrengthPolicyCombinationConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadAuthenticationStrengthPolicyCombinationConfigurationsOutputReference
 ```
@@ -1423,7 +1423,7 @@ func InternalValue() DataAzureadAuthenticationStrengthPolicyCombinationConfigura
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadAuthenticationStrengthPolicy.DataAzureadAuthenticationStrengthPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadauthenticationstrengthpolicy"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadauthenticationstrengthpolicy"
 
 dataazureadauthenticationstrengthpolicy.NewDataAzureadAuthenticationStrengthPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadAuthenticationStrengthPolicyTimeoutsOutputReference
 ```
