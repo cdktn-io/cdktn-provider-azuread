@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.NewDataAzureadGroups(scope Construct, id *string, config DataAzureadGroupsConfig) DataAzureadGroups
 ```
@@ -374,7 +374,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.DataAzureadGroups_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.DataAzureadGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataazureadgroups.DataAzureadGroups_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.DataAzureadGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ dataazureadgroups.DataAzureadGroups_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.DataAzureadGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +850,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 &dataazureadgroups.DataAzureadGroupsConfig {
 	Connection: interface{},
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgro
 	ObjectIds: *[]*string,
 	ReturnAll: interface{},
 	SecurityEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.dataAzureadGroups.DataAzureadGroupsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.dataAzureadGroups.DataAzureadGroupsTimeouts,
 }
 ```
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 &dataazureadgroups.DataAzureadGroupsGroups {
 
@@ -1112,7 +1112,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgro
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 &dataazureadgroups.DataAzureadGroupsTimeouts {
 	Read: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.NewDataAzureadGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzureadGroupsGroupsList
 ```
@@ -1295,7 +1295,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.NewDataAzureadGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzureadGroupsGroupsOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() DataAzureadGroupsGroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.dataAzureadGroups.DataAzureadGroupsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/dataazureadgroups"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/dataazureadgroups"
 
 dataazureadgroups.NewDataAzureadGroupsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzureadGroupsTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.userLicense.UserLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.NewUserLicense(scope Construct, id *string, config UserLicenseConfig) UserLicense
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.userLicense.UserLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.UserLicense_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.userLicense.UserLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.UserLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ userlicense.UserLicense_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.userLicense.UserLicense.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.UserLicense_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ userlicense.UserLicense_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.userLicense.UserLicense.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.UserLicense_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.userLicense.UserLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 &userlicense.UserLicenseConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
 	UserObjectId: *string,
 	DisabledPlans: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.userLicense.UserLicenseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.userLicense.UserLicenseTimeouts,
 }
 ```
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.userLicense.UserLicenseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 &userlicense.UserLicenseTimeouts {
 	Create: *string,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.userLicense.UserLicenseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/userlicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/userlicense"
 
 userlicense.NewUserLicenseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserLicenseTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.NewAuthenticationStrengthPolicyX509CombinationConfiguration(scope Construct, id *string, config AuthenticationStrengthPolicyX509CombinationConfigurationConfig) AuthenticationStrengthPolicyX509CombinationConfiguration
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthP
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthP
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 &authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authentication
 	AllowedIssuerSkis: *[]*string,
 	AllowedPolicyOids: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationTimeouts,
 }
 ```
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 &authenticationstrengthpolicyx509combinationconfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationTimeouts {
 	Create: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.authenticationStrengthPolicyX509CombinationConfiguration.AuthenticationStrengthPolicyX509CombinationConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/authenticationstrengthpolicyx509combinationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/authenticationstrengthpolicyx509combinationconfiguration"
 
 authenticationstrengthpolicyx509combinationconfiguration.NewAuthenticationStrengthPolicyX509CombinationConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AuthenticationStrengthPolicyX509CombinationConfigurationTimeoutsOutputReference
 ```

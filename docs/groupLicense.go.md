@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azuread/3.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupLicense.GroupLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.NewGroupLicense(scope Construct, id *string, config GroupLicenseConfig) GroupLicense
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azuread.groupLicense.GroupLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.GroupLicense_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azuread.groupLicense.GroupLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.GroupLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ grouplicense.GroupLicense_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azuread.groupLicense.GroupLicense.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.GroupLicense_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ grouplicense.GroupLicense_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azuread.groupLicense.GroupLicense.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.GroupLicense_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupLicense.GroupLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 &grouplicense.GroupLicenseConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
 	SkuId: *string,
 	DisabledPlans: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17.groupLicense.GroupLicenseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18.groupLicense.GroupLicenseTimeouts,
 }
 ```
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azuread.groupLicense.GroupLicenseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 &grouplicense.GroupLicenseTimeouts {
 	Create: *string,
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azuread.groupLicense.GroupLicenseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17/grouplicense"
+import "github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v18/grouplicense"
 
 grouplicense.NewGroupLicenseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupLicenseTimeoutsOutputReference
 ```
